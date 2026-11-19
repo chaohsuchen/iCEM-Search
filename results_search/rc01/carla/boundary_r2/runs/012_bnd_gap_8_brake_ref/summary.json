@@ -268,5 +268,9 @@
     "delay_s": 0.0,
     "captured_frame": 187,
     "delivered_frame": 187
-  }
+  },
+  "scene_name": "street_van",
+  "hidden_settings": [],
+  "constraints": null,
+  "constraints_pass": null
 }

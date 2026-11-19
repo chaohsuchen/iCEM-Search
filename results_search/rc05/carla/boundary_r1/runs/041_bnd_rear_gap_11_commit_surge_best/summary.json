@@ -156,5 +156,103 @@
     "min_front": 1.5828375303099917,
     "min_rear": 5.47921639454259,
     "margin": -0.7171624696900083
-  }
+  },
+  "scene_name": "lane_change_abort",
+  "hidden_settings": [
+    "rear_acc",
+    "rear_vmax"
+  ],
+  "constraints": [
+    {
+      "name": "no_contact",
+      "kind": "contact",
+      "measured": 0.0,
+      "required": 0.0,
+      "op": "==",
+      "unit": "frames",
+      "passed": true
+    },
+    {
+      "name": "road_edge_left",
+      "kind": "clearance",
+      "measured": -4.858544109729522,
+      "required": -5.25,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "road_edge_right",
+      "kind": "clearance",
+      "measured": 1.088677990391773,
+      "required": 1.75,
+      "op": "<=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_rear_left",
+      "kind": "clearance",
+      "measured": 3.1538454530580795,
+      "required": 1.0,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_lead",
+      "kind": "clearance",
+      "measured": 1.5539066480392028,
+      "required": 2.0,
+      "op": ">=",
+      "unit": "m",
+      "passed": false
+    },
+    {
+      "name": "ego_settled_in_lane",
+      "kind": "state",
+      "measured": true,
+      "required": true,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "envelope_forward_accel",
+      "kind": "limit",
+      "measured": 4.599779718854519,
+      "required": 4.905,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_braking",
+      "kind": "limit",
+      "measured": 6.916386351810574,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_lateral_accel",
+      "kind": "limit",
+      "measured": 1.3896640884195959,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_planar_accel",
+      "kind": "limit",
+      "measured": 6.9163863612392,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    }
+  ],
+  "constraints_pass": false
 }

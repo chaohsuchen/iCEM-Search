@@ -223,5 +223,85 @@
     "measured_right_walls": 112,
     "left_face": -1.999997312249918,
     "right_face": 1.99999822989287
-  }
+  },
+  "scene_name": "tunnel_squeeze",
+  "hidden_settings": [
+    "rear_delay_s",
+    "rear_decel"
+  ],
+  "constraints": [
+    {
+      "name": "no_contact",
+      "kind": "contact",
+      "measured": 21.0,
+      "required": 0.0,
+      "op": "==",
+      "unit": "frames",
+      "passed": false
+    },
+    {
+      "name": "clearance_front",
+      "kind": "clearance",
+      "measured": -0.1463164834387669,
+      "required": 1.0,
+      "op": ">=",
+      "unit": "m",
+      "passed": false
+    },
+    {
+      "name": "clearance_rear",
+      "kind": "clearance",
+      "measured": -0.09299696728353979,
+      "required": 1.0,
+      "op": ">=",
+      "unit": "m",
+      "passed": false
+    },
+    {
+      "name": "ego_stopped",
+      "kind": "state",
+      "measured": false,
+      "required": true,
+      "op": "==",
+      "unit": "bool",
+      "passed": false
+    },
+    {
+      "name": "envelope_forward_accel",
+      "kind": "limit",
+      "measured": 12.818886835093405,
+      "required": 4.905,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": false
+    },
+    {
+      "name": "envelope_braking",
+      "kind": "limit",
+      "measured": 10.193027913342258,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": false
+    },
+    {
+      "name": "envelope_lateral_accel",
+      "kind": "limit",
+      "measured": 8.818831056481566,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_planar_accel",
+      "kind": "limit",
+      "measured": 15.55942289719303,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": false
+    }
+  ],
+  "constraints_pass": false
 }

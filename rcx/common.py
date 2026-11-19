@@ -258,6 +258,8 @@ def run_engine(world, scn, policy, pcfg, calib, run_id, out_dir, meta_extra=None
                    files=["run.mp4", "ego_observable.csv", "ground_truth.csv", "decisions.jsonl", "summary.json"])
     summary.update(meta_extra or {})
     if hasattr(scn, "extra_summary"): summary.update(scn.extra_summary(rows, res, contacts))
+    if summary.get("rc_case"):
+        from . import constraints; summary.update(constraints.annotate(summary["rc_case"], summary, rows))      # scene_name, hidden_settings, constraint block (R1-R3)
     json.dump(summary, open(os.path.join(out_dir, "summary.json"), "w"), indent=2, default=float)
     return summary
 

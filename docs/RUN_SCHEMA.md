@@ -16,6 +16,24 @@ Every CARLA execution of a policy writes one folder `runs/<run_id>/` (written by
 `policy_source` (optimizer, search seed, pop, iters, robust cost of the iCEM run that produced the policy), `surrogate_prediction`, `calibration`,
 `label` / `reason` / `end_reason` (CARLA verdict, reference only: final recovery-profile labels are produced downstream), `metrics`, `times`, `contact` (frames, actors), `evidence_meta`, `files`.
 
+### Constraint block, scene name and hidden settings (added fields)
+- `scene_name`: scene family, separate from the RC number: `street_van` (rc01), `spun_car` (rc03), `stopped_car_truck_alongside` (rc04), `lane_change_abort` (rc05), `broken_car_passer` (rc06), `tunnel_squeeze` (rc09), `sidewalk_pedestrian_dart` (rc13). `variation_id` is the scene variation inside it.
+- `hidden_settings`: names of the scene parameters (keys of `scenario`) that are not observable in the recorded history at the decision point. Declared per case from `20RCs.md` ("Hidden at the trigger"): rc01 none; rc03 crash, intrude, psi_rest, T_slide, lead_brake, lead_react; rc04 and rc06 side_acc, side_react, fol_headway, fol_react; rc05 rear_acc, rear_vmax; rc09 rear_delay_s, rear_decel; rc13 dart_speed, dart_dist.
+- `constraints`: every check the CARLA judge applied, as a list of `{name, kind, measured, required, op, unit, passed}`. `kind` is `contact` (frames in contact, required 0), `clearance` (distance in m), `limit` (filtered acceleration against the physics envelope, m/s2: forward 0.5 g, braking 1 g, lateral 1 g, planar 1 g) or `state` (yes/no end checks such as settled, stopped, not closing). `op` compares `measured` with `required`. `constraints_pass` is true when every listed constraint passed; it is null for INVALID or UNRESOLVED runs, whose `constraints` is null.
+- The block is computed from the same recorded numbers as the label (`rcx/constraints.py`); `tools/backfill_constraints.py` checks that `constraints_pass` agrees with the label for every run (PASS if and only if all constraints passed). Some checks are only decisive when there is no contact (clearances, settled, not closing, stopped): a run that ends in a contact fails on `no_contact` first.
+
+## Units, signs and reference points
+| quantity | unit / sign / reference |
+|---|---|
+| time (`sim_time`, `t_since_cue`) | seconds; tick 0.05 s; `t_since_cue` is empty before the decision point (the tick at which the policy is first told about the hazard) |
+| `ego_s`, `ego_t` | metres in the scene lane frame: s forward along the road, t lateral, positive to the right; ego lane centre t = 0 (rc03/04/06: the escape lane is at t = -side * lane_w) |
+| `ego_yaw_rel` | heading relative to the road (sign convention not yet documented) |
+| `speed`, `accel_*` | m/s and m/s2; `accel_long` positive forward, `accel_lat` positive to the ego's right; `*_f` = 0.2 s trailing mean |
+| `a_req`, `a_req_clipped` | requested longitudinal acceleration in m/s2, negative = braking |
+| `seen_<actor>_rel_*` | the other actor relative to the ego: `rel_s` forward, `rel_t` right, `rel_vs`/`rel_vt` relative velocities (m/s), `yaw_rel` rad, `length`/`width` m. Reference point of the position: see the open question in the hand-off notes (the offset to the true centre distance is a few cm) |
+| `*_clear` (ground truth) | footprint-to-footprint distance in metres between the ego and that actor (rotated rectangles); 0 at contact |
+| `throttle`, `brake`, `steer`, `hand_brake` | CARLA vehicle control values as applied |
+
 ## ego_observable.csv (per tick, dt = 0.05 s)
 - time: `frame`, `sim_time`, `t_since_cue` (empty before the cue).
 - ego state (own sensing): `ego_s`, `ego_t` (lane frame; t positive to the right), `ego_yaw_rel`, `speed`, `accel_long`, `accel_lat`, `*_f` (0.2 s mean), `accel_planar_f`, `contact` (collision sensor bit).

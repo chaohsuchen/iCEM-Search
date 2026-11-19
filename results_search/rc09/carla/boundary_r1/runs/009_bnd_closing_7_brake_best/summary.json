@@ -207,5 +207,12 @@
     "measured_right_walls": 118,
     "left_face": -1.999997724709034,
     "right_face": 1.999998569883513
-  }
+  },
+  "scene_name": "tunnel_squeeze",
+  "hidden_settings": [
+    "rear_delay_s",
+    "rear_decel"
+  ],
+  "constraints": null,
+  "constraints_pass": null
 }

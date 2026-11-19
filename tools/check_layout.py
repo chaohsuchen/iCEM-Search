@@ -3,7 +3,7 @@ import glob, os, re, sys
 R = "results_search"; bad = []
 BATCH = re.compile(r"^(baseline|presets_[a-z0-9]+|boundary_r\d+)$"); RC = re.compile(r"^rc\d\d$"); RUN = re.compile(r"^\d{3}_[A-Za-z0-9_.@-]+_(best|boundary|ref)$")
 import csv, json
-SUMMARY_KEYS = {"schema", "run_id", "rc", "rc_case", "variation_id", "candidate_kind", "family", "scenario_params", "policy_params", "policy_source", "scene_seed", "label", "reason", "end_reason", "metrics", "contact", "files"}
+SUMMARY_KEYS = {"schema", "run_id", "rc", "rc_case", "variation_id", "candidate_kind", "family", "scenario_params", "policy_params", "policy_source", "scene_seed", "label", "reason", "end_reason", "metrics", "contact", "files", "scene_name", "hidden_settings", "constraints", "constraints_pass"}
 EGO_COLS = {"frame", "sim_time", "t_since_cue", "ego_s", "ego_t", "speed", "a_req", "throttle", "brake", "steer", "contact"}
 GT_COLS = {"frame", "sim_time", "contact_actor"}
 DEC_KEYS = {"frame", "query_time", "observation", "observation_history_frames", "policy_output", "controller_state", "applied_command", "pending_commands"}
