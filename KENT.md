@@ -18,6 +18,8 @@ RCs added here: RC07, RC10, RC11, RC14, RC15 (work in progress), RC08, RC12, RC1
 | `RC_scenarios_HighwayEnv_CARLA.ipynb` | the notebook whose code cells (actor laws, controllers) `options.py` / `laws.py` load at run time; outputs stripped |
 | `tools/kent/pick.py` | selective CARLA: picks the meaningful histories of a batch (defining / contrast / hard / easy) |
 | `tools/kent/shared_index.py` | writes `shared_runs.json` (which CARLA runs are each family's shared setting, R4) |
+| `tools/kent/runs_io.py` | reads a run folder's files, gzipped or plain |
+| `tools/kent/rc20.py` | RC20 on Victor's RC04 scene: restricted / full family library / generic planner / fixed settings, then labels |
 | `results_search/rc07`, `rc08`, `rc10`, `rc11`, `rc12`, `rc14`, `rc15`, `rc16`, `rc18`, `rc19` | Kent's results, next to Victor's RCs; `results_search/KENT_README.md` and `KENT_RUN_SCHEMA.md` describe them |
 
 ## `carla_rc/`: only what the search and the CARLA replay import
@@ -40,11 +42,17 @@ RCs added here: RC07, RC10, RC11, RC14, RC15 (work in progress), RC08, RC12, RC1
 `results_search/<rc>/search/<batch>/` holds the search output: `scenarios_*`, `profiles_*` and `candidates_*.json`. `results_search/<rc>/carla/<batch>/` holds the CARLA side: `selected.json`, `results_shard*.jsonl` (one line per CARLA run, including the label and the surrogate verdict), `repeats/` and `shared_runs.json`. Batches: `vsearch` for every RC; `vsearch_rear` (RC10, RC11) and `vsearch_rc14rear` (RC14) add a rear vehicle; RC19 has `on_rc03`, `on_rc10` and `on_rc07`.
 
 Not included:
-- The per-run folders (`runs/<run_id>/` with `ground_truth.csv`, `ego_observable.csv`, `decisions.jsonl`, `summary.json`). They total several GB and stay on the CARLA VM; ask Kent for any you need.
+- The per-run folders of the variations that were not selected. The selected ones are included (below); the rest stay on the CARLA VM, ask Kent for any you need.
 - The mid-search checkpoints (`partial_*.jsonl`).
 - Kent's RC03 and RC07's earlier batches (`baseline`, `validation`, `pilot2`). RC12 and RC19 `on_rc03` were built on Kent's RC03 scene, so regenerating them (`search/rc19_batch.py rc03`) needs Kent's RC03 batch, not Victor's `results_search/rc03`.
 
 At the time of this commit, the CARLA "complete" fill (every remaining candidate, not only the selected ones) is still running for several batches. Some `results_shard*.jsonl` files will grow.
+
+## Run folders (per-tick data)
+
+`results_search/<rc>/carla/<batch>/runs/<run_id>/` (and `repeats/runs/` for the repeats near the boundary, R6) for the **selected variations** of each batch: about 40-50 per batch, picked by `tools/kent/pick.py` (defining / contrast / hard / easy, spread over presets, random and boundary stages), each with every candidate in every hidden world (R5) and its repeats; RC19 complete. The selected variation ids are in each batch's `selected_variations.txt`; for RC07, RC10, RC11, RC14 and RC15 `vsearch` (where every candidate was run in CARLA) the run folders of 40 picked variations are included.
+
+Each folder: `summary.json` (plain: label, constraints R1, hidden parameters R2, scene name / uid / site / split R3, policy, surrogate prediction) and `ground_truth.csv.gz`, `ego_observable.csv.gz`, `decisions.jsonl.gz`. The per-tick files are gzipped, with numbers at float32 precision (CARLA's own; relative change < 5e-7): about 20 GB raw, ~2 GB here. Read them with `tools/kent/runs_io.py`; details in `results_search/KENT_RUN_SCHEMA.md`.
 
 ## Running
 

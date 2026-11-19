@@ -2,6 +2,8 @@
 
 One folder per policy executed once in one scene: `<rc>/carla/<batch>/runs/<NNN>_<variation>_<family>_<kind>/`. Written by `carla_rc/teachers/evidence.py`; CARLA 0.9.15, 20 Hz ticks (0.05 s), the policy decides at 10 Hz.
 
+**Compression in this repository.** `ground_truth.csv`, `ego_observable.csv` and `decisions.jsonl` are stored gzipped (`.csv.gz`, `.jsonl.gz`); `summary.json` is plain. Numbers with more than 7 significant digits are written at float32 precision, CARLA's own (relative change < 5e-7; columns, rows and text unchanged). Read them with `tools/kent/runs_io.py` (either form), or directly: `pandas.read_csv("ground_truth.csv.gz")`, `gzip.open("decisions.jsonl.gz", "rt")`. Repeats near the boundary (R6) are under `<rc>/carla/<batch>/repeats/runs/`.
+
 ## Frames, units, signs
 
 - **Scenario frame** (every `*_s`, `*_t`, `ego_*` field): `s` / `x` along the site's reference lane centreline [m], from the site's frame origin; `t` / `y` lateral [m], **positive to the right**; yaw [rad], **positive turning to the right** (towards +t), 0 = along the lane. On a bend the frame follows the centreline.
