@@ -1,0 +1,232 @@
+{
+ "run_id": "532_A_s308_0093~hidden2_overtake_boundary_x+0.60_v+0.15",
+ "rc": "RC08",
+ "label": "FAIL",
+ "reason": "no contact, but min margin r = 0.03 < 0.05 (binding: road)",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC08-S1-opt",
+  "town": "Town01",
+  "site": "A",
+  "frame_site": {
+   "start_xy": [
+    2.0,
+    318.0
+   ],
+   "ref_lane": -1,
+   "ref_idx": 0,
+   "s0": 50.0
+  },
+  "lane_width": 4.0,
+  "horizon_s": 22.0,
+  "prefix_s": 3.0,
+  "description": "A garbage truck stopped in the ego lane on a two-way town street, oncoming traffic in a stream with gaps, a car behind. Stop protected behind it and wait, or overtake through the oncoming lane now or once a large enough gap is seen past the truck; the route deadline may be missed.",
+  "params": {
+   "v": 11.654566794609428,
+   "d_truck": 35.335290246375635,
+   "truck_dy": 0.48272798419026103,
+   "t_go": 22.874802435249283,
+   "onc_v": 9.091623814609232,
+   "onc_x0": 149.7012583803263,
+   "onc_h1": 10.783920567374906,
+   "onc_h2": 10.806952124620368,
+   "onc_h3": 3.9919626399153776,
+   "onc_h4": 8.676797836494458,
+   "fol": 1,
+   "fol_T": 0.918110997397347,
+   "fol_react": 0.8900408788344201,
+   "fol_b": 4.5,
+   "wx": "wet"
+  }
+ },
+ "policy": {
+  "name": "options.overtake",
+  "family": "overtake",
+  "params": {
+   "dy": 4.259161532189209,
+   "A_lat": 4.067378569839583,
+   "margin": 3.4447946111630494,
+   "acc": 0.6823196530702997
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.025763474296261357,
+  "min_margins": {
+   "clear": 1.405143725325053,
+   "road": 0.025763474296261357,
+   "dyn": 0.11838281330372424
+  },
+  "start_speed": 12.219588383177323,
+  "end_speed": 12.208834601824542,
+  "progress_m": 247.83358718303265,
+  "terminal": 0.5999733829046211,
+  "envelope": {
+   "max_g": 0.411646732646638,
+   "max_ax_g": 0.11836914228035149,
+   "min_ax_g": -0.02798180476398128,
+   "viol_ticks": 0,
+   "shaped_frac": 0.01702127659574468,
+   "governed_frac": 0.0
+  },
+  "goal": {
+   "route_done": true,
+   "route_t": 3.8
+  }
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 1.405143725325053,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.025763474296261357,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.11838281330372424,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5999733829046211,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {
+    "route_done": true,
+    "route_t": 3.8
+   },
+   "required": "no deadline in the label; route_done stored apart",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "garbage_truck",
+  "uid": "A_s308_0093~hidden2",
+  "site": "A",
+  "split": "train",
+  "history_id": "A_s308_0093",
+  "hidden_world": "hidden2",
+  "hidden_params": [
+   "t_go",
+   "fol_react",
+   "fol_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 308,
+  "index": 28,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc08",
+ "variation_id": "A_s308_0093~hidden2",
+ "candidate_kind": "boundary",
+ "family": "overtake",
+ "scenario_params": {
+  "v": 11.654566794609428,
+  "d_truck": 35.335290246375635,
+  "truck_dy": 0.48272798419026103,
+  "t_go": 22.874802435249283,
+  "onc_v": 9.091623814609232,
+  "onc_x0": 149.7012583803263,
+  "onc_h1": 10.783920567374906,
+  "onc_h2": 10.806952124620368,
+  "onc_h3": 3.9919626399153776,
+  "onc_h4": 8.676797836494458,
+  "fol": 1,
+  "fol_T": 0.918110997397347,
+  "fol_react": 0.8900408788344201,
+  "fol_b": 4.5,
+  "wx": "wet"
+ },
+ "hidden_params": [
+  "t_go",
+  "fol_react",
+  "fol_b"
+ ],
+ "policy_params": {
+  "dy": 4.259161532189209,
+  "A_lat": 4.067378569839583,
+  "margin": 3.4447946111630494,
+  "acc": 0.6823196530702997
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   308,
+   1764722845,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.08194316822151215,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "boundary"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}

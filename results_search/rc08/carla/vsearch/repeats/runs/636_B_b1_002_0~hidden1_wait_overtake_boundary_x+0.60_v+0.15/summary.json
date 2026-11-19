@@ -1,0 +1,238 @@
+{
+ "run_id": "636_B_b1_002_0~hidden1_wait_overtake_boundary_x+0.60_v+0.15",
+ "rc": "RC08",
+ "label": "FAIL",
+ "reason": "no contact, but min margin r = -0.03 < 0.05 (binding: clear)",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC08-S1-opt@B",
+  "town": "Town01",
+  "site": "B",
+  "frame_site": {
+   "start_xy": [
+    -2.0,
+    10.0
+   ],
+   "ref_lane": -1,
+   "ref_idx": 0,
+   "s0": 50.0
+  },
+  "lane_width": 4.0,
+  "horizon_s": 22.0,
+  "prefix_s": 3.0,
+  "description": "A garbage truck stopped in the ego lane on a two-way town street, oncoming traffic in a stream with gaps, a car behind. Stop protected behind it and wait, or overtake through the oncoming lane now or once a large enough gap is seen past the truck; the route deadline may be missed.",
+  "params": {
+   "v": 12.132207466551684,
+   "d_truck": 68.11107889647454,
+   "truck_dy": 0.5704739792432505,
+   "t_go": 45.78345982542996,
+   "onc_v": 13.153084685260406,
+   "onc_x0": 109.2715260919671,
+   "onc_h1": 10.080589222291145,
+   "onc_h2": 5.594318559732761,
+   "onc_h3": 6.424792395283104,
+   "onc_h4": 6.363901621102545,
+   "fol": 0,
+   "fol_T": 0.8,
+   "fol_react": 0.5279982172329091,
+   "fol_b": 5.949344852778635,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.wait_overtake",
+  "family": "wait_overtake",
+  "params": {
+   "d_gap": 4.558147158874102,
+   "b_max": 0.6883382639435041,
+   "y_peek": 0.2636684058125477,
+   "T_need": 0.16562532250677098,
+   "a_go": 1.6745839424900368,
+   "A_lat": 2.696560751729777,
+   "margin": 1.3281219527493864
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -0.030960898542065185,
+  "min_margins": {
+   "clear": -0.030960898542065185,
+   "road": 0.5094330574843067,
+   "dyn": 0.498165678119332
+  },
+  "start_speed": 12.65726755545966,
+  "end_speed": 12.593343979614987,
+  "progress_m": 166.7661942631785,
+  "terminal": 0.5797663520845694,
+  "envelope": {
+   "max_g": 0.4286484251575667,
+   "max_ax_g": 0.37293570556326106,
+   "min_ax_g": -0.16830309581397893,
+   "viol_ticks": 0,
+   "shaped_frac": 0.0,
+   "governed_frac": 0.0
+  },
+  "goal": {
+   "route_done": true,
+   "route_t": 14.4
+  }
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": -0.030960898542065185,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.5094330574843067,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.498165678119332,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5797663520845694,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {
+    "route_done": true,
+    "route_t": 14.4
+   },
+   "required": "no deadline in the label; route_done stored apart",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "garbage_truck",
+  "uid": "B_b1_002_0~hidden1",
+  "site": "B",
+  "split": "train",
+  "history_id": "B_b1_002_0",
+  "hidden_world": "hidden1",
+  "hidden_params": [
+   "t_go",
+   "fol_react",
+   "fol_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 4,
+  "how": "boundary:brake:fol_T:B_s308_0110"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc08",
+ "variation_id": "B_b1_002_0~hidden1",
+ "candidate_kind": "boundary",
+ "family": "wait_overtake",
+ "scenario_params": {
+  "v": 12.132207466551684,
+  "d_truck": 68.11107889647454,
+  "truck_dy": 0.5704739792432505,
+  "t_go": 45.78345982542996,
+  "onc_v": 13.153084685260406,
+  "onc_x0": 109.2715260919671,
+  "onc_h1": 10.080589222291145,
+  "onc_h2": 5.594318559732761,
+  "onc_h3": 6.424792395283104,
+  "onc_h4": 6.363901621102545,
+  "fol": 0,
+  "fol_T": 0.8,
+  "fol_react": 0.5279982172329091,
+  "fol_b": 5.949344852778635,
+  "wx": "dry"
+ },
+ "hidden_params": [
+  "t_go",
+  "fol_react",
+  "fol_b"
+ ],
+ "policy_params": {
+  "d_gap": 4.558147158874102,
+  "b_max": 0.6883382639435041,
+  "y_peek": 0.2636684058125477,
+  "T_need": 0.16562532250677098,
+  "a_go": 1.6745839424900368,
+  "A_lat": 2.696560751729777,
+  "margin": 1.3281219527493864
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   3627254432,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.05872458754970955,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "boundary"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
