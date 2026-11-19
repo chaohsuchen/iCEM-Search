@@ -1,0 +1,3126 @@
+[
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 90,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 90
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 0.5441394749597848,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1872137938803911,
+   "a_brake": 4.938371592487118
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.6249221821473565,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1872137938803911,
+   "a_brake": 4.938371592487118
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.6249221821473565,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.932505352583278
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 7.751939068789669,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.438738429456556
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.7031569148137891,
+  "reason": "obstacle clearance",
+  "robust_cost": 1297.8495718020095,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.944971506329836
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1469.8111938947109,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 48.5,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 48.5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.438738429456556
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 1103.6655845426176,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 48.5,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 48.5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.75,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 46.75
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.944971506329836
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 1212.137223133059,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.75,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 46.75
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 45.875,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45.875
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.451204583203115
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 1260.0622407906376,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 45.875,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45.875
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.3944234256534951,
+   "a_brake": 3.1456828138690565
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 90,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 90
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1174.9893904804176,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.6836560857723802,
+   "t_lc": 3.1077905941933905,
+   "a_lc": 1.0830207816286386,
+   "a_post": 0.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.6630727052445451,
+  "reason": "still closing from fol",
+  "robust_cost": 34.764304680723704,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.616174481106317,
+   "t_lc": 2.385378701513435,
+   "a_lc": 1.528690718721716,
+   "a_post": 0.08124206161948438
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.41212630597271904,
+  "reason": "side clearance; still closing from fol",
+  "robust_cost": 34.69132062677169,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.6604515032713476,
+   "t_lc": 1.8209274393945647,
+   "a_lc": 2.0,
+   "a_post": 0.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.1598498796797495,
+  "reason": "side clearance",
+  "robust_cost": 44.22613700000577,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.6460387070555866,
+   "t_lc": 1.5034265719637312,
+   "a_lc": 1.9481180744865378,
+   "a_post": 0.0023801439398888776
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.09644312303554181,
+  "reason": "side clearance; still closing from fol",
+  "robust_cost": 54.76407988825359,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.33825235287624345,
+   "t_lc": 2.0723922312336107,
+   "a_lc": 1.9713762362051304,
+   "a_post": 0.24911537262723998
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1097.7702068492497,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8522583377883409,
+   "t_lc": 3.579900105556039,
+   "a_lc": 0.4129895930442711,
+   "a_post": 0.02371360502081074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 90,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 90
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9187297786192943,
+  "reason": "",
+  "robust_cost": 0.5997105142324544,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.5205270079271127,
+   "a_slow": 2.6860487802679427,
+   "t_lc": 3.9220416636384505,
+   "a_lc": -2.9070535717300965,
+   "a_post": 3.7769043161571316
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9462680680889455,
+  "reason": "",
+  "robust_cost": 0.5674927881206056,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 75,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 75
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.3753347935290142,
+  "reason": "obstacle clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.9594187612143177,
+   "a_slow": 3.658630152571306,
+   "t_lc": 3.3698082112751524,
+   "a_lc": -2.861231691981346,
+   "a_post": 4.2224871204731205
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8075484977502358,
+  "reason": "",
+  "robust_cost": 2.789120608333854,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.3992571371152767,
+   "a_slow": 4.825683400271977,
+   "t_lc": 2.627034376478722,
+   "a_lc": -3.0,
+   "a_post": 5.06761263510592
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.1575963369588953,
+  "reason": "fol clearance",
+  "robust_cost": 59.4667925897877,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.4568189673458587,
+   "a_slow": 5.8639417968102645,
+   "t_lc": 2.443148152536419,
+   "a_lc": -2.965599680846424,
+   "a_post": 4.502649218889128
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1349.8300184036673,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 45,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 45
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.386827605151763,
+   "a_slow": 6.0,
+   "t_lc": 3.1898637251467994,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1479.3186111660214,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 57.0,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 57.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.11301195121492259,
+   "t_slow": 1.8899440461661872,
+   "a_slow": 5.543074564303395,
+   "t_lc": 2.2858697990504973,
+   "a_lc": -2.883235115282918,
+   "a_post": 4.138653275747118
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.6211352618409365,
+  "reason": "fol clearance",
+  "robust_cost": 33.091158175232486,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 57.0,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 57.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 59.5,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 59.5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.0172566034505826,
+   "a_slow": 5.2123162635849285,
+   "t_lc": 3.151521980088245,
+   "a_lc": -3.0,
+   "a_post": 3.0865392840158252
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8632672915909818,
+  "reason": "",
+  "robust_cost": 1.0150111159512556,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 59.5,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 59.5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 58.25,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 58.25
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.767305789863269,
+   "a_slow": 5.563771339772242,
+   "t_lc": 2.9143554866710253,
+   "a_lc": -3.0,
+   "a_post": 1.517235447734448
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 1.0214179476391514,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 58.25,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 26.0,
+   "d_obs": 58.25
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21821790026176816,
+   "t_slow": 2.4905053966337074,
+   "a_slow": 2.5359676820936756,
+   "t_lc": 3.479101152562939,
+   "a_lc": -2.1015138219536005,
+   "a_post": 2.3794512696048966
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 30
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2096199431447507,
+  "reason": "",
+  "robust_cost": 2.642227954121612,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.12952033582080197,
+   "a_brake": 5.543877830468482
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615411945004562,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.12952033582080197,
+   "a_brake": 5.543877830468482
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615411945004562,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.12952033582080197,
+   "a_brake": 5.543877830468482
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615411945004562,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.12952033582080197,
+   "a_brake": 5.543877830468482
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615411945004562,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.12952033582080197,
+   "a_brake": 5.543877830468482
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615411945004562,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16455272388185554,
+   "a_brake": 5.2623828034598965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 30
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.1386011317724212,
+  "reason": "",
+  "robust_cost": 0.5965700743734333,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.14559818597947663,
+   "t_lc": 4.0,
+   "a_lc": -3.3754396025003386,
+   "a_post": 2.3037425461511987
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.5628296254881016,
+  "reason": "fol clearance",
+  "robust_cost": 30.854762210187573,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.30293090009810764,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.38381402476178306,
+   "t_lc": 4.0,
+   "a_lc": -5.0,
+   "a_post": 1.2067896590666083
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.08244118379352905,
+  "reason": "fol clearance",
+  "robust_cost": 54.26440652083379,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.30022988135530165,
+   "t_lc": 3.4184386593293965,
+   "a_lc": -1.969993749335452,
+   "a_post": 0.7029461970206012
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1531.7921177082671,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4626871540737961,
+   "t_lc": 3.1251228051053523,
+   "a_lc": 0.7964715075019146,
+   "a_post": 0.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1168.3243173826943,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.14223606610680953,
+   "t_lc": 3.606219648909398,
+   "a_lc": 1.9382202547343068,
+   "a_post": 0.6131834498859822
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1005.6415279152108,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 26.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 26.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.19243227882687755,
+   "t_lc": 3.7004742561544672,
+   "a_lc": -1.645934097355247,
+   "a_post": 2.01290081008031
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8395221119618577,
+  "reason": "",
+  "robust_cost": 0.5280570065057194,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 26.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 26.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8492366345063314,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 24.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 24.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1761354161041327,
+   "t_lc": 3.6652594044740696,
+   "a_lc": -1.577341881561333,
+   "a_post": 2.127139177299869
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.5696164915365445,
+  "reason": "fol clearance",
+  "robust_cost": 30.515443277270784,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 24.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 24.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.6003687949471319,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 25.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.19668684674118875,
+   "t_lc": 4.0,
+   "a_lc": -3.425489127925985,
+   "a_post": 2.531469174213757
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8289453193928982,
+  "reason": "",
+  "robust_cost": 0.8557122652202839,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 25.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.24095745930809725,
+   "t_lc": 3.4712374321848762,
+   "a_lc": -2.1879950766614242,
+   "a_post": 2.103499647628532
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.7364247468984426,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 30
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2096199431447507,
+  "reason": "",
+  "robust_cost": 0.6801438409776531,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.10780244126490217,
+   "t_slow": 0.7178619511773808,
+   "a_slow": 1.3284618829004562,
+   "t_lc": 2.7403715763879974,
+   "a_lc": -2.035653001802392,
+   "a_post": 1.765792389848417
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8005990976856185,
+  "reason": "",
+  "robust_cost": 0.6365264471959846,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.7491868462410902,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.1529150001316448,
+   "a_slow": 1.997460507260443,
+   "t_lc": 2.8700622529818975,
+   "a_lc": -2.9327024230282825,
+   "a_post": 2.476398140800076
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.5578606147668923,
+  "reason": "fol clearance",
+  "robust_cost": 30.71382533999253,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 14
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.48666657726658524,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.5991983107460404,
+   "a_slow": 3.311492871766129,
+   "t_lc": 2.9160989206169106,
+   "a_lc": -2.9641841119385055,
+   "a_post": 2.621840909089297
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8624350723147045,
+  "reason": "",
+  "robust_cost": 0.9252828898441192,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 8
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.9063067565970067,
+   "a_slow": 3.8739817858322914,
+   "t_lc": 2.8550097197242117,
+   "a_lc": -3.0,
+   "a_post": 2.5445112375183054
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8278266997350152,
+  "reason": "",
+  "robust_cost": 0.956866734698108,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 2,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 2
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.1146322648831437,
+   "a_slow": 3.426099697142419,
+   "t_lc": 2.819399638323671,
+   "a_lc": -3.0,
+   "a_post": 2.8618462672562113
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.5202113930209005,
+  "reason": "fol clearance",
+  "robust_cost": 30.92522658075401,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": -6,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": -6
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 18.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 18.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.076209107223012,
+   "a_slow": 1.9384733577512148,
+   "t_lc": 2.8217871628943043,
+   "a_lc": -2.724428654629281,
+   "a_post": 1.1579436073061207
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.837079338790021,
+  "reason": "",
+  "robust_cost": 0.6819017562174757,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 18.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 18.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.06580681972023283,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 16.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 16.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.2162574243974504,
+   "a_slow": 2.5418750840900537,
+   "t_lc": 2.813278669424262,
+   "a_lc": -2.8456659589900988,
+   "a_post": 1.1505652879220714
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.818338986591507,
+  "reason": "",
+  "robust_cost": 0.7033577786336332,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 16.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 16.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3710146454311438,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 15.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 15.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 1.1014523038318418,
+   "a_slow": 3.3379643378145647,
+   "t_lc": 3.66873721191803,
+   "a_lc": -2.9644305710007357,
+   "a_post": 2.6470398930768733
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8999497837828268,
+  "reason": "",
+  "robust_cost": 0.8675682572864546,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 15.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 60.0,
+   "v_side": 26.0,
+   "side_pos": 15.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2187086923089855,
+   "t_slow": 0.6124944865541386,
+   "a_slow": 1.574333451315495,
+   "t_lc": 2.50982879793664,
+   "a_lc": -2.1369845071557867,
+   "a_post": 2.43007928788662
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.48666657726658524,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 32,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 32
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1980639663904677,
+   "a_brake": 4.525100697261665
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.6306894328610895,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 29,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.11392477485075418,
+   "a_brake": 4.761128892540567
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615447368143504,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 29,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1980639663904677,
+   "a_brake": 4.525100697261665
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 26,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.11392477485075418,
+   "a_brake": 4.761128892540567
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615447368143504,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 26,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1980639663904677,
+   "a_brake": 4.525100697261665
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 23,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.11392477485075418,
+   "a_brake": 4.761128892540567
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615447368143504,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 23,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1980639663904677,
+   "a_brake": 4.525100697261665
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 21,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.11392477485075418,
+   "a_brake": 4.761128892540567
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.615447368143504,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "brake",
+  "key": "v_side",
+  "x": 21,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1980639663904677,
+   "a_brake": 4.525100697261665
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 32,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 32
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1315.6936233731406,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 29,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5926003260454941,
+   "t_lc": 2.558641495168149,
+   "a_lc": 1.670311314336434,
+   "a_post": 0.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1156.5877919806449,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 29,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 26,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.7019669993675156,
+   "t_lc": 2.3223820285434744,
+   "a_lc": 1.8420575973311184,
+   "a_post": 0.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.5298469885022374,
+  "reason": "",
+  "robust_cost": 0.398768098836609,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 26,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 23,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2969415881240891,
+   "t_lc": 2.5155668273266274,
+   "a_lc": 1.0277604263578137,
+   "a_post": 0.13113563697337666
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.48349362072375435,
+  "reason": "contact with side",
+  "robust_cost": 1000.1281085920602,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 23,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 21,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2576025461312648,
+   "t_lc": 2.465887563352143,
+   "a_lc": -0.3135957895659187,
+   "a_post": 2.5283754802403586
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1000.8903418929783,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 21,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 24.5,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 24.5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.9455320767630035,
+   "t_lc": 2.437459885483827,
+   "a_lc": 0.6040176871486134,
+   "a_post": 0.032804861060465
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.20915898394436788,
+  "reason": "side clearance; still closing from fol",
+  "robust_cost": 58.726218779624105,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 24.5,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 24.5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 25.25,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 25.25
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8220790763467376,
+   "t_lc": 2.4030058467896653,
+   "a_lc": 1.0553957616379233,
+   "a_post": 0.028984457355009846
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.29775925888017807,
+  "reason": "side clearance; still closing from fol",
+  "robust_cost": 38.476540253635996,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 25.25,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 25.25
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 25.625,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 25.625
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.8394619985494852,
+   "t_lc": 2.211375953545955,
+   "a_lc": 1.352145372333097,
+   "a_post": 0.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.5349743490479095,
+  "reason": "",
+  "robust_cost": 30.43622093217939,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "lane_change",
+  "key": "v_side",
+  "x": 25.625,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 25.625
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2754117948241517,
+   "t_lc": 2.1734328114096604,
+   "a_lc": 2.0,
+   "a_post": 3.5478334378103478
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 32,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 32
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14472556048658514,
+   "t_slow": 1.797952794458817,
+   "a_slow": 3.245206131959968,
+   "t_lc": 2.446808569559627,
+   "a_lc": -2.372019773809356,
+   "a_post": 2.64874773637567
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9657967767752551,
+  "reason": "",
+  "robust_cost": 0.8296416829456055,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 29,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.2976858025362294,
+   "a_slow": 3.1236515841347607,
+   "t_lc": 2.4015550652162014,
+   "a_lc": -3.0,
+   "a_post": 2.607178670965262
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 0.7934616797397305,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 29,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 29
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14472556048658514,
+   "t_slow": 1.797952794458817,
+   "a_slow": 3.245206131959968,
+   "t_lc": 2.446808569559627,
+   "a_lc": -2.372019773809356,
+   "a_post": 2.64874773637567
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.7552268002268359,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 26,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12343176010883845,
+   "t_slow": 2.918751890166773,
+   "a_slow": 3.288745630622404,
+   "t_lc": 2.962021645906507,
+   "a_lc": -3.0,
+   "a_post": 2.3716754826879685
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 0.8937638502766336,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 26,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 26
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14472556048658514,
+   "t_slow": 1.797952794458817,
+   "a_slow": 3.245206131959968,
+   "t_lc": 2.446808569559627,
+   "a_lc": -2.372019773809356,
+   "a_post": 2.64874773637567
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.11444184137548774,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 23,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.907422682730503,
+   "a_slow": 3.4541945341909397,
+   "t_lc": 3.310715351181484,
+   "a_lc": -2.926048585559816,
+   "a_post": 1.6452378112447406
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.968720511283504,
+  "reason": "",
+  "robust_cost": 0.8682637471387168,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 23,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 23
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14472556048658514,
+   "t_slow": 1.797952794458817,
+   "a_slow": 3.245206131959968,
+   "t_lc": 2.446808569559627,
+   "a_lc": -2.372019773809356,
+   "a_post": 2.64874773637567
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 21,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.9522097923101125,
+   "a_slow": 3.329653530607551,
+   "t_lc": 3.2831765931128833,
+   "a_lc": -3.0,
+   "a_post": 1.4378218378349654
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8404897516735108,
+  "reason": "",
+  "robust_cost": 0.8671842866007903,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "v_side",
+  "family": "staged",
+  "key": "v_side",
+  "x": 21,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 65.0,
+   "side_pos": 0.0,
+   "v_side": 21
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14472556048658514,
+   "t_slow": 1.797952794458817,
+   "a_slow": 3.245206131959968,
+   "t_lc": 2.446808569559627,
+   "a_lc": -2.372019773809356,
+   "a_post": 2.64874773637567
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ }
+]

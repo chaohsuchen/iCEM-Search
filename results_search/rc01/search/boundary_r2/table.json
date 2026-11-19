@@ -1,0 +1,2336 @@
+[
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 25
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 9.377903111647592,
+  "reason": "",
+  "robust_cost": 0.6730051072990229,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.49209856523037854,
+   "a1": 5.768963762492573
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 7.426518282120276,
+  "reason": "",
+  "robust_cost": 0.6596475009896317,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.377903111647592,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.49209856523037854,
+   "a1": 5.768963762492573
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.4265182821202735,
+  "reason": "",
+  "robust_cost": 0.6596475009896317,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3779031116475984,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.12721822404122518,
+   "a1": 5.802008543541538
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.23478855774197,
+  "reason": "",
+  "robust_cost": 0.6636621727694862,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.622096888352403,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 5.819313829527075
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.4300242148117492,
+  "reason": "",
+  "robust_cost": 0.6659613952753318,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 6.916913118532788
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.351365028090778,
+  "reason": "",
+  "robust_cost": 0.7555705281223908,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.5419787084976992,
+  "reason": "",
+  "robust_cost": 24.20703601302793,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "brake",
+  "key": "gap",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8843957308813822,
+   "a1": 5.929684668271608
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 25
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 13.03233571080055,
+  "reason": "",
+  "robust_cost": 0.6718054166204493,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3573016804267641,
+   "a1": 5.767970910993901,
+   "t1": 2.0886159980362966,
+   "a2": 6.399687063432603
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 8.22215586467725,
+  "reason": "",
+  "robust_cost": 0.6598114080371698,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 8.032335710800556,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.5010548462197185,
+   "a1": 5.763146152055665,
+   "t1": 1.7611637764754275,
+   "a2": 6.418097890870903
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.021931447873275,
+  "reason": "",
+  "robust_cost": 0.6590400011293234,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.032335710800563,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.05458987140600328,
+   "a1": 5.630505906446727,
+   "t1": 0.6542932343481151,
+   "a2": 6.614747009534233
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.78735292708521,
+  "reason": "",
+  "robust_cost": 0.6625113869549484,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.032335710800563,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.09694142615997042,
+   "a1": 5.483177479562626,
+   "t1": 0.7634804587147307,
+   "a2": 6.117553712519592
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.4665192212924074,
+  "reason": "",
+  "robust_cost": 0.6364909443854732,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.032335710800560635,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 6.350449768434212,
+   "t1": 0.3,
+   "a2": 7.033926229802918
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.2727511716244377,
+  "reason": "",
+  "robust_cost": 0.7421765678348005,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.9676642891994405,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 0.3,
+   "a2": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.5419787084976992,
+  "reason": "",
+  "robust_cost": 24.20703601302793,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "two_stage",
+  "key": "gap",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.3683651268896697,
+   "a1": 5.583881127156761,
+   "t1": 2.1282705573293015,
+   "a2": 6.4339240957504025
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 25
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 7.834754014628891,
+  "reason": "",
+  "robust_cost": 0.690627939203857,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.38780706652864966,
+   "d0": 0.9288751887767641,
+   "a1": 5.7122199871469
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.7739346074501015,
+  "reason": "",
+  "robust_cost": 0.6652287983668046,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 20
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.834754014628893,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.5843233470364657,
+   "a1": 6.137022923713501
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.4837284564895983,
+  "reason": "",
+  "robust_cost": 0.6969808116896061,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 16
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.1652459853711026,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.46272315405710873,
+   "d0": 0.28316401473074887,
+   "a1": 6.151893859149455
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.0454246875011037,
+  "reason": "",
+  "robust_cost": 0.6975299711097378,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 14
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.49882428741071727,
+   "d0": 0.2,
+   "a1": 6.566880453809676
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.291080398191899,
+  "reason": "",
+  "robust_cost": 0.7301244505567581,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 12
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8157122823355183,
+  "reason": "",
+  "robust_cost": 10.533906909877572,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 10
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.1842877176644802,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 111.13390690987762,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.18428771766447904,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 60.83390690987763,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.0,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.5,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3157122823355183,
+  "reason": "",
+  "robust_cost": 35.68390690987753,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.5,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.25,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.25
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.06571228233551918,
+  "reason": "",
+  "robust_cost": 48.25890690987762,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "gap",
+  "family": "surge_brake",
+  "key": "gap",
+  "x": 9.25,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "delay_s": 0.0,
+   "gap": 9.25
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.9848323027318298,
+   "a1": 6.034092692508257
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.821289754970854,
+  "reason": "",
+  "robust_cost": 0.6781227448927218,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.10894370151036484,
+   "a1": 5.7753512448865925
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.6265676791848156,
+  "reason": "",
+  "robust_cost": 0.6605956982793817,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2272656350749689,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.002131931757174327,
+   "a1": 6.4203844861264425
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.4042458191376275,
+  "reason": "",
+  "robust_cost": 0.7156805501670735,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.36034213501265433,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.187730485486782
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.7564228146421474,
+  "reason": "",
+  "robust_cost": 0.9399284042907946,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.9677843977857312,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.1584759900281092,
+  "reason": "",
+  "robust_cost": 43.496562844294154,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4511761033255088,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 124.46202011561559,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.9,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.9
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.6458967968133853,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 83.9564891397198,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.9,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.9
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.85,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.85
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.24358932195001626,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 63.720434671811496,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.85,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.85
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.825,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.825
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.24358932195001626,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 63.720434671811496,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "brake",
+  "key": "delay_s",
+  "x": 0.825,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.825
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.318002504425445,
+   "a1": 5.978474320278684
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.424157055592617,
+  "reason": "",
+  "robust_cost": 0.6780399159426764,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 5.983551801685378,
+   "t1": 1.5577670337728164,
+   "a2": 6.557597909569151
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.015136906987569,
+  "reason": "",
+  "robust_cost": 0.679076079299552,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8423439405554778,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 5.955443608385707,
+   "t1": 1.3633347702938914,
+   "a2": 5.784655009788764
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.403252823991295,
+  "reason": "",
+  "robust_cost": 0.6759960496781314,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.761232092301932,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.181343099455106,
+   "t1": 1.0685793331072038,
+   "a2": 6.6947284808463685
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.752495132513068,
+  "reason": "",
+  "robust_cost": 0.9405208507332539,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -2.3697925399230657,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 2.0335393665035055,
+   "a2": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.1584759900281092,
+  "reason": "",
+  "robust_cost": 43.496562844294154,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 2.998499399899807,
+   "a2": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4511761033255088,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 124.46202011561559,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.9,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.9
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 2.998499399899807,
+   "a2": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.6458967968133853,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 83.9564891397198,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.9,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.9
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.85,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.85
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 2.998499399899807,
+   "a2": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.24358932195001626,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 63.720434671811496,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.85,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.85
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.825,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.825
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 2.998499399899807,
+   "a2": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.24358932195001626,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 63.720434671811496,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "two_stage",
+  "key": "delay_s",
+  "x": 0.825,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.825
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.365863820875553,
+   "a1": 5.97911846818319,
+   "t1": 1.3180948562768222,
+   "a2": 5.492681724246033
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.629778379601535,
+  "reason": "",
+  "robust_cost": 0.7611628998092392,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3185995118508297,
+   "d0": 0.2,
+   "a1": 6.493839776533277
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.7092888135809483,
+  "reason": "",
+  "robust_cost": 0.7233172684023863,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.2,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.2
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.0507621028887357,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.647470306247729,
+  "reason": "",
+  "robust_cost": 0.9742996718185197,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.4,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.4
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5207478635211784,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.3745720226515068,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 70.30947983023353,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.6,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.6
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -2.094896397497805,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.9746891836004714,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 1087.8878438828958,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.8,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": 1230.3377475826542,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 1.0,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 1.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0,
+  "reason": "contact: van",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.5,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8518305975919642,
+  "reason": "",
+  "robust_cost": 20.009479830233527,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.5,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.3119573331071042,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.55,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.55
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.024262386791660928,
+  "reason": "",
+  "robust_cost": 50.24813766956398,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.55,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.55
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.7087201670001162,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.575,
+  "kind": "best",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.575
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.3745720226515068,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": 70.30947983023353,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "delay_s",
+  "family": "surge_brake",
+  "key": "delay_s",
+  "x": 0.575,
+  "kind": "ref",
+  "theta_s": {
+   "v_ego": 8.1,
+   "gap": 14,
+   "delay_s": 0.575
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.7313629761460603,
+   "d0": 0.37974636834574227,
+   "a1": 6.948448271350956
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -2.094896397497805,
+  "reason": "insufficient stopping clearance",
+  "robust_cost": null,
+  "warm": null
+ }
+]

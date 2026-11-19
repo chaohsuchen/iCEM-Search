@@ -1,0 +1,882 @@
+[
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1905068148100917,
+   "a1": 4.77782663829521
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.5756469643623883
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 7.582413157491122,
+   "min_rear": 10.417586842508882
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.8168619348232597,
+   "a1": 4.453666855455786
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.8904420391980594,
+   "min_rear": 14.799999999999976,
+   "margin": 0.4904420391980594
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.8371913216984999,
+   "a1": 4.345860481130838,
+   "t1": 1.6148475629252241,
+   "a2": 5.053680887395601
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.5257759508312727
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.720946996184027,
+   "min_rear": 8.279053003815973
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 5.034943688426132,
+   "t1": 0.9364197084061412,
+   "a2": 3.0218130311359843
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 16.49726856087918,
+   "min_rear": 1.50273143912082,
+   "margin": 0.40273143912082
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.43007886987516186,
+   "d0": 0.9401167158097012,
+   "a1": 5.022672971682443
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.5985701327301847
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.02139380467008,
+   "min_rear": 8.978606195329924
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "closing": 2.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 2.01958347336346,
+   "d0": 1.100416966926732,
+   "a1": 4.536789702930244
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.5056665371847735,
+   "min_rear": 16.262330596870626,
+   "margin": 0.10566653718477348
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.3843188033503693,
+   "a1": 6.641622055222416
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 27.024506468884365
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.8872873063092697,
+   "min_rear": 2.9127126936907497
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.3802790346065936,
+   "a1": 6.041256359520979
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4041564723355866,
+   "min_rear": 3.3958435276644323,
+   "margin": 0.004156472335586581
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.021174190372857,
+   "a1": 4.338375076041197,
+   "t1": 1.701422834370538,
+   "a2": 1.9213950232768737
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 27.08596118737848
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.8905740795235981,
+   "min_rear": 2.9094259204764175
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.1588830890620612,
+   "a1": 4.8314710610598155,
+   "t1": 0.40931770988740934,
+   "a2": 4.595449775417358
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4261247254911766,
+   "min_rear": 3.373875274508842,
+   "margin": 0.026124725491176615
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 2.4067500925044616,
+   "d0": 0.5045731416261494,
+   "a1": 3.947295945255366
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 27.057284650493116
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.9006960544742895,
+   "min_rear": 2.899303945525712
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 18.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.041464721758267,
+   "d0": 0.9079418463073583,
+   "a1": 4.884703921982156
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.473652125520463,
+   "min_rear": 3.3263478744795463,
+   "margin": 0.07365212552046307
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.67893417397194,
+   "a1": 3.5209581507465484
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 63.89761340964205
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.159484648726365,
+   "min_rear": 2.4405153512736812
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.5932036382568193,
+   "a1": 3.7230374045008676
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.468318476588604,
+   "min_rear": 1.131681523411445,
+   "margin": 0.031681523411445006
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.7970309907317619,
+   "a1": 3.865558411601479,
+   "t1": 3.6337363712048703,
+   "a2": 4.664519103780238
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 62.89191312320723
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.1777520571820013,
+   "min_rear": 2.4222479428180486
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.69377594949822,
+   "a1": 4.778220530748275,
+   "t1": 0.6877461651184191,
+   "a2": 3.451066307123908
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.466814508769484,
+   "min_rear": 1.1331854912305657,
+   "margin": 0.03318549123056566
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 2.130535265416152,
+   "d0": 0.9878175903194621,
+   "a1": 3.7892148152147485
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 64.23217758562971
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.149867869962353,
+   "min_rear": 2.4501321300376353
+  }
+ },
+ {
+  "scenario": "delay_boundary",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 2.0
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 2.7315235970977625,
+   "d0": 0.9480913035538363,
+   "a1": 4.184336649950564
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4682302159878313,
+   "min_rear": 2.131769784012167,
+   "margin": 0.0682302159878313
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.6677689271292149,
+   "a1": 3.3292466241894276
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1080.333066760945
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 0.6185658202237797,
+   "min_rear": 2.1733503834547347
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.5902898371076852,
+   "a1": 3.32919992006349
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.418437560521365,
+   "min_rear": 1.3815624394786432,
+   "margin": 0.018437560521365026
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.8642556147965306,
+   "a1": 4.121690700586711,
+   "t1": 1.5247883543680345,
+   "a2": 2.4998607171501854
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1076.5666157862263
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 0.40154383029220564,
+   "min_rear": 2.3133288658664375
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.653813489871693,
+   "a1": 3.87695581038248,
+   "t1": 1.5624029949119755,
+   "a2": 2.8684784103701513
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.692212709405457,
+   "min_rear": 1.1077872905945474,
+   "margin": 0.007787290594547386
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.8090028734577541,
+   "d0": 1.070437319131732,
+   "a1": 2.8337946643684444
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1079.3136500781636
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 0.5467644587526737,
+   "min_rear": 2.0861481650855778
+  }
+ },
+ {
+  "scenario": "closing_boundary",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.6117694340398854,
+   "d0": 1.0725801427179948,
+   "a1": 3.862589524783796
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.6502057415949607,
+   "min_rear": 1.1497942584050431,
+   "margin": 0.04979425840504312
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 14.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8023392080171003,
+   "a1": 4.346476474123437
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1154.641937462069
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 0.01145544006499151,
+   "min_rear": 0.8885445599349884
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 14.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.922765626093231,
+   "a1": 4.983786440526485,
+   "t1": 1.9936595078802437,
+   "a2": 4.379948436570049
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1154.265575401126
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": -0.009632047307271643,
+   "min_rear": 0.9096320473072526
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 14.0,
+   "rear_delay_s": 1.4
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 3.126340041821719,
+   "d0": 0.49470555803251043,
+   "a1": 4.903242800995075
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1146.9960150027414
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": -0.006939423061142008,
+   "min_rear": 0.9069394230611483
+  }
+ },
+ {
+  "scenario": "late_hard",
+  "theta_s": {
+   "closing": 5.5,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.8
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.653186026924788,
+   "a1": 2.8143125738572183
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1160.384134201295
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": -0.04812437595181761,
+   "min_rear": 0.7481243759518406
+  }
+ },
+ {
+  "scenario": "late_hard",
+  "theta_s": {
+   "closing": 5.5,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.8
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.857237924078567,
+   "a1": 4.3106606726247865,
+   "t1": 0.4369300862046126,
+   "a2": 3.0222679871607134
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1160.1408490932627
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": -0.06573279942063143,
+   "min_rear": 0.9469827994206543
+  }
+ },
+ {
+  "scenario": "late_hard",
+  "theta_s": {
+   "closing": 5.5,
+   "front_gap": 24.0,
+   "rear_delay_s": 1.8
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.9965628723951896,
+   "d0": 1.1300589629503694,
+   "a1": 3.9076690253722046
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1145.6671842070218
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": -0.016137549534790407,
+   "min_rear": 1.7473875495347828
+  }
+ }
+]

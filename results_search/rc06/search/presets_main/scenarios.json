@@ -1,0 +1,33 @@
+{
+ "easy": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 26.0
+ },
+ "mid": {
+  "d_obs": 70.0,
+  "side_pos": 0.0,
+  "v_side": 26.0
+ },
+ "boundary": {
+  "d_obs": 55.0,
+  "side_pos": 0.0,
+  "v_side": 28.0
+ },
+ "passer_ahead": {
+  "d_obs": 60.0,
+  "side_pos": 20.0,
+  "v_side": 26.0
+ },
+ "follower_hard": {
+  "d_obs": 70.0,
+  "side_pos": 0.0,
+  "v_side": 26.0,
+  "fol_gap": 8.0
+ },
+ "hard": {
+  "d_obs": 45.0,
+  "side_pos": 0.0,
+  "v_side": 24.0
+ }
+}

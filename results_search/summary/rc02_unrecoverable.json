@@ -1,0 +1,234 @@
+[
+ {
+  "rc": "RC02",
+  "source_rc": "rc01",
+  "scene": {
+   "gap": 8.0,
+   "delay_s": 0,
+   "v_ego": 9.5
+  },
+  "n_policies": 6,
+  "n_contact": 2,
+  "runs": [
+   {
+    "batch": "baseline",
+    "run_id": "036_g8_v9.5_brake_best",
+    "family": "brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/baseline/runs/036_g8_v9.5_brake_best"
+   },
+   {
+    "batch": "baseline",
+    "run_id": "037_g8_v9.5_two_stage_best",
+    "family": "two_stage",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/baseline/runs/037_g8_v9.5_two_stage_best"
+   },
+   {
+    "batch": "baseline",
+    "run_id": "038_g8_v9.5_surge_brake_best",
+    "family": "surge_brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "contact at t=+1.10s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/baseline/runs/038_g8_v9.5_surge_brake_best"
+   },
+   {
+    "batch": "presets_r2",
+    "run_id": "024_fast_hard_two_stage_best",
+    "family": "two_stage",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/024_fast_hard_two_stage_best"
+   },
+   {
+    "batch": "presets_r2",
+    "run_id": "023_fast_hard_brake_best",
+    "family": "brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/023_fast_hard_brake_best"
+   },
+   {
+    "batch": "presets_r2",
+    "run_id": "025_fast_hard_surge_brake_best",
+    "family": "surge_brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "contact at t=+0.95s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/025_fast_hard_surge_brake_best"
+   }
+  ]
+ },
+ {
+  "rc": "RC02",
+  "source_rc": "rc01",
+  "scene": {
+   "gap": 8.0,
+   "delay_s": 0.3,
+   "v_ego": 8.1
+  },
+  "n_policies": 3,
+  "n_contact": 1,
+  "runs": [
+   {
+    "batch": "presets_r2",
+    "run_id": "020_hard_brake_best",
+    "family": "brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 0.46 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/020_hard_brake_best"
+   },
+   {
+    "batch": "presets_r2",
+    "run_id": "022_hard_surge_brake_best",
+    "family": "surge_brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "contact at t=+1.00s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/022_hard_surge_brake_best"
+   },
+   {
+    "batch": "presets_r2",
+    "run_id": "021_hard_two_stage_best",
+    "family": "two_stage",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 0.46 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/presets_r2/runs/021_hard_two_stage_best"
+   }
+  ]
+ },
+ {
+  "rc": "RC02",
+  "source_rc": "rc01",
+  "scene": {
+   "gap": 14,
+   "delay_s": 0.9,
+   "v_ego": 8.1
+  },
+  "n_policies": 4,
+  "n_contact": 2,
+  "runs": [
+   {
+    "batch": "boundary_r2",
+    "run_id": "057_bnd_delay_s_0.9_brake_ref",
+    "family": "brake",
+    "kind": "ref",
+    "label": "FAIL",
+    "reason": "contact at t=+1.80s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/057_bnd_delay_s_0.9_brake_ref"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "073_bnd_delay_s_0.9_two_stage_best",
+    "family": "two_stage",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.61 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/073_bnd_delay_s_0.9_two_stage_best"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "056_bnd_delay_s_0.9_brake_best",
+    "family": "brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 1.61 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/056_bnd_delay_s_0.9_brake_best"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "074_bnd_delay_s_0.9_two_stage_ref",
+    "family": "two_stage",
+    "kind": "ref",
+    "label": "FAIL",
+    "reason": "contact at t=+1.75s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/074_bnd_delay_s_0.9_two_stage_ref"
+   }
+  ]
+ },
+ {
+  "rc": "RC02",
+  "source_rc": "rc01",
+  "scene": {
+   "gap": 14,
+   "delay_s": 1.0,
+   "v_ego": 8.1
+  },
+  "n_policies": 5,
+  "n_contact": 3,
+  "runs": [
+   {
+    "batch": "boundary_r2",
+    "run_id": "054_bnd_delay_s_1_brake_best",
+    "family": "brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 0.79 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/054_bnd_delay_s_1_brake_best"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "072_bnd_delay_s_1_two_stage_ref",
+    "family": "two_stage",
+    "kind": "ref",
+    "label": "FAIL",
+    "reason": "contact at t=+1.70s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/072_bnd_delay_s_1_two_stage_ref"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "055_bnd_delay_s_1_brake_ref",
+    "family": "brake",
+    "kind": "ref",
+    "label": "FAIL",
+    "reason": "contact at t=+1.75s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/055_bnd_delay_s_1_brake_ref"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "088_bnd_delay_s_1_surge_brake_best",
+    "family": "surge_brake",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "contact at t=+1.85s after observation; measured motion exceeded the physics envelope",
+    "contact": true,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/088_bnd_delay_s_1_surge_brake_best"
+   },
+   {
+    "batch": "boundary_r2",
+    "run_id": "071_bnd_delay_s_1_two_stage_best",
+    "family": "two_stage",
+    "kind": "best",
+    "label": "FAIL",
+    "reason": "insufficient clearance during hold: 0.79 m < 2.0 m",
+    "contact": false,
+    "evidence_dir": "results_search/rc01/carla/boundary_r2/runs/071_bnd_delay_s_1_two_stage_best"
+   }
+  ]
+ }
+]

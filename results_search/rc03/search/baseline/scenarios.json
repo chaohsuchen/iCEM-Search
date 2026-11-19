@@ -1,0 +1,31 @@
+{
+ "baseline": {},
+ "near_deep": {
+  "d0": 30.0,
+  "intrude": 1.4
+ },
+ "fast_far": {
+  "v_ego": 22.0,
+  "d0": 60.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "esc_gap": 40.0
+ },
+ "tight_gap": {
+  "esc_gap": 18.0
+ },
+ "braking_lead": {
+  "lead_brake": 4.0
+ },
+ "tailgater": {
+  "rear": 1,
+  "rear_gap": 18.0
+ },
+ "clip": {
+  "intrude": 0.55,
+  "d0": 35.0
+ },
+ "benign": {
+  "crash": 0
+ }
+}

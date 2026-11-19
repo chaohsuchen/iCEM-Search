@@ -1,0 +1,167 @@
+{
+  "run_id": "019_rear_hard_abort_best",
+  "rc": "RC05-01",
+  "label": "FAIL",
+  "reason": "contact with rear_left (footprint overlap); rear-left clearance 0.00 m < 1.0 m; ego not settled in a lane at the end",
+  "end_reason": "contact",
+  "scenario": {
+    "rc": "RC05-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 110.0,
+    "v_ego": 10.0,
+    "v_lead": 6.0,
+    "lead_gap": 35.0,
+    "closing": 6.5,
+    "rear_gap": 6.0,
+    "hazard_progress": 0.5,
+    "rear_acc": 2.5,
+    "rear_vmax": 20.0,
+    "t_lc": 4.0,
+    "preroll_s": 3.0,
+    "duration_s": 9.0,
+    "lane_w": 3.5,
+    "ego_bp": "vehicle.tesla.model3",
+    "lead_bp": "vehicle.citroen.c3",
+    "rear_bp": "vehicle.seat.leon",
+    "min_rear_clear": 1.0,
+    "min_lead_clear": 2.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "progress_tol": 0.08
+  },
+  "policy": {
+    "name": "lane_change_family",
+    "version": "rc05-fam-v1",
+    "params": {
+      "mode": "abort",
+      "v_target": 10.0,
+      "lane_w": 3.5,
+      "t_lc": 4.0,
+      "t_ret": 1.0874104786125076,
+      "ttc_abort": 5.477443616729023,
+      "gap_abort": 15.270045664834916,
+      "acc_headway": 1.0,
+      "acc_d0": 6.0,
+      "surge_acc": 0.0,
+      "surge_dur": 0.0
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.7108238106776232,
+      2.157782947084374,
+      2.5883175253778394,
+      2.970349354503333,
+      3.3623614621134212,
+      3.7557662229777216,
+      4.65058011357213,
+      6.413013982808696,
+      8.051539982152098
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.7108238106776232,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.37090440881562675,
+    "max_decel": 8.051539982152098
+  },
+  "metrics": {
+    "cue": {
+      "speed": 9.985751735006367,
+      "rear_gap": 5.626802636752046,
+      "closing_speed": 6.197267143400126,
+      "lane_change_progress": 0.4436888004222061,
+      "time": 260.9473004117608,
+      "rear_lane_id": -2,
+      "rear_lane_offcentre": 3.3703989118713935e-05
+    },
+    "aborted": true,
+    "abort_progress": 0.4436888004222061,
+    "min_clearance_lead": 22.28996669833357,
+    "min_clearance_rear_left": 0.0,
+    "rear_car_max_lane_offcentre": 7.82012939453125e-05,
+    "final_lateral": -0.009895305450578176,
+    "stable_after_return": null,
+    "post_return": null,
+    "max_filtered_accel": {
+      "forward": 0.0045776001131340215,
+      "brake": 2.675800675792968,
+      "lateral": 6.336052599868515,
+      "planar": 6.808567639964094
+    },
+    "abort_time_since_lc_start": 2.0000000298023224
+  },
+  "times": {
+    "lane_change_start": 258.9473003819585,
+    "hazard_cue": 260.9473004117608,
+    "abort": 2.0000000298023224
+  },
+  "contact": {
+    "frames": [
+      5521,
+      5522,
+      5523
+    ],
+    "actors": [
+      "rear_left (footprint overlap)"
+    ]
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc05",
+  "variation_id": "rear_hard",
+  "candidate_kind": "best",
+  "family": "abort",
+  "scenario_params": {
+    "rear_gap": 6.0,
+    "closing": 6.5,
+    "lead_gap": 35.0
+  },
+  "policy_params": {
+    "mode": "abort",
+    "surge_acc": 0.0,
+    "surge_dur": 0.0,
+    "ttc_abort": 5.477443616729023,
+    "gap_abort": 15.270045664834916,
+    "t_ret": 1.0874104786125076
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "seed": 1,
+    "pop": 48,
+    "iters": 8,
+    "robust_cost": 1479.6242813433287
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 24.168568630593203,
+    "min_rear": 0.0
+  }
+}

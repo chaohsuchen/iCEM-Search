@@ -1,0 +1,147 @@
+{
+  "run_id": "054_very_hard_react_best",
+  "rc": "RC13-01",
+  "label": "FAIL",
+  "reason": "[CLEARANCE] pedestrian clearance -0.05 m < 0.5 m",
+  "end_reason": "stopped",
+  "scenario": {
+    "rc": "RC13-01",
+    "map": "Town03",
+    "road": 3,
+    "lane": -2,
+    "s0": 3.0,
+    "ego_s": 6.0,
+    "v_ego": 8.0,
+    "ped_s": 78.0,
+    "ped_speed": 1.4,
+    "ped_t": 5.85,
+    "preroll_s": 2.5,
+    "duration_s": 11.0,
+    "true_v_ped_max": 1.8,
+    "true_horizon": 2.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "speed_tol": 0.5,
+    "min_speed_ratio": 0.9,
+    "sidewalk": [
+      4.85,
+      6.85
+    ],
+    "lane_half": 1.75,
+    "dart_speed": 7.0,
+    "dart_dist": 6.0
+  },
+  "policy": {
+    "name": "react_to_motion",
+    "version": "rc13-react-v1",
+    "params": {
+      "v_target": 8.0,
+      "thr": 0.3,
+      "a_react": 7.109072463118979,
+      "d_react": 42.514861966992605,
+      "lane_half": 1.75
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.9998143110181177,
+      2.390394223347727,
+      2.7596328580413108,
+      3.1133621537648004,
+      3.486676654551118,
+      3.8488713468957276,
+      4.720963461255519,
+      6.408790931254317,
+      7.958614260779554
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.9998143110181177,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.3451889858803437,
+    "max_decel": 7.958614260779554
+  },
+  "metrics": {
+    "first_predicted_lane_overlap_t": null,
+    "first_predicted_ego_conflict_t": 4.550000067800283,
+    "pedestrian_entered_lane": true,
+    "min_lateral_distance_to_ped": -1.359181216109527,
+    "yield_onset_t": 4.550000067800283,
+    "speed_at_pass": null,
+    "min_speed": 0.0,
+    "stopped": true,
+    "unnecessary_slowing": false,
+    "min_ped_dist": -0.05478299746494314,
+    "dart": true,
+    "physics_violations": [],
+    "physics_ok": true,
+    "max_filtered_accel": {
+      "forward": 0.03268667605222692,
+      "brake": 9.691762414341538,
+      "lateral": 0.0007381869762228821,
+      "planar": 9.691762417320522
+    },
+    "peak_decel_filtered": 9.691762414341538,
+    "peak_fwd_accel_filtered": 0.03268667605222692
+  },
+  "times": {
+    "cue": 372.0553750321269,
+    "first_pred_lane_overlap": null,
+    "yield_onset": 4.550000067800283
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "ped_violations": 55,
+    "ped_frames_in_lane": 47
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc13",
+  "variation_id": "very_hard",
+  "candidate_kind": "best",
+  "family": "react",
+  "scenario_params": {
+    "dart_dist": 6.0,
+    "dart_speed": 7.0
+  },
+  "policy_params": {
+    "thr": 0.3,
+    "a_react": 7.109072463118979,
+    "d_react": 42.514861966992605
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "seed": 0,
+    "pop": 48,
+    "iters": 8,
+    "robust_cost": 131.27288906756394
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 1.0338037275339957,
+    "min_rear": 99.0
+  }
+}

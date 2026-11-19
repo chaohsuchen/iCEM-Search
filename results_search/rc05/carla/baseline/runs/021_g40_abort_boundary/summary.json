@@ -1,0 +1,154 @@
+{
+  "run_id": "021_g40_abort_boundary",
+  "rc": "RC05-01",
+  "label": "PASS",
+  "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC05-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 110.0,
+    "v_ego": 10.0,
+    "v_lead": 6.0,
+    "lead_gap": 35.0,
+    "closing": 2.0,
+    "rear_gap": 40.0,
+    "hazard_progress": 0.5,
+    "rear_acc": 2.5,
+    "rear_vmax": 20.0,
+    "t_lc": 4.0,
+    "preroll_s": 3.0,
+    "duration_s": 9.0,
+    "lane_w": 3.5,
+    "ego_bp": "vehicle.tesla.model3",
+    "lead_bp": "vehicle.citroen.c3",
+    "rear_bp": "vehicle.seat.leon",
+    "min_rear_clear": 1.0,
+    "min_lead_clear": 2.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "progress_tol": 0.08
+  },
+  "policy": {
+    "name": "lane_change_family",
+    "version": "rc05-fam-v1",
+    "params": {
+      "mode": "abort",
+      "v_target": 10.0,
+      "lane_w": 3.5,
+      "t_lc": 4.0,
+      "t_ret": 4.0,
+      "ttc_abort": 7.4095077820212065,
+      "gap_abort": 9.236441391517555,
+      "acc_headway": 1.0,
+      "acc_d0": 6.0,
+      "surge_acc": 0.0,
+      "surge_dur": 0.0
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.7108238106776232,
+      2.157782947084374,
+      2.5883175253778394,
+      2.970349354503333,
+      3.3623614621134212,
+      3.7557662229777216,
+      4.65058011357213,
+      6.4130406079339695,
+      8.051569098607013
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.7108238106776232,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.37090440881562675,
+    "max_decel": 8.051569098607013
+  },
+  "metrics": {
+    "cue": {
+      "speed": 9.985751735006367,
+      "rear_gap": 39.83498679105287,
+      "closing_speed": 2.0174338369399525,
+      "lane_change_progress": 0.4436888004222061,
+      "time": 261.74385466612875,
+      "rear_lane_id": -2,
+      "rear_lane_offcentre": 1.239776611328125e-05
+    },
+    "aborted": true,
+    "abort_progress": 0.9248779224925358,
+    "min_clearance_lead": 12.177668052253631,
+    "min_clearance_rear_left": 1.1124982751484456,
+    "rear_car_max_lane_offcentre": 0.06793471871350884,
+    "final_lateral": 0.09126884900276017,
+    "stable_after_return": null,
+    "post_return": null,
+    "max_filtered_accel": {
+      "forward": 0.01482703008697079,
+      "brake": 4.837156781761366,
+      "lateral": 3.225047563305278,
+      "planar": 4.8445159162225595
+    },
+    "abort_time_since_lc_start": 3.250000048428774
+  },
+  "times": {
+    "lane_change_start": 259.74385463632643,
+    "hazard_cue": 261.74385466612875,
+    "abort": 3.250000048428774
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc05",
+  "variation_id": "g40",
+  "candidate_kind": "boundary",
+  "family": "abort",
+  "scenario_params": {
+    "rear_gap": 40.0
+  },
+  "policy_params": {
+    "mode": "abort",
+    "surge_acc": 0.0,
+    "surge_dur": 0.0,
+    "ttc_abort": 7.4095077820212065,
+    "gap_abort": 9.236441391517555,
+    "t_ret": 4.0
+  },
+  "policy_source": {},
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 11.299047103260278,
+    "min_rear": 1.3086760913231608,
+    "margin": 0.008676091323160773
+  }
+}

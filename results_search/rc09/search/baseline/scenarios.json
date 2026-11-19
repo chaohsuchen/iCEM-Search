@@ -1,0 +1,19 @@
+{
+ "baseline": {},
+ "closing6": {
+  "closing": 6.0
+ },
+ "delay2.0": {
+  "rear_delay_s": 2.0
+ },
+ "rear12": {
+  "rear_gap": 12.0
+ },
+ "front18": {
+  "front_gap": 18.0
+ },
+ "closing6_front18": {
+  "closing": 6.0,
+  "front_gap": 18.0
+ }
+}

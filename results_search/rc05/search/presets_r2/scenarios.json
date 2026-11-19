@@ -1,0 +1,32 @@
+{
+ "easy": {
+  "rear_gap": 25.0,
+  "closing": 2.0,
+  "lead_gap": 35.0
+ },
+ "closing_boundary": {
+  "rear_gap": 12.0,
+  "closing": 4.5,
+  "lead_gap": 35.0
+ },
+ "mid": {
+  "rear_gap": 12.0,
+  "closing": 6.5,
+  "lead_gap": 35.0
+ },
+ "lead_close": {
+  "rear_gap": 12.0,
+  "closing": 4.5,
+  "lead_gap": 26.0
+ },
+ "hard": {
+  "rear_gap": 12.0,
+  "closing": 6.5,
+  "lead_gap": 26.0
+ },
+ "rear_hard": {
+  "rear_gap": 6.0,
+  "closing": 6.5,
+  "lead_gap": 35.0
+ }
+}

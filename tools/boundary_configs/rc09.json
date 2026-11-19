@@ -1,0 +1,3 @@
+{"axes": [
+ {"axis": "closing", "key": "closing", "grid": [2.0, 3.0, 4.0, 5.0, 6.0, 7.0], "base": {"front_gap": 24, "rear_delay_s": 1.4}},
+ {"axis": "rear_delay_s", "key": "rear_delay_s", "grid": [1.4, 1.6, 1.8, 2.0, 2.2, 2.5], "base": {"closing": 4.0, "front_gap": 24}}]}

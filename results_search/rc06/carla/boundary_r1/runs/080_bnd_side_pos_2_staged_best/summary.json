@@ -1,0 +1,150 @@
+{
+  "run_id": "080_bnd_side_pos_2_staged_best",
+  "rc": "RC04-01",
+  "label": "PASS",
+  "reason": "no contact, clearances kept, ego settled",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC04-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 40.0,
+    "preroll_s": 1.5,
+    "duration_s": 7.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "obs_bp": "vehicle.citroen.c3",
+    "fol_bp": "vehicle.audi.a2",
+    "min_clear": 0.5,
+    "settle_tol": 0.6,
+    "side": 1,
+    "v_ego": 22.0,
+    "d_obs": 60.0,
+    "obs_lane": 0,
+    "v_side": 26.0,
+    "side_pos": 2,
+    "side_hl": 2.4,
+    "side_hw": 0.95,
+    "side_acc": 0.0,
+    "side_react": 0.8,
+    "fol": 1,
+    "fol_gap": 20.0,
+    "fol_react": 0.8,
+    "fol_headway": 1.2,
+    "lane_w": 3.5
+  },
+  "policy": {
+    "name": "escape",
+    "version": "rc03-v1",
+    "params": {
+      "mode": "staged",
+      "v_target": 22.0,
+      "lane_w": 3.5,
+      "esc_dir": -1.0,
+      "t_react": 0.1,
+      "a_brake": 6.0,
+      "shift": 0.0,
+      "t_lc": 2.8550097197242117,
+      "a_lc": -3.0,
+      "a_post": 2.5445112375183054,
+      "t_slow": 1.9063067565970067,
+      "a_slow": 3.8739817858322914
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3
+    ],
+    "brake_decel": [
+      3.279971248431857,
+      3.7649535484940904,
+      4.246829719157543,
+      4.665796055726598,
+      5.090264324738804,
+      5.509796515519087,
+      6.457853635809129
+    ],
+    "brake_cap": 0.3,
+    "coast_decel": 3.279971248431857,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.5955897549491816,
+    "max_decel": 6.457853635809129
+  },
+  "metrics": {
+    "min_front_gap": 1.669442643733769,
+    "min_rear_gap": 1.3689884575151126,
+    "min_clear_by": {
+      "obstacle": 1.669442643733769,
+      "side": 1.5115021339311727,
+      "fol": 1.3689884575151126
+    },
+    "final_lateral": -3.6619956193637715,
+    "stopped": false,
+    "settled": true,
+    "max_filtered_accel": {
+      "forward": -0.24850272773750193,
+      "brake": 6.783110250624139,
+      "lateral": 2.0565955855080866,
+      "planar": 6.783110252621717
+    }
+  },
+  "times": {},
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc06",
+  "variation_id": "bnd_side_pos_2",
+  "candidate_kind": "best",
+  "family": "staged",
+  "scenario_params": {
+    "d_obs": 60.0,
+    "v_side": 26.0,
+    "side_pos": 2
+  },
+  "policy_params": {
+    "mode": "staged",
+    "t_react": 0.1,
+    "t_slow": 1.9063067565970067,
+    "a_slow": 3.8739817858322914,
+    "t_lc": 2.8550097197242117,
+    "a_lc": -3.0,
+    "a_post": 2.5445112375183054
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": 0.956866734698108,
+    "warm_start": "neighbour"
+  },
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 1.8080739032847866,
+    "min_rear": 1.3278266997350152,
+    "margin": 0.8278266997350152
+  }
+}

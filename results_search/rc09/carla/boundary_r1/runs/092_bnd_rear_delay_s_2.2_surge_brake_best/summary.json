@@ -1,0 +1,201 @@
+{
+  "run_id": "092_bnd_rear_delay_s_2.2_surge_brake_best",
+  "rc": "RC09-01",
+  "label": "FAIL",
+  "reason": "front clearance 0.19 m < 1.0 m",
+  "end_reason": "all_stopped",
+  "scenario": {
+    "rc": "RC09-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 70.0,
+    "v_ego": 8.0,
+    "front_gap": 24,
+    "queue_n": 3,
+    "rear_gap": 18.0,
+    "closing": 4.0,
+    "rear_delay_s": 2.2,
+    "rear_decel": 5.0,
+    "preroll_s": 2.5,
+    "duration_s": 16.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "queue_bps": [
+      "vehicle.audi.a2",
+      "vehicle.toyota.prius",
+      "vehicle.nissan.micra"
+    ],
+    "rear_bp": "vehicle.carlamotors.carlacola",
+    "wall_bps": [
+      "static.prop.container"
+    ],
+    "wall_levels": 2,
+    "wall_min_inner_half": 2.0,
+    "wall_margin": 0.45,
+    "min_clear": 1.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "wall_tol": 0.05
+  },
+  "policy": {
+    "name": "profile_policy",
+    "version": "rc09-prof-v1",
+    "params": {
+      "v_target": 8.0,
+      "a0": 0.3,
+      "d0": 1.6588370726699604,
+      "a1": 3.689051750415441,
+      "t1": 99.0,
+      "a2": 3.689051750415441
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.4681581698771817,
+      1.898512206190604,
+      2.297134229323057,
+      2.686514417272724,
+      3.0642399873928747,
+      3.413883802585106,
+      4.327744269657114,
+      6.040435094348572,
+      7.6174306539801835
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.4681581698771817,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.3121495375623404,
+    "max_decel": 7.6174306539801835
+  },
+  "metrics": {
+    "cue": {
+      "speed": 7.922851058403081,
+      "front_gap": 23.92080541821099,
+      "rear_gap": 17.87393918044181,
+      "closing_speed": 3.987666851381581
+    },
+    "min_front_gap": 0.1933348599490614,
+    "min_rear_gap": 1.0932841127983153,
+    "final_front_gap": 0.1941893526471432,
+    "final_rear_gap": 1.1069407359137813,
+    "ego_stopped": true,
+    "rear_trigger_to_brake_delay_s": 2.3000000342726707,
+    "max_filtered_accel": {
+      "forward": 0.4218105251598714,
+      "brake": 4.61558755067435,
+      "lateral": 5.419395909065589e-05,
+      "planar": 4.6155875507099235
+    },
+    "min_wall_clearance": 0.6858320398201232,
+    "ego_brake_start": 1.700000025331974
+  },
+  "times": {
+    "cue": 413.60740504413843,
+    "ego_brake": 1.700000025331974,
+    "rear_brake": 415.9074050784111
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "walls": 224,
+    "wall_prop": "static.prop.container",
+    "tunnel_exits_blocked": true,
+    "tunnel": {
+      "prop": "static.prop.container",
+      "inner_half": 2.0,
+      "span": [
+        30.400271892547607,
+        136.84815773963928
+      ],
+      "levels": 2,
+      "count": 224,
+      "prop_ext": [
+        1.931825963595493,
+        1.0176147425042679,
+        1.7142443656921387
+      ],
+      "yaw_offset": 0.0,
+      "measured_left_walls": 112,
+      "measured_right_walls": 112,
+      "left_face": -1.999997312249918,
+      "right_face": 1.99999822989287
+    }
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc09",
+  "variation_id": "bnd_rear_delay_s_2.2",
+  "candidate_kind": "best",
+  "family": "surge_brake",
+  "scenario_params": {
+    "closing": 4.0,
+    "front_gap": 24,
+    "rear_delay_s": 2.2
+  },
+  "policy_params": {
+    "t1": 99.0,
+    "a0": 0.3,
+    "d0": 1.6588370726699604,
+    "a1": 3.689051750415441
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": 1123.0646704611195,
+    "warm_start": "neighbour"
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": 0.0098480335390741,
+    "min_rear": 1.9464019664609147,
+    "margin": -1.3901519664609259
+  },
+  "tunnel": {
+    "prop": "static.prop.container",
+    "inner_half": 2.0,
+    "span": [
+      30.400271892547607,
+      136.84815773963928
+    ],
+    "levels": 2,
+    "count": 224,
+    "prop_ext": [
+      1.931825963595493,
+      1.0176147425042679,
+      1.7142443656921387
+    ],
+    "yaw_offset": 0.0,
+    "measured_left_walls": 112,
+    "measured_right_walls": 112,
+    "left_face": -1.999997312249918,
+    "right_face": 1.99999822989287
+  }
+}

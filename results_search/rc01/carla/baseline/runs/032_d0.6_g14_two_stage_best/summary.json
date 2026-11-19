@@ -1,0 +1,244 @@
+{
+  "run_id": "032_d0.6_g14_two_stage_best",
+  "rc": "RC01-01",
+  "label": "PASS",
+  "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.37 m",
+  "end_reason": "hold_complete",
+  "scenario": {
+    "rc": "RC01-01",
+    "map": "Town01",
+    "road": 15,
+    "lane": -1,
+    "s0": 3.0,
+    "van_s": 100.0,
+    "gap": 14.0,
+    "v_ego": 8.0,
+    "clear": 1.5,
+    "n_per_side": 3,
+    "delay_s": 0.6,
+    "seed": 7,
+    "ego_bp": "vehicle.tesla.model3",
+    "van_bp": "vehicle.mercedes.sprinter",
+    "lane_w": 4.0,
+    "shoulder": 0.3,
+    "brake_torque_scale": 1.0,
+    "parked_bps": [
+      "vehicle.audi.a2",
+      "vehicle.toyota.prius",
+      "vehicle.seat.leon",
+      "vehicle.mini.cooper_s",
+      "vehicle.citroen.c3",
+      "vehicle.nissan.micra"
+    ],
+    "row_range": [
+      6.0,
+      114.0
+    ],
+    "walker_range": [
+      10.0,
+      108.0
+    ],
+    "cruise_before_cue_s": 2.5,
+    "accel_est": 1.1,
+    "row_gap": [
+      0.35,
+      0.7
+    ],
+    "speed_tol": 0.2,
+    "gap_tol": 0.5,
+    "accel_filter_s": 0.2,
+    "time_limit": 8.0,
+    "hold_time": 2.0,
+    "hold_speed": 0.1,
+    "min_clearance": 2.0
+  },
+  "policy": {
+    "name": "profile_policy",
+    "version": "rc09-prof-v1",
+    "params": {
+      "v_target": 8.0,
+      "a0": 0.0,
+      "d0": 0.0,
+      "a1": 7.089885792786679,
+      "t1": 2.869448442638145,
+      "a2": 4.40481260260806
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.9081296361883784,
+      2.3070206960643738,
+      2.695912584204374,
+      3.0731323982928176,
+      3.4512644583234797,
+      3.8127234423754266,
+      4.692883044522883,
+      6.3840820488661825,
+      7.936215648383164
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.9081296361883784,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.3520148631111343,
+    "max_decel": 7.936215648383164
+  },
+  "metrics": {
+    "start_speed": 8.028397957364362,
+    "start_gap": 13.831550051677056,
+    "min_gap": 4.37035978901568,
+    "stopping_gap": 4.372022997792911,
+    "hold_min_gap": 4.37035978901568,
+    "max_filtered_accel": {
+      "forward": 0.0034154231731776856,
+      "brake": 8.2712142304051,
+      "lateral": 0.0025605440775067234,
+      "planar": 8.27121423040645
+    },
+    "clear_width_measured": 1.4947192095984576,
+    "van_blocks_route": true,
+    "pedestrians": 8,
+    "ego_width": 2.163450002670288,
+    "delay_s": 0.6,
+    "min_wall_clearance": 1.0381178112055476,
+    "max_lateral_excursion_m": 1.084288154445994
+  },
+  "times": {
+    "observation_captured": 383.4193263016641,
+    "observation_delivered_to_controller": 384.0193263106048,
+    "first_brake_application": 384.0193263106048,
+    "onset_measured_decel": 384.06932631134987,
+    "recording_before_cue_s": 9.200000137090683
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "blocked_check": {
+      "ok": true,
+      "ego_width": 2.163450002670288,
+      "van_t": [
+        -0.6975140280814149,
+        1.3938502210808754
+      ],
+      "row_inner_faces": [
+        -2.1922332376798725,
+        2.1231716120422823
+      ],
+      "free_width_each_side": [
+        1.4947192095984576,
+        0.7293213909614069
+      ],
+      "clear_width_measured": 1.4947192095984576,
+      "right_free_width": 0.7293213909614069,
+      "parked_left": 24,
+      "parked_right": 24,
+      "row_max_gap_m": 1.1655653293712902,
+      "row_slot_failures": 2,
+      "row_slot_failure_positions": [
+        [
+          "r",
+          10.3
+        ],
+        [
+          "r",
+          51.2
+        ]
+      ],
+      "pedestrians": 8,
+      "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+    },
+    "van_moved_m": 0.0,
+    "van_max_speed": 0.0,
+    "ped_violations": 0
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc01",
+  "variation_id": "d0.6_g14",
+  "candidate_kind": "best",
+  "family": "two_stage",
+  "scenario_params": {
+    "gap": 14.0,
+    "delay_s": 0.6
+  },
+  "policy_params": {
+    "a0": 0.0,
+    "d0": 0.0,
+    "a1": 7.089885792786679,
+    "t1": 2.869448442638145,
+    "a2": 4.40481260260806
+  },
+  "policy_source": {},
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 4.562972768861188,
+    "min_rear": 99.0
+  },
+  "start_speed": 8.028397957364362,
+  "start_gap": 13.831550051677056,
+  "min_gap": 4.37035978901568,
+  "stopping_gap": 4.372022997792911,
+  "blocked_road_check": {
+    "ok": true,
+    "ego_width": 2.163450002670288,
+    "van_t": [
+      -0.6975140280814149,
+      1.3938502210808754
+    ],
+    "row_inner_faces": [
+      -2.1922332376798725,
+      2.1231716120422823
+    ],
+    "free_width_each_side": [
+      1.4947192095984576,
+      0.7293213909614069
+    ],
+    "clear_width_measured": 1.4947192095984576,
+    "right_free_width": 0.7293213909614069,
+    "parked_left": 24,
+    "parked_right": 24,
+    "row_max_gap_m": 1.1655653293712902,
+    "row_slot_failures": 2,
+    "row_slot_failure_positions": [
+      [
+        "r",
+        10.3
+      ],
+      [
+        "r",
+        51.2
+      ]
+    ],
+    "pedestrians": 8,
+    "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+  },
+  "observation": {
+    "source": "idealized: bumper gap from CARLA footprints; captured when gap <= target, delivered after delay_s",
+    "delay_s": 0.6,
+    "captured_frame": 185,
+    "delivered_frame": 197
+  }
+}

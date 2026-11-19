@@ -1,0 +1,33 @@
+{
+ "easy": {
+  "d_obs": 70.0,
+  "side_pos": 0.0,
+  "v_side": 22.0
+ },
+ "mid": {
+  "d_obs": 55.0,
+  "side_pos": 0.0,
+  "v_side": 22.0
+ },
+ "brake_boundary": {
+  "d_obs": 48.0,
+  "side_pos": 0.0,
+  "v_side": 22.0
+ },
+ "lane_change_boundary": {
+  "d_obs": 46.0,
+  "side_pos": 22.0,
+  "v_side": 23.0
+ },
+ "follower_hard": {
+  "d_obs": 50.0,
+  "side_pos": 20.0,
+  "v_side": 25.0,
+  "fol_gap": 8.0
+ },
+ "hard": {
+  "d_obs": 42.0,
+  "side_pos": 8.0,
+  "v_side": 21.0
+ }
+}

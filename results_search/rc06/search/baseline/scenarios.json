@@ -1,0 +1,46 @@
+{
+ "baseline": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 26.0
+ },
+ "passer_ahead": {
+  "d_obs": 90.0,
+  "side_pos": 12.0,
+  "v_side": 26.0
+ },
+ "passer_behind": {
+  "d_obs": 90.0,
+  "side_pos": -12.0,
+  "v_side": 26.0
+ },
+ "fast_passer": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 29.0
+ },
+ "slow_passer": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 23.0
+ },
+ "passer_brakes": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 26.0,
+  "side_acc": -3.0
+ },
+ "second_car_close": {
+  "d_obs": 90.0,
+  "side_pos": 0.0,
+  "v_side": 26.0,
+  "fol_gap": 10.0
+ },
+ "near_block": {
+  "d_obs": 60.0
+ },
+ "benign": {
+  "d_obs": 90.0,
+  "obs_lane": 2
+ }
+}

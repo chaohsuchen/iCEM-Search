@@ -1,0 +1,2484 @@
+[
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 6.371703638077085,
+  "reason": "",
+  "robust_cost": 0.5772917537876676,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 5.628296361922959,
+  "reason": "",
+  "robust_cost": 0.5772917537876676,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 5.628296361922959,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.5360107575855908,
+   "a1": 4.779174933096141
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.3842509794745124,
+  "reason": "",
+  "robust_cost": 0.5712732591698257,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.9282963619229587,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.6381381303891123,
+   "a1": 4.079740298577512
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.4137661454682267,
+  "reason": "",
+  "robust_cost": 1.1598880298989986,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2154536380770582,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.5528773629533263,
+   "a1": 3.067545412023281
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.8261784841266882,
+  "reason": "front clearance",
+  "robust_cost": 1080.5078373658466,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1986534395532564,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.7235996324596992,
+   "a1": 2.687697672815334
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.5214527085472742,
+  "reason": "contact: queue0",
+  "robust_cost": 1187.1028192846954,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.337648496295755,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.5270513312107317,
+   "a1": 3.3256406709751944
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.40866356660110303,
+  "reason": "",
+  "robust_cost": 33.632598418218365,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.240453638077054,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.3635315686128964,
+   "a1": 2.7880584102661583
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.2970995705895275,
+  "reason": "",
+  "robust_cost": 1026.7589608590692,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.121703638077063,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.7256307013717673,
+   "a1": 3.5407280709035924
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5932824709813584,
+  "reason": "front clearance",
+  "robust_cost": 1062.4717554360468,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "brake",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1572807189372272,
+   "a1": 4.913969522780179
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1663580379931173,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.986021048625308,
+  "reason": "",
+  "robust_cost": 0.5670607635879876,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.986021048625308,
+  "reason": "",
+  "robust_cost": 0.5670607635879876,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 4.986021048625308,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.508629387141521,
+   "a1": 4.7766360419506055,
+   "t1": 2.4070468431199825,
+   "a2": 3.8005412964971836
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.380790354900879,
+  "reason": "",
+  "robust_cost": 0.5795089328260632,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.3139789513747364,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.7422370167036536,
+   "a1": 4.5211332128253865,
+   "t1": 2.155434069487102,
+   "a2": 2.013815117320009
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.3933715606744235,
+  "reason": "",
+  "robust_cost": 1.1134314488645456,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5860210486252782,
+  "reason": "rear clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.956412752665414,
+   "a1": 4.517840179314772,
+   "t1": 1.5544934485647774,
+   "a2": 1.3530537503890834
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4051930920858875,
+  "reason": "contact: queue0",
+  "robust_cost": 1065.8422255401456,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.112609223210921,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 2.1246476674490844,
+   "a1": 4.300619614085315,
+   "t1": 1.195358218550448,
+   "a2": 3.900469360642728
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.4404192253252557,
+  "reason": "contact: queue0",
+  "robust_cost": 1180.798701882735,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1097771226584974,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.8016259213658827,
+   "a1": 4.394488140609343,
+   "t1": 2.1817900863768775,
+   "a2": 2.222157432661256
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3840858705286051,
+  "reason": "",
+  "robust_cost": 32.24808104425959,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.204771048625276,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.968177736702267,
+   "a1": 4.962882390194823,
+   "t1": 1.3824644540729902,
+   "a2": 2.1652450231322216
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.3370592378005298,
+  "reason": "",
+  "robust_cost": 68.71064897947454,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1422710486252825,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.8715366132550042,
+   "a1": 4.094823366136,
+   "t1": 1.739872218101811,
+   "a2": 2.1657381308933044
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.7727163852925387,
+  "reason": "front clearance",
+  "robust_cost": 1051.321681398502,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "two_stage",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3292144894317761,
+   "a1": 4.780473467546528,
+   "t1": 1.9922793347466925,
+   "a2": 3.3732694656992632
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2735210486252615,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 2.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 6.804080928058873,
+  "reason": "",
+  "robust_cost": 0.6072642525943621,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.41649376910037145,
+   "d0": 1.0318256699973167,
+   "a1": 4.7697992985556965
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 5.6410322592218725,
+  "reason": "",
+  "robust_cost": 0.5769666206821356,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 3.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.304080928058864,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.5870104830235127,
+   "d0": 1.297659449899946,
+   "a1": 4.698452744967987
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.3759424280905574,
+  "reason": "",
+  "robust_cost": 0.5800164385839537,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 4.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.39591907194113163,
+  "reason": "rear clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.604062172126259,
+   "d0": 1.4040354007825344,
+   "a1": 4.6315022006352615
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.7067270811842903,
+  "reason": "",
+  "robust_cost": 1.1512373540600604,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.270919071941145,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.494334494996027,
+   "a1": 3.2995784006708933
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.7248787089796279,
+  "reason": "front clearance",
+  "robust_cost": 1085.8189045156757,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 6.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1779960809727517,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3876436347960991,
+   "d0": 1.663528149930319,
+   "a1": 3.4529418093203854
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.409829481748476,
+  "reason": "contact: queue0",
+  "robust_cost": 1184.108991081834,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 7.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.361208842208438,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.5701843554446981,
+   "a1": 4.042550909176298
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3835756801525053,
+  "reason": "",
+  "robust_cost": 32.52640274322227,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.5,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.4209190719411346,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.40255714640857976,
+   "d0": 1.7328543624190118,
+   "a1": 4.613151109218474
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.3641025747619452,
+  "reason": "",
+  "robust_cost": 69.9110374772539,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.75,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.75
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.345919071941135,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "best",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3049133337819532,
+   "d0": 1.4586314165374525,
+   "a1": 3.355142864152347
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5619670458097802,
+  "reason": "front clearance",
+  "robust_cost": 1058.8690877162876,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "closing",
+  "family": "surge_brake",
+  "key": "closing",
+  "x": 5.875,
+  "kind": "ref",
+  "theta_s": {
+   "front_gap": 24,
+   "rear_delay_s": 1.4,
+   "closing": 5.875
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4245115364670913,
+   "d0": 0.8220570161971228,
+   "a1": 5.134892590201672
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2709190719411336,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 1.4,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.3805999368052366,
+  "reason": "",
+  "robust_cost": 0.5799620908334773,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.6781988264913639,
+   "a1": 4.773751661282988
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.1768591494821403,
+  "reason": "",
+  "robust_cost": 0.7619221107665076,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.519400063194804,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.681222601907911,
+   "a1": 4.084056955597175
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.02164433126288,
+  "reason": "",
+  "robust_cost": 1.353961343615647,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.11940006319481253,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.788095997840374,
+   "a1": 3.8657699642888623
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.22182419505360873,
+  "reason": "",
+  "robust_cost": 62.869910581660726,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2243499368051933,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.8593342561547668,
+   "a1": 3.6893011362877464
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.388357969916671,
+  "reason": "contact: queue0",
+  "robust_cost": 1124.2826462222827,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0805999368051913,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 2.117252473048105,
+   "a1": 4.552394114001704
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4189419581648801,
+  "reason": "contact: queue0",
+  "robust_cost": 1163.9418796948478,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.0826668731360913,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.7437481269988453,
+   "a1": 3.3789651233278852
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.0307194391494834,
+  "reason": "front clearance",
+  "robust_cost": 1094.9280563990312,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2243499368051909,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.619472642165007,
+   "a1": 3.2351328473081638
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.6626729818543944,
+  "reason": "front clearance",
+  "robust_cost": 1065.5409425847297,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2805999368051872,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.8428765580106443,
+   "a1": 3.9392538782756494
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.4625855903293863,
+  "reason": "front clearance",
+  "robust_cost": 1038.28102680196,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "brake",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.534238651004013,
+   "a1": 4.776496335581456
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2649749368051892,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 1.4,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.4
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.3641935149806224,
+  "reason": "",
+  "robust_cost": 0.5906320153477971,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.7569682729406573,
+   "a1": 5.352711363455565,
+   "t1": 2.1210404620928247,
+   "a2": 3.9749483044207485
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.1148385326120436,
+  "reason": "",
+  "robust_cost": 0.7804415389215091,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.53580648501942,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.892083640108795,
+   "a1": 5.206959373059494,
+   "t1": 1.8585383388014742,
+   "a2": 6.436781151840898
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.1444400977229297,
+  "reason": "",
+  "robust_cost": 1.3238599058300728,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.1358064850194277,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.9310274394897196,
+   "a1": 4.570240999261573,
+   "t1": 1.1374664562990289,
+   "a2": 4.210153086442864
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.2208916283333201,
+  "reason": "",
+  "robust_cost": 63.02932331569482,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2079435149805753,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.9651003821109436,
+   "a1": 4.3292259111567315,
+   "t1": 1.272232987612768,
+   "a2": 2.8304574676225323
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4253280812060325,
+  "reason": "contact: queue0",
+  "robust_cost": 1112.77660703164,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.3579435149805723,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 2.0947641901474183,
+   "a1": 4.216067947140387,
+   "t1": 1.2572344142460647,
+   "a2": 2.7958184918978777
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.454804686892817,
+  "reason": "contact: queue0",
+  "robust_cost": 1161.377727942729,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.457943514980574,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 2.0009736735788612,
+   "a1": 4.559772226126968,
+   "t1": 1.7284563120080123,
+   "a2": 4.6480307176835325
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.9358571236444019,
+  "reason": "front clearance",
+  "robust_cost": 1103.0176063241468,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2079435149805755,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.85526621900171,
+   "a1": 4.062433826145469,
+   "t1": 1.627606751928371,
+   "a2": 4.090839208588369
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.6151928438037895,
+  "reason": "front clearance",
+  "robust_cost": 1063.187876409072,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2641935149805725,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.785183098088055,
+   "a1": 3.627047881905439,
+   "t1": 1.1721336410053798,
+   "a2": 4.147299631723919
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.46817980477142973,
+  "reason": "front clearance",
+  "robust_cost": 1036.081717364643,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "two_stage",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.5697208584246067,
+   "a1": 5.06108405415402,
+   "t1": 2.1377551944751625,
+   "a2": 4.284074323011945
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2485685149805719,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 1.4,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.4
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 3.4390051715820964,
+  "reason": "",
+  "robust_cost": 0.6268793323396231,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.597858387088416,
+   "a1": 5.044600347806615
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.157254395004869,
+  "reason": "",
+  "robust_cost": 0.7692970262633334,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 1.6,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.6
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 2.460994828417891,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.7848213523981016,
+   "a1": 5.6835524012371295
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.1710094677897476,
+  "reason": "",
+  "robust_cost": 1.3887612423408169,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 1.8,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 1.8
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.06099482841789147,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.823381236205423,
+   "a1": 4.961300139623768
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": -0.22008757107826604,
+  "reason": "",
+  "robust_cost": 62.621128334456884,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.0,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.0
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1140051715821095,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.6588370726699604,
+   "a1": 3.689051750415441
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.3901519664609259,
+  "reason": "contact: queue0",
+  "robust_cost": 1123.0646704611195,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.2,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.2
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1390051715821086,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.7785638424880856,
+   "a1": 3.821321398493598
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.4156985170012097,
+  "reason": "contact: queue0",
+  "robust_cost": 1155.58356092425,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.5,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.5
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.114005171582109,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.778957403473556,
+   "a1": 4.2757356348350495
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.9508142997144943,
+  "reason": "front clearance",
+  "robust_cost": 1100.907268615972,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.1,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.1
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.2827551715821093,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.31844732163929984,
+   "d0": 1.663162580105826,
+   "a1": 4.044040164941405
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.6279747154117872,
+  "reason": "front clearance",
+  "robust_cost": 1063.1981302216805,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.05,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.05
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1327551715821054,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "best",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.5056720916360622,
+   "d0": 1.6917434625349623,
+   "a1": 4.57834983291445
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.44264873448676756,
+  "reason": "front clearance",
+  "robust_cost": 1032.0135380248582,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "rear_delay_s",
+  "family": "surge_brake",
+  "key": "rear_delay_s",
+  "x": 2.025,
+  "kind": "ref",
+  "theta_s": {
+   "closing": 4.0,
+   "front_gap": 24,
+   "rear_delay_s": 2.025
+  },
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.4978261645765094,
+   "a1": 5.333837037566141
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -1.1358801715821059,
+  "reason": "contact: rear_truck",
+  "robust_cost": null,
+  "warm": null
+ }
+]

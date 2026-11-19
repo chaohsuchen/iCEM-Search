@@ -1,0 +1,66 @@
+{
+ "speed": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0
+ },
+ "axes": [
+  {
+   "axis": "brake_vs_d0",
+   "family": "brake",
+   "key": "d0",
+   "grid": [
+    36.0,
+    33.0,
+    30.0,
+    27.0,
+    24.0,
+    21.0,
+    18.0
+   ],
+   "base": {
+    "intrude": 0.3,
+    "esc_gap": 40.0,
+    "d0": 22.0
+   }
+  },
+  {
+   "axis": "lane_change_vs_intrude",
+   "family": "lane_change",
+   "key": "intrude",
+   "grid": [
+    0.3,
+    0.44,
+    0.58,
+    0.72,
+    0.86,
+    1.0
+   ],
+   "base": {
+    "d0": 22.0,
+    "esc_gap": 40.0,
+    "intrude": 0.3
+   }
+  },
+  {
+   "axis": "lane_change_vs_esc_gap",
+   "family": "lane_change",
+   "key": "esc_gap",
+   "grid": [
+    40.0,
+    30.0,
+    22.0,
+    17.0,
+    13.0,
+    10.0,
+    8.0
+   ],
+   "base": {
+    "d0": 22.0,
+    "intrude": 0.3,
+    "esc_gap": 40.0
+   }
+  }
+ ],
+ "bisect_rounds": 3
+}

@@ -1,0 +1,32 @@
+{
+ "easy": {
+  "closing": 2.0,
+  "front_gap": 24.0,
+  "rear_delay_s": 1.4
+ },
+ "mid": {
+  "closing": 4.0,
+  "front_gap": 18.0,
+  "rear_delay_s": 1.4
+ },
+ "delay_boundary": {
+  "closing": 4.0,
+  "front_gap": 24.0,
+  "rear_delay_s": 2.0
+ },
+ "closing_boundary": {
+  "closing": 6.0,
+  "front_gap": 24.0,
+  "rear_delay_s": 1.4
+ },
+ "hard": {
+  "closing": 6.0,
+  "front_gap": 14.0,
+  "rear_delay_s": 1.4
+ },
+ "late_hard": {
+  "closing": 5.5,
+  "front_gap": 24.0,
+  "rear_delay_s": 1.8
+ }
+}

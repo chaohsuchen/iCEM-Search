@@ -1,0 +1,916 @@
+[
+ {
+  "scenario": "baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.14499201561141287,
+   "a_brake": 5.582946620920646
+  },
+  "robust_cost": 4.512218000259217,
+  "cost_by_seed": [
+   4.512218000259217
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    13.02766503846593,
+    12.57401072585861,
+    11.119015866005219,
+    5.937687315873744,
+    5.732509215633151,
+    4.512218000259217
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 6.228748392360934,
+  "min_rear": 1.4699999999999998,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "robust_cost": 1017.2000664451451,
+  "cost_by_seed": [
+   1017.2000664451451
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.3711304354931,
+    1017.2000664451451,
+    1017.2000664451451
+   ]
+  ],
+  "cls": "mitigate",
+  "verdict": "FAIL",
+  "min_front": 10.887092172558894,
+  "min_rear": 19.73223470966019,
+  "contact": true,
+  "rel_speed": 0.3414584416105946
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.24902181390923628,
+   "t_slow": 3.0,
+   "a_slow": 4.854448164255384,
+   "t_lc": 2.4359035817079744,
+   "a_lc": -2.571741487072158,
+   "a_post": 1.6534074461853647
+  },
+  "robust_cost": 1321.5442271021866,
+  "cost_by_seed": [
+   1321.5442271021866
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1439.7371501732962,
+    1397.3103023659398,
+    1346.6500737716183,
+    1346.6500737716183,
+    1336.1165225049865,
+    1321.5442271021866
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.0,
+  "min_rear": 1.4472731745930447,
+  "contact": true,
+  "rel_speed": 5.951830713192434
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "robust_cost": 1197.9058285841,
+  "cost_by_seed": [
+   1197.9058285841
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1349.7817969221726,
+    1197.9058285841,
+    1197.9058285841,
+    1197.9058285841,
+    1197.9058285841,
+    1197.9058285841
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 1.3438303728737324,
+  "min_rear": 1.6147181844941956,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 2.5859062520505907,
+   "a_lc": -4.116412989231437,
+   "a_post": 1.6819187615337872
+  },
+  "robust_cost": 1.0606116113956092,
+  "cost_by_seed": [
+   1.0606116113956092
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1.0606116113956092,
+    1.0606116113956092,
+    1.0606116113956092,
+    1.0606116113956092,
+    1.0606116113956092,
+    1.0606116113956092
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 1.7035036893577193,
+  "min_rear": 1.6147181844941956,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.652921504241149,
+   "a_slow": 4.543887481739972,
+   "t_lc": 3.022799654400914,
+   "a_lc": 0.008891021718292258,
+   "a_post": 4.059540144454824
+  },
+  "robust_cost": 1449.2834473300336,
+  "cost_by_seed": [
+   1449.2834473300336
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1454.559885279334,
+    1454.559885279334,
+    1452.9576587310085,
+    1452.9576587310085,
+    1452.9576587310085,
+    1449.2834473300336
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.0,
+  "min_rear": 1.6147181844941956,
+  "contact": true,
+  "rel_speed": 8.565877020438016
+ },
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "robust_cost": 1373.983072526785,
+  "cost_by_seed": [
+   1373.983072526785
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1482.3361130451256,
+    1373.983072526785,
+    1373.983072526785,
+    1373.983072526785,
+    1373.983072526785,
+    1373.983072526785
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.0,
+  "min_rear": 1.4699999999999998,
+  "contact": true,
+  "rel_speed": 4.881193593808731
+ },
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.540198150122483,
+   "t_lc": 1.7321299498513596,
+   "a_lc": -0.27691831901716224,
+   "a_post": 2.8861164244237165
+  },
+  "robust_cost": 1027.8067889191984,
+  "cost_by_seed": [
+   1027.8067889191984
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1083.120921366682,
+    1064.8892465671065,
+    1059.1413496562427,
+    1046.7418415933455,
+    1028.717827151927,
+    1027.8067889191984
+   ]
+  ],
+  "cls": "mitigate",
+  "verdict": "FAIL",
+  "min_front": 7.81478250621009,
+  "min_rear": 19.619045387846317,
+  "contact": true,
+  "rel_speed": 0.5545943689731487
+ },
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.6391067580414584,
+   "a_slow": 5.061448810421776,
+   "t_lc": 2.904349626896135,
+   "a_lc": 0.2986908463342415,
+   "a_post": 3.7338084587113016
+  },
+  "robust_cost": 1508.0288188362601,
+  "cost_by_seed": [
+   1508.0288188362601
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1525.604752787818,
+    1525.604752787818,
+    1519.8848775247848,
+    1519.8848775247848,
+    1515.3448809191204,
+    1508.0288188362601
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.0,
+  "min_rear": 2.2416767205326753,
+  "contact": true,
+  "rel_speed": 8.632348050124133
+ },
+ {
+  "scenario": "slow_truck",
+  "theta_s": {
+   "d_obs": 55.0,
+   "v_side": 19.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.14499201561141287,
+   "a_brake": 5.582946620920646
+  },
+  "robust_cost": 4.512218000259217,
+  "cost_by_seed": [
+   4.512218000259217
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    13.02766503846593,
+    12.57401072585861,
+    11.119015866005219,
+    5.937687315873744,
+    5.732509215633151,
+    4.512218000259217
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 6.228748392360934,
+  "min_rear": 1.4699999999999998,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "slow_truck",
+  "theta_s": {
+   "d_obs": 55.0,
+   "v_side": 19.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5280983475189176,
+   "t_lc": 2.4072422519337087,
+   "a_lc": 1.663109677977478,
+   "a_post": 5.117963478295579
+  },
+  "robust_cost": 106.48288679219337,
+  "cost_by_seed": [
+   106.48288679219337
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    128.1409782128199,
+    128.1409782128199,
+    128.1409782128199,
+    111.52507715804398,
+    106.48288679219337,
+    106.48288679219337
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.6020558531844616,
+  "min_rear": 20.235322078334896,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "slow_truck",
+  "theta_s": {
+   "d_obs": 55.0,
+   "v_side": 19.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.4150155748384552,
+   "t_slow": 0.5717494902817573,
+   "a_slow": 4.991216572210601,
+   "t_lc": 2.298614248169036,
+   "a_lc": 0.12407421668419794,
+   "a_post": 3.1986310996311045
+  },
+  "robust_cost": 1020.5544073462207,
+  "cost_by_seed": [
+   1020.5544073462207
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1086.5176659822705,
+    1041.9219926693174,
+    1041.9219926693174,
+    1025.813500070348,
+    1020.5544073462207,
+    1020.5544073462207
+   ]
+  ],
+  "cls": "mitigate",
+  "verdict": "FAIL",
+  "min_front": 10.208389240619653,
+  "min_rear": 20.235322078334896,
+  "contact": true,
+  "rel_speed": 0.3939732311762185
+ },
+ {
+  "scenario": "truck_behind",
+  "theta_s": {
+   "d_obs": 50.0,
+   "side_pos": -15.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "robust_cost": 12.57401072585861,
+  "cost_by_seed": [
+   12.57401072585861
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1166.2583083563377,
+    12.57401072585861,
+    12.57401072585861,
+    12.57401072585861,
+    12.57401072585861,
+    12.57401072585861
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 5.343830372873732,
+  "min_rear": 1.4699999999999998,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "truck_behind",
+  "theta_s": {
+   "d_obs": 50.0,
+   "side_pos": -15.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5783013750702752,
+   "t_lc": 2.2983851474871555,
+   "a_lc": -0.9247616157039378,
+   "a_post": 0.4214928705576349
+  },
+  "robust_cost": 1236.6838991794334,
+  "cost_by_seed": [
+   1236.6838991794334
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1399.275900871771,
+    1337.209401050214,
+    1337.209401050214,
+    1275.7691220077224,
+    1262.1620743730793,
+    1236.6838991794334
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 0.8692585491400066,
+  "min_rear": 24.700747463245186,
+  "contact": true,
+  "rel_speed": 4.728948105339025
+ },
+ {
+  "scenario": "truck_behind",
+  "theta_s": {
+   "d_obs": 50.0,
+   "side_pos": -15.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8662542891573433,
+   "a_slow": 3.392231555503887,
+   "t_lc": 2.4801010325891575,
+   "a_lc": -0.21415290282572386,
+   "a_post": 4.379440691916883
+  },
+  "robust_cost": 1279.9789980423718,
+  "cost_by_seed": [
+   1279.9789980423718
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1416.9377817176478,
+    1319.187287868189,
+    1319.187287868189,
+    1319.187287868189,
+    1319.187287868189,
+    1279.9789980423718
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 4.177025002797997,
+  "min_rear": 24.25679924942551,
+  "contact": true,
+  "rel_speed": 5.561436131008268
+ },
+ {
+  "scenario": "follower_close",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol_gap": 10.0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.14499201561141287,
+   "a_brake": 5.582946620920646
+  },
+  "robust_cost": 4.512218000259217,
+  "cost_by_seed": [
+   4.512218000259217
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    13.02766503846593,
+    12.57401072585861,
+    11.119015866005219,
+    5.937687315873744,
+    5.732509215633151,
+    4.512218000259217
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 6.228748392360934,
+  "min_rear": 1.4699999999999998,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "follower_close",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol_gap": 10.0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "robust_cost": 1017.2000664451451,
+  "cost_by_seed": [
+   1017.2000664451451
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.3711304354931,
+    1017.2000664451451,
+    1017.2000664451451
+   ]
+  ],
+  "cls": "mitigate",
+  "verdict": "FAIL",
+  "min_front": 10.887092172558894,
+  "min_rear": 9.73223470966019,
+  "contact": true,
+  "rel_speed": 0.3414584416105946
+ },
+ {
+  "scenario": "follower_close",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol_gap": 10.0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.4413671403143975,
+   "t_slow": 0.770691011659599,
+   "a_slow": 3.068044116672986,
+   "t_lc": 2.059064364880668,
+   "a_lc": -0.02076973372661506,
+   "a_post": 3.164106242552909
+  },
+  "robust_cost": 1155.1026821308676,
+  "cost_by_seed": [
+   1155.1026821308676
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1230.582576743174,
+    1230.582576743174,
+    1230.582576743174,
+    1187.1125473774687,
+    1155.1026821308676,
+    1155.1026821308676
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 7.25247839153311,
+  "min_rear": 5.590582623831857,
+  "contact": true,
+  "rel_speed": 3.092262224218395
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.14499201561141287,
+   "a_brake": 5.582946620920646
+  },
+  "robust_cost": 4.512218000259217,
+  "cost_by_seed": [
+   4.512218000259217
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    13.02766503846593,
+    12.57401072585861,
+    11.119015866005219,
+    5.937687315873744,
+    5.732509215633151,
+    4.512218000259217
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 6.228748392360934,
+  "min_rear": 99.0,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2929315651501708,
+   "t_lc": 3.8632798217893294,
+   "a_lc": -4.469024359719598,
+   "a_post": 2.311622278192367
+  },
+  "robust_cost": 48.296346059951134,
+  "cost_by_seed": [
+   48.296346059951134
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    64.72757115449679,
+    51.345668596355786,
+    51.345668596355786,
+    50.899384098206916,
+    50.899384098206916,
+    48.296346059951134
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 1.6375117132537285,
+  "min_rear": 99.0,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.4338850993434964,
+   "t_slow": 0.9359764119462672,
+   "a_slow": 3.602114570240863,
+   "t_lc": 1.885039653520816,
+   "a_lc": -1.9759424984457081,
+   "a_post": 1.9376846785553425
+  },
+  "robust_cost": 31.203666161045252,
+  "cost_by_seed": [
+   31.203666161045252
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    52.004448020648546,
+    52.004448020648546,
+    31.49538024415098,
+    31.219420503684766,
+    31.219420503684766,
+    31.203666161045252
+   ]
+  ],
+  "cls": "fail",
+  "verdict": "FAIL",
+  "min_front": 1.69419422444323,
+  "min_rear": 99.0,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "d_obs": 55.0,
+   "obs_lane": 2
+  },
+  "family": "brake",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5407440728364757,
+   "a_brake": 2.0
+  },
+  "robust_cost": 0.44734868617354806,
+  "cost_by_seed": [
+   0.44734868617354806
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    0.48586702761712885,
+    0.4493567429778764,
+    0.4493567429778764,
+    0.4478874602578671,
+    0.44734868617354806,
+    0.44734868617354806
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 1.87,
+  "min_rear": 1.4699999999999998,
+  "contact": false,
+  "rel_speed": 0.0
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "d_obs": 55.0,
+   "obs_lane": 2
+  },
+  "family": "lane_change",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "robust_cost": 1017.2000664451451,
+  "cost_by_seed": [
+   1017.2000664451451
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.8370687163659,
+    1017.3711304354931,
+    1017.2000664451451,
+    1017.2000664451451
+   ]
+  ],
+  "cls": "mitigate",
+  "verdict": "FAIL",
+  "min_front": 11.27789421841446,
+  "min_rear": 19.73223470966019,
+  "contact": true,
+  "rel_speed": 0.3414584416105946
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "d_obs": 55.0,
+   "obs_lane": 2
+  },
+  "family": "staged",
+  "optimizer": "icem",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.5718210090627956,
+   "t_slow": 2.7815587341101,
+   "a_slow": 3.3416267018197634,
+   "t_lc": 3.5371287968455807,
+   "a_lc": -2.5180092289986544,
+   "a_post": 4.227169175696389
+  },
+  "robust_cost": 0.8752091687883898,
+  "cost_by_seed": [
+   0.8752091687883898
+  ],
+  "evals_per_seed": 137,
+  "best_seed": 0,
+  "hist": [
+   [
+    0.986892241598355,
+    0.9746633441656105,
+    0.8823455853809359,
+    0.8823455853809359,
+    0.8760459097426253,
+    0.8752091687883898
+   ]
+  ],
+  "cls": "success",
+  "verdict": "PASS",
+  "min_front": 1.8394657805327757,
+  "min_rear": 1.3250228219878584,
+  "contact": false,
+  "rel_speed": 0.0
+ }
+]

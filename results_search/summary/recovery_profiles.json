@@ -1,0 +1,6791 @@
+[
+ {
+  "case": "rc01",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1189609662346696,
+   "a1": 5.684240125270518
+  },
+  "robust_cost": 0.6494884245688102,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.1189609662346696,
+     "a1": 5.684240125270518
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.071970501624404,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.82 m",
+     "min_front": 4.823332272273106,
+     "min_rear": null,
+     "stopping_gap": 4.8246597869895,
+     "min_wall": 1.035351102007531
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.8515630478298843,
+     "a1": 3.1922562360141575
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.6201127769214936,
+     "min_rear": 99.0,
+     "margin": 0.22011277692149356
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.26 m",
+     "min_front": 2.25835984210255,
+     "min_rear": null,
+     "stopping_gap": 2.2591532990878136,
+     "min_wall": 1.035351102007531
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "two_stage",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.7272291632199117,
+   "a1": 4.605689574469929,
+   "t1": 0.9266361000434618,
+   "a2": 5.847908511230911
+  },
+  "robust_cost": 0.5928815736953089,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.7272291632199117,
+     "a1": 4.605689574469929,
+     "t1": 0.9266361000434618,
+     "a2": 5.847908511230911
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 7.308635048868654,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 7.08 m",
+     "min_front": 7.0835789054363545,
+     "min_rear": null,
+     "stopping_gap": 7.084975085067796,
+     "min_wall": 1.035351102007531
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.3160348540368032,
+     "a1": 4.815038199369651,
+     "t1": 2.0894014524840916,
+     "a2": 6.3063799326751955
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.452587551100825,
+     "min_rear": 99.0,
+     "margin": 0.0525875511008248
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.18 m",
+     "min_front": 2.1811275134707557,
+     "min_rear": null,
+     "stopping_gap": 2.1822566640186807,
+     "min_wall": 1.035351102007531
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "surge_brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.5782845931267864,
+   "d0": 0.8117307708886505,
+   "a1": 5.721667362927035
+  },
+  "robust_cost": 0.6724902607794595,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.5782845931267864,
+     "d0": 0.8117307708886505,
+     "a1": 5.721667362927035
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 6.299661782224602,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 6.21 m",
+     "min_front": 6.210249361873949,
+     "min_rear": null,
+     "stopping_gap": 6.21156924738365,
+     "min_wall": 1.035351102007531
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 2.170346324399868,
+     "d0": 0.7741198471272877,
+     "a1": 4.825227573543953
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.5220782011508964,
+     "min_rear": 99.0,
+     "margin": 0.1220782011508964
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.15 m",
+     "min_front": 2.1507396695875656,
+     "min_rear": null,
+     "stopping_gap": 2.1518764494667124,
+     "min_wall": 1.035351102007531
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.10916754728717247,
+   "a1": 5.733078666758804
+  },
+  "robust_cost": 0.655619366410594,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.10916754728717247,
+     "a1": 5.733078666758804
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.01449430958899,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.88 m",
+     "min_front": 4.87605910739299,
+     "min_rear": null,
+     "stopping_gap": 4.877394251066988,
+     "min_wall": 1.03812281883474
+    }
+   },
+   {
+    "scenario": "g12",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.2057062185026295,
+     "a1": 4.36546986463581
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.43650664257205,
+     "min_rear": 99.0,
+     "margin": 0.03650664257204983
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.26 m",
+     "min_front": 2.2644405114328947,
+     "min_rear": null,
+     "stopping_gap": 2.265447591498159,
+     "min_wall": 1.03812281883474
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 4.977832539917701,
+   "t1": 1.3834712353164746,
+   "a2": 5.70944581397631
+  },
+  "robust_cost": 0.6548140045530346,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.0,
+     "a1": 4.977832539917701,
+     "t1": 1.3834712353164746,
+     "a2": 5.70944581397631
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.324423845340808,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 5.23 m",
+     "min_front": 5.231382857827711,
+     "min_rear": null,
+     "stopping_gap": 5.23266459649453,
+     "min_wall": 1.0381228188151572
+    }
+   },
+   {
+    "scenario": "g12",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.2164801148444458,
+     "a1": 4.380594246224503,
+     "t1": 2.0812747649310945,
+     "a2": 3.8627287164395994
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4606329583281585,
+     "min_rear": 99.0,
+     "margin": 0.060632958328158515
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.29 m",
+     "min_front": 2.2912502086268347,
+     "min_rear": null,
+     "stopping_gap": 2.2922801768725662,
+     "min_wall": 1.03812281883474
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.6971297711367325,
+   "d0": 0.2,
+   "a1": 6.478099121296698
+  },
+  "robust_cost": 0.7240824002562131,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.6971297711367325,
+     "d0": 0.2,
+     "a1": 6.478099121296698
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.999740129232661,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.89 m",
+     "min_front": 4.893293841715234,
+     "min_rear": null,
+     "stopping_gap": 4.894796832357372,
+     "min_wall": 1.03812281883474
+    }
+   },
+   {
+    "scenario": "g12",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 12.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 1.3485059255784142,
+     "d0": 0.372503730992636,
+     "a1": 6.163724810282195
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.404451025988059,
+     "min_rear": 99.0,
+     "margin": 0.004451025988059132
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.22 m",
+     "min_front": 2.219709398447108,
+     "min_rear": null,
+     "stopping_gap": 2.221143724859189,
+     "min_wall": 1.0381228188151572
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.4867391144442681,
+   "a1": 5.364011593724759
+  },
+  "robust_cost": 0.6493236291968643,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.4867391144442681,
+     "a1": 5.364011593724759
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 6.701235312306815,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 6.37 m",
+     "min_front": 6.366255260546225,
+     "min_rear": null,
+     "stopping_gap": 6.367491222727523,
+     "min_wall": 1.0353560400849868
+    }
+   },
+   {
+    "scenario": "v9.5",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.6914522122042471,
+     "a1": 4.167042520299487
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4068686747670043,
+     "min_rear": 99.0,
+     "margin": 0.006868674767004257
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "insufficient clearance during hold: 1.99 m < 2.0 m",
+     "min_front": 1.9933757251036184,
+     "min_rear": null,
+     "stopping_gap": 1.9943751760244766,
+     "min_wall": 1.0353560400849868
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "two_stage",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 4.91843390519994,
+   "t1": 1.3900012577042646,
+   "a2": 6.090169988165635
+  },
+  "robust_cost": 0.614567994948235,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.0,
+     "a1": 4.91843390519994,
+     "t1": 1.3900012577042646,
+     "a2": 6.090169988165635
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 10.748869489171923,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 10.56 m",
+     "min_front": 10.558761148899976,
+     "min_rear": null,
+     "stopping_gap": 10.560164958298543,
+     "min_wall": 1.0353560400849868
+    }
+   },
+   {
+    "scenario": "v9.5",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.997627622227056,
+     "a1": 5.676013554153329,
+     "t1": 1.8296069037217813,
+     "a2": 3.94574176120699
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.471327371709054,
+     "min_rear": 99.0,
+     "margin": 0.07132737170905379
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.10 m",
+     "min_front": 2.095960637840136,
+     "min_rear": null,
+     "stopping_gap": 2.0972652645628926,
+     "min_wall": 1.0353560400849868
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "surge_brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.8820824953861204,
+   "d0": 0.29035598026046217,
+   "a1": 5.424723226149024
+  },
+  "robust_cost": 0.6668955815576031,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.8820824953861204,
+     "d0": 0.29035598026046217,
+     "a1": 5.424723226149024
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 7.964082732711299,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 7.70 m",
+     "min_front": 7.6974629982861416,
+     "min_rear": null,
+     "stopping_gap": 7.6987142193167415,
+     "min_wall": 1.0353560400849868
+    }
+   },
+   {
+    "scenario": "v9.5",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 1.9682253924308164,
+     "d0": 0.49846338526693823,
+     "a1": 4.552133843837804
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4101300400023002,
+     "min_rear": 99.0,
+     "margin": 0.010130040002300222
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "insufficient clearance during hold: 1.75 m < 2.0 m",
+     "min_front": 1.7529963743999843,
+     "min_rear": null,
+     "stopping_gap": 1.7540492308884552,
+     "min_wall": 1.0353560400849868
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.024637177748240018,
+   "a1": 5.689959874382779
+  },
+  "robust_cost": 0.6786784630581373,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5_g14",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.024637177748240018,
+     "a1": 5.689959874382779
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.353334538476098,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 5.13 m",
+     "min_front": 5.126364267829331,
+     "min_rear": null,
+     "stopping_gap": 5.127661265096322,
+     "min_wall": 1.0353546544704575
+    }
+   },
+   {
+    "scenario": "v9.5_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.38541796142935186,
+     "a1": 5.9033139519461795
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4102089270079636,
+     "min_rear": 99.0,
+     "margin": 0.010208927007963609
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.09 m",
+     "min_front": 2.0916500225472987,
+     "min_rear": null,
+     "stopping_gap": 2.092962278725807,
+     "min_wall": 1.0353546544704575
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.031576479637581145,
+   "a1": 4.490410745568564,
+   "t1": 0.3379136131194612,
+   "a2": 5.878692612111571
+  },
+  "robust_cost": 0.6635277253099131,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5_g14",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.031576479637581145,
+     "a1": 4.490410745568564,
+     "t1": 0.3379136131194612,
+     "a2": 5.878692612111571
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.067661254268266,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.85 m",
+     "min_front": 4.851277951822553,
+     "min_rear": null,
+     "stopping_gap": 4.852628351419014,
+     "min_wall": 1.0353546544704575
+    }
+   },
+   {
+    "scenario": "v9.5_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.33775377407681656,
+     "a1": 5.608827482952093,
+     "t1": 2.6901288876770195,
+     "a2": 5.340633570983197
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.471829357245279,
+     "min_rear": 99.0,
+     "margin": 0.07182935724527917
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.17 m",
+     "min_front": 2.1670131911225354,
+     "min_rear": null,
+     "stopping_gap": 2.1682949296648246,
+     "min_wall": 1.0353546544704575
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.3542896872901129,
+   "d0": 0.2,
+   "a1": 6.89532672584901
+  },
+  "robust_cost": 0.7795702767994683,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "v9.5_g14",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3542896872901129,
+     "d0": 0.2,
+     "a1": 6.89532672584901
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.174180111658504,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.96 m",
+     "min_front": 4.956297435430187,
+     "min_rear": null,
+     "stopping_gap": 4.957846202495531,
+     "min_wall": 1.0353546544704575
+    }
+   },
+   {
+    "scenario": "v9.5_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 9.5,
+     "gap": 14.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 1.4089317379052584,
+     "d0": 0.22893561478736493,
+     "a1": 5.51851606915749
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.421582801272699,
+     "min_rear": 99.0,
+     "margin": 0.02158280127269918
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.16 m",
+     "min_front": 2.1592540987524274,
+     "min_rear": null,
+     "stopping_gap": 2.1604900608714956,
+     "min_wall": 1.0353546544704575
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.4046641271860637,
+   "a1": 5.69284309644795
+  },
+  "robust_cost": 0.6505113505516107,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.3_g17",
+    "kind": "best",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.4046641271860637,
+     "a1": 5.69284309644795
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.2591038815188735,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 5.03 m",
+     "min_front": 5.032164104184062,
+     "min_rear": null,
+     "stopping_gap": 5.03349924816942,
+     "min_wall": 1.035351918289455
+    }
+   },
+   {
+    "scenario": "d0.3_g17",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.7301286171292319,
+     "a1": 5.346257172889779
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.523088590291163,
+     "min_rear": 99.0,
+     "margin": 0.12308859029116304
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.25 m",
+     "min_front": 2.2538051471199907,
+     "min_rear": null,
+     "stopping_gap": 2.2550563680883045,
+     "min_wall": 1.035351918289455
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.12005233883183156,
+   "a1": 5.129009981824728,
+   "t1": 0.8498281514570416,
+   "a2": 5.924481778838722
+  },
+  "robust_cost": 0.6208190338710666,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.3_g17",
+    "kind": "best",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.12005233883183156,
+     "a1": 5.129009981824728,
+     "t1": 0.8498281514570416,
+     "a2": 5.924481778838722
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 7.2276550311583225,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 7.04 m",
+     "min_front": 7.041922417975599,
+     "min_rear": null,
+     "stopping_gap": 7.043318597856143,
+     "min_wall": 1.035351918289455
+    }
+   },
+   {
+    "scenario": "d0.3_g17",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.7918463398431145,
+     "a1": 5.63080557629133,
+     "t1": 1.798329167149969,
+     "a2": 4.521586979079236
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.419660594799254,
+     "min_rear": 99.0,
+     "margin": 0.019660594799254194
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.17 m",
+     "min_front": 2.1679820759595856,
+     "min_rear": null,
+     "stopping_gap": 2.1692790730397604,
+     "min_wall": 1.035351918289455
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "surge_brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 1.5739464418575184,
+   "d0": 0.30495343034272615,
+   "a1": 5.750294733792847
+  },
+  "robust_cost": 0.6701613564136117,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.3_g17",
+    "kind": "best",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 1.5739464418575184,
+     "d0": 0.30495343034272615,
+     "a1": 5.750294733792847
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.038033626209393,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.78 m",
+     "min_front": 4.778723212396102,
+     "min_rear": null,
+     "stopping_gap": 4.780081244811015,
+     "min_wall": 1.035351918289455
+    }
+   },
+   {
+    "scenario": "d0.3_g17",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 17.0,
+     "delay_s": 0.3
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.8442168932599972,
+     "d0": 0.4026610597785859,
+     "a1": 4.317177469319365
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4564082761882795,
+     "min_rear": 99.0,
+     "margin": 0.05640827618827948
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.17 m",
+     "min_front": 2.1700648962724927,
+     "min_rear": null,
+     "stopping_gap": 2.1711101235542998,
+     "min_wall": 1.035351918289455
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.110788812923508
+  },
+  "robust_cost": 0.8963950637039616,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.6_g14",
+    "kind": "best",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.0,
+     "a1": 7.110788812923508
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.57585179004804,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.38 m",
+     "min_front": 4.38395537263672,
+     "min_rear": null,
+     "stopping_gap": 4.385626210807459,
+     "min_wall": 1.0381178111869327
+    }
+   },
+   {
+    "scenario": "d0.6_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.0,
+     "a1": 4.809786754664639
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4011330253682575,
+     "min_rear": 99.0,
+     "margin": 0.0011330253682574343
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.17 m",
+     "min_front": 2.169561348767232,
+     "min_rear": null,
+     "stopping_gap": 2.170682869921663,
+     "min_wall": 1.0381178111869327
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "two_stage",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.089885792786679,
+   "t1": 2.869448442638145,
+   "a2": 4.40481260260806
+  },
+  "robust_cost": 0.8983231777516524,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.6_g14",
+    "kind": "best",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.0,
+     "a1": 7.089885792786679,
+     "t1": 2.869448442638145,
+     "a2": 4.40481260260806
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.562972768861188,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 4.37 m",
+     "min_front": 4.37035978901568,
+     "min_rear": null,
+     "stopping_gap": 4.372022997792911,
+     "min_wall": 1.0381178112055476
+    }
+   },
+   {
+    "scenario": "d0.6_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.11001014599969453,
+     "a1": 5.841494415347795,
+     "t1": 1.7070039336122844,
+     "a2": 5.42634399652852
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4054561251850695,
+     "min_rear": 99.0,
+     "margin": 0.005456125185069438
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.18 m",
+     "min_front": 2.177793482775769,
+     "min_rear": null,
+     "stopping_gap": 2.1791438857971883,
+     "min_wall": 1.0381178111869327
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "surge_brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "robust_cost": 45.6607988794943,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "d0.6_g14",
+    "kind": "best",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3,
+     "d0": 0.2,
+     "a1": 7.2
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.5172394544026995,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.74 m",
+     "min_front": 2.7373868035776923,
+     "min_rear": null,
+     "stopping_gap": 2.739072900224045,
+     "min_wall": 1.0381178111869327
+    }
+   },
+   {
+    "scenario": "d0.6_g14",
+    "kind": "boundary",
+    "theta_s": {
+     "gap": 14.0,
+     "delay_s": 0.6
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.5895653103795797,
+     "d0": 0.2,
+     "a1": 7.184651247505247
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.4049117294585134,
+     "min_rear": 99.0,
+     "margin": 0.00491172945851337
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.65 m",
+     "min_front": 2.6460019022587886,
+     "min_rear": null,
+     "stopping_gap": 2.647703257505313,
+     "min_wall": 1.0381178112055476
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "robust_cost": 96.59671230652019,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "g8_v9.5",
+    "kind": "best",
+    "theta_s": {
+     "gap": 8.0,
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.0,
+     "a1": 7.2
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5072693089383091,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+     "min_front": 1.2913264521213819,
+     "min_rear": null,
+     "stopping_gap": 1.2929820310069573,
+     "min_wall": 1.0353530084037583
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 1.3003922783617523,
+   "a2": 2.609993140080986
+  },
+  "robust_cost": 96.59671230652019,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "g8_v9.5",
+    "kind": "best",
+    "theta_s": {
+     "gap": 8.0,
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.0,
+     "a1": 7.2,
+     "t1": 1.3003922783617523,
+     "a2": 2.609993140080986
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5072693089383091,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "insufficient clearance during hold: 1.29 m < 2.0 m",
+     "min_front": 1.2898539786795737,
+     "min_rear": null,
+     "stopping_gap": 1.2915095575028772,
+     "min_wall": 1.0353530084037583
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc01",
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "surge_brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.4707756046181387,
+   "d0": 0.2,
+   "a1": 7.09570832735649
+  },
+  "robust_cost": 1236.651856597186,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "g8_v9.5",
+    "kind": "best",
+    "theta_s": {
+     "gap": 8.0,
+     "v_ego": 9.5
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.4707756046181387,
+     "d0": 0.2,
+     "a1": 7.09570832735649
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.01813581342204834,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact at t=+1.10s after observation; measured motion exceeded the physics envelope",
+     "min_front": -0.08968607839750575,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": 1.0353530084037583
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 3.9627142362763985,
+   "gap_abort": 24.860523298968968,
+   "t_ret": 2.8897358476791366
+  },
+  "robust_cost": 0.7284100788086879,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 3.9627142362763985,
+     "gap_abort": 24.860523298968968,
+     "t_ret": 2.8897358476791366
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.60640620841555,
+     "min_rear": 1.6290273632271082
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.261959100175133,
+     "min_rear": 1.5704130644219627,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 5.1799444976109665,
+     "gap_abort": 15.440847051087356,
+     "t_ret": 2.6591850879843193
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 12.444400462218724,
+     "min_rear": 1.3017047006206792,
+     "margin": 0.0017047006206792337
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 13.572460134172907,
+     "min_rear": 1.0405034976077885,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort_surge",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 3.4069870311865817,
+   "gap_abort": 25.0,
+   "t_ret": 2.8878003012667075,
+   "surge_acc": 0.5,
+   "surge_dur": 1.9425687533025846
+  },
+  "robust_cost": 0.7237915531252608,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 3.4069870311865817,
+     "gap_abort": 25.0,
+     "t_ret": 2.8878003012667075,
+     "surge_acc": 0.5,
+     "surge_dur": 1.9425687533025846
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.60992612185558,
+     "min_rear": 1.6179232813837419
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.261959099610138,
+     "min_rear": 1.5708007484512743,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 6.091327929753761,
+     "gap_abort": 14.157069030415073,
+     "t_ret": 2.602519666794466,
+     "surge_acc": 1.5926560549937891,
+     "surge_dur": 2.343582859898146
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 6.120954706673089,
+     "min_rear": 1.3294343807857354,
+     "margin": 0.029434380785735403
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "rear-left clearance 0.91 m < 1.0 m",
+     "min_front": 6.057797927227898,
+     "min_rear": 0.9098095346665435,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "commit_surge",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.41390145563675,
+   "surge_dur": 3.056521331747461
+  },
+  "robust_cost": 36.38237321583575,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.41390145563675,
+     "surge_dur": 3.056521331747461
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5829447990205097,
+     "min_rear": 12.871851720828474
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "lead clearance 1.55 m < 2.0 m",
+     "min_front": 1.5525706038955542,
+     "min_rear": 2.928313611492784,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 8.05142636783323,
+   "gap_abort": 13.263070420939776,
+   "t_ret": 2.4450928158373655
+  },
+  "robust_cost": 0.7832074602978965,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "p0.8",
+    "kind": "best",
+    "theta_s": {
+     "hazard_progress": 0.8
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 8.05142636783323,
+     "gap_abort": 13.263070420939776,
+     "t_ret": 2.4450928158373655
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 12.065451751327686,
+     "min_rear": 1.7789843205930955
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 13.159657577004896,
+     "min_rear": 1.5488968554632674,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "p0.8",
+    "kind": "boundary",
+    "theta_s": {
+     "hazard_progress": 0.8
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 5.798776841653185,
+     "gap_abort": 20.325909534088066,
+     "t_ret": 2.7507905163487094
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 11.215063795556077,
+     "min_rear": 1.3074518418737398,
+     "margin": 0.007451841873739762
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 12.253821880620638,
+     "min_rear": 1.0666649661773282,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 7.677210198234481,
+   "gap_abort": 12.309106269702442,
+   "t_ret": 2.2909870761732183,
+   "surge_acc": 0.8087125555444797,
+   "surge_dur": 0.5186718576877962
+  },
+  "robust_cost": 0.7853733693496372,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "p0.8",
+    "kind": "best",
+    "theta_s": {
+     "hazard_progress": 0.8
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 7.677210198234481,
+     "gap_abort": 12.309106269702442,
+     "t_ret": 2.2909870761732183,
+     "surge_acc": 0.8087125555444797,
+     "surge_dur": 0.5186718576877962
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 11.794889612033913,
+     "min_rear": 1.7967274728964078
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 12.94245487291366,
+     "min_rear": 1.528874583070314,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "p0.8",
+    "kind": "boundary",
+    "theta_s": {
+     "hazard_progress": 0.8
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 5.235535300491187,
+     "gap_abort": 17.028254511242224,
+     "t_ret": 2.4500193948972555,
+     "surge_acc": 0.5,
+     "surge_dur": 1.284028392738422
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 10.708375911524428,
+     "min_rear": 1.3062108451049517,
+     "margin": 0.006210845104951679
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 11.771695168131162,
+     "min_rear": 1.0263495939143352,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "commit_surge",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.413325250441512,
+   "surge_dur": 2.977696073391557
+  },
+  "robust_cost": 37.44666486629143,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "p0.8",
+    "kind": "best",
+    "theta_s": {
+     "hazard_progress": 0.8
+    },
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.413325250441512,
+     "surge_dur": 2.977696073391557
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5610822798968456,
+     "min_rear": 17.671967952529258
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "lead clearance 1.52 m < 2.0 m",
+     "min_front": 1.5202300299815694,
+     "min_rear": 8.862962088103743,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 4.636773266356407,
+   "gap_abort": 14.283603122704706,
+   "t_ret": 1.3898492526214232
+  },
+  "robust_cost": 0.7789903389565884,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 4.636773266356407,
+     "gap_abort": 14.283603122704706,
+     "t_ret": 1.3898492526214232
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.620695744072961,
+     "min_rear": 1.5861016188689927
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.276490352837744,
+     "min_rear": 1.4728895633120689,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "g12",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 5.156741650180459,
+     "gap_abort": 18.131592899866142,
+     "t_ret": 2.034805833979693
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.616590715853562,
+     "min_rear": 1.3026026140469529,
+     "margin": 0.002602614046952889
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.269221931480438,
+     "min_rear": 1.21186855865399,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 4.0923186973245365,
+   "gap_abort": 16.112346901916002,
+   "t_ret": 1.3897867868980147,
+   "surge_acc": 0.9822032670904309,
+   "surge_dur": 2.3809928816748336
+  },
+  "robust_cost": 0.7789905754467854,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 4.0923186973245365,
+     "gap_abort": 16.112346901916002,
+     "t_ret": 1.3897867868980147,
+     "surge_acc": 0.9822032670904309,
+     "surge_dur": 2.3809928816748336
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.620696134279896,
+     "min_rear": 1.5861159334296289
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.276490355097753,
+     "min_rear": 1.4729001004413445,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "g12",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 6.022597938457257,
+     "gap_abort": 9.658444368230116,
+     "t_ret": 2.0358918342638663,
+     "surge_acc": 1.2920426946199568,
+     "surge_dur": 2.922631981968622
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.616582153070397,
+     "min_rear": 1.3018372174177923,
+     "margin": 0.0018372174177923584
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.090317991212359,
+     "min_rear": 1.03829687080252,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "commit_surge",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.414431740663996,
+   "surge_dur": 3.3389757807489415
+  },
+  "robust_cost": 36.39419367879609,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "g12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.414431740663996,
+     "surge_dur": 3.3389757807489415
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5829385373136815,
+     "min_rear": 6.022830626949684
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with rear_left, rear_left (footprint overlap); physics envelope exceeded; rear-left clearance 0.00 m < 1.0 m; lead clearance 1.55 m < 2.0 m",
+     "min_front": 1.5540881211022313,
+     "min_rear": 0.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 6.627406305011542,
+   "gap_abort": 11.084371771672883,
+   "t_ret": 2.253147633058401
+  },
+  "robust_cost": 0.7177962938275378,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "c4.5",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 6.627406305011542,
+     "gap_abort": 11.084371771672883,
+     "t_ret": 2.253147633058401
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.614909910775609,
+     "min_rear": 1.627870467715998
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.267462293835354,
+     "min_rear": 1.5439731757235493,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "c4.5",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 4.5
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 5.712488738923567,
+     "gap_abort": 19.95263498306163,
+     "t_ret": 3.0609810210422865
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.608571835373382,
+     "min_rear": 1.3100156066739088,
+     "margin": 0.010015606673908828
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.24571414519968,
+     "min_rear": 1.1141712353005795,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 7.52824906883664,
+   "gap_abort": 8.49429919758951,
+   "t_ret": 1.9423825421673653,
+   "surge_acc": 0.5,
+   "surge_dur": 2.1925085178199373
+  },
+  "robust_cost": 0.710568656329311,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "c4.5",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 7.52824906883664,
+     "gap_abort": 8.49429919758951,
+     "t_ret": 1.9423825421673653,
+     "surge_acc": 0.5,
+     "surge_dur": 2.1925085178199373
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.617275483367933,
+     "min_rear": 1.6038586455208708
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.270285863460927,
+     "min_rear": 1.5705530979740159,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "c4.5",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 4.5
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 5.947878782330168,
+     "gap_abort": 6.416953112312841,
+     "t_ret": 3.070722627310494,
+     "surge_acc": 2.0867080182423416,
+     "surge_dur": 2.756203182506688
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.608496215561175,
+     "min_rear": 1.3051964591468421,
+     "margin": 0.005196459146842136
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.260971982593647,
+     "min_rear": 1.2200916445630683,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "commit_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.413292822658575,
+   "surge_dur": 3.1309904215957434
+  },
+  "robust_cost": 36.384995454619094,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "c4.5",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5
+    },
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.413292822658575,
+     "surge_dur": 3.1309904215957434
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.582931710582881,
+     "min_rear": 7.350837664944223
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with rear_left, rear_left (footprint overlap); physics envelope exceeded; rear-left clearance 0.00 m < 1.0 m; lead clearance 1.55 m < 2.0 m",
+     "min_front": 1.552711466765438,
+     "min_rear": 0.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.784248004450481,
+   "gap_abort": 10.881442213697435,
+   "t_ret": 2.769581854011242
+  },
+  "robust_cost": 0.7607578058544402,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g40",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 5.784248004450481,
+     "gap_abort": 10.881442213697435,
+     "t_ret": 2.769581854011242
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 11.299193128996066,
+     "min_rear": 1.795983962797406
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 12.350608577406412,
+     "min_rear": 1.5599316855701955,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "g40",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 7.4095077820212065,
+     "gap_abort": 9.236441391517555,
+     "t_ret": 4.0
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 11.299047103260278,
+     "min_rear": 1.3086760913231608,
+     "margin": 0.008676091323160773
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 12.177668052253631,
+     "min_rear": 1.1124982751484456,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 6.133010085368948,
+   "gap_abort": 14.108126677657456,
+   "t_ret": 2.830496816464403,
+   "surge_acc": 0.8975716400833706,
+   "surge_dur": 1.0273645617428602
+  },
+  "robust_cost": 0.7498992936748765,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "g40",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 6.133010085368948,
+     "gap_abort": 14.108126677657456,
+     "t_ret": 2.830496816464403,
+     "surge_acc": 0.8975716400833706,
+     "surge_dur": 1.0273645617428602
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 11.056286384572218,
+     "min_rear": 1.8027316819824297
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 12.09992714132669,
+     "min_rear": 1.5796131595978646,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "g40",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 4.627288689075361,
+     "gap_abort": 8.251560108674791,
+     "t_ret": 3.1384499042289695,
+     "surge_acc": 1.0227928331559872,
+     "surge_dur": 0.6616114785346046
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 10.107306282302702,
+     "min_rear": 1.3053721444439288,
+     "margin": 0.005372144443928806
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 10.48787474799865,
+     "min_rear": 1.0924862924357204,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "commit_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.411517116450952,
+   "surge_dur": 3.0072405242213636
+  },
+  "robust_cost": 36.38050867660679,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "g40",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.411517116450952,
+     "surge_dur": 3.0072405242213636
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5829354886761358,
+     "min_rear": 26.60279458744739
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "lead clearance 1.55 m < 2.0 m",
+     "min_front": 1.5527064812437221,
+     "min_rear": 16.81168534873458,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 4.046003944773121,
+   "gap_abort": 10.914655654631398,
+   "t_ret": 1.0
+  },
+  "robust_cost": 6.877194052928763,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "c4.5_g12",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5,
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 4.046003944773121,
+     "gap_abort": 10.914655654631398,
+     "t_ret": 1.0
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.621597162907108,
+     "min_rear": 1.3983686341135038
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.285942283729113,
+     "min_rear": 1.2710540693559746,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "c4.5_g12",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 4.5,
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "surge_acc": 0.0,
+     "surge_dur": 0.0,
+     "ttc_abort": 7.439795589990589,
+     "gap_abort": 12.315644392992137,
+     "t_ret": 1.2027969133779648
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.621376092833472,
+     "min_rear": 1.300291090941431,
+     "margin": 0.00029109094143092706
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.27984304703212,
+     "min_rear": 1.1830123388678297,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "abort",
+   "ttc_abort": 3.504141289910355,
+   "gap_abort": 13.78514925749598,
+   "t_ret": 1.0,
+   "surge_acc": 2.41119500360904,
+   "surge_dur": 0.9417935053842816
+  },
+  "robust_cost": 6.877194052928763,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "c4.5_g12",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5,
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 3.504141289910355,
+     "gap_abort": 13.78514925749598,
+     "t_ret": 1.0,
+     "surge_acc": 2.41119500360904,
+     "surge_dur": 0.9417935053842816
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.621597162907108,
+     "min_rear": 1.3983686341135038
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.285942283729113,
+     "min_rear": 1.2710540693559746,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "c4.5_g12",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 4.5,
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "abort",
+     "ttc_abort": 3.7814687154445195,
+     "gap_abort": 11.41715122271155,
+     "t_ret": 1.2016788627326667,
+     "surge_acc": 3.913070311623353,
+     "surge_dur": 3.2017653731413867
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 13.621375055827485,
+     "min_rear": 1.3009124598331103,
+     "margin": 0.0009124598331103351
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+     "min_front": 15.279843046494307,
+     "min_rear": 1.1835789111290305,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc05",
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "commit_surge",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.3892885684753065,
+   "surge_dur": 3.5551920026566948
+  },
+  "robust_cost": 36.41412557772288,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "c4.5_g12",
+    "kind": "best",
+    "theta_s": {
+     "closing": 4.5,
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "mode": "commit",
+     "surge_acc": 4.3892885684753065,
+     "surge_dur": 3.5551920026566948
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 1.5827581766751089,
+     "min_rear": 4.914781037885035
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with rear_left, rear_left (footprint overlap); physics envelope exceeded; rear-left clearance 0.00 m < 1.0 m; lead clearance 1.55 m < 2.0 m",
+     "min_front": 1.5524636557436968,
+     "min_rear": 0.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.6085795264799918,
+   "a1": 4.779629871227237
+  },
+  "robust_cost": 0.547441724672575,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.6085795264799918,
+     "a1": 4.779629871227237
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.0804088700231205,
+     "min_rear": 6.719591129976921
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 4.032649737557762,
+     "min_rear": 6.850842744316466,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.4014447964859431,
+     "a1": 2.92624875379509
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4075180642971075,
+     "min_rear": 8.63286221817883,
+     "margin": 0.007518064297107441
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.2327967532601605,
+     "min_rear": 8.67079300895422,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.488956905086439,
+   "a1": 4.138820778942134,
+   "t1": 0.9654851834286682,
+   "a2": 5.184601883222076
+  },
+  "robust_cost": 0.5351066201384382,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.488956905086439,
+     "a1": 4.138820778942134,
+     "t1": 0.9654851834286682,
+     "a2": 5.184601883222076
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.695303862593763,
+     "min_rear": 6.104696137406284
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 4.616068295175694,
+     "min_rear": 6.267391905415792,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.111274274636925,
+     "a1": 6.417760442410951,
+     "t1": 2.5893275728635663,
+     "a2": 3.8651541950045507
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 9.78747820543607,
+     "min_rear": 1.0125217945639762,
+     "margin": 0.012521794563976174
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 9.713790175662595,
+     "min_rear": 1.1666182830431495,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "surge_brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.3387344124708996,
+   "d0": 1.4366341888305805,
+   "a1": 4.926701980563866
+  },
+  "robust_cost": 0.556767499312194,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3387344124708996,
+     "d0": 1.4366341888305805,
+     "a1": 4.926701980563866
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.666779324341308,
+     "min_rear": 6.133220675658699
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 4.7248179719689745,
+     "min_rear": 6.158566350341914,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 2.5540486078863935,
+     "d0": 1.1172107638213862,
+     "a1": 5.264292840696715
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4239863316733006,
+     "min_rear": 9.376013668326696,
+     "margin": 0.023986331673300554
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.4368207698199882,
+     "min_rear": 9.447570903149526,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6",
+  "theta_s": {
+   "closing": 6.0
+  },
+  "family": "brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.6156825713634786,
+   "a1": 3.145713074540237
+  },
+  "robust_cost": 1075.7371220870411,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.6156825713634786,
+     "a1": 3.145713074540237
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 0.5631147102645827,
+     "min_rear": 2.198670915415111
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "front clearance 0.42 m < 1.0 m",
+     "min_front": 0.41597605254170844,
+     "min_rear": 2.2864309353307277,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   },
+   {
+    "scenario": "closing6",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.6707803220639812,
+     "a1": 3.731102096079523
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.7966945818272322,
+     "min_rear": 1.0033054181727694,
+     "margin": 0.0033054181727694143
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.6632475742834743,
+     "min_rear": 1.17145530843392,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6",
+  "theta_s": {
+   "closing": 6.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.6098150654098515,
+   "a1": 3.146391826271898,
+   "t1": 2.2179734012045893,
+   "a2": 3.5634098388619493
+  },
+  "robust_cost": 1075.8063804761027,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.6098150654098515,
+     "a1": 3.146391826271898,
+     "t1": 2.2179734012045893,
+     "a2": 3.5634098388619493
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 0.6066604301609824,
+     "min_rear": 2.1885546175358614
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "front clearance 0.48 m < 1.0 m",
+     "min_front": 0.4806733763725788,
+     "min_rear": 2.2833639138132753,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   },
+   {
+    "scenario": "closing6",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.7878084270850758,
+     "a1": 4.806671369182763,
+     "t1": 0.7694838019057981,
+     "a2": 3.2557306574694
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.7980134495910896,
+     "min_rear": 1.001986550408916,
+     "margin": 0.0019865504089160435
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.6405118366176907,
+     "min_rear": 1.1941619756429134,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6",
+  "theta_s": {
+   "closing": 6.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.48297883058559576,
+   "d0": 1.3200823978232465,
+   "a1": 3.0834525111053606
+  },
+  "robust_cost": 1077.413175731127,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.48297883058559576,
+     "d0": 1.3200823978232465,
+     "a1": 3.0834525111053606
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 0.5390974420076867,
+     "min_rear": 2.249623979536859
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "front clearance 0.58 m < 1.0 m",
+     "min_front": 0.5772480614686089,
+     "min_rear": 2.1782612672102744,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   },
+   {
+    "scenario": "closing6",
+    "kind": "boundary",
+    "theta_s": {
+     "closing": 6.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.4913339574915808,
+     "d0": 1.2882858012115552,
+     "a1": 3.187187091543027
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4001132699179333,
+     "min_rear": 1.3998867300820614,
+     "margin": 0.00011326991793325636
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.4280483878427788,
+     "min_rear": 1.4069291400433457,
+     "stopping_gap": null,
+     "min_wall": 0.6858326135252386
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "delay2.0",
+  "theta_s": {
+   "rear_delay_s": 2.0
+  },
+  "family": "brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.9805135958806734,
+   "a1": 4.703653383300317
+  },
+  "robust_cost": 62.9472474443069,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "delay2.0",
+    "kind": "best",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.9805135958806734,
+     "a1": 4.703653383300317
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.177572378266572,
+     "min_rear": 2.4224276217334775
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.0745154579072391,
+     "min_rear": 2.6107588593241644,
+     "stopping_gap": null,
+     "min_wall": 0.6858320460192342
+    }
+   },
+   {
+    "scenario": "delay2.0",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 2.0133746927214458,
+     "a1": 5.183559533104222
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4076569957878133,
+     "min_rear": 2.1923430042122374,
+     "margin": 0.007656995787813314
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.3169642974493172,
+     "min_rear": 2.36794380661631,
+     "stopping_gap": null,
+     "min_wall": 0.6858320460192342
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "delay2.0",
+  "theta_s": {
+   "rear_delay_s": 2.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.8285923443034964,
+   "a1": 4.001552631403495,
+   "t1": 2.3043735279707476,
+   "a2": 2.100707710692207
+  },
+  "robust_cost": 63.028647129979305,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "delay2.0",
+    "kind": "best",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.8285923443034964,
+     "a1": 4.001552631403495,
+     "t1": 2.3043735279707476,
+     "a2": 2.100707710692207
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.1780088886005782,
+     "min_rear": 2.421991111399468
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.0551825562970834,
+     "min_rear": 2.6302273678876276,
+     "stopping_gap": null,
+     "min_wall": 0.6858320460192342
+    }
+   },
+   {
+    "scenario": "delay2.0",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.9251594135593442,
+     "a1": 2.0,
+     "t1": 2.6204773943776063,
+     "a2": 3.2321362784791132
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4063821099685325,
+     "min_rear": 2.1766515878976413,
+     "margin": 0.006382109968532501
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.2641671296105557,
+     "min_rear": 2.3018579163265116,
+     "stopping_gap": null,
+     "min_wall": 0.6858320460192342
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "delay2.0",
+  "theta_s": {
+   "rear_delay_s": 2.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 1.8501640995765702,
+   "d0": 1.087735512667753,
+   "a1": 3.9592989537701584
+  },
+  "robust_cost": 62.777030283384086,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "delay2.0",
+    "kind": "best",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 1.8501640995765702,
+     "d0": 1.087735512667753,
+     "a1": 3.9592989537701584
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.1780286728557678,
+     "min_rear": 2.4219713271442402
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.1399469288157462,
+     "min_rear": 2.5453884120083075,
+     "stopping_gap": null,
+     "min_wall": 0.6858320460192342
+    }
+   },
+   {
+    "scenario": "delay2.0",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_delay_s": 2.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3,
+     "d0": 1.8984688192924077,
+     "a1": 6.569340269710285
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.585342171527481,
+     "min_rear": 1.0146578284725016,
+     "margin": 0.014657828472501633
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "rear clearance 0.96 m < 1.0 m",
+     "min_front": 2.7207575179431984,
+     "min_rear": 0.9622880287857924,
+     "stopping_gap": null,
+     "min_wall": 0.6858317548356727
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "rear12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "brake",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.7945260143241422,
+   "a1": 4.1711907114828595
+  },
+  "robust_cost": 26.636789034211933,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "rear12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.7945260143241422,
+     "a1": 4.1711907114828595
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.893348738022133,
+     "min_rear": 2.9066512619779012
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.7831495173593055,
+     "min_rear": 3.0760590536403924,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   },
+   {
+    "scenario": "rear12",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.553339592780973,
+     "a1": 3.279318497803224
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4030325401054777,
+     "min_rear": 2.9509555018027993,
+     "margin": 0.00303254010547771
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.2495798541889087,
+     "min_rear": 2.9913421973750474,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "rear12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.765959543690669,
+   "a1": 4.175004534709616,
+   "t1": 2.100841014051283,
+   "a2": 5.455832560334322
+  },
+  "robust_cost": 26.70773990658303,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "rear12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.765959543690669,
+     "a1": 4.175004534709616,
+     "t1": 2.100841014051283,
+     "a2": 5.455832560334322
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.8999576637187243,
+     "min_rear": 2.9000423362813095
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.7911603897606625,
+     "min_rear": 3.0703827815393794,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   },
+   {
+    "scenario": "rear12",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.6821162047504479,
+     "a1": 4.864800641992143,
+     "t1": 1.407975165517442,
+     "a2": 4.699156247521575
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 3.7984691343671755,
+     "min_rear": 1.0015308656328628,
+     "margin": 0.0015308656328627546
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 3.69161391942545,
+     "min_rear": 1.1904985017485075,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "rear12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.900192505374918,
+   "d0": 1.1969261476842337,
+   "a1": 3.5073953466641727
+  },
+  "robust_cost": 26.721265242687537,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "rear12",
+    "kind": "best",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.900192505374918,
+     "d0": 1.1969261476842337,
+     "a1": 3.5073953466641727
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.8990534074316976,
+     "min_rear": 2.859424086454645
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.9280928890667894,
+     "min_rear": 2.8349564201483446,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   },
+   {
+    "scenario": "rear12",
+    "kind": "boundary",
+    "theta_s": {
+     "rear_gap": 12.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3,
+     "d0": 1.4697570103631201,
+     "a1": 4.556968795043073
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 3.780457833730061,
+     "min_rear": 1.0195421662699276,
+     "margin": 0.019542166269927552
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 3.8279053592395655,
+     "min_rear": 1.0543592375368718,
+     "stopping_gap": null,
+     "min_wall": 0.685837263865684
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "front18",
+  "theta_s": {
+   "front_gap": 18.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.9737282598718416,
+   "a1": 3.9657816484193087
+  },
+  "robust_cost": 26.570098032125642,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "front18",
+    "kind": "best",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.9737282598718416,
+     "a1": 3.9657816484193087
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.8962140463913697,
+     "min_rear": 2.9037859536086494
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.7888410469569038,
+     "min_rear": 3.0938050694683312,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "front18",
+    "kind": "boundary",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 0.851927959144317,
+     "a1": 4.58588966276465
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 3.799607334565476,
+     "min_rear": 1.0003926654345412,
+     "margin": 0.00039266543454119507
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 3.6963135429494542,
+     "min_rear": 1.1838303107864192,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "front18",
+  "theta_s": {
+   "front_gap": 18.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.1370555625905596,
+   "a1": 4.673236005819312,
+   "t1": 0.8762337665945754,
+   "a2": 4.6071019315945465
+  },
+  "robust_cost": 26.567896104185078,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "front18",
+    "kind": "best",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.1370555625905596,
+     "a1": 4.673236005819312,
+     "t1": 0.8762337665945754,
+     "a2": 4.6071019315945465
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.8977940411354441,
+     "min_rear": 2.9022059588645726
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.798286241683229,
+     "min_rear": 3.0842395291215468,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "front18",
+    "kind": "boundary",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 0.9651824699770166,
+     "a1": 4.815317129201924,
+     "t1": 0.5140680032468445,
+     "a2": 5.478915816407751
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 3.7973773983584085,
+     "min_rear": 1.0026226016416058,
+     "margin": 0.0026226016416057707
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 3.7159669747479995,
+     "min_rear": 1.1639024460913703,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "front18",
+  "theta_s": {
+   "front_gap": 18.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 1.2155423894046449,
+   "a1": 6.045672901168777
+  },
+  "robust_cost": 26.592053653397983,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "front18",
+    "kind": "best",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 0.3,
+     "d0": 1.2155423894046449,
+     "a1": 6.045672901168777
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.8972197289459547,
+     "min_rear": 2.9027802710540374
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.922937139909834,
+     "min_rear": 2.959163063732646,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   },
+   {
+    "scenario": "front18",
+    "kind": "boundary",
+    "theta_s": {
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 2.157942746543197,
+     "d0": 0.78497660058864,
+     "a1": 5.118205484807783
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.4178875697685884,
+     "min_rear": 3.382112430231402,
+     "margin": 0.017887569768588407
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "stopped between queue and truck with no contact and >= 1 m clearance both sides",
+     "min_front": 1.2189875257675737,
+     "min_rear": 3.6639061431441036,
+     "stopping_gap": null,
+     "min_wall": 0.6858316153120345
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6_front18",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 18.0
+  },
+  "family": "brake",
+  "best_optimizer": "mppi",
+  "best_theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.3359912247956198,
+   "a1": 4.227165872712087
+  },
+  "robust_cost": 1157.8524706750782,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6_front18",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0,
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "t1": 99.0,
+     "d0": 1.3359912247956198,
+     "a1": 4.227165872712087
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": -0.0036048408872065008,
+     "min_rear": 1.3598548408871864
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact: front impact with queue0, front impact with queue0 (footprint overlap), rear-end by truck, rear-end by truck, front impact with static.road",
+     "min_front": -2.0223511556542775,
+     "min_rear": -0.20736360860169611,
+     "stopping_gap": null,
+     "min_wall": 0.637420572495391
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6_front18",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 18.0
+  },
+  "family": "two_stage",
+  "best_optimizer": "cem",
+  "best_theta_p": {
+   "a0": 0.0,
+   "d0": 1.4098490046070626,
+   "a1": 4.9115799094741055,
+   "t1": 2.945294340868772,
+   "a2": 0.5
+  },
+  "robust_cost": 1154.33655355728,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6_front18",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0,
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "a0": 0.0,
+     "d0": 1.4098490046070626,
+     "a1": 4.9115799094741055,
+     "t1": 2.945294340868772,
+     "a2": 0.5
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 0.018824982486197656,
+     "min_rear": 1.3374250175137816
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact: front impact with queue0, front impact with queue0 (footprint overlap), rear-end by truck, rear-end by truck",
+     "min_front": -0.2741353768649617,
+     "min_rear": -0.15341675517828435,
+     "stopping_gap": null,
+     "min_wall": 0.5537649438565553
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc09",
+  "scenario": "closing6_front18",
+  "theta_s": {
+   "closing": 6.0,
+   "front_gap": 18.0
+  },
+  "family": "surge_brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "t1": 99.0,
+   "a0": 2.3585606565416355,
+   "d0": 0.7999642438224717,
+   "a1": 4.594448819848276
+  },
+  "robust_cost": 1145.7664718321455,
+  "surrogate_class": "mitigate",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "closing6_front18",
+    "kind": "best",
+    "theta_s": {
+     "closing": 6.0,
+     "front_gap": 18.0
+    },
+    "theta_p": {
+     "t1": 99.0,
+     "a0": 2.3585606565416355,
+     "d0": 0.7999642438224717,
+     "a1": 4.594448819848276
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 0.00021079134703214097,
+     "min_rear": 1.356039208652971
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact: front impact with queue0, front impact with queue0 (footprint overlap), rear-end by truck, rear-end by truck",
+     "min_front": -0.2778940197683113,
+     "min_rear": -0.10904702617519035,
+     "stopping_gap": null,
+     "min_wall": 0.6407576802665609
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "reachable_set",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_ped_max": 2.635185893087309,
+   "horizon": 1.8610286756086993,
+   "pad": 0.1704771806096442,
+   "a_max": 2.0
+  },
+  "robust_cost": 172.3124221326122,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart2@20",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_ped_max": 2.635185893087309,
+     "horizon": 1.8610286756086993,
+     "pad": 0.1704771806096442,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.33528643581009315,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[CLEARANCE] pedestrian clearance -0.21 m < 0.5 m",
+     "min_front": -0.20752896036242702,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_ped_max": 2.635185893087309,
+     "horizon": 1.8610286756086993,
+     "pad": 0.1704771806096442,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.6 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.470774618061273,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_ped_max": 4.1440861372685625,
+     "horizon": 1.2976857599543041,
+     "pad": 0.6903858592201533,
+     "a_max": 3.2512824629359085
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.2 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.470883854858537,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_ped_max": 4.1440861372685625,
+     "horizon": 1.2976857599543041,
+     "pad": 0.6903858592201533,
+     "a_max": 3.2512824629359085
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 0.8019061048385112,
+     "min_rear": 99.0,
+     "margin": 0.0019061048385112245
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 0.8022682591485732,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "pre_slow",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_slow": 5.81720764951514,
+   "zone": 34.124802796161404,
+   "a_react": 4.558931081684608
+  },
+  "robust_cost": 42.60332508309644,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart2@20",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_slow": 5.81720764951514,
+     "zone": 34.124802796161404,
+     "a_react": 4.558931081684608
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.072093390685555,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.9419094150924934,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_slow": 5.81720764951514,
+     "zone": 34.124802796161404,
+     "a_react": 4.558931081684608
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 5.8 m/s vs 8 target, min speed 5.8)",
+     "min_front": 4.47061985091116,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_slow": 5.106465796555116,
+     "zone": 29.80785051751107,
+     "a_react": 5.1087755053719555
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 5.1 m/s vs 8 target, min speed 5.1)",
+     "min_front": 4.470657308001404,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "v_slow": 5.106465796555116,
+     "zone": 29.80785051751107,
+     "a_react": 5.1087755053719555
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.081782064119213,
+     "min_rear": 99.0,
+     "margin": 1.281782064119213
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.9754214296624297,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "react",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "thr": 1.3041016710618398,
+   "a_react": 5.473348941998978,
+   "d_react": 18.286146124033753
+  },
+  "robust_cost": 25.23542481829171,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "dart2@20",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "thr": 1.3041016710618398,
+     "a_react": 5.473348941998978,
+     "d_react": 18.286146124033753
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.1064499975296544,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 2.0025596801918484,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "thr": 1.3041016710618398,
+     "a_react": 5.473348941998978,
+     "d_react": 18.286146124033753
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 4.470511148027532,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "thr": 0.606427214362861,
+     "a_react": 5.216390413883933,
+     "d_react": 32.01356879563342
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 4.470511148027532,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart2@20",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 2.0,
+     "dart_dist": 20.0
+    },
+    "theta_p": {
+     "thr": 0.606427214362861,
+     "a_react": 5.216390413883933,
+     "d_react": 32.01356879563342
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.0818706704520795,
+     "min_rear": 99.0,
+     "margin": 1.2818706704520795
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.9984398639872125,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "reachable_set",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_ped_max": 3.6647645620806717,
+   "horizon": 1.6725962206531628,
+   "pad": 0.30446734064510816,
+   "a_max": 2.0
+  },
+  "robust_cost": 174.79474892827653,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "dart3@15",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 3.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.6647645620806717,
+     "horizon": 1.6725962206531628,
+     "pad": 0.30446734064510816,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 0.6345755601322651,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[CLEARANCE] pedestrian clearance -0.04 m < 0.5 m",
+     "min_front": -0.04397570950266355,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.6647645620806717,
+     "horizon": 1.6725962206531628,
+     "pad": 0.30446734064510816,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.4 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.4708527424216795,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.6000235824614184,
+     "horizon": 1.7150563067929367,
+     "pad": 0.26091283845891994,
+     "a_max": 2.044745137520788
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.3 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.47090582648712,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 3.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.6000235824614184,
+     "horizon": 1.7150563067929367,
+     "pad": 0.26091283845891994,
+     "a_max": 2.044745137520788
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 0.8193557020841198,
+     "min_rear": 99.0,
+     "margin": 0.019355702084119797
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 0.7318498738063937,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "pre_slow",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_slow": 5.334586337441893,
+   "zone": 31.19007273245704,
+   "a_react": 4.770963344974664
+  },
+  "robust_cost": 56.10763044781076,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart3@15",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 3.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_slow": 5.334586337441893,
+     "zone": 31.19007273245704,
+     "a_react": 4.770963344974664
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.1366022515095184,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.9466443655980583,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_slow": 5.334586337441893,
+     "zone": 31.19007273245704,
+     "a_react": 4.770963344974664
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 5.3 m/s vs 8 target, min speed 5.3)",
+     "min_front": 4.470643193031401,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_slow": 4.43493893383443,
+     "zone": 47.4962482024435,
+     "a_react": 7.2
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 4.4 m/s vs 8 target, min speed 4.4)",
+     "min_front": 4.470684616547526,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 3.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "v_slow": 4.43493893383443,
+     "zone": 47.4962482024435,
+     "a_react": 7.2
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.0818419618742925,
+     "min_rear": 99.0,
+     "margin": 1.2818419618742924
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 2.0063399957540726,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "react",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "thr": 0.3,
+   "a_react": 2.746068322935424,
+   "d_react": 36.33621723328298
+  },
+  "robust_cost": 59.51218236279963,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart3@15",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 3.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "thr": 0.3,
+     "a_react": 2.746068322935424,
+     "d_react": 36.33621723328298
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 1.9718845534803677,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.7571554989449651,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart3@15__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 15.0
+    },
+    "theta_p": {
+     "thr": 0.3,
+     "a_react": 2.746068322935424,
+     "d_react": 36.33621723328298
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 4.470511148027532,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "reachable_set",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_ped_max": 3.161180456794901,
+   "horizon": 1.8648554689941936,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "robust_cost": 174.76538174569026,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart4@12",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 4.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.161180456794901,
+     "horizon": 1.8648554689941936,
+     "pad": 0.0,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.4232966503217555,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[CLEARANCE] pedestrian clearance 0.01 m < 0.5 m",
+     "min_front": 0.012148889929062545,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.161180456794901,
+     "horizon": 1.8648554689941936,
+     "pad": 0.0,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.4 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.4708760845419055,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_ped_max": 1.7619770662014274,
+     "horizon": 2.4230965550052894,
+     "pad": 0.7300943556454071,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.3 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.4709264299431695,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 4.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_ped_max": 1.7619770662014274,
+     "horizon": 2.4230965550052894,
+     "pad": 0.7300943556454071,
+     "a_max": 2.0
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 0.8092508410423591,
+     "min_rear": 99.0,
+     "margin": 0.009250841042359126
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 0.7304877709724138,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "pre_slow",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_slow": 5.159501690878377,
+   "zone": 33.656772118606604,
+   "a_react": 3.1643659934958692
+  },
+  "robust_cost": 61.352008520395344,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart4@12",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 4.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_slow": 5.159501690878377,
+     "zone": 33.656772118606604,
+     "a_react": 3.1643659934958692
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.084255732866399,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[PHYSICS] braking 9.94 > cap 9.81 m/s2",
+     "min_front": 1.6166041693703732,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_slow": 5.159501690878377,
+     "zone": 33.656772118606604,
+     "a_react": 3.1643659934958692
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 5.1 m/s vs 8 target, min speed 5.1)",
+     "min_front": 4.470657308001404,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_slow": 4.003118894436706,
+     "zone": 41.73080941351243,
+     "a_react": 4.115531787211722
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 4.0 m/s vs 8 target, min speed 4.0)",
+     "min_front": 4.470705373405191,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 4.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "v_slow": 4.003118894436706,
+     "zone": 41.73080941351243,
+     "a_react": 4.115531787211722
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 2.0810295390680724,
+     "min_rear": 99.0,
+     "margin": 1.2810295390680724
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.9655631172371215,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "react",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "thr": 1.1344763390937518,
+   "a_react": 3.89954518527232,
+   "d_react": 25.318150337917185
+  },
+  "robust_cost": 70.61782552092893,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart4@12",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 4.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "thr": 1.1344763390937518,
+     "a_react": 3.89954518527232,
+     "d_react": 25.318150337917185
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.001289656412712,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.7216940214475158,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart4@12__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 12.0
+    },
+    "theta_p": {
+     "thr": 1.1344763390937518,
+     "a_react": 3.89954518527232,
+     "d_react": 25.318150337917185
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 4.470511148027532,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "reachable_set",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_ped_max": 3.239649477131227,
+   "horizon": 1.8675017626305739,
+   "pad": 0.3917170254657008,
+   "a_max": 2.0111581442825406
+  },
+  "robust_cost": 175.18096945394333,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart5@9",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 5.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.239649477131227,
+     "horizon": 1.8675017626305739,
+     "pad": 0.3917170254657008,
+     "a_max": 2.0111581442825406
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.326434517335595,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[CLEARANCE] pedestrian clearance 0.22 m < 0.5 m",
+     "min_front": 0.22454200817155084,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart5@9__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.239649477131227,
+     "horizon": 1.8675017626305739,
+     "pad": 0.3917170254657008,
+     "a_max": 2.0111581442825406
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.3 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.47090582648712,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart5@9__benign",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.4224976158993097,
+     "horizon": 1.9389684522585322,
+     "pad": 0.389631184470262,
+     "a_max": 2.2660342556189246
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 1.2 m/s vs 8 target, min speed 1.2)",
+     "min_front": 4.476402233426141,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart5@9",
+    "kind": "boundary",
+    "theta_s": {
+     "dart_speed": 5.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_ped_max": 3.4224976158993097,
+     "horizon": 1.9389684522585322,
+     "pad": 0.389631184470262,
+     "a_max": 2.2660342556189246
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 0.8073336884799887,
+     "min_rear": 99.0,
+     "margin": 0.007333688479988665
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 0.6915003949406013,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "pre_slow",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "v_slow": 4.603439523660766,
+   "zone": 27.053128346271293,
+   "a_react": 4.397300639898729
+  },
+  "robust_cost": 78.22842023912112,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart5@9",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 5.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_slow": 4.603439523660766,
+     "zone": 27.053128346271293,
+     "a_react": 4.397300639898729
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.0339283859638644,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[PHYSICS] braking 9.85 > cap 9.81 m/s2",
+     "min_front": 1.6811563433772931,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart5@9__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "v_slow": 4.603439523660766,
+     "zone": 27.053128346271293,
+     "a_react": 4.397300639898729
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "mitigate",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "[SLOWING] ego slowed/stopped for a pedestrian who never entered the lane (speed at pass 4.6 m/s vs 8 target, min speed 4.6)",
+     "min_front": 4.470677901038314,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc13",
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "react",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "thr": 0.3,
+   "a_react": 5.558236271085256,
+   "d_react": 36.334631730190566
+  },
+  "robust_cost": 86.33682611035121,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "dart5@9",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 5.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "thr": 0.3,
+     "a_react": 5.558236271085256,
+     "d_react": 36.334631730190566
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 1.9242116556643822,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 1.6262326164106866,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "dart5@9__benign",
+    "kind": "best",
+    "theta_s": {
+     "dart_speed": 0.0,
+     "dart_dist": 9.0
+    },
+    "theta_p": {
+     "thr": 0.3,
+     "a_react": 5.558236271085256,
+     "d_react": 36.334631730190566
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.47,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+     "min_front": 4.470511148027532,
+     "min_rear": null,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.067309965539,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "robust_cost": 0.7845646964159543,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.38667131154806256,
+     "a_brake": 3.430866965025355,
+     "shift": 0.3381492393687338
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 8.945337692035949,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 7.042821782262367,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "baseline",
+    "kind": "boundary",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.5294253695973902,
+     "a_brake": 3.9408839877885695,
+     "shift": 0.28342224710510616
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 8.588614901919847,
+     "min_rear": 99.0,
+     "margin": 1.2588577551397946
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 6.627046601342624,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "robust_cost": 1269.1979210038432,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "baseline",
+    "kind": "best",
+    "theta_s": {},
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.42455502056493777,
+     "t_lc": 1.6810583026794292,
+     "a_lc": -1.8278619650709471,
+     "a_post": 0.40103190277999423
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.747470358849991,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap); physics envelope exceeded",
+     "min_front": 0.399465569906361,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.0307404604694,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "near_deep",
+    "kind": "best",
+    "theta_s": {
+     "d0": 30.0,
+     "intrude": 1.4
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.23281975079931344,
+   "a_brake": 5.016986299962481,
+   "shift": 0.3616945431782601
+  },
+  "robust_cost": 27.185873285554372,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "near_deep",
+    "kind": "best",
+    "theta_s": {
+     "d0": 30.0,
+     "intrude": 1.4
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.23281975079931344,
+     "a_brake": 5.016986299962481,
+     "shift": 0.3616945431782601
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 4.893182943792567,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 3.838695035054859,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "near_deep",
+    "kind": "boundary",
+    "theta_s": {
+     "d0": 30.0,
+     "intrude": 1.4
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.19027178121108945,
+     "a_brake": 5.100722284906067,
+     "shift": 0.39117774186641974
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 6.192205261320005,
+     "min_rear": 99.0,
+     "margin": 1.3743652802789847
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 5.652396434196525,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.952386134778581,
+   "t_lc": 1.7393790217964695,
+   "a_lc": -4.955033207104167,
+   "a_post": 4.142207631260529
+  },
+  "robust_cost": 1433.7929104973182,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "near_deep",
+    "kind": "best",
+    "theta_s": {
+     "d0": 30.0,
+     "intrude": 1.4
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.952386134778581,
+     "t_lc": 1.7393790217964695,
+     "a_lc": -4.955033207104167,
+     "a_post": 4.142207631260529
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap), victim (footprint overlap); physics envelope exceeded",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 2100.1170009918314,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "fast_far",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 22.0,
+     "d0": 60.0,
+     "v_post": 20.0,
+     "v_esc": 22.0,
+     "esc_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.2589831357083056,
+   "a_brake": 3.188929226768152,
+   "shift": 0.23068881968789037
+  },
+  "robust_cost": 0.7425730138760804,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "fast_far",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 22.0,
+     "d0": 60.0,
+     "v_post": 20.0,
+     "v_esc": 22.0,
+     "esc_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.2589831357083056,
+     "a_brake": 3.188929226768152,
+     "shift": 0.23068881968789037
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 16.458494450250193,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 14.110746287504082,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "fast_far",
+    "kind": "boundary",
+    "theta_s": {
+     "v_ego": 22.0,
+     "d0": 60.0,
+     "v_post": 20.0,
+     "v_esc": 22.0,
+     "esc_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.5629468480243847,
+     "a_brake": 4.470434537725635,
+     "shift": 0.2269718161725805
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 14.769734785282608,
+     "min_rear": 99.0,
+     "margin": 1.2003416458522294
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 12.390758001822451,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2507264127512723,
+   "t_lc": 1.8518355121698602,
+   "a_lc": -1.9334426900275998,
+   "a_post": 0.4437987786306884
+  },
+  "robust_cost": 1262.864214545648,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "fast_far",
+    "kind": "best",
+    "theta_s": {
+     "v_ego": 22.0,
+     "d0": 60.0,
+     "v_post": 20.0,
+     "v_esc": 22.0,
+     "esc_gap": 40.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.2507264127512723,
+     "t_lc": 1.8518355121698602,
+     "a_lc": -1.9334426900275998,
+     "a_post": 0.4437987786306884
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.4982152578606926,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap); physics envelope exceeded",
+     "min_front": 0.3941301212856598,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.067309965539,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "tight_gap",
+    "kind": "best",
+    "theta_s": {
+     "esc_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "robust_cost": 0.7845646964159543,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "tight_gap",
+    "kind": "best",
+    "theta_s": {
+     "esc_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.38667131154806256,
+     "a_brake": 3.430866965025355,
+     "shift": 0.3381492393687338
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 8.945337692035949,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 7.042821782262367,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "tight_gap",
+    "kind": "boundary",
+    "theta_s": {
+     "esc_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.3757860364217157,
+     "a_brake": 4.122637292379806,
+     "shift": 0.22546867395004494
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 12.048921524651632,
+     "min_rear": 99.0,
+     "margin": 1.206211971771527
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 9.94580772005027,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4546318240390861,
+   "t_lc": 1.650478085861162,
+   "a_lc": -1.0148582034130444,
+   "a_post": 0.2634040175595358
+  },
+  "robust_cost": 1135.6042203972108,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "tight_gap",
+    "kind": "best",
+    "theta_s": {
+     "esc_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.4546318240390861,
+     "t_lc": 1.650478085861162,
+     "a_lc": -1.0148582034130444,
+     "a_post": 0.2634040175595358
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.46400441124661707,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap); physics envelope exceeded",
+     "min_front": 0.46744571635654303,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.067309965539,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "braking_lead",
+    "kind": "best",
+    "theta_s": {
+     "lead_brake": 4.0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "robust_cost": 0.7845646964159543,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "braking_lead",
+    "kind": "best",
+    "theta_s": {
+     "lead_brake": 4.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.38667131154806256,
+     "a_brake": 3.430866965025355,
+     "shift": 0.3381492393687338
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 8.945337692035949,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 7.042806523474723,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "braking_lead",
+    "kind": "boundary",
+    "theta_s": {
+     "lead_brake": 4.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.5294253695973902,
+     "a_brake": 3.9408839877885695,
+     "shift": 0.28342224710510616
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 8.588614901919847,
+     "min_rear": 99.0,
+     "margin": 1.2588577551397946
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 6.627046601342624,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "robust_cost": 1269.1979210038432,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "braking_lead",
+    "kind": "best",
+    "theta_s": {
+     "lead_brake": 4.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.42455502056493777,
+     "t_lc": 1.6810583026794292,
+     "a_lc": -1.8278619650709471,
+     "a_post": 0.40103190277999423
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.747470358849991,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap), esc_lead, esc_lead (footprint overlap), static.road; ego left the road; physics envelope exceeded",
+     "min_front": 0.399465569906361,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.067309965539,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "tailgater",
+    "kind": "best",
+    "theta_s": {
+     "rear": 1,
+     "rear_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 15.668652840445144
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 15.76930766149501,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.681458826395997,
+   "a_brake": 2.0,
+   "shift": 0.3106004070938755
+  },
+  "robust_cost": 1448.6337161740244,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "tailgater",
+    "kind": "best",
+    "theta_s": {
+     "rear": 1,
+     "rear_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.681458826395997,
+     "a_brake": 2.0,
+     "shift": 0.3106004070938755
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 5.288298983366829,
+     "min_rear": 0.019505069941487818
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with rear, rear (footprint overlap), victim (footprint overlap); physics envelope exceeded",
+     "min_front": 0.0,
+     "min_rear": 0.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "robust_cost": 1269.1979210038432,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "tailgater",
+    "kind": "best",
+    "theta_s": {
+     "rear": 1,
+     "rear_gap": 18.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.42455502056493777,
+     "t_lc": 1.6810583026794292,
+     "a_lc": -1.8278619650709471,
+     "a_post": 0.40103190277999423
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 2.747470358849991,
+     "min_rear": 1.6218356301284536
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_follow, esc_follow (footprint overlap); physics envelope exceeded",
+     "min_front": 0.399465569906361,
+     "min_rear": 1.6625882236418834,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 1900.0447715079306,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "clip",
+    "kind": "best",
+    "theta_s": {
+     "intrude": 0.55,
+     "d0": 35.0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 0.0,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with victim (footprint overlap)",
+     "min_front": 0.0,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.1,
+   "a_brake": 3.9659865814007653,
+   "shift": 0.283961259557506
+  },
+  "robust_cost": 17.428765126277433,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "clip",
+    "kind": "best",
+    "theta_s": {
+     "intrude": 0.55,
+     "d0": 35.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.1,
+     "a_brake": 3.9659865814007653,
+     "shift": 0.283961259557506
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 6.197013931128865,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 6.450986346081695,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "clip",
+    "kind": "boundary",
+    "theta_s": {
+     "intrude": 0.55,
+     "d0": 35.0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.14960910758226387,
+     "a_brake": 4.04664707982249,
+     "shift": 0.2261399796220791
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 5.847330598652945,
+     "min_rear": 99.0,
+     "margin": 1.2002731681415195
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 5.544762259720872,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.37568797664365505,
+   "t_lc": 3.207117443453069,
+   "a_lc": -0.6313266698392708,
+   "a_post": 0.32804590444532566
+  },
+  "robust_cost": 30.289790793737225,
+  "surrogate_class": "fail",
+  "surrogate_verdict": "FAIL",
+  "verified": [
+   {
+    "scenario": "clip",
+    "kind": "best",
+    "theta_s": {
+     "intrude": 0.55,
+     "d0": 35.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.37568797664365505,
+     "t_lc": 3.207117443453069,
+     "a_lc": -0.6313266698392708,
+     "a_post": 0.32804590444532566
+    },
+    "surrogate": {
+     "verdict": "FAIL",
+     "cls": "fail",
+     "min_front": 1.3943369742266647,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "still closing from esc_follow",
+     "min_front": 1.6712510518631793,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "clip",
+    "kind": "boundary",
+    "theta_s": {
+     "intrude": 0.55,
+     "d0": 35.0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.5495615011694905,
+     "t_lc": 2.3396136936525895,
+     "a_lc": -0.006377755734916946,
+     "a_post": 0.5324354368028276
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 1.7388570134740102,
+     "min_rear": 99.0,
+     "margin": 1.2388570134740102
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 2.129936917962983,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "keep",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "keep"
+  },
+  "robust_cost": 0.10777276438847849,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "benign",
+    "kind": "best",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 30.154402880991018,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 24.56259749780008,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "benign",
+    "kind": "boundary",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "keep"
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 30.154402880991018,
+     "min_rear": 99.0,
+     "margin": 14.590218868685058
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 24.56259749780008,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "brake",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "brake",
+   "t_react": 0.9324123253878313,
+   "a_brake": 2.0,
+   "shift": 0.23388146251884367
+  },
+  "robust_cost": 0.5178750139844863,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "benign",
+    "kind": "best",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.9324123253878313,
+     "a_brake": 2.0,
+     "shift": 0.23388146251884367
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 37.743866608245234,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 24.56259749780008,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "benign",
+    "kind": "boundary",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "brake",
+     "t_react": 0.3681205455517226,
+     "a_brake": 2.012224070989725,
+     "shift": 0.23357723527991003
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 38.829146302884176,
+     "min_rear": 99.0,
+     "margin": 1.2047932341813747
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 24.56259749780008,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ },
+ {
+  "case": "rc03",
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "lane_change",
+  "best_optimizer": "icem",
+  "best_theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5087581345241445,
+   "t_lc": 3.6423834032857436,
+   "a_lc": -0.4564018451786307,
+   "a_post": 0.21602492429553474
+  },
+  "robust_cost": 0.24804541016445558,
+  "surrogate_class": "success",
+  "surrogate_verdict": "PASS",
+  "verified": [
+   {
+    "scenario": "benign",
+    "kind": "best",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.5087581345241445,
+     "t_lc": 3.6423834032857436,
+     "a_lc": -0.4564018451786307,
+     "a_post": 0.21602492429553474
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 35.669637352344495,
+     "min_rear": 99.0
+    },
+    "carla": {
+     "label": "PASS",
+     "reason": "no contact, clearances kept, ego settled",
+     "min_front": 24.56259749780008,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   },
+   {
+    "scenario": "benign",
+    "kind": "boundary",
+    "theta_s": {
+     "crash": 0
+    },
+    "theta_p": {
+     "mode": "lane_change",
+     "t_react": 0.6181685025907897,
+     "t_lc": 3.3881733654714528,
+     "a_lc": 0.9398575127133642,
+     "a_post": 1.5737097185511502
+    },
+    "surrogate": {
+     "verdict": "PASS",
+     "cls": "success",
+     "min_front": 19.419846652723706,
+     "min_rear": 99.0,
+     "margin": 3.174846117466984
+    },
+    "carla": {
+     "label": "FAIL",
+     "reason": "contact with esc_lead, esc_lead (footprint overlap); physics envelope exceeded",
+     "min_front": 14.85989525779747,
+     "min_rear": 99.0,
+     "stopping_gap": null,
+     "min_wall": null
+    }
+   }
+  ]
+ }
+]

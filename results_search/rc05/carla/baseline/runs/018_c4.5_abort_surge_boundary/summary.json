@@ -1,0 +1,158 @@
+{
+  "run_id": "018_c4.5_abort_surge_boundary",
+  "rc": "RC05-01",
+  "label": "PASS",
+  "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC05-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 110.0,
+    "v_ego": 10.0,
+    "v_lead": 6.0,
+    "lead_gap": 35.0,
+    "closing": 4.5,
+    "rear_gap": 25.0,
+    "hazard_progress": 0.5,
+    "rear_acc": 2.5,
+    "rear_vmax": 20.0,
+    "t_lc": 4.0,
+    "preroll_s": 3.0,
+    "duration_s": 9.0,
+    "lane_w": 3.5,
+    "ego_bp": "vehicle.tesla.model3",
+    "lead_bp": "vehicle.citroen.c3",
+    "rear_bp": "vehicle.seat.leon",
+    "min_rear_clear": 1.0,
+    "min_lead_clear": 2.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "progress_tol": 0.08
+  },
+  "policy": {
+    "name": "lane_change_family",
+    "version": "rc05-fam-v1",
+    "params": {
+      "mode": "abort",
+      "v_target": 10.0,
+      "lane_w": 3.5,
+      "t_lc": 4.0,
+      "t_ret": 3.070722627310494,
+      "ttc_abort": 5.947878782330168,
+      "gap_abort": 6.416953112312841,
+      "acc_headway": 1.0,
+      "acc_d0": 6.0,
+      "surge_acc": 2.0867080182423416,
+      "surge_dur": 2.756203182506688
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.7121413438633741,
+      2.157782947084374,
+      2.5883175253778394,
+      2.970349354503333,
+      3.3623614621134212,
+      3.7557662229777216,
+      4.65058011357213,
+      6.415513800265791,
+      8.051569098607013
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.7121413438633741,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.37090440881562675,
+    "max_decel": 8.051569098607013
+  },
+  "metrics": {
+    "cue": {
+      "speed": 9.985751735006367,
+      "rear_gap": 24.720852616950197,
+      "closing_speed": 4.271775081609906,
+      "lane_change_progress": 0.4436888004222061,
+      "time": 247.09260436333716,
+      "rear_lane_id": -2,
+      "rear_lane_offcentre": 1.9073486328125e-06
+    },
+    "aborted": true,
+    "abort_progress": 0.4436888004222061,
+    "min_clearance_lead": 15.260971982593647,
+    "min_clearance_rear_left": 1.2200916445630683,
+    "rear_car_max_lane_offcentre": 0.06796400745462237,
+    "final_lateral": 0.0033434467252655455,
+    "stable_after_return": true,
+    "post_return": {
+      "max_lateral_dev": 0.0840031856003186,
+      "max_yaw_deg": 0.4204843690075677,
+      "max_lat_accel": 0.8981298645253428
+    },
+    "max_filtered_accel": {
+      "forward": 0.0045776001131340215,
+      "brake": 2.2287514663096615,
+      "lateral": 4.509584765257683,
+      "planar": 4.821741569911957
+    },
+    "abort_time_since_lc_start": 2.0000000298023224
+  },
+  "times": {
+    "lane_change_start": 245.09260433353484,
+    "hazard_cue": 247.09260436333716,
+    "abort": 2.0000000298023224
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc05",
+  "variation_id": "c4.5",
+  "candidate_kind": "boundary",
+  "family": "abort_surge",
+  "scenario_params": {
+    "closing": 4.5
+  },
+  "policy_params": {
+    "mode": "abort",
+    "ttc_abort": 5.947878782330168,
+    "gap_abort": 6.416953112312841,
+    "t_ret": 3.070722627310494,
+    "surge_acc": 2.0867080182423416,
+    "surge_dur": 2.756203182506688
+  },
+  "policy_source": {},
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 13.608496215561175,
+    "min_rear": 1.3051964591468421,
+    "margin": 0.005196459146842136
+  }
+}

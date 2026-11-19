@@ -1,0 +1,651 @@
+[
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 3.9627142362763985,
+   "gap_abort": 24.860523298968968,
+   "t_ret": 2.8897358476791366
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.60640620841555,
+   "min_rear": 1.6290273632271082
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.1799444976109665,
+   "gap_abort": 15.440847051087356,
+   "t_ret": 2.6591850879843193
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 12.444400462218724,
+   "min_rear": 1.3017047006206792,
+   "margin": 0.0017047006206792337
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 3.4069870311865817,
+   "gap_abort": 25.0,
+   "t_ret": 2.8878003012667075,
+   "surge_acc": 0.5,
+   "surge_dur": 1.9425687533025846
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.60992612185558,
+   "min_rear": 1.6179232813837419
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 6.091327929753761,
+   "gap_abort": 14.157069030415073,
+   "t_ret": 2.602519666794466,
+   "surge_acc": 1.5926560549937891,
+   "surge_dur": 2.343582859898146
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 6.120954706673089,
+   "min_rear": 1.3294343807857354,
+   "margin": 0.029434380785735403
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.41390145563675,
+   "surge_dur": 3.056521331747461
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5829447990205097,
+   "min_rear": 12.871851720828474
+  }
+ },
+ {
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 8.05142636783323,
+   "gap_abort": 13.263070420939776,
+   "t_ret": 2.4450928158373655
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 12.065451751327686,
+   "min_rear": 1.7789843205930955
+  }
+ },
+ {
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.798776841653185,
+   "gap_abort": 20.325909534088066,
+   "t_ret": 2.7507905163487094
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 11.215063795556077,
+   "min_rear": 1.3074518418737398,
+   "margin": 0.007451841873739762
+  }
+ },
+ {
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 7.677210198234481,
+   "gap_abort": 12.309106269702442,
+   "t_ret": 2.2909870761732183,
+   "surge_acc": 0.8087125555444797,
+   "surge_dur": 0.5186718576877962
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 11.794889612033913,
+   "min_rear": 1.7967274728964078
+  }
+ },
+ {
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 5.235535300491187,
+   "gap_abort": 17.028254511242224,
+   "t_ret": 2.4500193948972555,
+   "surge_acc": 0.5,
+   "surge_dur": 1.284028392738422
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 10.708375911524428,
+   "min_rear": 1.3062108451049517,
+   "margin": 0.006210845104951679
+  }
+ },
+ {
+  "scenario": "p0.8",
+  "theta_s": {
+   "hazard_progress": 0.8
+  },
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.413325250441512,
+   "surge_dur": 2.977696073391557
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5610822798968456,
+   "min_rear": 17.671967952529258
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 4.636773266356407,
+   "gap_abort": 14.283603122704706,
+   "t_ret": 1.3898492526214232
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.620695744072961,
+   "min_rear": 1.5861016188689927
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.156741650180459,
+   "gap_abort": 18.131592899866142,
+   "t_ret": 2.034805833979693
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.616590715853562,
+   "min_rear": 1.3026026140469529,
+   "margin": 0.002602614046952889
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 4.0923186973245365,
+   "gap_abort": 16.112346901916002,
+   "t_ret": 1.3897867868980147,
+   "surge_acc": 0.9822032670904309,
+   "surge_dur": 2.3809928816748336
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.620696134279896,
+   "min_rear": 1.5861159334296289
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 6.022597938457257,
+   "gap_abort": 9.658444368230116,
+   "t_ret": 2.0358918342638663,
+   "surge_acc": 1.2920426946199568,
+   "surge_dur": 2.922631981968622
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.616582153070397,
+   "min_rear": 1.3018372174177923,
+   "margin": 0.0018372174177923584
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "rear_gap": 12.0
+  },
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.414431740663996,
+   "surge_dur": 3.3389757807489415
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5829385373136815,
+   "min_rear": 6.022830626949684
+  }
+ },
+ {
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 6.627406305011542,
+   "gap_abort": 11.084371771672883,
+   "t_ret": 2.253147633058401
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.614909910775609,
+   "min_rear": 1.627870467715998
+  }
+ },
+ {
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.712488738923567,
+   "gap_abort": 19.95263498306163,
+   "t_ret": 3.0609810210422865
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.608571835373382,
+   "min_rear": 1.3100156066739088,
+   "margin": 0.010015606673908828
+  }
+ },
+ {
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 7.52824906883664,
+   "gap_abort": 8.49429919758951,
+   "t_ret": 1.9423825421673653,
+   "surge_acc": 0.5,
+   "surge_dur": 2.1925085178199373
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.617275483367933,
+   "min_rear": 1.6038586455208708
+  }
+ },
+ {
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 5.947878782330168,
+   "gap_abort": 6.416953112312841,
+   "t_ret": 3.070722627310494,
+   "surge_acc": 2.0867080182423416,
+   "surge_dur": 2.756203182506688
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.608496215561175,
+   "min_rear": 1.3051964591468421,
+   "margin": 0.005196459146842136
+  }
+ },
+ {
+  "scenario": "c4.5",
+  "theta_s": {
+   "closing": 4.5
+  },
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.413292822658575,
+   "surge_dur": 3.1309904215957434
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.582931710582881,
+   "min_rear": 7.350837664944223
+  }
+ },
+ {
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 5.784248004450481,
+   "gap_abort": 10.881442213697435,
+   "t_ret": 2.769581854011242
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 11.299193128996066,
+   "min_rear": 1.795983962797406
+  }
+ },
+ {
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 7.4095077820212065,
+   "gap_abort": 9.236441391517555,
+   "t_ret": 4.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 11.299047103260278,
+   "min_rear": 1.3086760913231608,
+   "margin": 0.008676091323160773
+  }
+ },
+ {
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 6.133010085368948,
+   "gap_abort": 14.108126677657456,
+   "t_ret": 2.830496816464403,
+   "surge_acc": 0.8975716400833706,
+   "surge_dur": 1.0273645617428602
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 11.056286384572218,
+   "min_rear": 1.8027316819824297
+  }
+ },
+ {
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 4.627288689075361,
+   "gap_abort": 8.251560108674791,
+   "t_ret": 3.1384499042289695,
+   "surge_acc": 1.0227928331559872,
+   "surge_dur": 0.6616114785346046
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 10.107306282302702,
+   "min_rear": 1.3053721444439288,
+   "margin": 0.005372144443928806
+  }
+ },
+ {
+  "scenario": "g40",
+  "theta_s": {
+   "rear_gap": 40.0
+  },
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.411517116450952,
+   "surge_dur": 3.0072405242213636
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5829354886761358,
+   "min_rear": 26.60279458744739
+  }
+ },
+ {
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 4.046003944773121,
+   "gap_abort": 10.914655654631398,
+   "t_ret": 1.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.621597162907108,
+   "min_rear": 1.3983686341135038
+  }
+ },
+ {
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "surge_acc": 0.0,
+   "surge_dur": 0.0,
+   "ttc_abort": 7.439795589990589,
+   "gap_abort": 12.315644392992137,
+   "t_ret": 1.2027969133779648
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.621376092833472,
+   "min_rear": 1.300291090941431,
+   "margin": 0.00029109094143092706
+  }
+ },
+ {
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 3.504141289910355,
+   "gap_abort": 13.78514925749598,
+   "t_ret": 1.0,
+   "surge_acc": 2.41119500360904,
+   "surge_dur": 0.9417935053842816
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.621597162907108,
+   "min_rear": 1.3983686341135038
+  }
+ },
+ {
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "abort_surge",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "abort",
+   "ttc_abort": 3.7814687154445195,
+   "gap_abort": 11.41715122271155,
+   "t_ret": 1.2016788627326667,
+   "surge_acc": 3.913070311623353,
+   "surge_dur": 3.2017653731413867
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 13.621375055827485,
+   "min_rear": 1.3009124598331103,
+   "margin": 0.0009124598331103351
+  }
+ },
+ {
+  "scenario": "c4.5_g12",
+  "theta_s": {
+   "closing": 4.5,
+   "rear_gap": 12.0
+  },
+  "family": "commit_surge",
+  "kind": "best",
+  "theta_p": {
+   "mode": "commit",
+   "surge_acc": 4.3892885684753065,
+   "surge_dur": 3.5551920026566948
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5827581766751089,
+   "min_rear": 4.914781037885035
+  }
+ }
+]

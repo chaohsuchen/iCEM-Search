@@ -1,0 +1,183 @@
+{
+  "run_id": "079_bnd_closing_2_commit_surge_best",
+  "rc": "RC05-01",
+  "label": "FAIL",
+  "reason": "contact with rear_left, rear_left (footprint overlap); physics envelope exceeded; rear-left clearance 0.00 m < 1.0 m; lead clearance 1.55 m < 2.0 m",
+  "end_reason": "contact",
+  "scenario": {
+    "rc": "RC05-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 110.0,
+    "v_ego": 10.0,
+    "v_lead": 6.0,
+    "lead_gap": 35,
+    "closing": 2.0,
+    "rear_gap": 12,
+    "hazard_progress": 0.5,
+    "rear_acc": 2.5,
+    "rear_vmax": 20.0,
+    "t_lc": 4.0,
+    "preroll_s": 3.0,
+    "duration_s": 9.0,
+    "lane_w": 3.5,
+    "ego_bp": "vehicle.tesla.model3",
+    "lead_bp": "vehicle.citroen.c3",
+    "rear_bp": "vehicle.seat.leon",
+    "min_rear_clear": 1.0,
+    "min_lead_clear": 2.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "progress_tol": 0.08
+  },
+  "policy": {
+    "name": "lane_change_family",
+    "version": "rc05-fam-v1",
+    "params": {
+      "mode": "commit",
+      "v_target": 10.0,
+      "lane_w": 3.5,
+      "t_lc": 4.0,
+      "t_ret": 2.5,
+      "ttc_abort": 4.5,
+      "gap_abort": 8.0,
+      "acc_headway": 1.0,
+      "acc_d0": 6.0,
+      "surge_acc": 4.406438829963319,
+      "surge_dur": 3.3959710585353458
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.7108238106776232,
+      2.157782947084374,
+      2.5883175253778394,
+      2.970349354503333,
+      3.3623614621134212,
+      3.7557662229777216,
+      4.65058011357213,
+      6.413013982808696,
+      8.051539982152098
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.7108238106776232,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.37090440881562675,
+    "max_decel": 8.051539982152098
+  },
+  "metrics": {
+    "cue": {
+      "speed": 9.985751735006367,
+      "rear_gap": 11.849515531533058,
+      "closing_speed": 1.7221906849369741,
+      "lane_change_progress": 0.4436888004222061,
+      "time": 499.8792512807995,
+      "rear_lane_id": -2,
+      "rear_lane_offcentre": 6.738773661395841e-05
+    },
+    "aborted": false,
+    "abort_progress": null,
+    "min_clearance_lead": 1.5539916782065775,
+    "min_clearance_rear_left": 0.0,
+    "rear_car_max_lane_offcentre": 0.06793471871350884,
+    "final_lateral": -3.5235465399453254,
+    "stable_after_return": null,
+    "post_return": null,
+    "max_filtered_accel": {
+      "forward": 56.387518161679466,
+      "brake": 11.202544589712877,
+      "lateral": 1.390101866787032,
+      "planar": 56.388164406151034
+    },
+    "abort_time_since_lc_start": null
+  },
+  "times": {
+    "lane_change_start": 497.8792512509972,
+    "hazard_cue": 499.8792512807995,
+    "abort": null
+  },
+  "contact": {
+    "frames": [
+      10624,
+      10625,
+      10626,
+      10627,
+      10630,
+      10631,
+      10632,
+      10633,
+      10634,
+      10635,
+      10636,
+      10637,
+      10638,
+      10639,
+      10640,
+      10641,
+      10642,
+      10643,
+      10644
+    ],
+    "actors": [
+      "rear_left",
+      "rear_left (footprint overlap)"
+    ]
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc05",
+  "variation_id": "bnd_closing_2",
+  "candidate_kind": "best",
+  "family": "commit_surge",
+  "scenario_params": {
+    "rear_gap": 12,
+    "lead_gap": 35,
+    "closing": 2.0
+  },
+  "policy_params": {
+    "mode": "commit",
+    "surge_acc": 4.406438829963319,
+    "surge_dur": 3.3959710585353458
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": 36.39912289507935,
+    "warm_start": null
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": 1.5828815308411508,
+    "min_rear": 7.123926864008951,
+    "margin": -0.7171184691588492
+  }
+}

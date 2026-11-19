@@ -1,0 +1,3303 @@
+[
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 70,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 70
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.61777811588352,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.2954355003521188,
+   "a_brake": 5.0822193960789335
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.6339556521977414,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.16637397720001648,
+   "a_brake": 5.437097636278055
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 2.621605046169994,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.709981271657831
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 6.005376678477384,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.2162143485311105
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 68.82079581090932,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.722447425404389
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.228680502277667
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1440.225475214769,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.0,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 46.0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.722447425404389
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.8438303728737324,
+  "reason": "obstacle clearance",
+  "robust_cost": 1197.9058285841,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.0,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 46.0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 47.0,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 47.0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.722447425404389
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9699999999999998,
+  "reason": "",
+  "robust_cost": 1132.1415674393145,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 47.0,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 47.0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.5,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 46.5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.228680502277667
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.9699999999999998,
+  "reason": "obstacle clearance",
+  "robust_cost": 1164.3180899161985,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "brake",
+  "key": "d_obs",
+  "x": 46.5,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 46.5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5629709561675172,
+   "a_brake": 5.015396987819221
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 70,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 70
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2000664451451,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2000664451451,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2000664451451,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2000664451451,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2000664451451,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4892888381809227,
+   "t_lc": 2.2654853407869426,
+   "a_lc": -0.09723141647504985,
+   "a_post": 2.3184827523147744
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.317950221212,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5416227186139717,
+   "t_lc": 1.583295302843416,
+   "a_lc": -0.16824065746884553,
+   "a_post": 2.6531731073364715
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.8767329454346,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "lane_change",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5737723759868214,
+   "t_lc": 2.7478584581970393,
+   "a_lc": -0.07440771828723225,
+   "a_post": 2.4030459344560353
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 70,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 70
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.7552867569264914,
+  "reason": "",
+  "robust_cost": 0.90506874318436,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.797406817969378,
+   "a_slow": 4.657638407087891,
+   "t_lc": 3.2220135975409407,
+   "a_lc": -2.9349274854406406,
+   "a_post": 0.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8638946945706982,
+  "reason": "",
+  "robust_cost": 0.9700884680363147,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 62,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 62
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.25244384005626536,
+  "reason": "obstacle clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14119297185948257,
+   "t_slow": 2.664909820165959,
+   "a_slow": 5.635786500868165,
+   "t_lc": 2.0057019156629003,
+   "a_lc": -2.554051150594725,
+   "a_post": 0.11094932041963357
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.740967724510267,
+  "reason": "",
+  "robust_cost": 3.69871811375752,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 56,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 56
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.6724163990657908,
+   "a_slow": 5.890772777169265,
+   "t_lc": 1.6020028929468304,
+   "a_lc": -2.8535754464499505,
+   "a_post": 0.04583178059140533
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.7897054433029447,
+  "reason": "",
+  "robust_cost": 7.749383909398518,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 52,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 52
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 3.0,
+   "a_slow": 6.0,
+   "t_lc": 2.249282302667389,
+   "a_lc": -3.0,
+   "a_post": 2.0727607235238135
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1187.2737272786749,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 48,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 48
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.9300086378059045,
+   "a_slow": 6.0,
+   "t_lc": 2.9959978752777694,
+   "a_lc": -3.0,
+   "a_post": 3.889469253210689
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 44,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 44
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.860017275611809,
+   "a_slow": 6.0,
+   "t_lc": 3.7427134478881494,
+   "a_lc": -3.0,
+   "a_post": 5.706177782897564
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1450.5241550546743,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 40,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 40
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 50.0,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 50.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.460521773741257,
+   "a_slow": 5.999678575615105,
+   "t_lc": 1.5,
+   "a_lc": -2.9261235418416165,
+   "a_post": 0.19281414381213807
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.32002441631731804,
+  "reason": "",
+  "robust_cost": 60.49259935974355,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 50.0,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 50.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 49.0,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 49.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.3329982736206683,
+   "a_slow": 6.0,
+   "t_lc": 1.5,
+   "a_lc": -2.839504278853074,
+   "a_post": 0.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.06803347144169392,
+  "reason": "fol clearance",
+  "robust_cost": 78.24008287687637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 49.0,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 49.0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 49.5,
+  "kind": "best",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 49.5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.451300639008947,
+   "a_slow": 6.0,
+   "t_lc": 1.5,
+   "a_lc": -3.0,
+   "a_post": 0.18000108028977757
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.29944132517739885,
+  "reason": "fol clearance",
+  "robust_cost": 68.03531578892199,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "d_obs",
+  "family": "staged",
+  "key": "d_obs",
+  "x": 49.5,
+  "kind": "ref",
+  "theta_s": {
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "d_obs": 49.5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.2927364556726907,
+   "t_slow": 2.729386982384598,
+   "a_slow": 3.371521711411818,
+   "t_lc": 3.041364184208183,
+   "a_lc": -2.8704223992424875,
+   "a_post": 0.4139964781209019
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 34,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 34
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.356650306218161
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.8628833830914395
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 8.369116459964719
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 8.875349536837998
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 9.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 9.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "brake",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 34,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 34
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9693725998161629,
+  "reason": "",
+  "robust_cost": 0.8358939304412625,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 2.878233324551817,
+   "a_lc": -4.1606757808639045,
+   "a_post": 1.4040703338578588
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6228400020582878,
+  "reason": "",
+  "robust_cost": 2.2393903338091437,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.11838473367710495,
+  "reason": "fol clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 3.8175622580825337,
+   "a_lc": -5.0,
+   "a_post": 1.81563389781774
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.15041109391076635,
+  "reason": "fol clearance",
+  "robust_cost": 63.43914902925357,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.12386655953154806,
+   "t_lc": 2.935980917330282,
+   "a_lc": -1.6063724842144476,
+   "a_post": 1.661109163343991
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1260.6498314995185,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.49873029051381934,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15867127757131486,
+   "t_lc": 2.850800131102714,
+   "a_lc": -0.6722764844613067,
+   "a_post": 1.0646199804427527
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1279.321933049444,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15599969282299958,
+   "t_lc": 2.86406010599725,
+   "a_lc": -0.0806897075554387,
+   "a_post": 0.34064479930778835
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1018.7515808124452,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.484843202661736,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1745509585150396,
+   "t_lc": 2.971783223774376,
+   "a_lc": -0.05741005735647953,
+   "a_post": 1.5411266342417302
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": 1017.2542603781468,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with side",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 25.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 3.583914178321376,
+   "a_lc": -5.0,
+   "a_post": 1.3903158609862791
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.22928765778055704,
+  "reason": "fol clearance",
+  "robust_cost": 47.566102118841215,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 25.0
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 26.5,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 26.5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 3.380994265552437,
+   "a_lc": -5.0,
+   "a_post": 2.1452123864680273
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.43916450099608295,
+  "reason": "",
+  "robust_cost": 39.43454037651021,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 26.5,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 26.5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.75,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 25.75
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 3.478065266387068,
+   "a_lc": -4.972335348912027,
+   "a_post": 1.9633790112538791
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3254243800601807,
+  "reason": "",
+  "robust_cost": 43.627658468268656,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "lane_change",
+  "key": "side_pos",
+  "x": 25.75,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 25.75
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.25082382250647883,
+   "t_lc": 2.1788339609759895,
+   "a_lc": -2.401669864906367,
+   "a_post": 1.921973875238879
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 34,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 34
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1484.391812781677,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.877901608581728,
+   "a_slow": 6.0,
+   "t_lc": 3.296382838019027,
+   "a_lc": -0.23593051265714848,
+   "a_post": 4.036013121196176
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 28,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 28
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.8079102463876326,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -1.4949960447612685,
+   "a_post": 5.852721650883051
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 22,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 22
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.737918884193537,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -2.754061576865389,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 16,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 16
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.6679275219994416,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 10
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.597936159805346,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 4,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 4
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.5279447976112506,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "side_pos",
+  "family": "staged",
+  "key": "side_pos",
+  "x": 0,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "v_side": 22.0,
+   "side_pos": 0
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 30
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.356650306218161
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.8628833830914395
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 8.369116459964719
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 8.875349536837998
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 9.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1294.8517622339637,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "brake",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.850417229344882
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 30
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.5,
+  "reason": "contact with fol",
+  "robust_cost": 1080.2263565554788,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.17012322152183068,
+   "t_lc": 2.0634182640546963,
+   "a_lc": -1.6943918738660804,
+   "a_post": 2.2211065016483205
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.1360406768765612,
+  "reason": "",
+  "robust_cost": 0.8244258686112194,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6048654192621092,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1476364109844395,
+   "t_lc": 2.156042246709432,
+   "a_lc": -0.6506024599058469,
+   "a_post": 0.9699302720488379
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8596538949518051,
+  "reason": "",
+  "robust_cost": 0.5672337483135581,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6048654192621092,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.13964048904946524,
+   "t_lc": 2.157071493778086,
+   "a_lc": -0.46426972452536663,
+   "a_post": 0.6881339471444613
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8176500083335061,
+  "reason": "",
+  "robust_cost": 0.5317437026084587,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6048654192621092,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.12563160272100066,
+   "t_lc": 2.1556019033354152,
+   "a_lc": -0.3364918103346044,
+   "a_post": 0.3780340374071315
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.803224034208093,
+  "reason": "",
+  "robust_cost": 0.4862492908851821,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6048654192621092,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1317113549020043,
+   "t_lc": 2.1037634076905976,
+   "a_lc": -0.060207134772350734,
+   "a_post": 0.055735998957920516
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.8035043649591167,
+  "reason": "",
+  "robust_cost": 0.4505507507230938,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "lane_change",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4928576408570805,
+   "t_lc": 1.768147761237334,
+   "a_lc": -0.2567947127488548,
+   "a_post": 3.7111055813355014
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.6048654192621092,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 30,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 30
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1484.391812781677,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.877901608581728,
+   "a_slow": 6.0,
+   "t_lc": 3.296382838019027,
+   "a_lc": -0.23593051265714848,
+   "a_post": 4.036013121196176
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 20
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.8079102463876326,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -1.4949960447612685,
+   "a_post": 5.852721650883051
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 14,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 14
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.737918884193537,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -2.754061576865389,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 10,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 10
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.6679275219994416,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 7
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "best",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.597936159805346,
+   "a_slow": 6.0,
+   "t_lc": 4.0,
+   "a_lc": -3.0,
+   "a_post": 6.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": 1320.9916603427976,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "fol_gap",
+  "family": "staged",
+  "key": "fol_gap",
+  "x": 5,
+  "kind": "ref",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 30.0,
+   "v_side": 23.0,
+   "fol_gap": 5
+  },
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 2.636272751327947,
+   "a_slow": 4.640633308503374,
+   "t_lc": 3.038838326888823,
+   "a_lc": 0.24181110613995482,
+   "a_post": 4.165840485493437
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.5,
+  "reason": "contact with obstacle",
+  "robust_cost": null,
+  "warm": null
+ }
+]

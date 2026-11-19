@@ -1,0 +1,172 @@
+{
+  "run_id": "002_bnd_d_obs_75_brake_ref",
+  "rc": "RC04-01",
+  "label": "FAIL",
+  "reason": "contact with obstacle, obstacle (footprint overlap); physics envelope exceeded",
+  "end_reason": "contact",
+  "scenario": {
+    "rc": "RC04-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 40.0,
+    "preroll_s": 1.5,
+    "duration_s": 7.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "obs_bp": "vehicle.citroen.c3",
+    "fol_bp": "vehicle.audi.a2",
+    "min_clear": 0.5,
+    "settle_tol": 0.6,
+    "side": 1,
+    "v_ego": 22.0,
+    "d_obs": 75,
+    "obs_lane": 0,
+    "v_side": 26.0,
+    "side_pos": 0.0,
+    "side_hl": 2.4,
+    "side_hw": 0.95,
+    "side_acc": 0.0,
+    "side_react": 0.8,
+    "fol": 1,
+    "fol_gap": 20.0,
+    "fol_react": 0.8,
+    "fol_headway": 1.2,
+    "lane_w": 3.5
+  },
+  "policy": {
+    "name": "escape",
+    "version": "rc03-v1",
+    "params": {
+      "mode": "brake",
+      "v_target": 22.0,
+      "lane_w": 3.5,
+      "esc_dir": -1.0,
+      "t_react": 0.3944234256534951,
+      "a_brake": 3.1456828138690565,
+      "shift": 0.0,
+      "t_lc": 2.5,
+      "a_lc": 0.0,
+      "a_post": 0.0,
+      "t_slow": 0.0,
+      "a_slow": 0.0
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3
+    ],
+    "brake_decel": [
+      3.279971248431857,
+      3.7649535484940904,
+      4.246829719157543,
+      4.665796055726598,
+      5.090292933836814,
+      5.509796515519087,
+      6.464137608078051
+    ],
+    "brake_cap": 0.3,
+    "coast_decel": 3.279971248431857,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.5955897549491816,
+    "max_decel": 6.464137608078051
+  },
+  "metrics": {
+    "min_front_gap": 0.0,
+    "min_rear_gap": 1.5236296383207257,
+    "min_clear_by": {
+      "obstacle": 0.0,
+      "side": 1.5114966712232547,
+      "fol": 1.5236296383207257
+    },
+    "final_lateral": 0.0004416126280403695,
+    "stopped": true,
+    "settled": true,
+    "max_filtered_accel": {
+      "forward": 3.6867938923256083,
+      "brake": 14.980262779993689,
+      "lateral": 0.11882460923462539,
+      "planar": 14.980734035601326
+    }
+  },
+  "times": {},
+  "contact": {
+    "frames": [
+      3398,
+      3399,
+      3400,
+      3401,
+      3402,
+      3403,
+      3404,
+      3405,
+      3406,
+      3407,
+      3408,
+      3409,
+      3410,
+      3411,
+      3412,
+      3413,
+      3414,
+      3415,
+      3416,
+      3417,
+      3418
+    ],
+    "actors": [
+      "obstacle",
+      "obstacle (footprint overlap)"
+    ]
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc06",
+  "variation_id": "bnd_d_obs_75",
+  "candidate_kind": "ref",
+  "family": "brake",
+  "scenario_params": {
+    "side_pos": 0.0,
+    "v_side": 26.0,
+    "d_obs": 75
+  },
+  "policy_params": {
+    "mode": "brake",
+    "shift": 0.0,
+    "t_react": 0.3944234256534951,
+    "a_brake": 3.1456828138690565
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": null,
+    "warm_start": null
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 0.0,
+    "min_rear": 1.4699999999999998,
+    "margin": -0.5
+  }
+}

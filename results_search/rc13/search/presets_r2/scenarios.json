@@ -1,0 +1,26 @@
+{
+ "easy": {
+  "dart_dist": 25.0,
+  "dart_speed": 2.0
+ },
+ "mid": {
+  "dart_dist": 15.0,
+  "dart_speed": 3.0
+ },
+ "near": {
+  "dart_dist": 12.0,
+  "dart_speed": 4.0
+ },
+ "react_fails": {
+  "dart_dist": 9.0,
+  "dart_speed": 5.0
+ },
+ "hard": {
+  "dart_dist": 6.5,
+  "dart_speed": 5.0
+ },
+ "very_hard": {
+  "dart_dist": 6.0,
+  "dart_speed": 7.0
+ }
+}

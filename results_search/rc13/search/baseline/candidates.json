@@ -1,0 +1,826 @@
+[
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 2.635185893087309,
+   "horizon": 1.8610286756086993,
+   "pad": 0.1704771806096442,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.33528643581009315,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 2.635185893087309,
+   "horizon": 1.8610286756086993,
+   "pad": 0.1704771806096442,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 4.1440861372685625,
+   "horizon": 1.2976857599543041,
+   "pad": 0.6903858592201533,
+   "a_max": 3.2512824629359085
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 4.1440861372685625,
+   "horizon": 1.2976857599543041,
+   "pad": 0.6903858592201533,
+   "a_max": 3.2512824629359085
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8019061048385112,
+   "min_rear": 99.0,
+   "margin": 0.0019061048385112245
+  }
+ },
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.81720764951514,
+   "zone": 34.124802796161404,
+   "a_react": 4.558931081684608
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.072093390685555,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.81720764951514,
+   "zone": 34.124802796161404,
+   "a_react": 4.558931081684608
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 5.106465796555116,
+   "zone": 29.80785051751107,
+   "a_react": 5.1087755053719555
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 5.106465796555116,
+   "zone": 29.80785051751107,
+   "a_react": 5.1087755053719555
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.081782064119213,
+   "min_rear": 99.0,
+   "margin": 1.281782064119213
+  }
+ },
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.3041016710618398,
+   "a_react": 5.473348941998978,
+   "d_react": 18.286146124033753
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1064499975296544,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.3041016710618398,
+   "a_react": 5.473348941998978,
+   "d_react": 18.286146124033753
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 20.0
+  },
+  "family": "react",
+  "kind": "boundary",
+  "theta_p": {
+   "thr": 0.606427214362861,
+   "a_react": 5.216390413883933,
+   "d_react": 32.01356879563342
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart2@20",
+  "theta_s": {
+   "dart_speed": 2.0,
+   "dart_dist": 20.0
+  },
+  "family": "react",
+  "kind": "boundary",
+  "theta_p": {
+   "thr": 0.606427214362861,
+   "a_react": 5.216390413883933,
+   "d_react": 32.01356879563342
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0818706704520795,
+   "min_rear": 99.0,
+   "margin": 1.2818706704520795
+  }
+ },
+ {
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.6647645620806717,
+   "horizon": 1.6725962206531628,
+   "pad": 0.30446734064510816,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.6345755601322651,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 15.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.6647645620806717,
+   "horizon": 1.6725962206531628,
+   "pad": 0.30446734064510816,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 15.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.6000235824614184,
+   "horizon": 1.7150563067929367,
+   "pad": 0.26091283845891994,
+   "a_max": 2.044745137520788
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.6000235824614184,
+   "horizon": 1.7150563067929367,
+   "pad": 0.26091283845891994,
+   "a_max": 2.044745137520788
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8193557020841198,
+   "min_rear": 99.0,
+   "margin": 0.019355702084119797
+  }
+ },
+ {
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.334586337441893,
+   "zone": 31.19007273245704,
+   "a_react": 4.770963344974664
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.1366022515095184,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 15.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.334586337441893,
+   "zone": 31.19007273245704,
+   "a_react": 4.770963344974664
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 15.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.43493893383443,
+   "zone": 47.4962482024435,
+   "a_react": 7.2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.43493893383443,
+   "zone": 47.4962482024435,
+   "a_react": 7.2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0818419618742925,
+   "min_rear": 99.0,
+   "margin": 1.2818419618742924
+  }
+ },
+ {
+  "scenario": "dart3@15",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 2.746068322935424,
+   "d_react": 36.33621723328298
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.9718845534803677,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart3@15__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 15.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 2.746068322935424,
+   "d_react": 36.33621723328298
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.161180456794901,
+   "horizon": 1.8648554689941936,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.4232966503217555,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 12.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.161180456794901,
+   "horizon": 1.8648554689941936,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 12.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 1.7619770662014274,
+   "horizon": 2.4230965550052894,
+   "pad": 0.7300943556454071,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 1.7619770662014274,
+   "horizon": 2.4230965550052894,
+   "pad": 0.7300943556454071,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8092508410423591,
+   "min_rear": 99.0,
+   "margin": 0.009250841042359126
+  }
+ },
+ {
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.159501690878377,
+   "zone": 33.656772118606604,
+   "a_react": 3.1643659934958692
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.084255732866399,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 12.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.159501690878377,
+   "zone": 33.656772118606604,
+   "a_react": 3.1643659934958692
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 12.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.003118894436706,
+   "zone": 41.73080941351243,
+   "a_react": 4.115531787211722
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.003118894436706,
+   "zone": 41.73080941351243,
+   "a_react": 4.115531787211722
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0810295390680724,
+   "min_rear": 99.0,
+   "margin": 1.2810295390680724
+  }
+ },
+ {
+  "scenario": "dart4@12",
+  "theta_s": {
+   "dart_speed": 4.0,
+   "dart_dist": 12.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.1344763390937518,
+   "a_react": 3.89954518527232,
+   "d_react": 25.318150337917185
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.001289656412712,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart4@12__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 12.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.1344763390937518,
+   "a_react": 3.89954518527232,
+   "d_react": 25.318150337917185
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.239649477131227,
+   "horizon": 1.8675017626305739,
+   "pad": 0.3917170254657008,
+   "a_max": 2.0111581442825406
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.326434517335595,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 9.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.239649477131227,
+   "horizon": 1.8675017626305739,
+   "pad": 0.3917170254657008,
+   "a_max": 2.0111581442825406
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 9.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.4224976158993097,
+   "horizon": 1.9389684522585322,
+   "pad": 0.389631184470262,
+   "a_max": 2.2660342556189246
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.4224976158993097,
+   "horizon": 1.9389684522585322,
+   "pad": 0.389631184470262,
+   "a_max": 2.2660342556189246
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8073336884799887,
+   "min_rear": 99.0,
+   "margin": 0.007333688479988665
+  }
+ },
+ {
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.603439523660766,
+   "zone": 27.053128346271293,
+   "a_react": 4.397300639898729
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.0339283859638644,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 9.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.603439523660766,
+   "zone": 27.053128346271293,
+   "a_react": 4.397300639898729
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9",
+  "theta_s": {
+   "dart_speed": 5.0,
+   "dart_dist": 9.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 5.558236271085256,
+   "d_react": 36.334631730190566
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.9242116556643822,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "dart5@9__benign",
+  "theta_s": {
+   "dart_speed": 0.0,
+   "dart_dist": 9.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 5.558236271085256,
+   "d_react": 36.334631730190566
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ }
+]

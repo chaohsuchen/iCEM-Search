@@ -1,0 +1,149 @@
+{
+  "run_id": "115_bnd_dart_speed_3_pre_slow_best",
+  "rc": "RC13-01",
+  "label": "PASS",
+  "reason": "passed the pedestrian at near-target speed; no contact, no unnecessary slowing, physics within envelope",
+  "end_reason": "stopped",
+  "scenario": {
+    "rc": "RC13-01",
+    "map": "Town03",
+    "road": 3,
+    "lane": -2,
+    "s0": 3.0,
+    "ego_s": 6.0,
+    "v_ego": 8.0,
+    "ped_s": 78.0,
+    "ped_speed": 1.4,
+    "ped_t": 5.85,
+    "preroll_s": 2.5,
+    "duration_s": 11.0,
+    "true_v_ped_max": 1.8,
+    "true_horizon": 2.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "speed_tol": 0.5,
+    "min_speed_ratio": 0.9,
+    "sidewalk": [
+      4.85,
+      6.85
+    ],
+    "lane_half": 1.75,
+    "dart_speed": 3.0,
+    "dart_dist": 12
+  },
+  "policy": {
+    "name": "pre_slow",
+    "version": "rc13-preslow-v1",
+    "params": {
+      "v_target": 8.0,
+      "v_slow": 4.956751755565369,
+      "zone": 32.75268612082131,
+      "a_react": 3.810283204958247,
+      "lane_half": 1.75
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.9998143110181177,
+      2.390394223347727,
+      2.7596328580413108,
+      3.1133621537648004,
+      3.486676654551118,
+      3.8488713468957276,
+      4.720980942254731,
+      6.408790931254317,
+      7.958614260779554
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.9998143110181177,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.3451889858803437,
+    "max_decel": 7.958614260779554
+  },
+  "metrics": {
+    "first_predicted_lane_overlap_t": null,
+    "first_predicted_ego_conflict_t": 6.3000000938773155,
+    "pedestrian_entered_lane": true,
+    "min_lateral_distance_to_ped": -1.2390285034789794,
+    "yield_onset_t": 6.3000000938773155,
+    "speed_at_pass": null,
+    "min_speed": 5.127566952939012e-05,
+    "stopped": true,
+    "unnecessary_slowing": false,
+    "min_ped_dist": 1.5976509490077546,
+    "dart": true,
+    "physics_violations": [],
+    "physics_ok": true,
+    "max_filtered_accel": {
+      "forward": 0.015765727662649536,
+      "brake": 9.18909331189417,
+      "lateral": 0.0012773280468965148,
+      "planar": 9.189093320857982
+    },
+    "peak_decel_filtered": 9.18909331189417,
+    "peak_fwd_accel_filtered": 0.009711149150074223
+  },
+  "times": {
+    "cue": 512.7305148467422,
+    "first_pred_lane_overlap": null,
+    "yield_onset": 6.3000000938773155
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "ped_violations": 76,
+    "ped_frames_in_lane": 58
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc13",
+  "variation_id": "bnd_dart_speed_3",
+  "candidate_kind": "best",
+  "family": "pre_slow",
+  "scenario_params": {
+    "dart_dist": 12,
+    "dart_speed": 3.0
+  },
+  "policy_params": {
+    "v_slow": 4.956751755565369,
+    "zone": 32.75268612082131,
+    "a_react": 3.810283204958247
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": 68.96929545817312,
+    "warm_start": "neighbour"
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 1.8256254938190921,
+    "min_rear": 99.0,
+    "margin": 1.025625493819092
+  }
+}

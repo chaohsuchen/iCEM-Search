@@ -1,0 +1,165 @@
+{
+  "run_id": "015_tight_gap_lane_change_best",
+  "rc": "RC03-01",
+  "label": "FAIL",
+  "reason": "contact with esc_follow, esc_follow (footprint overlap); physics envelope exceeded",
+  "end_reason": "contact",
+  "scenario": {
+    "rc": "RC03-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 40.0,
+    "preroll_s": 1.5,
+    "duration_s": 5.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "victim_bp": "vehicle.citroen.c3",
+    "esc_bp": "vehicle.seat.leon",
+    "rear_bp": "vehicle.audi.a2",
+    "min_clear": 0.5,
+    "settle_tol": 0.6,
+    "side": 1,
+    "crash": 1,
+    "v_ego": 18.0,
+    "d0": 45.0,
+    "intrude": 1.0,
+    "psi_rest": 0.8,
+    "T_slide": 2.0,
+    "v_post": 16.0,
+    "v_esc": 18.0,
+    "esc_gap": 18.0,
+    "gap_center": 0.0,
+    "lead_brake": 0.0,
+    "lead_react": 0.7,
+    "rear": 0,
+    "rear_gap": 20.0,
+    "lane_w": 3.5
+  },
+  "policy": {
+    "name": "escape",
+    "version": "rc03-v1",
+    "params": {
+      "mode": "lane_change",
+      "v_target": 18.0,
+      "lane_w": 3.5,
+      "esc_dir": -1.0,
+      "t_react": 0.4546318240390861,
+      "a_brake": 6.0,
+      "shift": 0.0,
+      "t_lc": 1.650478085861162,
+      "a_lc": -1.0148582034130444,
+      "a_post": 0.2634040175595358
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5
+    ],
+    "brake_decel": [
+      2.7465486440866034,
+      3.2357584358517157,
+      3.6946465742865304,
+      4.101332241251567,
+      4.519406486930977,
+      4.931126312106551,
+      5.882825587157678,
+      7.682828399579182
+    ],
+    "brake_cap": 0.5,
+    "coast_decel": 2.7465486440866034,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.5376400522824886,
+    "max_decel": 7.682828399579182
+  },
+  "metrics": {
+    "min_front_gap": 0.46744571635654303,
+    "min_rear_gap": 99.0,
+    "min_clear_by": {
+      "victim": 0.46744571635654303,
+      "esc_lead": 6.939384743871389,
+      "esc_follow": 0.0
+    },
+    "final_lateral": -3.5709300890721436,
+    "stopped": false,
+    "settled": true,
+    "max_filtered_accel": {
+      "forward": 19.544789775650983,
+      "brake": 2.7039029357147744,
+      "lateral": 5.854278924856101,
+      "planar": 19.566533726102758
+    }
+  },
+  "times": {},
+  "contact": {
+    "frames": [
+      5881,
+      5882,
+      5883,
+      5884,
+      5885,
+      5886,
+      5887,
+      5888,
+      5889,
+      5890,
+      5891,
+      5892,
+      5893,
+      5894,
+      5895,
+      5896,
+      5897,
+      5898,
+      5899,
+      5900,
+      5901
+    ],
+    "actors": [
+      "esc_follow",
+      "esc_follow (footprint overlap)"
+    ]
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc03",
+  "variation_id": "tight_gap",
+  "candidate_kind": "best",
+  "family": "lane_change",
+  "scenario_params": {
+    "esc_gap": 18.0
+  },
+  "policy_params": {
+    "mode": "lane_change",
+    "t_react": 0.4546318240390861,
+    "t_lc": 1.650478085861162,
+    "a_lc": -1.0148582034130444,
+    "a_post": 0.2634040175595358
+  },
+  "policy_source": {},
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 0.46400441124661707,
+    "min_rear": 99.0
+  }
+}

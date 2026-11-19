@@ -1,0 +1,2150 @@
+[
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 25
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.6613009771120206,
+  "reason": "",
+  "robust_cost": 176.37408903518582,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "v_ped_max": 4.224738932810549,
+   "horizon": 1.5328683289100047,
+   "pad": 0.04601589711874953,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.2727110179561833,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.74099341853096,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.9596620039049384,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "v_ped_max": 3.94771392170671,
+   "horizon": 1.6708044222403178,
+   "pad": 0.033430591974188344,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.16542443986773486,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.79474892827653,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.3729488666299688,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "v_ped_max": 3.535760678606105,
+   "horizon": 1.7809019839753424,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.4400233007794724,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.79474892827653,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.07114557494335122,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "v_ped_max": 3.453848538660859,
+   "horizon": 1.8246969867520773,
+   "pad": 0.02145702837821658,
+   "a_max": 2.0103786995762074
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.47455426995961136,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.1682094363871,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.19516092462698958,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "v_ped_max": 1.361320841485908,
+   "horizon": 1.7153011547858044,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3546836953119227,
+  "reason": "pedestrian clearance",
+  "robust_cost": 17.637385331615206,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.37020302661557014,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "v_ped_max": 1.474478040469962,
+   "horizon": 1.6492487231401534,
+   "pad": 0.12808453008865642,
+   "a_max": 2.1090961218391615
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.03398342628590795,
+  "reason": "pedestrian clearance",
+  "robust_cost": 17.637385331615206,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.4855025235917977,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 22.5,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 22.5
+  },
+  "theta_p": {
+   "v_ped_max": 4.224738932810549,
+   "horizon": 1.5328683289100047,
+   "pad": 0.04601589711874953,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.03185887191334297,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.74099341853096,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 22.5,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 22.5
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.3216799721050594,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 23.75,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 23.75
+  },
+  "theta_p": {
+   "v_ped_max": 4.224738932810549,
+   "horizon": 1.5328683289100047,
+   "pad": 0.04601589711874953,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.06473196250965435,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.74099341853096,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 23.75,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 23.75
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.507694711388382,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 24.375,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 24.375
+  },
+  "theta_p": {
+   "v_ped_max": 4.224738932810549,
+   "horizon": 1.5328683289100047,
+   "pad": 0.04601589711874953,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.10994060111100629,
+  "reason": "",
+  "robust_cost": 174.74099341853096,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "reachable_set",
+  "key": "dart_dist",
+  "x": 24.375,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 24.375
+  },
+  "theta_p": {
+   "v_ped_max": 4.180556267140637,
+   "horizon": 1.8622515197734155,
+   "pad": 0.21475770748243717,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.5810358488512295,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 25
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2849173327289665,
+  "reason": "",
+  "robust_cost": 24.651885465368466,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "v_slow": 6.239766421544323,
+   "zone": 32.79890314026983,
+   "a_react": 7.014391098021906
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2827435776920455,
+  "reason": "",
+  "robust_cost": 30.125869080705712,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2667397440396828,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "v_slow": 5.336182093617101,
+   "zone": 29.70530387463503,
+   "a_react": 6.4937010051557875
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3327980545396374,
+  "reason": "physics: braking > cap",
+  "robust_cost": 56.05958911858055,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.9010579995247525,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "v_slow": 4.693797798683198,
+   "zone": 32.580839413696694,
+   "a_react": 5.519689063757708
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2710884037725665,
+  "reason": "physics: braking > cap",
+  "robust_cost": 75.27264305313398,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.9705405924115809,
+  "reason": "contact: pedestrian",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "v_slow": 4.049699101958208,
+   "zone": 33.101864606270205,
+   "a_react": 5.136525142248763
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.8805304618805394,
+  "reason": "physics: braking > cap",
+  "robust_cost": 94.0460341665128,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.8115811729804641,
+  "reason": "contact: pedestrian",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "v_slow": 3.0964760754641256,
+   "zone": 31.041272400668383,
+   "a_react": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.24601866723425786,
+  "reason": "pedestrian clearance; physics: braking > cap",
+  "robust_cost": 1115.598676118247,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.8115811729804641,
+  "reason": "contact: pedestrian",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "v_slow": 2.0,
+   "zone": 26.05507670036957,
+   "a_react": 7.2
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -0.8115811729804641,
+  "reason": "contact: pedestrian",
+  "robust_cost": 1115.598676118247,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.4221953045340533,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 17.5,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 17.5
+  },
+  "theta_p": {
+   "v_slow": 5.845079216678378,
+   "zone": 33.13437800025791,
+   "a_react": 6.833705417031291
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3361421684307546,
+  "reason": "physics: braking > cap",
+  "robust_cost": 41.37814939252237,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 17.5,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 17.5
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2332069128603822,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 18.75,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.75
+  },
+  "theta_p": {
+   "v_slow": 6.022432215691874,
+   "zone": 35.608173385808676,
+   "a_react": 6.849348020755662
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2984243429314406,
+  "reason": "",
+  "robust_cost": 35.494925081921394,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 18.75,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.75
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2483561513613355,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 18.125,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.125
+  },
+  "theta_p": {
+   "v_slow": 5.97553655607906,
+   "zone": 46.32748108233118,
+   "a_react": 6.371721952358897
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3388057238984887,
+  "reason": "physics: braking > cap",
+  "robust_cost": 38.228062848959176,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "pre_slow",
+  "key": "dart_dist",
+  "x": 18.125,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.125
+  },
+  "theta_p": {
+   "v_slow": 7.1280228098278755,
+   "zone": 34.45894021568843,
+   "a_react": 6.642818330188765
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2428336976568206,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 25,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 25
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2876608029451833,
+  "reason": "",
+  "robust_cost": 24.735312101475234,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "thr": 2.696937998372379,
+   "a_react": 5.44316915576389,
+   "d_react": 45.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2839131977367375,
+  "reason": "",
+  "robust_cost": 22.364374225247914,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 20,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 20
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3228842933246485,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "thr": 1.4414213800674087,
+   "a_react": 5.215625825274042,
+   "d_react": 36.27862336922854
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2875942968360052,
+  "reason": "physics: braking > cap",
+  "robust_cost": 69.8045746178037,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 15,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 15
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.166288096692199,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "thr": 2.140483142565612,
+   "a_react": 4.430835802363713,
+   "d_react": 45.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.0984371135618431,
+  "reason": "physics: braking > cap",
+  "robust_cost": 75.00928368914099,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 12,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 12
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 0.08213178612913913,
+  "reason": "pedestrian clearance; physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "thr": 1.1305943412218817,
+   "a_react": 5.807594803668437,
+   "d_react": 43.57164875628936
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.0,
+  "reason": "unnecessary slowing; physics: braking > cap",
+  "robust_cost": 404.68358013756625,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 9,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 9
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.8115811729804641,
+  "reason": "contact: pedestrian",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "thr": 1.54003876009147,
+   "a_react": 5.816304659691867,
+   "d_react": 41.93179035489859
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -4.926639462221115,
+  "reason": "unnecessary slowing; physics: braking > cap",
+  "robust_cost": 335.6291527803858,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 7,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 7
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.8115811729804641,
+  "reason": "contact: pedestrian",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "thr": 2.4974792734822056,
+   "a_react": 6.3985458373452015,
+   "d_react": 41.47755552243713
+  },
+  "verdict": "FAIL",
+  "cls": "mitigate",
+  "margin": -1.7667306398779319,
+  "reason": "unnecessary slowing; physics: braking > cap",
+  "robust_cost": 247.73704657482745,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 6,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 6
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.6233821092869734,
+  "reason": "pedestrian clearance",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 17.5,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 17.5
+  },
+  "theta_p": {
+   "thr": 2.013610404007511,
+   "a_react": 4.794963714725045,
+   "d_react": 45.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.306732770099899,
+  "reason": "physics: braking > cap",
+  "robust_cost": 58.46621530666758,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 17.5,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 17.5
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2855881764346295,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 18.75,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.75
+  },
+  "theta_p": {
+   "thr": 2.3015136268325156,
+   "a_react": 4.877139813592288,
+   "d_react": 42.78589890541592
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.2929698736480904,
+  "reason": "",
+  "robust_cost": 47.450795749647796,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 18.75,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.75
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3038147713096182,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 18.125,
+  "kind": "best",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.125
+  },
+  "theta_p": {
+   "thr": 1.6181860324676471,
+   "a_react": 4.228934372553442,
+   "d_react": 43.07518076084662
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.3212393590937526,
+  "reason": "",
+  "robust_cost": 56.99738314210116,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_dist",
+  "family": "react",
+  "key": "dart_dist",
+  "x": 18.125,
+  "kind": "ref",
+  "theta_s": {
+   "dart_speed": 3.0,
+   "dart_dist": 18.125
+  },
+  "theta_p": {
+   "thr": 2.9326130318297188,
+   "a_react": 6.659763139847668,
+   "d_react": 34.150202539661606
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2979428404674993,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": 176.58823522299974,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.470154461830829,
+   "horizon": 1.56198694467649,
+   "pad": 0.3525883916530574,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3184886225542697,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.22335521388797,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.058201218730223,
+   "horizon": 1.6720845064115146,
+   "pad": 0.1506647549453102,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3184886225542697,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.22335521388797,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "v_ped_max": 3.5042189855185653,
+   "horizon": 1.7764428611683418,
+   "pad": 0.04052793006159006,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.4400233007794724,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.79474892827653,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "v_ped_max": 3.2073230416092873,
+   "horizon": 1.8942557816807941,
+   "pad": 0.013983110431464217,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.36562263217791713,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.76538174569026,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "v_ped_max": 3.2073230416092873,
+   "horizon": 1.8942557816807941,
+   "pad": 0.013983110431464217,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.36562263217791713,
+  "reason": "pedestrian clearance",
+  "robust_cost": 174.76538174569026,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.5,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.5
+  },
+  "theta_p": {
+   "v_ped_max": 4.470154461830829,
+   "horizon": 1.56198694467649,
+   "pad": 0.3525883916530574,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3184886225542697,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.22335521388797,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.5,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.5
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.25,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.25
+  },
+  "theta_p": {
+   "v_ped_max": 4.470154461830829,
+   "horizon": 1.56198694467649,
+   "pad": 0.3525883916530574,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3184886225542697,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.22335521388797,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.25,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.25
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.125,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.125
+  },
+  "theta_p": {
+   "v_ped_max": 4.470154461830829,
+   "horizon": 1.56198694467649,
+   "pad": 0.3525883916530574,
+   "a_max": 2.0
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.3184886225542697,
+  "reason": "pedestrian clearance",
+  "robust_cost": 175.22335521388797,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "reachable_set",
+  "key": "dart_speed",
+  "x": 2.125,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.125
+  },
+  "theta_p": {
+   "v_ped_max": 4.515746002429262,
+   "horizon": 1.9353226119348685,
+   "pad": 0.44773999715990614,
+   "a_max": 2.0
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 0.4674269855966032,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.2660148104110504,
+  "reason": "pedestrian clearance; physics: braking > cap",
+  "robust_cost": 82.68514138395454,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "v_slow": 4.956751755565369,
+   "zone": 32.75268612082131,
+   "a_react": 3.810283204958247
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.025625493819092,
+  "reason": "physics: braking > cap",
+  "robust_cost": 68.96929545817312,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3178074042233592,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "v_slow": 5.148332947892127,
+   "zone": 38.428906454603236,
+   "a_react": 3.1457126653138774
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2934188983135757,
+  "reason": "physics: braking > cap",
+  "robust_cost": 62.08230379484942,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.3032362295114555,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "v_slow": 5.260501950740617,
+   "zone": 39.602491219635056,
+   "a_react": 3.1140696692947847
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.319566060835257,
+  "reason": "physics: braking > cap",
+  "robust_cost": 60.92390708748955,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3455840599336144,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "v_slow": 5.266865342907801,
+   "zone": 39.9807410407941,
+   "a_react": 2.8841357662337836
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.294146856165398,
+  "reason": "physics: braking > cap",
+  "robust_cost": 58.72559534005785,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "PASS",
+  "cls": "success",
+  "margin": 1.3115547765312672,
+  "reason": "",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "v_slow": 5.272684706593635,
+   "zone": 39.9543029843894,
+   "a_react": 2.5038089183484082
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3163072812889711,
+  "reason": "physics: braking > cap",
+  "robust_cost": 57.95626388786255,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "pre_slow",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "v_slow": 4.464136718676054,
+   "zone": 27.618702655083208,
+   "a_react": 3.9272107926468838
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.3212171886350037,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 2.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 2.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": -0.309832044664884,
+  "reason": "pedestrian clearance",
+  "robust_cost": 78.47001116348987,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "thr": 2.18262217870372,
+   "a_react": 4.427832994613391,
+   "d_react": 30.246526050893717
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.0981012658753002,
+  "reason": "physics: braking > cap",
+  "robust_cost": 75.10670509197291,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 3.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 3.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.183233418541974,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "thr": 1.5301301172713477,
+   "a_react": 4.423200696168505,
+   "d_react": 34.84185059642807
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.228785998325023,
+  "reason": "physics: braking > cap",
+  "robust_cost": 79.07217107802944,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 4.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 4.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2504352201178508,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "thr": 0.3299805206007218,
+   "a_react": 3.536798199602399,
+   "d_react": 28.587459972403266
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.1560581176518951,
+  "reason": "physics: braking > cap",
+  "robust_cost": 70.9890537094438,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 5.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 5.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.228785998325023,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "thr": 0.30326996038809517,
+   "a_react": 3.9273703111533464,
+   "d_react": 27.41495128240309
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2548180609232278,
+  "reason": "physics: braking > cap",
+  "robust_cost": 69.31793822344744,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 6.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 6.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.228785998325023,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "best",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "thr": 0.30326996038809517,
+   "a_react": 3.9273703111533464,
+   "d_react": 27.41495128240309
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.2548180609232278,
+  "reason": "physics: braking > cap",
+  "robust_cost": 69.31793822344744,
+  "warm": "neighbour"
+ },
+ {
+  "axis": "dart_speed",
+  "family": "react",
+  "key": "dart_speed",
+  "x": 7.0,
+  "kind": "ref",
+  "theta_s": {
+   "dart_dist": 12,
+   "dart_speed": 7.0
+  },
+  "theta_p": {
+   "thr": 2.0082440616427695,
+   "a_react": 4.928933184786841,
+   "d_react": 29.668615896008312
+  },
+  "verdict": "FAIL",
+  "cls": "fail",
+  "margin": 1.297860623988939,
+  "reason": "physics: braking > cap",
+  "robust_cost": null,
+  "warm": null
+ }
+]

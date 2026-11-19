@@ -1,0 +1,253 @@
+{
+  "run_id": "024_bnd_gap_8_two_stage_best",
+  "rc": "RC01-01",
+  "label": "PASS",
+  "reason": "no contact, in corridor, within envelope; held <0.1 m/s for 2.0s with min clearance 2.90 m",
+  "end_reason": "hold_complete",
+  "scenario": {
+    "rc": "RC01-01",
+    "map": "Town01",
+    "road": 15,
+    "lane": -1,
+    "s0": 3.0,
+    "van_s": 100.0,
+    "gap": 8,
+    "v_ego": 8.1,
+    "clear": 1.5,
+    "n_per_side": 3,
+    "delay_s": 0.0,
+    "seed": 7,
+    "ego_bp": "vehicle.tesla.model3",
+    "van_bp": "vehicle.mercedes.sprinter",
+    "lane_w": 4.0,
+    "shoulder": 0.3,
+    "brake_torque_scale": 1.0,
+    "parked_bps": [
+      "vehicle.audi.a2",
+      "vehicle.toyota.prius",
+      "vehicle.seat.leon",
+      "vehicle.mini.cooper_s",
+      "vehicle.citroen.c3",
+      "vehicle.nissan.micra"
+    ],
+    "row_range": [
+      6.0,
+      114.0
+    ],
+    "walker_range": [
+      10.0,
+      108.0
+    ],
+    "cruise_before_cue_s": 2.5,
+    "accel_est": 1.1,
+    "row_gap": [
+      0.35,
+      0.7
+    ],
+    "speed_tol": 0.2,
+    "gap_tol": 0.5,
+    "accel_filter_s": 0.2,
+    "time_limit": 8.0,
+    "hold_time": 2.0,
+    "hold_speed": 0.1,
+    "min_clearance": 2.0
+  },
+  "policy": {
+    "name": "profile_policy",
+    "version": "rc09-prof-v1",
+    "params": {
+      "v_target": 8.1,
+      "a0": 0.0,
+      "d0": 0.0,
+      "a1": 7.2,
+      "t1": 0.3,
+      "a2": 7.2
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.9143421169736914,
+      2.3140560619777637,
+      2.7012261621152205,
+      3.0766833497514927,
+      3.4500363045527433,
+      3.813107296266512,
+      4.7209631922108235,
+      6.410825197878096,
+      7.963216418407086
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.9143421169736914,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.35497666566238084,
+    "max_decel": 7.963216418407086
+  },
+  "metrics": {
+    "start_speed": 8.128715235273264,
+    "start_gap": 7.604552339325863,
+    "min_gap": 2.8959866857077685,
+    "stopping_gap": 2.897680411560799,
+    "hold_min_gap": 2.8959866857077685,
+    "max_filtered_accel": {
+      "forward": 0.0030896778575267908,
+      "brake": 8.41069155409192,
+      "lateral": 0.0003593793302598649,
+      "planar": 8.410691554922389
+    },
+    "clear_width_measured": 1.4947192095984576,
+    "van_blocks_route": true,
+    "pedestrians": 8,
+    "ego_width": 2.163450002670288,
+    "delay_s": 0.0,
+    "min_wall_clearance": 1.0381067356792317,
+    "max_lateral_excursion_m": 1.0843217067377928
+  },
+  "times": {
+    "observation_captured": 245.70379691757262,
+    "observation_delivered_to_controller": 245.70379691757262,
+    "first_brake_application": 245.70379691757262,
+    "onset_measured_decel": 245.75379691831768,
+    "recording_before_cue_s": 9.300000138580799
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "blocked_check": {
+      "ok": true,
+      "ego_width": 2.163450002670288,
+      "van_t": [
+        -0.6975140280814149,
+        1.3938502210808754
+      ],
+      "row_inner_faces": [
+        -2.1922332376798725,
+        2.1231716120422823
+      ],
+      "free_width_each_side": [
+        1.4947192095984576,
+        0.7293213909614069
+      ],
+      "clear_width_measured": 1.4947192095984576,
+      "right_free_width": 0.7293213909614069,
+      "parked_left": 24,
+      "parked_right": 24,
+      "row_max_gap_m": 1.1655653293712902,
+      "row_slot_failures": 2,
+      "row_slot_failure_positions": [
+        [
+          "r",
+          10.3
+        ],
+        [
+          "r",
+          51.2
+        ]
+      ],
+      "pedestrians": 8,
+      "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+    },
+    "van_moved_m": 0.0,
+    "van_max_speed": 0.0,
+    "ped_violations": 0
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc01",
+  "variation_id": "bnd_gap_8",
+  "candidate_kind": "best",
+  "family": "two_stage",
+  "scenario_params": {
+    "v_ego": 8.1,
+    "delay_s": 0.0,
+    "gap": 8
+  },
+  "policy_params": {
+    "a0": 0.0,
+    "d0": 0.0,
+    "a1": 7.2,
+    "t1": 0.3,
+    "a2": 7.2
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "pop": 32,
+    "iters": 6,
+    "seed": 0,
+    "robust_cost": 24.20703601302793,
+    "warm_start": "neighbour"
+  },
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 3.241978708497699,
+    "min_rear": 99.0,
+    "margin": 0.5419787084976992
+  },
+  "start_speed": 8.128715235273264,
+  "start_gap": 7.604552339325863,
+  "min_gap": 2.8959866857077685,
+  "stopping_gap": 2.897680411560799,
+  "blocked_road_check": {
+    "ok": true,
+    "ego_width": 2.163450002670288,
+    "van_t": [
+      -0.6975140280814149,
+      1.3938502210808754
+    ],
+    "row_inner_faces": [
+      -2.1922332376798725,
+      2.1231716120422823
+    ],
+    "free_width_each_side": [
+      1.4947192095984576,
+      0.7293213909614069
+    ],
+    "clear_width_measured": 1.4947192095984576,
+    "right_free_width": 0.7293213909614069,
+    "parked_left": 24,
+    "parked_right": 24,
+    "row_max_gap_m": 1.1655653293712902,
+    "row_slot_failures": 2,
+    "row_slot_failure_positions": [
+      [
+        "r",
+        10.3
+      ],
+      [
+        "r",
+        51.2
+      ]
+    ],
+    "pedestrians": 8,
+    "note": "parked cars on both kerbs + van block the street; the only available action is braking in lane"
+  },
+  "observation": {
+    "source": "idealized: bumper gap from CARLA footprints; captured when gap <= target, delivered after delay_s",
+    "delay_s": 0.0,
+    "captured_frame": 187,
+    "delivered_frame": 187
+  }
+}

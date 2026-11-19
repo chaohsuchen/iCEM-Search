@@ -1,0 +1,1342 @@
+[
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.0861071585258597,
+   "horizon": 1.574107908054867,
+   "pad": 0.7685689833491276,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 172.22553910045224
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.37025170745518504,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.0861071585258597,
+   "horizon": 1.574107908054867,
+   "pad": 0.7685689833491276,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.0702027435118087,
+   "horizon": 1.6678793601767337,
+   "pad": 0.753468384309054,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.0702027435118087,
+   "horizon": 1.6678793601767337,
+   "pad": 0.753468384309054,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9321383318983181,
+   "min_rear": 99.0,
+   "margin": 0.13213833189831808
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 6.4118891864302,
+   "zone": 31.760948354724245,
+   "a_react": 3.697351842891328
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 23.815068427527343
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.084974421141172,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 6.4118891864302,
+   "zone": 31.760948354724245,
+   "a_react": 3.697351842891328
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 6.236004458125441,
+   "zone": 29.362871208057577,
+   "a_react": 4.989566925544733
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 6.236004458125441,
+   "zone": 29.362871208057577,
+   "a_react": 4.989566925544733
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.082172916545861,
+   "min_rear": 99.0,
+   "margin": 1.2821729165458609
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.0565157056786236,
+   "a_react": 4.423295891108216,
+   "d_react": 25.167299335373073
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 24.94989607823691
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0816825187995422,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.0565157056786236,
+   "a_react": 4.423295891108216,
+   "d_react": 25.167299335373073
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy__benign",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "boundary",
+  "theta_p": {
+   "thr": 1.3957225202254937,
+   "a_react": 6.874512266317656,
+   "d_react": 45.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "dart_dist": 25.0,
+   "dart_speed": 2.0
+  },
+  "family": "react",
+  "kind": "boundary",
+  "theta_p": {
+   "thr": 1.3957225202254937,
+   "a_react": 6.874512266317656,
+   "d_react": 45.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0816825187995422,
+   "min_rear": 99.0,
+   "margin": 1.2816825187995422
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 3.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.6647645620806717,
+   "horizon": 1.6725962206531628,
+   "pad": 0.30446734064510816,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 174.79474892827653
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.6345755601322651,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid__benign",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.6647645620806717,
+   "horizon": 1.6725962206531628,
+   "pad": 0.30446734064510816,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid__benign",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.672925565703774,
+   "horizon": 1.72008349940373,
+   "pad": 0.14727740823244878,
+   "a_max": 2.0947691575654894
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 3.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.672925565703774,
+   "horizon": 1.72008349940373,
+   "pad": 0.14727740823244878,
+   "a_max": 2.0947691575654894
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9125617262768586,
+   "min_rear": 99.0,
+   "margin": 0.11256172627685862
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 3.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.333816461769343,
+   "zone": 29.54866612824597,
+   "a_react": 3.4485469599869494
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 56.130808081071734
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.1384417813424963,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid__benign",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.333816461769343,
+   "zone": 29.54866612824597,
+   "a_react": 3.4485469599869494
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid__benign",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.43493893383443,
+   "zone": 47.4962482024435,
+   "a_react": 7.2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 3.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.43493893383443,
+   "zone": 47.4962482024435,
+   "a_react": 7.2
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.0818419618742925,
+   "min_rear": 99.0,
+   "margin": 1.2818419618742924
+  }
+ },
+ {
+  "scenario": "mid",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 3.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.0310827215843017,
+   "a_react": 2.858776938983038,
+   "d_react": 24.141835324905827
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 60.04651143375387
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.9030950293100404,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "mid__benign",
+  "theta_s": {
+   "dart_dist": 15.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.0310827215843017,
+   "a_react": 2.858776938983038,
+   "d_react": 24.141835324905827
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 4.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.161180456794901,
+   "horizon": 1.8648554689941936,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 174.76538174569026
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.4232966503217555,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near__benign",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.161180456794901,
+   "horizon": 1.8648554689941936,
+   "pad": 0.0,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near__benign",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.274727829386961,
+   "horizon": 1.7966161475138787,
+   "pad": 0.22460370486933728,
+   "a_max": 3.1678623741387026
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 4.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.274727829386961,
+   "horizon": 1.7966161475138787,
+   "pad": 0.22460370486933728,
+   "a_max": 3.1678623741387026
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9039837917252413,
+   "min_rear": 99.0,
+   "margin": 0.10398379172524136
+  }
+ },
+ {
+  "scenario": "near",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 4.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.159501690878377,
+   "zone": 33.656772118606604,
+   "a_react": 3.1643659934958692
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 61.352008520395344
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.084255732866399,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near__benign",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 5.159501690878377,
+   "zone": 33.656772118606604,
+   "a_react": 3.1643659934958692
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near__benign",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.478079589509846,
+   "zone": 29.931214763315126,
+   "a_react": 3.4048230276926565
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 4.0
+  },
+  "family": "pre_slow",
+  "kind": "boundary",
+  "theta_p": {
+   "v_slow": 4.478079589509846,
+   "zone": 29.931214763315126,
+   "a_react": 3.4048230276926565
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.083336180093102,
+   "min_rear": 99.0,
+   "margin": 1.2833361800931018
+  }
+ },
+ {
+  "scenario": "near",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 4.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.1344763390937518,
+   "a_react": 3.89954518527232,
+   "d_react": 25.318150337917185
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 70.61782552092893
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.001289656412712,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near__benign",
+  "theta_s": {
+   "dart_dist": 12.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 1.1344763390937518,
+   "a_react": 3.89954518527232,
+   "d_react": 25.318150337917185
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 5.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.239649477131227,
+   "horizon": 1.8675017626305739,
+   "pad": 0.3917170254657008,
+   "a_max": 2.0111581442825406
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 175.18096945394333
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.326434517335595,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails__benign",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.239649477131227,
+   "horizon": 1.8675017626305739,
+   "pad": 0.3917170254657008,
+   "a_max": 2.0111581442825406
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails__benign",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.4905349088771307,
+   "horizon": 2.159287251926631,
+   "pad": 0.4733591031467311,
+   "a_max": 2.0054374965598623
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 5.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 3.4905349088771307,
+   "horizon": 2.159287251926631,
+   "pad": 0.4733591031467311,
+   "a_max": 2.0054374965598623
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9009566451430431,
+   "min_rear": 99.0,
+   "margin": 0.10095664514304309
+  }
+ },
+ {
+  "scenario": "react_fails",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 5.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.592664232445463,
+   "zone": 27.249718226880596,
+   "a_react": 4.400573884590488
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 78.27399773799671
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.0399949973270597,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails__benign",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.592664232445463,
+   "zone": 27.249718226880596,
+   "a_react": 4.400573884590488
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 5.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.916545594472794,
+   "a_react": 5.815798705913071,
+   "d_react": 18.95645539275639
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 93.87404647375938
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.87661272979216,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "react_fails__benign",
+  "theta_s": {
+   "dart_dist": 9.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.916545594472794,
+   "a_react": 5.815798705913071,
+   "d_react": 18.95645539275639
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 5.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.5461372747024646,
+   "horizon": 2.0017174895221888,
+   "pad": 0.4740381643209246,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 176.0360674992672
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.5157661460218137,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard__benign",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.5461372747024646,
+   "horizon": 2.0017174895221888,
+   "pad": 0.4740381643209246,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard__benign",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 5.5,
+   "horizon": 1.6665308551093605,
+   "pad": 0.2934305157097035,
+   "a_max": 4.825041057374887
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 5.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 5.5,
+   "horizon": 1.6665308551093605,
+   "pad": 0.2934305157097035,
+   "a_max": 4.825041057374887
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9002278531874268,
+   "min_rear": 99.0,
+   "margin": 0.10022785318742683
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 5.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 2.9183505926441105,
+   "zone": 24.678247681091285,
+   "a_react": 4.848607006154285
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 107.38393820809343
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.0551559311073107,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard__benign",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 2.9183505926441105,
+   "zone": 24.678247681091285,
+   "a_react": 4.848607006154285
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 5.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.31798456144423615,
+   "a_react": 7.101432827358197,
+   "d_react": 33.112183272344495
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 131.9730679773071
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.1323540165322632,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "hard__benign",
+  "theta_s": {
+   "dart_dist": 6.5,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.31798456144423615,
+   "a_react": 7.101432827358197,
+   "d_react": 33.112183272344495
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 7.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.5461372747024646,
+   "horizon": 2.0017174895221888,
+   "pad": 0.4740381643209246,
+   "a_max": 2.0
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 176.0360674992672
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.45431142329099156,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard__benign",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "best",
+  "theta_p": {
+   "v_ped_max": 3.5461372747024646,
+   "horizon": 2.0017174895221888,
+   "pad": 0.4740381643209246,
+   "a_max": 2.0
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard__benign",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 0.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 4.154867166660491,
+   "horizon": 2.0807354914371103,
+   "pad": 0.1933817542530895,
+   "a_max": 2.4899441301684013
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 7.0
+  },
+  "family": "reachable_set",
+  "kind": "boundary",
+  "theta_p": {
+   "v_ped_max": 4.154867166660491,
+   "horizon": 2.0807354914371103,
+   "pad": 0.1933817542530895,
+   "a_max": 2.4899441301684013
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.9017154717646847,
+   "min_rear": 99.0,
+   "margin": 0.1017154717646847
+  }
+ },
+ {
+  "scenario": "very_hard",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 7.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.088679781203748,
+   "zone": 31.16942692938666,
+   "a_react": 4.753960223941574
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 92.96160708889296
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.109035456444427,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard__benign",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 0.0
+  },
+  "family": "pre_slow",
+  "kind": "best",
+  "theta_p": {
+   "v_slow": 4.088679781203748,
+   "zone": 31.16942692938666,
+   "a_react": 4.753960223941574
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 7.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 7.109072463118979,
+   "d_react": 42.514861966992605
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 131.27288906756394
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.0338037275339957,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "very_hard__benign",
+  "theta_s": {
+   "dart_dist": 6.0,
+   "dart_speed": 0.0
+  },
+  "family": "react",
+  "kind": "best",
+  "theta_p": {
+   "thr": 0.3,
+   "a_react": 7.109072463118979,
+   "d_react": 42.514861966992605
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.47,
+   "min_rear": 99.0
+  }
+ }
+]

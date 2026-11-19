@@ -1,0 +1,695 @@
+[
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.945337692035949,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.5294253695973902,
+   "a_brake": 3.9408839877885695,
+   "shift": 0.28342224710510616
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.588614901919847,
+   "min_rear": 99.0,
+   "margin": 1.2588577551397946
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.747470358849991,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.23281975079931344,
+   "a_brake": 5.016986299962481,
+   "shift": 0.3616945431782601
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.893182943792567,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.19027178121108945,
+   "a_brake": 5.100722284906067,
+   "shift": 0.39117774186641974
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 6.192205261320005,
+   "min_rear": 99.0,
+   "margin": 1.3743652802789847
+  }
+ },
+ {
+  "scenario": "near_deep",
+  "theta_s": {
+   "d0": 30.0,
+   "intrude": 1.4
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.952386134778581,
+   "t_lc": 1.7393790217964695,
+   "a_lc": -4.955033207104167,
+   "a_post": 4.142207631260529
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.2589831357083056,
+   "a_brake": 3.188929226768152,
+   "shift": 0.23068881968789037
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 16.458494450250193,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.5629468480243847,
+   "a_brake": 4.470434537725635,
+   "shift": 0.2269718161725805
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 14.769734785282608,
+   "min_rear": 99.0,
+   "margin": 1.2003416458522294
+  }
+ },
+ {
+  "scenario": "fast_far",
+  "theta_s": {
+   "v_ego": 22.0,
+   "d0": 60.0,
+   "v_post": 20.0,
+   "v_esc": 22.0,
+   "esc_gap": 40.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.2507264127512723,
+   "t_lc": 1.8518355121698602,
+   "a_lc": -1.9334426900275998,
+   "a_post": 0.4437987786306884
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.4982152578606926,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.945337692035949,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.3757860364217157,
+   "a_brake": 4.122637292379806,
+   "shift": 0.22546867395004494
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 12.048921524651632,
+   "min_rear": 99.0,
+   "margin": 1.206211971771527
+  }
+ },
+ {
+  "scenario": "tight_gap",
+  "theta_s": {
+   "esc_gap": 18.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4546318240390861,
+   "t_lc": 1.650478085861162,
+   "a_lc": -1.0148582034130444,
+   "a_post": 0.2634040175595358
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.46400441124661707,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.38667131154806256,
+   "a_brake": 3.430866965025355,
+   "shift": 0.3381492393687338
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.945337692035949,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.5294253695973902,
+   "a_brake": 3.9408839877885695,
+   "shift": 0.28342224710510616
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.588614901919847,
+   "min_rear": 99.0,
+   "margin": 1.2588577551397946
+  }
+ },
+ {
+  "scenario": "braking_lead",
+  "theta_s": {
+   "lead_brake": 4.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.747470358849991,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 15.668652840445144
+  }
+ },
+ {
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.681458826395997,
+   "a_brake": 2.0,
+   "shift": 0.3106004070938755
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 5.288298983366829,
+   "min_rear": 0.019505069941487818
+  }
+ },
+ {
+  "scenario": "tailgater",
+  "theta_s": {
+   "rear": 1,
+   "rear_gap": 18.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.42455502056493777,
+   "t_lc": 1.6810583026794292,
+   "a_lc": -1.8278619650709471,
+   "a_post": 0.40103190277999423
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 2.747470358849991,
+   "min_rear": 1.6218356301284536
+  }
+ },
+ {
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.1,
+   "a_brake": 3.9659865814007653,
+   "shift": 0.283961259557506
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 6.197013931128865,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.14960910758226387,
+   "a_brake": 4.04664707982249,
+   "shift": 0.2261399796220791
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.847330598652945,
+   "min_rear": 99.0,
+   "margin": 1.2002731681415195
+  }
+ },
+ {
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.37568797664365505,
+   "t_lc": 3.207117443453069,
+   "a_lc": -0.6313266698392708,
+   "a_post": 0.32804590444532566
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.3943369742266647,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "clip",
+  "theta_s": {
+   "intrude": 0.55,
+   "d0": 35.0
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5495615011694905,
+   "t_lc": 2.3396136936525895,
+   "a_lc": -0.006377755734916946,
+   "a_post": 0.5324354368028276
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.7388570134740102,
+   "min_rear": 99.0,
+   "margin": 1.2388570134740102
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "keep",
+  "kind": "best",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 30.154402880991018,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "keep",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "keep"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 30.154402880991018,
+   "min_rear": 99.0,
+   "margin": 14.590218868685058
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.9324123253878313,
+   "a_brake": 2.0,
+   "shift": 0.23388146251884367
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 37.743866608245234,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "t_react": 0.3681205455517226,
+   "a_brake": 2.012224070989725,
+   "shift": 0.23357723527991003
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 38.829146302884176,
+   "min_rear": 99.0,
+   "margin": 1.2047932341813747
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5087581345241445,
+   "t_lc": 3.6423834032857436,
+   "a_lc": -0.4564018451786307,
+   "a_post": 0.21602492429553474
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 35.669637352344495,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "benign",
+  "theta_s": {
+   "crash": 0
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.6181685025907897,
+   "t_lc": 3.3881733654714528,
+   "a_lc": 0.9398575127133642,
+   "a_post": 1.5737097185511502
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 19.419846652723706,
+   "min_rear": 99.0,
+   "margin": 3.174846117466984
+  }
+ }
+]

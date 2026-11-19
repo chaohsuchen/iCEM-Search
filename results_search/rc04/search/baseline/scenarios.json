@@ -1,0 +1,32 @@
+{
+ "baseline": {
+  "d_obs": 55.0
+ },
+ "truck_far_ahead": {
+  "d_obs": 46.0,
+  "side_pos": 30.0
+ },
+ "near_obstacle": {
+  "d_obs": 42.0
+ },
+ "slow_truck": {
+  "d_obs": 55.0,
+  "v_side": 19.0
+ },
+ "truck_behind": {
+  "d_obs": 50.0,
+  "side_pos": -15.0
+ },
+ "follower_close": {
+  "d_obs": 55.0,
+  "fol_gap": 10.0
+ },
+ "no_follower": {
+  "d_obs": 55.0,
+  "fol": 0
+ },
+ "benign": {
+  "d_obs": 55.0,
+  "obs_lane": 2
+ }
+}

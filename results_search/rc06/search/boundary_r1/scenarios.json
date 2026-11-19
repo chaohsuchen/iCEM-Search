@@ -1,0 +1,56 @@
+{
+ "config": {
+  "axes": [
+   {
+    "axis": "d_obs",
+    "key": "d_obs",
+    "grid": [
+     90,
+     75,
+     62,
+     52,
+     45,
+     40
+    ],
+    "base": {
+     "side_pos": 0.0,
+     "v_side": 26.0
+    }
+   },
+   {
+    "axis": "side_pos",
+    "key": "side_pos",
+    "grid": [
+     30,
+     22,
+     14,
+     8,
+     2,
+     -6
+    ],
+    "base": {
+     "d_obs": 60.0,
+     "v_side": 26.0
+    }
+   },
+   {
+    "axis": "v_side",
+    "key": "v_side",
+    "grid": [
+     32,
+     29,
+     26,
+     23,
+     21
+    ],
+    "base": {
+     "d_obs": 65.0,
+     "side_pos": 0.0
+    }
+   }
+  ]
+ },
+ "pop": 32,
+ "iters": 6,
+ "bisect_rounds": 3
+}

@@ -1,0 +1,41 @@
+{
+ "config": {
+  "axes": [
+   {
+    "axis": "rear_gap",
+    "key": "rear_gap",
+    "grid": [
+     25,
+     20,
+     16,
+     13,
+     11,
+     9
+    ],
+    "base": {
+     "closing": 4.5,
+     "lead_gap": 35
+    }
+   },
+   {
+    "axis": "closing",
+    "key": "closing",
+    "grid": [
+     2.0,
+     3.0,
+     4.0,
+     5.0,
+     6.0,
+     7.0
+    ],
+    "base": {
+     "rear_gap": 12,
+     "lead_gap": 35
+    }
+   }
+  ]
+ },
+ "pop": 32,
+ "iters": 6,
+ "bisect_rounds": 3
+}

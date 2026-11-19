@@ -1,0 +1,159 @@
+{
+  "run_id": "028_c4.5_g12_abort_surge_boundary",
+  "rc": "RC05-01",
+  "label": "PASS",
+  "reason": "lane change aborted and ego returned to its original lane behind the slow car, stable, no contact",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC05-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 110.0,
+    "v_ego": 10.0,
+    "v_lead": 6.0,
+    "lead_gap": 35.0,
+    "closing": 4.5,
+    "rear_gap": 12.0,
+    "hazard_progress": 0.5,
+    "rear_acc": 2.5,
+    "rear_vmax": 20.0,
+    "t_lc": 4.0,
+    "preroll_s": 3.0,
+    "duration_s": 9.0,
+    "lane_w": 3.5,
+    "ego_bp": "vehicle.tesla.model3",
+    "lead_bp": "vehicle.citroen.c3",
+    "rear_bp": "vehicle.seat.leon",
+    "min_rear_clear": 1.0,
+    "min_lead_clear": 2.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "progress_tol": 0.08
+  },
+  "policy": {
+    "name": "lane_change_family",
+    "version": "rc05-fam-v1",
+    "params": {
+      "mode": "abort",
+      "v_target": 10.0,
+      "lane_w": 3.5,
+      "t_lc": 4.0,
+      "t_ret": 1.2016788627326667,
+      "ttc_abort": 3.7814687154445195,
+      "gap_abort": 11.41715122271155,
+      "acc_headway": 1.0,
+      "acc_d0": 6.0,
+      "surge_acc": 3.913070311623353,
+      "surge_dur": 3.2017653731413867
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.7121413438633741,
+      2.157782947084374,
+      2.5883175253778394,
+      2.970349354503333,
+      3.3623614621134212,
+      3.7557662229777216,
+      4.65058011357213,
+      6.415513800265791,
+      8.051569098607013
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.7121413438633741,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.37090440881562675,
+    "max_decel": 8.051569098607013
+  },
+  "metrics": {
+    "cue": {
+      "speed": 9.985751735006367,
+      "rear_gap": 11.725586512601268,
+      "closing_speed": 4.220865993316442,
+      "lane_change_progress": 0.4436888004222061,
+      "time": 320.0926054511219,
+      "rear_lane_id": -2,
+      "rear_lane_offcentre": 3.0651395187355416e-05
+    },
+    "aborted": true,
+    "abort_progress": 0.4436888004222061,
+    "min_clearance_lead": 15.279843046494307,
+    "min_clearance_rear_left": 1.1835789111290305,
+    "rear_car_max_lane_offcentre": 0.06796399541081662,
+    "final_lateral": 0.0003703984128980738,
+    "stable_after_return": true,
+    "post_return": {
+      "max_lateral_dev": 0.06645309917493344,
+      "max_yaw_deg": 0.6454641173205289,
+      "max_lat_accel": 3.4446192192547627
+    },
+    "max_filtered_accel": {
+      "forward": 0.0045776001131340215,
+      "brake": 2.5655765387517055,
+      "lateral": 5.923322020071632,
+      "planar": 6.39202008434343
+    },
+    "abort_time_since_lc_start": 2.0000000298023224
+  },
+  "times": {
+    "lane_change_start": 318.0926054213196,
+    "hazard_cue": 320.0926054511219,
+    "abort": 2.0000000298023224
+  },
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc05",
+  "variation_id": "c4.5_g12",
+  "candidate_kind": "boundary",
+  "family": "abort_surge",
+  "scenario_params": {
+    "closing": 4.5,
+    "rear_gap": 12.0
+  },
+  "policy_params": {
+    "mode": "abort",
+    "ttc_abort": 3.7814687154445195,
+    "gap_abort": 11.41715122271155,
+    "t_ret": 1.2016788627326667,
+    "surge_acc": 3.913070311623353,
+    "surge_dur": 3.2017653731413867
+  },
+  "policy_source": {},
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 13.621375055827485,
+    "min_rear": 1.3009124598331103,
+    "margin": 0.0009124598331103351
+  }
+}

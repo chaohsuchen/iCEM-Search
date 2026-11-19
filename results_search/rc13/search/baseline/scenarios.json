@@ -1,0 +1,18 @@
+{
+ "dart2@20": {
+  "dart_speed": 2.0,
+  "dart_dist": 20.0
+ },
+ "dart3@15": {
+  "dart_speed": 3.0,
+  "dart_dist": 15.0
+ },
+ "dart4@12": {
+  "dart_speed": 4.0,
+  "dart_dist": 12.0
+ },
+ "dart5@9": {
+  "dart_speed": 5.0,
+  "dart_dist": 9.0
+ }
+}

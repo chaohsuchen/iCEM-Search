@@ -1,0 +1,42 @@
+{
+ "config": {
+  "axes": [
+   {
+    "axis": "gap",
+    "key": "gap",
+    "grid": [
+     25,
+     20,
+     16,
+     14,
+     12,
+     10,
+     8
+    ],
+    "base": {
+     "v_ego": 8.1,
+     "delay_s": 0.0
+    }
+   },
+   {
+    "axis": "delay_s",
+    "key": "delay_s",
+    "grid": [
+     0.0,
+     0.2,
+     0.4,
+     0.6,
+     0.8,
+     1.0
+    ],
+    "base": {
+     "v_ego": 8.1,
+     "gap": 14
+    }
+   }
+  ]
+ },
+ "pop": 32,
+ "iters": 6,
+ "bisect_rounds": 3
+}

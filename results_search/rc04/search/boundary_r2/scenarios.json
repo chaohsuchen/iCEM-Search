@@ -1,0 +1,60 @@
+{
+ "config": {
+  "axes": [
+   {
+    "axis": "d_obs",
+    "key": "d_obs",
+    "grid": [
+     70,
+     62,
+     56,
+     52,
+     48,
+     44,
+     40
+    ],
+    "base": {
+     "side_pos": 0.0,
+     "v_side": 22.0
+    }
+   },
+   {
+    "axis": "side_pos",
+    "key": "side_pos",
+    "grid": [
+     34,
+     28,
+     22,
+     16,
+     10,
+     4,
+     0
+    ],
+    "base": {
+     "d_obs": 44.0,
+     "v_side": 22.0
+    }
+   },
+   {
+    "axis": "fol_gap",
+    "key": "fol_gap",
+    "grid": [
+     30,
+     20,
+     14,
+     10,
+     7,
+     5
+    ],
+    "base": {
+     "d_obs": 44.0,
+     "side_pos": 30.0,
+     "v_side": 23.0
+    }
+   }
+  ]
+ },
+ "pop": 32,
+ "iters": 6,
+ "bisect_rounds": 3
+}

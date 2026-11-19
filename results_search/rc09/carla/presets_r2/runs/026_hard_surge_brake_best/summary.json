@@ -1,0 +1,225 @@
+{
+  "run_id": "026_hard_surge_brake_best",
+  "rc": "RC09-01",
+  "label": "FAIL",
+  "reason": "contact: front impact with queue0, rear-end by truck, rear-end by truck",
+  "end_reason": "contact",
+  "scenario": {
+    "rc": "RC09-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 70.0,
+    "v_ego": 8.0,
+    "front_gap": 14.0,
+    "queue_n": 3,
+    "rear_gap": 18.0,
+    "closing": 6.0,
+    "rear_delay_s": 1.4,
+    "rear_decel": 5.0,
+    "preroll_s": 2.5,
+    "duration_s": 16.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "queue_bps": [
+      "vehicle.audi.a2",
+      "vehicle.toyota.prius",
+      "vehicle.nissan.micra"
+    ],
+    "rear_bp": "vehicle.carlamotors.carlacola",
+    "wall_bps": [
+      "static.prop.container"
+    ],
+    "wall_levels": 2,
+    "wall_min_inner_half": 2.0,
+    "wall_margin": 0.45,
+    "min_clear": 1.0,
+    "speed_tol": 0.5,
+    "gap_tol": 1.5,
+    "closing_tol": 0.5,
+    "wall_tol": 0.05
+  },
+  "policy": {
+    "name": "profile_policy",
+    "version": "rc09-prof-v1",
+    "params": {
+      "v_target": 8.0,
+      "a0": 3.126340041821719,
+      "d0": 0.49470555803251043,
+      "a1": 4.903242800995075,
+      "t1": 99.0,
+      "a2": 4.903242800995075
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3,
+      0.5,
+      0.7
+    ],
+    "brake_decel": [
+      1.4681581698771817,
+      1.898512206190604,
+      2.297134229323057,
+      2.686514417272724,
+      3.0642399873928747,
+      3.413883802585106,
+      4.32777196656254,
+      6.040437350819882,
+      7.6174306539801835
+    ],
+    "brake_cap": 0.7,
+    "coast_decel": 1.4681581698771817,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.3121495375623404,
+    "max_decel": 7.6174306539801835
+  },
+  "metrics": {
+    "cue": {
+      "speed": 7.922851058403081,
+      "front_gap": 13.920033489836555,
+      "rear_gap": 17.774253427200122,
+      "closing_speed": 5.971393227000201
+    },
+    "min_front_gap": -0.31564507455159685,
+    "min_rear_gap": -0.16713788131890794,
+    "final_front_gap": -0.31564507455159685,
+    "final_rear_gap": -0.16713788131890794,
+    "ego_stopped": false,
+    "rear_trigger_to_brake_delay_s": 1.5000000223517418,
+    "max_filtered_accel": {
+      "forward": 50.45306095406407,
+      "brake": 20.713777397658873,
+      "lateral": 2.123461950198883,
+      "planar": 50.45326309364397
+    },
+    "min_wall_clearance": 0.6448615956076791,
+    "ego_brake_start": 0.5000000074505806
+  },
+  "times": {
+    "cue": 245.14484710805118,
+    "ego_brake": 0.5000000074505806,
+    "rear_brake": 246.64484713040292
+  },
+  "contact": {
+    "frames": [
+      5646,
+      5647,
+      5648,
+      5649,
+      5650,
+      5651,
+      5652,
+      5653,
+      5654,
+      5655,
+      5656,
+      5657,
+      5658,
+      5659,
+      5660,
+      5661,
+      5662,
+      5663,
+      5664,
+      5665,
+      5666
+    ],
+    "actors": [
+      "queue0",
+      "rear_truck",
+      "rear_truck (footprint overlap)"
+    ]
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true,
+    "walls": 212,
+    "wall_prop": "static.prop.container",
+    "tunnel_exits_blocked": true,
+    "tunnel": {
+      "prop": "static.prop.container",
+      "inner_half": 2.0,
+      "span": [
+        25.400271892547607,
+        126.84815773963929
+      ],
+      "levels": 2,
+      "count": 212,
+      "prop_ext": [
+        1.9318259632758021,
+        1.0176149809226356,
+        1.7142443656921387
+      ],
+      "yaw_offset": 0.0,
+      "measured_left_walls": 106,
+      "measured_right_walls": 106,
+      "left_face": -1.999998412588372,
+      "right_face": 1.9999995217634585
+    }
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc09",
+  "variation_id": "hard",
+  "candidate_kind": "best",
+  "family": "surge_brake",
+  "scenario_params": {
+    "closing": 6.0,
+    "front_gap": 14.0,
+    "rear_delay_s": 1.4
+  },
+  "policy_params": {
+    "t1": 99.0,
+    "a0": 3.126340041821719,
+    "d0": 0.49470555803251043,
+    "a1": 4.903242800995075
+  },
+  "policy_source": {
+    "optimizer": "icem",
+    "seed": 1,
+    "pop": 48,
+    "iters": 8,
+    "robust_cost": 1146.9960150027414
+  },
+  "surrogate_prediction": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": -0.006939423061142008,
+    "min_rear": 0.9069394230611483
+  },
+  "tunnel": {
+    "prop": "static.prop.container",
+    "inner_half": 2.0,
+    "span": [
+      25.400271892547607,
+      126.84815773963929
+    ],
+    "levels": 2,
+    "count": 212,
+    "prop_ext": [
+      1.9318259632758021,
+      1.0176149809226356,
+      1.7142443656921387
+    ],
+    "yaw_offset": 0.0,
+    "measured_left_walls": 106,
+    "measured_right_walls": 106,
+    "left_face": -1.999998412588372,
+    "right_face": 1.9999995217634585
+  }
+}

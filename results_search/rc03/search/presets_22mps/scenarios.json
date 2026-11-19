@@ -1,0 +1,51 @@
+{
+ "easy": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 50.0,
+  "intrude": 1.0,
+  "esc_gap": 40.0
+ },
+ "both": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 35.0,
+  "intrude": 0.3,
+  "esc_gap": 40.0
+ },
+ "steer_only": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 22.0,
+  "intrude": 0.3,
+  "esc_gap": 40.0
+ },
+ "hard": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 22.0,
+  "intrude": 1.0,
+  "esc_gap": 40.0
+ },
+ "steer_blocked_gap": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 22.0,
+  "intrude": 0.3,
+  "esc_gap": 8.0
+ },
+ "steer_blocked_lead_brake": {
+  "v_ego": 22.0,
+  "v_post": 20.0,
+  "v_esc": 22.0,
+  "d0": 22.0,
+  "intrude": 0.3,
+  "esc_gap": 40.0,
+  "lead_brake": 4.0
+ }
+}

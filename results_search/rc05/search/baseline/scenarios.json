@@ -1,0 +1,19 @@
+{
+ "baseline": {},
+ "p0.8": {
+  "hazard_progress": 0.8
+ },
+ "g12": {
+  "rear_gap": 12.0
+ },
+ "c4.5": {
+  "closing": 4.5
+ },
+ "g40": {
+  "rear_gap": 40.0
+ },
+ "c4.5_g12": {
+  "closing": 4.5,
+  "rear_gap": 12.0
+ }
+}

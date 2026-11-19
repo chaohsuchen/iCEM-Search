@@ -1,0 +1,822 @@
+[
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 1.1189609662346696,
+   "a1": 5.684240125270518
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.071970501624404,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.8515630478298843,
+   "a1": 3.1922562360141575
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.6201127769214936,
+   "min_rear": 99.0,
+   "margin": 0.22011277692149356
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.7272291632199117,
+   "a1": 4.605689574469929,
+   "t1": 0.9266361000434618,
+   "a2": 5.847908511230911
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 7.308635048868654,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 1.3160348540368032,
+   "a1": 4.815038199369651,
+   "t1": 2.0894014524840916,
+   "a2": 6.3063799326751955
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.452587551100825,
+   "min_rear": 99.0,
+   "margin": 0.0525875511008248
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.5782845931267864,
+   "d0": 0.8117307708886505,
+   "a1": 5.721667362927035
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 6.299661782224602,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "baseline",
+  "theta_s": {},
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 2.170346324399868,
+   "d0": 0.7741198471272877,
+   "a1": 4.825227573543953
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.5220782011508964,
+   "min_rear": 99.0,
+   "margin": 0.1220782011508964
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.10916754728717247,
+   "a1": 5.733078666758804
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.01449430958899,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.2057062185026295,
+   "a1": 4.36546986463581
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.43650664257205,
+   "min_rear": 99.0,
+   "margin": 0.03650664257204983
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 4.977832539917701,
+   "t1": 1.3834712353164746,
+   "a2": 5.70944581397631
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.324423845340808,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.2164801148444458,
+   "a1": 4.380594246224503,
+   "t1": 2.0812747649310945,
+   "a2": 3.8627287164395994
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4606329583281585,
+   "min_rear": 99.0,
+   "margin": 0.060632958328158515
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.6971297711367325,
+   "d0": 0.2,
+   "a1": 6.478099121296698
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.999740129232661,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "g12",
+  "theta_s": {
+   "gap": 12.0
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.3485059255784142,
+   "d0": 0.372503730992636,
+   "a1": 6.163724810282195
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.404451025988059,
+   "min_rear": 99.0,
+   "margin": 0.004451025988059132
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.4867391144442681,
+   "a1": 5.364011593724759
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 6.701235312306815,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.6914522122042471,
+   "a1": 4.167042520299487
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4068686747670043,
+   "min_rear": 99.0,
+   "margin": 0.006868674767004257
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 4.91843390519994,
+   "t1": 1.3900012577042646,
+   "a2": 6.090169988165635
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 10.748869489171923,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.997627622227056,
+   "a1": 5.676013554153329,
+   "t1": 1.8296069037217813,
+   "a2": 3.94574176120699
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.471327371709054,
+   "min_rear": 99.0,
+   "margin": 0.07132737170905379
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.8820824953861204,
+   "d0": 0.29035598026046217,
+   "a1": 5.424723226149024
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 7.964082732711299,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5",
+  "theta_s": {
+   "v_ego": 9.5
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.9682253924308164,
+   "d0": 0.49846338526693823,
+   "a1": 4.552133843837804
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4101300400023002,
+   "min_rear": 99.0,
+   "margin": 0.010130040002300222
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.024637177748240018,
+   "a1": 5.689959874382779
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.353334538476098,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.38541796142935186,
+   "a1": 5.9033139519461795
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4102089270079636,
+   "min_rear": 99.0,
+   "margin": 0.010208927007963609
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.031576479637581145,
+   "a1": 4.490410745568564,
+   "t1": 0.3379136131194612,
+   "a2": 5.878692612111571
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.067661254268266,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.33775377407681656,
+   "a1": 5.608827482952093,
+   "t1": 2.6901288876770195,
+   "a2": 5.340633570983197
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.471829357245279,
+   "min_rear": 99.0,
+   "margin": 0.07182935724527917
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3542896872901129,
+   "d0": 0.2,
+   "a1": 6.89532672584901
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.174180111658504,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "v9.5_g14",
+  "theta_s": {
+   "v_ego": 9.5,
+   "gap": 14.0
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.4089317379052584,
+   "d0": 0.22893561478736493,
+   "a1": 5.51851606915749
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.421582801272699,
+   "min_rear": 99.0,
+   "margin": 0.02158280127269918
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.4046641271860637,
+   "a1": 5.69284309644795
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.2591038815188735,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.7301286171292319,
+   "a1": 5.346257172889779
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.523088590291163,
+   "min_rear": 99.0,
+   "margin": 0.12308859029116304
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.12005233883183156,
+   "a1": 5.129009981824728,
+   "t1": 0.8498281514570416,
+   "a2": 5.924481778838722
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 7.2276550311583225,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.7918463398431145,
+   "a1": 5.63080557629133,
+   "t1": 1.798329167149969,
+   "a2": 4.521586979079236
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.419660594799254,
+   "min_rear": 99.0,
+   "margin": 0.019660594799254194
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 1.5739464418575184,
+   "d0": 0.30495343034272615,
+   "a1": 5.750294733792847
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.038033626209393,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.3_g17",
+  "theta_s": {
+   "gap": 17.0,
+   "delay_s": 0.3
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.8442168932599972,
+   "d0": 0.4026610597785859,
+   "a1": 4.317177469319365
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4564082761882795,
+   "min_rear": 99.0,
+   "margin": 0.05640827618827948
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.110788812923508
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.57585179004804,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 4.809786754664639
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4011330253682575,
+   "min_rear": 99.0,
+   "margin": 0.0011330253682574343
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.089885792786679,
+   "t1": 2.869448442638145,
+   "a2": 4.40481260260806
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.562972768861188,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "two_stage",
+  "kind": "boundary",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.11001014599969453,
+   "a1": 5.841494415347795,
+   "t1": 1.7070039336122844,
+   "a2": 5.42634399652852
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4054561251850695,
+   "min_rear": 99.0,
+   "margin": 0.005456125185069438
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.3,
+   "d0": 0.2,
+   "a1": 7.2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.5172394544026995,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "d0.6_g14",
+  "theta_s": {
+   "gap": 14.0,
+   "delay_s": 0.6
+  },
+  "family": "surge_brake",
+  "kind": "boundary",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.5895653103795797,
+   "d0": 0.2,
+   "a1": 7.184651247505247
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.4049117294585134,
+   "min_rear": 99.0,
+   "margin": 0.00491172945851337
+  }
+ },
+ {
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "t1": 99.0,
+   "d0": 0.0,
+   "a1": 7.2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5072693089383091,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "two_stage",
+  "kind": "best",
+  "theta_p": {
+   "a0": 0.0,
+   "d0": 0.0,
+   "a1": 7.2,
+   "t1": 1.3003922783617523,
+   "a2": 2.609993140080986
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 1.5072693089383091,
+   "min_rear": 99.0
+  }
+ },
+ {
+  "scenario": "g8_v9.5",
+  "theta_s": {
+   "gap": 8.0,
+   "v_ego": 9.5
+  },
+  "family": "surge_brake",
+  "kind": "best",
+  "theta_p": {
+   "t1": 99.0,
+   "a0": 0.4707756046181387,
+   "d0": 0.2,
+   "a1": 7.09570832735649
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.01813581342204834,
+   "min_rear": 99.0
+  }
+ }
+]
