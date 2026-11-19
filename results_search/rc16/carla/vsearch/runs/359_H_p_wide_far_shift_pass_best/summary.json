@@ -1,0 +1,218 @@
+{
+ "run_id": "359_H_p_wide_far_shift_pass_best",
+ "rc": "RC16",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.28 (clearance 0.28, road 0.29, friction 0.77), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC16-S1-opt@H",
+  "town": "Town02",
+  "site": "H",
+  "frame_site": {
+   "start_xy": [
+    181.5,
+    105.4
+   ],
+   "ref_lane": 1,
+   "ref_idx": 0,
+   "s0": 40.0
+  },
+  "lane_width": 4.0,
+  "horizon_s": 15.0,
+  "prefix_s": 3.0,
+  "description": "A van double-parked in the right part of the ego lane, a traffic island opposite it: a passage w_pass m wide, off m left of the lane centre. The van ahead hides it until it swerves through. Stop behind, brake and shift, or shift early and shallow; a late sharp swerve clips with the body.",
+  "params": {
+   "v": 9.0,
+   "w_pass": 3.3,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 1.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.shift_pass",
+  "family": "shift_pass",
+  "params": {
+   "dy": 1.3859362165727442,
+   "D": 11.093077399491655,
+   "x_ready": 1.1779036407464,
+   "v_pass": 11.924961975704305,
+   "b": 3.6041198648346455
+  },
+  "t_trigger": 1.999999999999999,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.2785372117738477,
+  "min_margins": {
+   "clear": 0.2785372117738477,
+   "road": 0.291661053210893,
+   "dyn": 0.7722718278011399
+  },
+  "start_speed": 9.459528695954127,
+  "end_speed": 9.277483353285593,
+  "progress_m": 125.35427738808916,
+  "terminal": 0.5888152020381351,
+  "envelope": {
+   "max_g": 0.0,
+   "max_ax_g": 0.0,
+   "min_ax_g": 0.0,
+   "viol_ticks": 0,
+   "shaped_frac": 0.0,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.2785372117738477,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.291661053210893,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.7722718278011399,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5888152020381351,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "inside the corridor, lane-centred at the horizon",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "double_parked_van",
+  "uid": "H_p_wide_far",
+  "site": "H",
+  "split": "heldout",
+  "history_id": "H_p_wide_far",
+  "hidden_world": null,
+  "hidden_params": []
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 6,
+  "how": "preset:wide_far"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc16",
+ "variation_id": "H_p_wide_far",
+ "candidate_kind": "best",
+ "family": "shift_pass",
+ "scenario_params": {
+  "v": 9.0,
+  "w_pass": 3.3,
+  "off": 1.2,
+  "park_bp": "vehicle.mercedes.sprinter",
+  "lead_hw": 1.6,
+  "isl_lead": 8.0,
+  "lead_bp": "vehicle.ford.ambulance",
+  "T_lead": 1.0,
+  "wx": "dry"
+ },
+ "hidden_params": [],
+ "policy_params": {
+  "dy": 1.3859362165727442,
+  "D": 11.093077399491655,
+  "x_ready": 1.1779036407464,
+  "v_pass": 11.924961975704305,
+  "b": 3.6041198648346455
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   2592859106,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "PASS",
+  "nominal": "PASS",
+  "r": 0.25737833592781434,
+  "r_worst": 0.24820150530281881,
+  "n_pass": 12,
+  "n_worlds": 12,
+  "fail": "",
+  "near": "parked",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 0.25737833592781434,
+   "road": 0.2854329867083383,
+   "dyn": 0.7156287703621619
+  },
+  "cls": "success",
+  "robust_cost": 1.4792439212468733
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
