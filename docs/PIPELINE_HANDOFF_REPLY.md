@@ -30,7 +30,7 @@ Delivered in `rcx-run-1`: 1206 CARLA runs, all with the full evidence files, for
 - rc13: pedestrian clearance 0.5 m (only when the pedestrian darts into the lane), unnecessary slowing = speed at the pass below 0.9 of the target speed or a stop although the pedestrian never entered the lane.
 These are exactly the checks listed in `constraints` of each run.
 
-**Q4. Scene and policy identity.** Yes: a scene is identified by its scene parameters (`scenario_params`), a policy by family plus `policy_params`. 9 identical (scene, family, parameters) triples occur more than once in the data (the same run in two batches).
+**Q4. Scene and policy identity.** Yes: a scene is identified by its scene parameters (`scenario_params`), a policy by family plus `policy_params`. 9 identical (scene name, family, parameters) combinations occur more than once in the data (not checked whether these are the same scene in two batches or true repeats).
 
 **Q5. Schedule.** All RCs built so far are delivered. Not built: RC07, RC08, RC10, RC11, RC12, RC14 to RC20. The 7 INVALID runs (rc01 5, rc09 2) have not been re-run; they can be, on request. Videos are not in the repository.
 
