@@ -1,0 +1,234 @@
+{
+ "run_id": "798_B_b1_008_0~hidden1_left_best",
+ "rc": "RC14",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.20 (clearance 1.39, road 0.20, friction 0.55), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC14-S1-opt@B",
+  "town": "Town06",
+  "site": "B",
+  "frame_site": {
+   "start_xy": [
+    128.5,
+    244.6
+   ],
+   "ref_lane": -5,
+   "ref_idx": 1,
+   "s0": 90.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 10.0,
+  "prefix_s": 4.0,
+  "description": "A stopped car ahead in the ego's lane; the way around it is the left lane, where a van drives just behind the ego. A motorbike seen approaching in the left lane went out of view behind the van moments ago: fast, it will pass the van and arrive in the gap; slow, it stays behind. Change now, brake, or remember the bike and wait for it; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "v": 25.0,
+   "d_obs": 60.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 0.0,
+   "bike": 0,
+   "bike_fast": 1,
+   "dv_fast": 12.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "rear": 1,
+   "rear_bp": "vehicle.mercedes.sprinter",
+   "rear_gap": 9.0,
+   "rear_react": 1.0,
+   "rear_b": 4.0,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.left",
+  "family": "left",
+  "params": {
+   "A_lat": 3.920282398762768,
+   "b_evasive": 1.8677081707004546,
+   "y_off": 0.05422239489412162,
+   "t_start": 0.12559346193598694
+  },
+  "t_trigger": -5.842548667089886e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.19924477709788135,
+  "min_margins": {
+   "clear": 1.3872462806474573,
+   "road": 0.19924477709788135,
+   "dyn": 0.5521154777766911
+  },
+  "start_speed": 25.14478835044219,
+  "end_speed": 25.110743945614605,
+  "progress_m": 250.80302663098345,
+  "terminal": 0.5450577455502431,
+  "envelope": {
+   "max_g": 0.3936653086691386,
+   "max_ax_g": 0.04963058669238928,
+   "min_ax_g": -0.008161375094507898,
+   "viol_ticks": 0,
+   "shaped_frac": 0.014184397163120567,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 1.3872462806474573,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.19924477709788135,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.5521154777766911,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5450577455502431,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "hidden_motorbike",
+  "uid": "B_b1_008_0~hidden1",
+  "site": "B",
+  "split": "train",
+  "history_id": "B_b1_008_0",
+  "hidden_world": "hidden1",
+  "hidden_params": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 14,
+  "how": "boundary:left:dv_occ:B_p_no_bike"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc14",
+ "variation_id": "B_b1_008_0~hidden1",
+ "candidate_kind": "best",
+ "family": "left",
+ "scenario_params": {
+  "v": 25.0,
+  "d_obs": 60.0,
+  "stalled_bp": "vehicle.toyota.prius",
+  "occ_bp": "vehicle.mercedes.sprinter",
+  "occ_dx": -9.0,
+  "dv_occ": 0.0,
+  "bike": 0,
+  "bike_fast": 1,
+  "dv_fast": 12.0,
+  "dv_slow": 1.5,
+  "t_since": 0.5,
+  "rear": 1,
+  "rear_bp": "vehicle.mercedes.sprinter",
+  "rear_gap": 9.0,
+  "rear_react": 1.0,
+  "rear_b": 4.0,
+  "wx": "dry"
+ },
+ "hidden_params": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "A_lat": 3.920282398762768,
+  "b_evasive": 1.8677081707004546,
+  "y_off": 0.05422239489412162,
+  "t_start": 0.12559346193598694
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   3584296822,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.48516900107945227,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "best"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
