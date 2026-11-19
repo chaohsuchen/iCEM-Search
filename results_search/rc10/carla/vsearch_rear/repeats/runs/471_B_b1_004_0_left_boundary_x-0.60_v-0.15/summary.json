@@ -1,0 +1,250 @@
+{
+ "run_id": "471_B_b1_004_0_left_boundary_x-0.60_v-0.15",
+ "rc": "RC10",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.10 (clearance 2.00, road 0.11, friction 0.10), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC10-S4-opt@B",
+  "town": "Town06",
+  "site": "B",
+  "frame_site": {
+   "start_xy": [
+    128.5,
+    244.6
+   ],
+   "ref_lane": -5,
+   "ref_idx": 1,
+   "s0": 90.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 3.0,
+  "description": "The car ahead blows a tyre, skids along the ego's lane, then slides across into the left or the right lane; which one shows only t_reveal s after it loses control. Brake in lane, commit early to a side, or brake and escape to the side it is not sliding to once that is seen; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "spin": 0,
+   "slide_dir": 1,
+   "t_reveal": 0.7840976187976845,
+   "v": 26.3215300485433,
+   "headway": 0.3,
+   "b_spin": 10.913356760543607,
+   "slide": 2.479892373639206,
+   "benign_dec": 4.714194335449884,
+   "adjL": 1,
+   "adjL_dx": 9.366857802129864,
+   "adjR": 0,
+   "adjR_dx": 6.765385923751509,
+   "rear": 1,
+   "rear_bp": "vehicle.carlamotors.european_hgv",
+   "rear_gap": 10.087039329601895,
+   "rear_react": 0.9746186328933082,
+   "rear_b": 4.058035956758735,
+   "wx": "wet"
+  }
+ },
+ "policy": {
+  "name": "options.left",
+  "family": "left",
+  "params": {
+   "A_lat": 3.411364364973103,
+   "b_evasive": 0.7809219940317451,
+   "y_off": -0.03205109960328267,
+   "t_start": 0.0
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.10051555053113292,
+  "min_margins": {
+   "clear": 2.0,
+   "road": 0.1098862508375058,
+   "dyn": 0.10051555053113292
+  },
+  "start_speed": 26.385518600246773,
+  "end_speed": 23.4965720083732,
+  "progress_m": 188.80885638269052,
+  "terminal": 0.5621277098832412,
+  "envelope": {
+   "max_g": 0.5355694783107389,
+   "max_ax_g": 0.2801763302294298,
+   "min_ax_g": -0.5056459594668994,
+   "viol_ticks": 0,
+   "shaped_frac": 0.009009009009009009,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 2.0,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.1098862508375058,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.10051555053113292,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5621277098832412,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "inside the corridor, lane-centred at the horizon",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "spinning_lead",
+  "uid": "B_b1_004_0",
+  "site": "B",
+  "split": "train",
+  "history_id": "B_b1_004_0",
+  "hidden_world": null,
+  "hidden_params": [
+   "spin",
+   "slide_dir",
+   "t_reveal",
+   "b_spin",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 3,
+  "how": "boundary:left:headway:B_s201_0099"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc10",
+ "variation_id": "B_b1_004_0",
+ "candidate_kind": "boundary",
+ "family": "left",
+ "scenario_params": {
+  "spin": 0,
+  "slide_dir": 1,
+  "t_reveal": 0.7840976187976845,
+  "v": 26.3215300485433,
+  "headway": 0.3,
+  "b_spin": 10.913356760543607,
+  "slide": 2.479892373639206,
+  "benign_dec": 4.714194335449884,
+  "adjL": 1,
+  "adjL_dx": 9.366857802129864,
+  "adjR": 0,
+  "adjR_dx": 6.765385923751509,
+  "rear": 1,
+  "rear_bp": "vehicle.carlamotors.european_hgv",
+  "rear_gap": 10.087039329601895,
+  "rear_react": 0.9746186328933082,
+  "rear_b": 4.058035956758735,
+  "wx": "wet"
+ },
+ "hidden_params": [
+  "spin",
+  "slide_dir",
+  "t_reveal",
+  "b_spin",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "A_lat": 3.411364364973103,
+  "b_evasive": 0.7809219940317451,
+  "y_off": -0.03205109960328267,
+  "t_start": 0.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   3703504402,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "uncertain",
+   "edge",
+   "boundary"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "UNCERTAIN",
+  "nominal": "PASS",
+  "r": 0.10010212976050215,
+  "r_worst": 0.1000380568205439,
+  "n_pass": 15,
+  "n_worlds": 15,
+  "fail": "",
+  "near": "spin_car",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 1.1148889554990622,
+   "road": 0.48187903358573525,
+   "dyn": 0.10010212976050215
+  },
+  "cls": "success",
+  "robust_cost": 7.795710550058909
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
