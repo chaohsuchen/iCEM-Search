@@ -1,0 +1,240 @@
+{
+ "run_id": "963_A_s151_0036_keep_best",
+ "rc": "RC15",
+ "label": "FAIL",
+ "reason": "contact with lane_end",
+ "end_reason": "contact:lane_end",
+ "scenario": {
+  "sid": "RC15-M-opt",
+  "town": "Town06",
+  "site": "A",
+  "frame_site": {
+   "start_xy": [
+    40.0,
+    48.9
+   ],
+   "ref_lane": -6,
+   "ref_idx": 0,
+   "s0": 0.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 14.0,
+  "prefix_s": 2.0,
+  "description": "The ego's lane ends; a car alongside in the target lane yields, holds its speed or speeds up to stay level once the ego signals (hidden). Merge in front, drop back and merge behind, watch the response and decide, or stop before the end.",
+  "params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.8264899483902142,
+   "dv_adj": -0.8811527061055902,
+   "adj_dx": -0.19908132432429415,
+   "lead_dx": 43.95998207006942,
+   "follow_dx": -50.219576705610976,
+   "lead": 1,
+   "ego_lead_dx": 21.70474405781437,
+   "wx": "wet",
+   "v": 17.206291791865425,
+   "end_x": 173.16624028045882
+  }
+ },
+ "policy": {
+  "name": "options.keep",
+  "family": "keep",
+  "params": {},
+  "t_trigger": 1.2073675392798577e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -3.7178029864690956,
+  "min_margins": {
+   "clear": -3.7178029864690956,
+   "road": 0.6948579040334826,
+   "dyn": 0.9830184164348436
+  },
+  "start_speed": 17.652998141742444,
+  "end_speed": 17.227340359125282,
+  "progress_m": 170.18471793867113,
+  "terminal": null,
+  "envelope": {
+   "max_g": 0.13879129943920607,
+   "max_ax_g": 0.1387912846430717,
+   "min_ax_g": -0.053441888565729394,
+   "viol_ticks": 0,
+   "shaped_frac": 0.0,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [
+   56457964
+  ],
+  "actors": [
+   "lane_end"
+  ],
+  "impact_speed": 17.227340359125282
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": -3.7178029864690956,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.6948579040334826,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.9830184164348436,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": "lane_end",
+    "impact_speed": 17.227340359125282
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": false,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "ends in the target lane (in front of or behind the adjacent car)",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "lane_end_merge",
+  "uid": "A_s151_0036",
+  "site": "A",
+  "split": "train",
+  "history_id": "A_s151_0036",
+  "hidden_world": null,
+  "hidden_params": [
+   "mode",
+   "react",
+   "style"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 151,
+  "index": 16,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc15",
+ "variation_id": "A_s151_0036",
+ "candidate_kind": "best",
+ "family": "keep",
+ "scenario_params": {
+  "mode": "yield",
+  "style": "subtle",
+  "react": 0.8264899483902142,
+  "dv_adj": -0.8811527061055902,
+  "adj_dx": -0.19908132432429415,
+  "lead_dx": 43.95998207006942,
+  "follow_dx": -50.219576705610976,
+  "lead": 1,
+  "ego_lead_dx": 21.70474405781437,
+  "wx": "wet",
+  "v": 17.206291791865425,
+  "end_x": 173.16624028045882
+ },
+ "hidden_params": [
+  "mode",
+  "react",
+  "style"
+ ],
+ "policy_params": {},
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   151,
+   3568889226,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "FAIL",
+  "nominal": "FAIL",
+  "r": -3.71780298646908,
+  "r_worst": -3.71780298646908,
+  "n_pass": 0,
+  "n_worlds": 14,
+  "fail": "contact:lane_end",
+  "near": "lane_end",
+  "contact": "lane_end",
+  "impact_speed": 17.44629179186542,
+  "margins": {
+   "clear": -3.71780298646908,
+   "road": 0.7000000000000002,
+   "dyn": 1.0
+  },
+  "cls": "fail",
+  "robust_cost": 1872.314589593271,
+  "companions": {
+   "hold": {
+    "success": false,
+    "r": -3.71780298646908,
+    "fail": "contact:lane_end",
+    "contact": "lane_end",
+    "impact_speed": 17.44629179186542
+   },
+   "match": {
+    "success": false,
+    "r": -3.71780298646908,
+    "fail": "contact:lane_end",
+    "contact": "lane_end",
+    "impact_speed": 17.44629179186542
+   }
+  }
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
