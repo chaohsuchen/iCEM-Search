@@ -1,0 +1,612 @@
+[
+ {
+  "variation_id": "A_b1_000_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:A_s141_0108",
+  "history_id": "A_b1_000_0"
+ },
+ {
+  "variation_id": "A_b1_000_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_000_0",
+  "history_id": "A_b1_000_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_000_1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 54.548701908425265,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:A_s141_0108",
+  "history_id": "A_b1_000_1"
+ },
+ {
+  "variation_id": "A_b1_000_1~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 54.548701908425265,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_000_1",
+  "history_id": "A_b1_000_1",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_000_2",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 61.823052862637894,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:A_s141_0108",
+  "history_id": "A_b1_000_2"
+ },
+ {
+  "variation_id": "A_b1_000_2~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 61.823052862637894,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_000_2",
+  "history_id": "A_b1_000_2",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_000_3",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 65.46022833974422,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:A_s141_0108",
+  "history_id": "A_b1_000_3"
+ },
+ {
+  "variation_id": "A_b1_000_3~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 27.92374164617714,
+   "d_obs": 65.46022833974422,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -11.757617382162252,
+   "dv_occ": 0.6349027552415804,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 7.494912457155732,
+   "dv_slow": 1.4133304590166587,
+   "t_since": 0.7761267222364063,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_000_3",
+  "history_id": "A_b1_000_3",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_003_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 24.15695764915243,
+   "d_obs": 58.93620768331073,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -12.006517680402736,
+   "dv_occ": 1.8361763146698658,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 7.201954331326548,
+   "dv_slow": 2.5,
+   "t_since": 0.5440926573271097,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:left:dv_slow:A_s141_0066",
+  "history_id": "A_b1_003_0"
+ },
+ {
+  "variation_id": "A_b1_003_0~hidden1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 24.15695764915243,
+   "d_obs": 58.93620768331073,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -12.006517680402736,
+   "dv_occ": 1.8361763146698658,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 9.201954331326547,
+   "dv_slow": 2.5,
+   "t_since": 0.5440926573271097,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:hidden1:A_b1_003_0",
+  "history_id": "A_b1_003_0",
+  "hidden_world": "hidden1"
+ },
+ {
+  "variation_id": "A_b1_004_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 26.11281699400823,
+   "d_obs": 63.49656929259036,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -7.814262689137122,
+   "dv_occ": 0.9267547645307112,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 13.722560721653938,
+   "dv_slow": 2.5,
+   "t_since": 0.6307570398187752,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:left:dv_slow:A_s141_0060",
+  "history_id": "A_b1_004_0"
+ },
+ {
+  "variation_id": "A_b1_004_0~hidden1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 26.11281699400823,
+   "d_obs": 63.49656929259036,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -7.814262689137122,
+   "dv_occ": 0.9267547645307112,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 14.0,
+   "dv_slow": 2.5,
+   "t_since": 0.6307570398187752,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:hidden1:A_b1_004_0",
+  "history_id": "A_b1_004_0",
+  "hidden_world": "hidden1"
+ },
+ {
+  "variation_id": "A_b1_006_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 40.61258715665246,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.45578475103084,
+   "dv_occ": 1.8602595375991418,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 6.662874206402993,
+   "dv_slow": 0.8976690363259932,
+   "t_since": 0.7736451181208253,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:merge_back:v:A_s141_0014",
+  "history_id": "A_b1_006_0"
+ },
+ {
+  "variation_id": "A_b1_006_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 40.61258715665246,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.45578475103084,
+   "dv_occ": 1.8602595375991418,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 6.662874206402993,
+   "dv_slow": 0.8976690363259932,
+   "t_since": 0.7736451181208253,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_006_0",
+  "history_id": "A_b1_006_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_007_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 7,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 79.73317628704011,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -10.411966884411514,
+   "dv_occ": 1.1254437003104392,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 8.557784084418891,
+   "dv_slow": 0.6434294364824056,
+   "t_since": 0.760317259028058,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:merge_back:v:A_s141_0098",
+  "history_id": "A_b1_007_0"
+ },
+ {
+  "variation_id": "A_b1_007_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 7,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 79.73317628704011,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -10.411966884411514,
+   "dv_occ": 1.1254437003104392,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 8.557784084418891,
+   "dv_slow": 0.6434294364824056,
+   "t_since": 0.760317259028058,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_007_0",
+  "history_id": "A_b1_007_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_008_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 8,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 45.99064071511599,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -7.721268354725393,
+   "dv_occ": 0.9690726073077491,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 12.690786759625222,
+   "dv_slow": 1.0171014252780461,
+   "t_since": 0.5517640646049635,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:merge_back:v:A_s141_0019",
+  "history_id": "A_b1_008_0"
+ },
+ {
+  "variation_id": "A_b1_008_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 8,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 45.99064071511599,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -7.721268354725393,
+   "dv_occ": 0.9690726073077491,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 12.690786759625222,
+   "dv_slow": 1.0171014252780461,
+   "t_since": 0.5517640646049635,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_008_0",
+  "history_id": "A_b1_008_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "A_b1_011_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 9,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 62.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:A_p_fast_mid",
+  "history_id": "A_b1_011_0"
+ },
+ {
+  "variation_id": "A_b1_011_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 9,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 62.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:A_b1_011_0",
+  "history_id": "A_b1_011_0",
+  "hidden_world": "other_bike"
+ }
+]

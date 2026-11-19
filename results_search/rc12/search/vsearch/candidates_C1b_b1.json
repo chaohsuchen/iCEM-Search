@@ -1,0 +1,1534 @@
+[
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "r_worst": 0.5206861020713438,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.5206861020713438,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -1.0413722041426876
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden1",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.6222676712493983,
+   "psi_rest": 0.5045701832834664,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden2",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 4.232424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.0533168040795133,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.542281910020017,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "C1b_b1_013_0~hidden3",
+  "sid": "RC03-S1-opt@C1b",
+  "site": "C1b",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 24.171568152686916,
+   "d0": 36.633753661538606,
+   "intrude": 0.5222676712493983,
+   "psi_rest": 0.40457018328346633,
+   "T_slide": 1.5401717726284296,
+   "v_post": 26.0,
+   "v_esc": 22.825290663030177,
+   "esc_gap": 22.15555612123168,
+   "gap_center": 0.12697140191075107,
+   "lead_brake": 2.732424077189176,
+   "follow_T": 1.240434920467564,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 28.3229045057299,
+   "rear_react": 0.7422819100200171,
+   "wx": "wet",
+   "delay": 0.6,
+   "vic_bp": "vehicle.audi.a2",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.toyota.prius"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:right_brake:v_post:C1b_s312_0044"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    408343527,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "C1b_b1_013_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.5206861020713438,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ }
+]

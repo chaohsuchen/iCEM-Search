@@ -1,0 +1,856 @@
+[
+ {
+  "variation_id": "B_b1_001_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0005",
+  "history_id": "B_b1_001_0"
+ },
+ {
+  "variation_id": "B_b1_001_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_001_0",
+  "history_id": "B_b1_001_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_001_1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 54.209657843728976,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0005",
+  "history_id": "B_b1_001_1"
+ },
+ {
+  "variation_id": "B_b1_001_1~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 54.209657843728976,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_001_1",
+  "history_id": "B_b1_001_1",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_001_2",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 47.10482892186449,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0005",
+  "history_id": "B_b1_001_2"
+ },
+ {
+  "variation_id": "B_b1_001_2~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 47.10482892186449,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_001_2",
+  "history_id": "B_b1_001_2",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_001_3",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 43.55241446093224,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0005",
+  "history_id": "B_b1_001_3"
+ },
+ {
+  "variation_id": "B_b1_001_3~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 20.48934453047932,
+   "d_obs": 43.55241446093224,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -11.009383902987633,
+   "dv_occ": 0.5515344024985529,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 13.513078774874533,
+   "dv_slow": 0.5837474096635432,
+   "t_since": 0.4182016204500356,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_001_3",
+  "history_id": "B_b1_001_3",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_002_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0016",
+  "history_id": "B_b1_002_0"
+ },
+ {
+  "variation_id": "B_b1_002_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 40.0,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_002_0",
+  "history_id": "B_b1_002_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_002_1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 62.24453505710831,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0016",
+  "history_id": "B_b1_002_1"
+ },
+ {
+  "variation_id": "B_b1_002_1~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 62.24453505710831,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_002_1",
+  "history_id": "B_b1_002_1",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_002_2",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 73.36680258566247,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0016",
+  "history_id": "B_b1_002_2"
+ },
+ {
+  "variation_id": "B_b1_002_2~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 73.36680258566247,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_002_2",
+  "history_id": "B_b1_002_2",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_002_3",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 7,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 67.80566882138538,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:brake:d_obs:B_s141_0016",
+  "history_id": "B_b1_002_3"
+ },
+ {
+  "variation_id": "B_b1_002_3~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 7,
+  "scenario_params": {
+   "v": 21.528895376756022,
+   "d_obs": 67.80566882138538,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -10.651688056363366,
+   "dv_occ": 1.540587536923073,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.985612242746043,
+   "dv_slow": 0.7582106821594019,
+   "t_since": 0.7755533780216457,
+   "wx": "wet"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_002_3",
+  "history_id": "B_b1_002_3",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_005_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 8,
+  "scenario_params": {
+   "v": 19.097644748801116,
+   "d_obs": 53.29020536586886,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -12.991617421175519,
+   "dv_occ": 1.5081437152660853,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 6.280221174571974,
+   "dv_slow": 2.5,
+   "t_since": 0.32023819907033146,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:left:dv_slow:B_s141_0132",
+  "history_id": "B_b1_005_0"
+ },
+ {
+  "variation_id": "B_b1_005_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 8,
+  "scenario_params": {
+   "v": 19.097644748801116,
+   "d_obs": 53.29020536586886,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -12.991617421175519,
+   "dv_occ": 1.5081437152660853,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 6.280221174571974,
+   "dv_slow": 2.5,
+   "t_since": 0.32023819907033146,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_005_0",
+  "history_id": "B_b1_005_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_009_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 9,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 76.11272812145526,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -12.529546598819369,
+   "dv_occ": 0.4463250577320495,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 9.747873717034896,
+   "dv_slow": 2.3766702936385418,
+   "t_since": 0.37329297262232897,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:B_s141_0119",
+  "history_id": "B_b1_009_0"
+ },
+ {
+  "variation_id": "B_b1_009_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 9,
+  "scenario_params": {
+   "v": 22.0,
+   "d_obs": 76.11272812145526,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -12.529546598819369,
+   "dv_occ": 0.4463250577320495,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 9.747873717034896,
+   "dv_slow": 2.3766702936385418,
+   "t_since": 0.37329297262232897,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_009_0",
+  "history_id": "B_b1_009_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_010_0",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 10,
+  "scenario_params": {
+   "v": 17.16,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:B_s141_0064",
+  "history_id": "B_b1_010_0"
+ },
+ {
+  "variation_id": "B_b1_010_0~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 10,
+  "scenario_params": {
+   "v": 17.16,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_010_0",
+  "history_id": "B_b1_010_0",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_010_1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 11,
+  "scenario_params": {
+   "v": 17.688351181690038,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:B_s141_0064",
+  "history_id": "B_b1_010_1"
+ },
+ {
+  "variation_id": "B_b1_010_1~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 11,
+  "scenario_params": {
+   "v": 17.688351181690038,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_010_1",
+  "history_id": "B_b1_010_1",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_010_2",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 12,
+  "scenario_params": {
+   "v": 17.424175590845017,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:B_s141_0064",
+  "history_id": "B_b1_010_2"
+ },
+ {
+  "variation_id": "B_b1_010_2~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 12,
+  "scenario_params": {
+   "v": 17.424175590845017,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_010_2",
+  "history_id": "B_b1_010_2",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "B_b1_010_3",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 13,
+  "scenario_params": {
+   "v": 17.29208779542251,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "boundary:memory_left:v:B_s141_0064",
+  "history_id": "B_b1_010_3"
+ },
+ {
+  "variation_id": "B_b1_010_3~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 13,
+  "scenario_params": {
+   "v": 17.29208779542251,
+   "d_obs": 72.60895662425773,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.391753862100888,
+   "dv_occ": 1.0548210087650434,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 11.04251025016077,
+   "dv_slow": 1.7335595475477577,
+   "t_since": 0.7287627974403362,
+   "wx": "heavy"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:B_b1_010_3",
+  "history_id": "B_b1_010_3",
+  "hidden_world": "other_bike"
+ }
+]

@@ -1,0 +1,79 @@
+[
+ {
+  "variation_id": "A_s201_0055",
+  "status": "recoverable",
+  "recovering": [
+   "right"
+  ]
+ },
+ {
+  "variation_id": "E1_s201_0071",
+  "status": "recoverable",
+  "recovering": [
+   "left"
+  ]
+ },
+ {
+  "variation_id": "A_s201_0098",
+  "status": "recoverable",
+  "recovering": [
+   "left",
+   "right",
+   "brake_free"
+  ]
+ },
+ {
+  "variation_id": "B_p_slide_side_closed",
+  "status": "recoverable",
+  "recovering": [
+   "left",
+   "brake_free"
+  ]
+ },
+ {
+  "variation_id": "A_s201_0037",
+  "status": "recoverable",
+  "recovering": [
+   "left",
+   "brake_free"
+  ]
+ },
+ {
+  "variation_id": "A_s201_0040",
+  "status": "recoverable",
+  "recovering": [
+   "right",
+   "brake_free"
+  ]
+ },
+ {
+  "variation_id": "E1_s201_0138",
+  "status": "uncertain",
+  "recovering": []
+ },
+ {
+  "variation_id": "B_s201_0062",
+  "status": "unrecoverable",
+  "recovering": []
+ },
+ {
+  "variation_id": "B_s201_0002",
+  "status": "uncertain",
+  "recovering": []
+ },
+ {
+  "variation_id": "A_s201_0004",
+  "status": "unrecoverable",
+  "recovering": []
+ },
+ {
+  "variation_id": "B_s201_0047",
+  "status": "unrecoverable",
+  "recovering": []
+ },
+ {
+  "variation_id": "B_s201_0020",
+  "status": "unrecoverable",
+  "recovering": []
+ }
+]

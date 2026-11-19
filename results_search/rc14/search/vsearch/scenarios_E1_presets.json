@@ -1,0 +1,429 @@
+[
+ {
+  "variation_id": "E1_p_fast_far",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 80.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:fast_far",
+  "history_id": "E1_p_fast_far"
+ },
+ {
+  "variation_id": "E1_p_fast_far~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 80.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_fast_far",
+  "history_id": "E1_p_fast_far",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "E1_p_fast_mid",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 62.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:fast_mid",
+  "history_id": "E1_p_fast_mid"
+ },
+ {
+  "variation_id": "E1_p_fast_mid~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 62.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_fast_mid",
+  "history_id": "E1_p_fast_mid",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "E1_p_fast_near",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 45.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:fast_near",
+  "history_id": "E1_p_fast_near"
+ },
+ {
+  "variation_id": "E1_p_fast_near~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 45.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_fast_near",
+  "history_id": "E1_p_fast_near",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "E1_p_no_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 60.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 0,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:no_bike",
+  "history_id": "E1_p_no_bike"
+ },
+ {
+  "variation_id": "E1_p_no_bike~hidden1",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 60.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 0,
+   "bike_fast": 1,
+   "dv_fast": 12.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:hidden1:E1_p_no_bike",
+  "history_id": "E1_p_no_bike",
+  "hidden_world": "hidden1"
+ },
+ {
+  "variation_id": "E1_p_slow_far",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 80.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:slow_far",
+  "history_id": "E1_p_slow_far"
+ },
+ {
+  "variation_id": "E1_p_slow_far~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 80.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_slow_far",
+  "history_id": "E1_p_slow_far",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "E1_p_slow_near",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 45.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:slow_near",
+  "history_id": "E1_p_slow_near"
+ },
+ {
+  "variation_id": "E1_p_slow_near~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 45.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_slow_near",
+  "history_id": "E1_p_slow_near",
+  "hidden_world": "other_bike"
+ },
+ {
+  "variation_id": "E1_p_truck_occluder",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 70.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 1,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "preset:truck_occluder",
+  "history_id": "E1_p_truck_occluder"
+ },
+ {
+  "variation_id": "E1_p_truck_occluder~other_bike",
+  "rc": "rc14",
+  "sid": "RC14-S1-opt@E1",
+  "site": "E1",
+  "split": "heldout",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "v": 25.0,
+   "d_obs": 70.0,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -9.0,
+   "dv_occ": 1.0,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 10.0,
+   "dv_slow": 1.5,
+   "t_since": 0.5,
+   "wx": "dry"
+  },
+  "hidden": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow"
+  ],
+  "source": "hidden_world:other_bike:E1_p_truck_occluder",
+  "history_id": "E1_p_truck_occluder",
+  "hidden_world": "other_bike"
+ }
+]

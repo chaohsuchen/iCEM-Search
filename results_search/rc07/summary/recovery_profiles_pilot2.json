@@ -1,0 +1,1502 @@
+[
+ {
+  "variation_id": "A_s101_0000",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 23.46754472998999,
+   "headway": 1.115835868781833,
+   "blow_dec": 7.076202596928658,
+   "blow_dy": -0.16273916709272596,
+   "benign_dec": 1.9717561836960402,
+   "fast": 1,
+   "fast_dv": 4.342036099662754,
+   "fast_gap": 26.53835440149528,
+   "fast_notice": 36.76665546909526,
+   "fast_react": 1.4763685777801292,
+   "fast_b": 3.618998670685932,
+   "ramp_dx": -8.727737066929192,
+   "ramp_v": 25.448904510992783,
+   "ramp_cut": 1,
+   "t_cut": 1.5883169270670248,
+   "ramp_acc": 3.0369764344623364,
+   "ramp_left": 150.93600521664985,
+   "pile": 0,
+   "pile_dx": 50.69663762592964,
+   "rear": 1,
+   "rear_gap": 38.51142743588195,
+   "rear_react": 1.0445034904598427,
+   "dense_sp": 13.868653143297427,
+   "dense_off": -1.3428146704837212,
+   "wx": "wet"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.3620320386894775,
+    "r_carla": null,
+    "contact": "lead",
+    "impact_speed": 15.883026726227358,
+    "run": null
+   },
+   "brake": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {
+     "b_frac": 0.8212005299863598,
+     "off": -0.3803165535658257
+    },
+    "r_surrogate": -1.0,
+    "r_carla": null,
+    "contact": "rear",
+    "impact_speed": 0.1635691716947548,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 6.630251095528556,
+     "b_evasive": 3.947709946194718,
+     "y_off": -0.3533996072554086,
+     "t_start": 0.024710426469008985,
+     "h_A": 3.942801623244071,
+     "h_margin": 3.602544771785967,
+     "h_a": 0.7807787486228587,
+     "h_y": 0.10631092593914043
+    },
+    "r_surrogate": 0.09992607398278364,
+    "r_carla": 0.05663946681504162,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "002_A_s101_0000_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 3.667321889354201,
+     "b_evasive": 1.9516833802614821,
+     "y_off": 0.5842146661978207,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.56197737572548,
+     "h_T": 1.11209809927223
+    },
+    "r_surrogate": 0.1769509644743924,
+    "r_carla": 0.3538005704374181,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "004_A_s101_0000_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.8520514144112825,
+     "b_evasive": 6.0,
+     "y_off": 0.21303095299055197,
+     "t_start": 0.0,
+     "h_dv": 6.0,
+     "h_a": 3.5
+    },
+    "r_surrogate": 0.11921268434842591,
+    "r_carla": 0.11922610552093471,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "000_A_s101_0000_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0001",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 24.016232764971097,
+   "headway": 1.37818289022152,
+   "blow_dec": 8.691588579403875,
+   "blow_dy": 0.28912699790531093,
+   "benign_dec": 2.416273937925869,
+   "fast": 1,
+   "fast_dv": 4.456261511123242,
+   "fast_gap": 55.88145798663969,
+   "fast_notice": 22.589353021758757,
+   "fast_react": 1.3953220798932793,
+   "fast_b": 5.812007873818927,
+   "ramp_dx": -3.413929889578455,
+   "ramp_v": 28.90566366490685,
+   "ramp_cut": 1,
+   "t_cut": 2.3526878529225725,
+   "ramp_acc": 3.337590819533088,
+   "ramp_left": 91.97403665262212,
+   "pile": 0,
+   "pile_dx": 75.42844983954424,
+   "rear": 0,
+   "rear_gap": 42.69907248562764,
+   "rear_react": 0.93847553241169,
+   "dense_sp": 16.629839856701352,
+   "dense_off": -2.9474570628718895,
+   "wx": "dry"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "carla",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.253548898359776,
+    "r_carla": -3.27636337969033,
+    "contact": "lead",
+    "impact_speed": 0.5489436005806425,
+    "run": "007_A_s101_0001_keep_best"
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.9,
+     "off": 0.0
+    },
+    "r_surrogate": 0.30568603435075115,
+    "r_carla": 0.30567179695306024,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "006_A_s101_0001_brake_best"
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.115071091924658,
+     "b_evasive": 4.358598876988774,
+     "y_off": 0.48857762304302665,
+     "t_start": 0.0,
+     "h_A": 2.0,
+     "h_margin": 2.299451451319213,
+     "h_a": 0.3377234110453729,
+     "h_y": 0.04536518237356818
+    },
+    "r_surrogate": 0.3636092425938071,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.7133970498089734,
+     "b_evasive": 6.0,
+     "y_off": 0.43884540795375393,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 1.1197107975702374,
+     "h_T": 1.2579456492793688
+    },
+    "r_surrogate": 0.39145700004264616,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.618348843346675,
+     "b_evasive": 3.0869467375793915,
+     "y_off": 0.6000000000000001,
+     "t_start": 0.015898167201484677,
+     "h_dv": 5.174894461028566,
+     "h_a": 2.6255793094528777
+    },
+    "r_surrogate": 0.22241849833632132,
+    "r_carla": 0.22229646048608787,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "008_A_s101_0001_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0002",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 0,
+   "v": 22.441180441907864,
+   "headway": 1.5093964746412525,
+   "blow_dec": 7.857475154388462,
+   "blow_dy": -0.1400582463177501,
+   "benign_dec": 1.3516204137246126,
+   "fast": 0,
+   "fast_dv": 5.898202821795875,
+   "fast_gap": 44.47890379263537,
+   "fast_notice": 37.752256404418986,
+   "fast_react": 1.1625040259444888,
+   "fast_b": 4.914921130917807,
+   "ramp_dx": -14.224899119746487,
+   "ramp_v": 21.19976529548939,
+   "ramp_cut": 1,
+   "t_cut": 2.8835124161407113,
+   "ramp_acc": 2.838892638652981,
+   "ramp_left": 127.38273377254349,
+   "pile": 1,
+   "pile_dx": 76.07466141939432,
+   "rear": 0,
+   "rear_gap": 27.530989781591224,
+   "rear_react": 0.8330095311452368,
+   "dense_sp": 16.877912346070786,
+   "dense_off": -1.6204135459500644,
+   "wx": "heavy"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "keep",
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {},
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.9,
+     "off": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_A": 3.0,
+     "h_margin": 3.0,
+     "h_a": 1.0,
+     "h_y": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.5,
+     "h_T": 1.2
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_dv": 6.0,
+     "h_a": 3.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0003",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 20.384869588329444,
+   "headway": 1.286916862472861,
+   "blow_dec": 8.212025903566586,
+   "blow_dy": -0.15611135407852128,
+   "benign_dec": 1.0436555831751664,
+   "fast": 1,
+   "fast_dv": 6.137131342462914,
+   "fast_gap": 52.544697930708374,
+   "fast_notice": 39.852830952430175,
+   "fast_react": 1.3945073184255878,
+   "fast_b": 4.728634090878343,
+   "ramp_dx": -3.8130308123066676,
+   "ramp_v": 22.599244507884713,
+   "ramp_cut": 1,
+   "t_cut": 1.9383070557681672,
+   "ramp_acc": 2.6769240135471253,
+   "ramp_left": 120.54573631980404,
+   "pile": 0,
+   "pile_dx": 55.487779038080156,
+   "rear": 1,
+   "rear_gap": 16.213211714771386,
+   "rear_react": 0.8377784472748117,
+   "dense_sp": 16.40425327831236,
+   "dense_off": -0.26395689368868513,
+   "wx": "heavy"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "carla",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.3847337413945153,
+    "r_carla": -3.3950407579606887,
+    "contact": "lead",
+    "impact_speed": 15.056219676587116,
+    "run": "012_A_s101_0003_keep_best"
+   },
+   "brake": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {
+     "b_frac": 0.7851654358978758,
+     "off": -0.04107946157234421
+    },
+    "r_surrogate": -1.1267093746201757,
+    "r_carla": null,
+    "contact": "rear",
+    "impact_speed": 0.5387720093730659,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 5.921971053435407,
+     "b_evasive": 4.168875782921011,
+     "y_off": 0.5388405332718247,
+     "t_start": 0.27678214193376055,
+     "h_A": 3.168093772794765,
+     "h_margin": 5.245771642792684,
+     "h_a": 0.9148078031185085,
+     "h_y": -0.16863288539402227
+    },
+    "r_surrogate": 0.1926422577358068,
+    "r_carla": 0.19267118018810647,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "015_A_s101_0003_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 3.0,
+     "b_evasive": 6.0,
+     "y_off": -0.11783819330387518,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.0168051550610397,
+     "h_T": 1.3090601518314553
+    },
+    "r_surrogate": 0.19265870231462123,
+    "r_carla": 0.2606086865725966,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "017_A_s101_0003_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.684679940707454,
+     "b_evasive": 3.528544048555484,
+     "y_off": 0.5986383923639491,
+     "t_start": 0.027642559765650644,
+     "h_dv": 6.0,
+     "h_a": 2.840258561708407
+    },
+    "r_surrogate": 0.19258110002044826,
+    "r_carla": 0.19261846397209448,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "013_A_s101_0003_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0004",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 25.834718916096026,
+   "headway": 1.0702447394549044,
+   "blow_dec": 7.828736126290174,
+   "blow_dy": -0.1282639617685536,
+   "benign_dec": 1.2397559152761979,
+   "fast": 1,
+   "fast_dv": 7.448630007736352,
+   "fast_gap": 58.122323289283514,
+   "fast_notice": 38.48070962115061,
+   "fast_react": 1.2873250682619404,
+   "fast_b": 5.8548410113587295,
+   "ramp_dx": 8.066314410286601,
+   "ramp_v": 22.911880355117862,
+   "ramp_cut": 1,
+   "t_cut": 2.0888142950892754,
+   "ramp_acc": 2.6219861456600677,
+   "ramp_left": 138.1685105850032,
+   "pile": 0,
+   "pile_dx": 67.34531683116722,
+   "rear": 0,
+   "rear_gap": 19.6349144500484,
+   "rear_react": 1.1007100138616588,
+   "dense_sp": 15.960268841843577,
+   "dense_off": -3.1205151098805795,
+   "wx": "wet"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "carla",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.332190730750402,
+    "r_carla": -3.401415502042177,
+    "contact": "lead",
+    "impact_speed": 8.846361522046365,
+    "run": "021_A_s101_0004_keep_best"
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.8838111081798078,
+     "off": 0.06939647843784036
+    },
+    "r_surrogate": 0.1161888837814331,
+    "r_carla": 0.11618886962628316,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "019_A_s101_0004_brake_best"
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.668908279650011,
+     "b_evasive": 5.095592535904489,
+     "y_off": 0.2574955683856679,
+     "t_start": 0.09196119563966575,
+     "h_A": 3.1802315178173894,
+     "h_margin": 4.019247959505824,
+     "h_a": 1.1776071407344972,
+     "h_y": 0.08461355620052396
+    },
+    "r_surrogate": 0.11920867176607741,
+    "r_carla": 0.1192074231368293,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "024_A_s101_0004_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 3.558646448839979,
+     "b_evasive": 4.500910598278907,
+     "y_off": 0.6000000000000001,
+     "t_start": 0.0,
+     "h_match": 0.7764649117198077,
+     "h_a": 2.878013834287608,
+     "h_T": 1.3306908600195597
+    },
+    "r_surrogate": 0.20679427158602282,
+    "r_carla": 0.34819493036236837,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "026_A_s101_0004_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.769984695982569,
+     "b_evasive": 4.763000268665,
+     "y_off": 0.5558068493005686,
+     "t_start": 0.03508479647368623,
+     "h_dv": 5.372383621614767,
+     "h_a": 3.218038254100857
+    },
+    "r_surrogate": 0.11920867111754418,
+    "r_carla": 0.11919788821534094,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "022_A_s101_0004_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0005",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 22.689931190794447,
+   "headway": 0.9044540242289432,
+   "blow_dec": 7.121417107781855,
+   "blow_dy": 0.3514629409971839,
+   "benign_dec": 2.0962422856530663,
+   "fast": 1,
+   "fast_dv": 5.681781827050667,
+   "fast_gap": 53.70492010323758,
+   "fast_notice": 24.76908172549097,
+   "fast_react": 0.851673116570859,
+   "fast_b": 4.6179303088520705,
+   "ramp_dx": 0.8043353232374978,
+   "ramp_v": 19.74269037538392,
+   "ramp_cut": 1,
+   "t_cut": 2.45358625176784,
+   "ramp_acc": 2.9670103405259853,
+   "ramp_left": 90.1037931550401,
+   "pile": 0,
+   "pile_dx": 54.21673147321712,
+   "rear": 1,
+   "rear_gap": 36.38339836926854,
+   "rear_react": 0.6398657823586664,
+   "dense_sp": 19.29858799633045,
+   "dense_off": -2.206005726066671,
+   "wx": "heavy"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.164868160255774,
+    "r_carla": null,
+    "contact": "lead",
+    "impact_speed": 12.422016168767575,
+    "run": null
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.7953857624558425,
+     "off": 0.1437654955247376
+    },
+    "r_surrogate": 0.21017112635439483,
+    "r_carla": 0.20999636158961144,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "028_A_s101_0005_brake_best"
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 3.0,
+     "y_off": 0.0,
+     "t_start": 0.0,
+     "h_A": 3.0,
+     "h_margin": 3.0,
+     "h_a": 1.0,
+     "h_y": 0.0
+    },
+    "r_surrogate": 0.19250301880255016,
+    "r_carla": 0.19270621856332149,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "032_A_s101_0005_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 6.210553948956512,
+     "b_evasive": 4.182116352141181,
+     "y_off": 0.06346861618880406,
+     "t_start": 0.24974248068971183,
+     "h_match": 1.0,
+     "h_a": 2.3076387530840363,
+     "h_T": 1.6018190931751364
+    },
+    "r_surrogate": 0.1926437682334341,
+    "r_carla": 0.19258489825856306,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "034_A_s101_0005_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.003394314615575,
+     "b_evasive": 0.4561812185857119,
+     "y_off": 0.06199778297814773,
+     "t_start": 0.1500950467008494,
+     "h_dv": 4.531562323768446,
+     "h_a": 2.912764798959129
+    },
+    "r_surrogate": 0.19262684064387492,
+    "r_carla": 0.19269189514872964,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "030_A_s101_0005_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0006",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 23.123790158427767,
+   "headway": 1.0464079446414012,
+   "blow_dec": 8.352325357537515,
+   "blow_dy": 0.2691234917113432,
+   "benign_dec": 2.2856545743846626,
+   "fast": 1,
+   "fast_dv": 6.757546292862104,
+   "fast_gap": 49.58610623814796,
+   "fast_notice": 38.71970077678696,
+   "fast_react": 1.3942771088808465,
+   "fast_b": 3.600251181041706,
+   "ramp_dx": 3.759034875584107,
+   "ramp_v": 24.11511896807229,
+   "ramp_cut": 1,
+   "t_cut": 2.3602461508880084,
+   "ramp_acc": 3.3383027912190197,
+   "ramp_left": 121.14116995282706,
+   "pile": 0,
+   "pile_dx": 62.818278847029404,
+   "rear": 1,
+   "rear_gap": 20.706036173254123,
+   "rear_react": 0.6094099795673358,
+   "dense_sp": 15.125553336105636,
+   "dense_off": -0.03251613749971227,
+   "wx": "wet"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.337868631082602,
+    "r_carla": null,
+    "contact": "lead",
+    "impact_speed": 16.35822631325145,
+    "run": null
+   },
+   "brake": {
+    "label": "FAIL",
+    "source": "carla",
+    "surrogate": "FAIL",
+    "policy": {
+     "b_frac": 0.7577846477899521,
+     "off": 0.1632956340538394
+    },
+    "r_surrogate": -0.13093793443108837,
+    "r_carla": -1.6272995495256557,
+    "contact": "rear",
+    "impact_speed": 2.1658460627865455,
+    "run": "036_A_s101_0006_brake_best"
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 3.3171476803198177,
+     "b_evasive": 4.203419678291144,
+     "y_off": 0.33481278777931556,
+     "t_start": 0.04128981182955563,
+     "h_A": 2.8433071135906838,
+     "h_margin": 6.0,
+     "h_a": 0.8100047407977804,
+     "h_y": -0.006812352577607567
+    },
+    "r_surrogate": 0.2538043105578832,
+    "r_carla": 0.3267816200198945,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "039_A_s101_0006_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 3.0,
+     "b_evasive": 5.100163417645169,
+     "y_off": 0.34937760791159755,
+     "t_start": 0.09353996286177814,
+     "h_match": 0.9554275880236998,
+     "h_a": 1.7995622352307512,
+     "h_T": 1.5945713662404073
+    },
+    "r_surrogate": 0.35308323278812603,
+    "r_carla": 0.46393436224751927,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "041_A_s101_0006_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.124229896527588,
+     "b_evasive": 3.5941831016208763,
+     "y_off": 0.29470281512753393,
+     "t_start": 0.0,
+     "h_dv": 5.323267101721681,
+     "h_a": 2.917216791728952
+    },
+    "r_surrogate": 0.11921351814161207,
+    "r_carla": 0.21169485829483747,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "037_A_s101_0006_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0007",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 0,
+   "v": 22.903839945136824,
+   "headway": 1.3341204889517249,
+   "blow_dec": 7.107779713576651,
+   "blow_dy": 0.3075351389084907,
+   "benign_dec": 2.395498905043614,
+   "fast": 0,
+   "fast_dv": 4.693109903575325,
+   "fast_gap": 25.183883088297854,
+   "fast_notice": 26.511035725873025,
+   "fast_react": 1.4845328596317737,
+   "fast_b": 4.639536981947803,
+   "ramp_dx": 0.3864507389260885,
+   "ramp_v": 21.55681295980415,
+   "ramp_cut": 1,
+   "t_cut": 2.05155780061759,
+   "ramp_acc": 2.666388981533357,
+   "ramp_left": 96.2708604908171,
+   "pile": 0,
+   "pile_dx": 77.1451834232832,
+   "rear": 1,
+   "rear_gap": 46.86388177842642,
+   "rear_react": 0.6238776730197183,
+   "dense_sp": 12.040027286962834,
+   "dense_off": 0.9483058788244434,
+   "wx": "heavy"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "keep",
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {},
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.9,
+     "off": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_A": 3.0,
+     "h_margin": 3.0,
+     "h_a": 1.0,
+     "h_y": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.5,
+     "h_T": 1.2
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_dv": 6.0,
+     "h_a": 3.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": 0.5997039575385034,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "043_A_s101_0007_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0008",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 0,
+   "v": 28.314043014729105,
+   "headway": 1.2311065256555154,
+   "blow_dec": 7.749353084255612,
+   "blow_dy": 0.16267312226281194,
+   "benign_dec": 1.5095453622443882,
+   "fast": 0,
+   "fast_dv": 4.8645150800092996,
+   "fast_gap": 48.66788738285311,
+   "fast_notice": 24.919795262543765,
+   "fast_react": 1.3319629131451096,
+   "fast_b": 4.682424758889585,
+   "ramp_dx": 7.246791051703182,
+   "ramp_v": 27.676919944179737,
+   "ramp_cut": 1,
+   "t_cut": 2.2917081026419917,
+   "ramp_acc": 2.9568953755797,
+   "ramp_left": 92.92340427369825,
+   "pile": 0,
+   "pile_dx": 69.51236365182272,
+   "rear": 1,
+   "rear_gap": 47.12968271567426,
+   "rear_react": 0.7212740632181824,
+   "dense_sp": 13.244618000981676,
+   "dense_off": 1.8734343448240396,
+   "wx": "dry"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "keep",
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {},
+    "r_surrogate": 0.6,
+    "r_carla": 0.5994139228288294,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "044_A_s101_0008_keep_best"
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.9,
+     "off": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_A": 3.0,
+     "h_margin": 3.0,
+     "h_a": 1.0,
+     "h_y": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.5,
+     "h_T": 1.2
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_dv": 6.0,
+     "h_a": 3.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0009",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 19.04445427535346,
+   "headway": 1.4741894104673157,
+   "blow_dec": 8.017653615857764,
+   "blow_dy": -0.40466306321402945,
+   "benign_dec": 1.0227477691689404,
+   "fast": 1,
+   "fast_dv": 6.6151208370882335,
+   "fast_gap": 49.00702084288968,
+   "fast_notice": 37.38453138326656,
+   "fast_react": 1.0060092946528816,
+   "fast_b": 4.2472032484301945,
+   "ramp_dx": 2.8144311114048493,
+   "ramp_v": 21.975352546331546,
+   "ramp_cut": 1,
+   "t_cut": 1.5733350635387375,
+   "ramp_acc": 3.3321948981410814,
+   "ramp_left": 183.61388965621052,
+   "pile": 0,
+   "pile_dx": 49.43604539045218,
+   "rear": 1,
+   "rear_gap": 21.192907885016986,
+   "rear_react": 0.9006548571427454,
+   "dense_sp": 13.908204900434963,
+   "dense_off": -5.7385514971733365,
+   "wx": "heavy"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.237051342236093,
+    "r_carla": null,
+    "contact": "lead",
+    "impact_speed": 15.493497736090065,
+    "run": null
+   },
+   "brake": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {
+     "b_frac": 0.7080143991865206,
+     "off": -0.09556136435921547
+    },
+    "r_surrogate": -1.2639234073334045,
+    "r_carla": null,
+    "contact": "rear",
+    "impact_speed": 0.8997287608899807,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 7.150282443191996,
+     "b_evasive": 1.1887534545269878,
+     "y_off": 0.3876762620776504,
+     "t_start": 0.10675864873047712,
+     "h_A": 2.4377098389541474,
+     "h_margin": 3.7644757693288557,
+     "h_a": 0.3534245616752761,
+     "h_y": 0.05971899954942533
+    },
+    "r_surrogate": 0.1926210923800198,
+    "r_carla": 0.19257788283650734,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "047_A_s101_0009_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.983838080596767,
+     "b_evasive": 4.249349459401452,
+     "y_off": 0.24882488868074482,
+     "t_start": 0.018176213373407753,
+     "h_match": 0.013993947839266135,
+     "h_a": 0.5,
+     "h_T": 1.4983888066556115
+    },
+    "r_surrogate": 0.19257581289776615,
+    "r_carla": 0.19254558253237075,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "049_A_s101_0009_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 6.324806136132168,
+     "b_evasive": 4.128168454521115,
+     "y_off": 0.36117458399627733,
+     "t_start": 0.25295982094761377,
+     "h_dv": 2.0545688123684975,
+     "h_a": 1.0
+    },
+    "r_surrogate": 0.19264121366050801,
+    "r_carla": 0.19259382673520964,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "045_A_s101_0009_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0010",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 1,
+   "v": 27.82488046081827,
+   "headway": 0.9605824313279068,
+   "blow_dec": 7.412359113861149,
+   "blow_dy": -0.00247303588760861,
+   "benign_dec": 1.748380792173534,
+   "fast": 1,
+   "fast_dv": 6.558156776208635,
+   "fast_gap": 36.322493976971515,
+   "fast_notice": 37.750134298276556,
+   "fast_react": 1.2536146331917963,
+   "fast_b": 3.81829308368604,
+   "ramp_dx": 1.0627850735118844,
+   "ramp_v": 26.423150895727943,
+   "ramp_cut": 0,
+   "t_cut": 1.6454140221527465,
+   "ramp_acc": 3.329047954024498,
+   "ramp_left": 130.4965281087225,
+   "pile": 1,
+   "pile_dx": 40.726532805140856,
+   "rear": 0,
+   "rear_gap": 45.61219966150052,
+   "rear_react": 0.664792186079754,
+   "dense_sp": 18.638584047325,
+   "dense_off": -4.03433564519651,
+   "wx": "dry"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "FAIL",
+    "source": "surrogate",
+    "surrogate": "FAIL",
+    "policy": {},
+    "r_surrogate": -3.339689780368756,
+    "r_carla": null,
+    "contact": "lead",
+    "impact_speed": 19.552133696011115,
+    "run": null
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "b_frac": 0.811179187730882,
+     "off": 0.18882895738907057
+    },
+    "r_surrogate": 0.3668872804932155,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 3.426786742826886,
+     "b_evasive": 4.265924386519909,
+     "y_off": 0.0969878192722079,
+     "t_start": 0.0,
+     "h_A": 2.654532675998887,
+     "h_margin": 2.811951505732691,
+     "h_a": 0.5675090447472921,
+     "h_y": 0.02245658129705705
+    },
+    "r_surrogate": 0.5279095918288037,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "surrogate",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.16115802543738,
+     "b_evasive": 4.872814174311247,
+     "y_off": 0.6000000000000001,
+     "t_start": 0.18407637951256642,
+     "h_match": 0.8247891977860449,
+     "h_a": 1.849640134040194,
+     "h_T": 0.8
+    },
+    "r_surrogate": 0.4884593083886061,
+    "r_carla": null,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": null
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "PASS",
+    "policy": {
+     "A_lat": 4.619016130522091,
+     "b_evasive": 6.0,
+     "y_off": 0.5500648764515326,
+     "t_start": 0.0,
+     "h_dv": 4.547335017755816,
+     "h_a": 1.8585859654256962
+    },
+    "r_surrogate": 0.4884617396546841,
+    "r_carla": 0.4994809220441967,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "052_A_s101_0010_right-away_best"
+   }
+  }
+ },
+ {
+  "variation_id": "A_s101_0011",
+  "site": "A",
+  "split": "train",
+  "scenario_params": {
+   "blowout": 0,
+   "v": 22.880422631508313,
+   "headway": 0.9172991413148108,
+   "blow_dec": 7.772887107946865,
+   "blow_dy": 0.3862951328540912,
+   "benign_dec": 2.44385936473933,
+   "fast": 1,
+   "fast_dv": 5.932889060066964,
+   "fast_gap": 36.649726989093644,
+   "fast_notice": 15.90869698546116,
+   "fast_react": 0.9481204322649417,
+   "fast_b": 4.4240196338604685,
+   "ramp_dx": 6.026173330025988,
+   "ramp_v": 25.706635459161927,
+   "ramp_cut": 1,
+   "t_cut": 2.06078997590748,
+   "ramp_acc": 3.0324525963488442,
+   "ramp_left": 194.24614538893312,
+   "pile": 1,
+   "pile_dx": 44.61494196941237,
+   "rear": 0,
+   "rear_gap": 47.903531997892216,
+   "rear_react": 0.7339563611948718,
+   "dense_sp": 17.936848477563604,
+   "dense_off": -1.4821891254495325,
+   "wx": "wet"
+  },
+  "status": "recoverable",
+  "recovering": [
+   "keep",
+   "brake",
+   "right>return",
+   "right>stay",
+   "right>away"
+  ],
+  "mitigation": null,
+  "families": {
+   "keep": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {},
+    "r_surrogate": 0.6,
+    "r_carla": 0.5996800603339815,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "057_A_s101_0011_keep_best"
+   },
+   "brake": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "b_frac": 0.9,
+     "off": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": 0.5996800603339815,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "056_A_s101_0011_brake_best"
+   },
+   "right>return": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_A": 3.0,
+     "h_margin": 3.0,
+     "h_a": 1.0,
+     "h_y": 0.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": 0.5996800603339815,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "059_A_s101_0011_right-return_best"
+   },
+   "right>stay": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_match": 1.0,
+     "h_a": 2.5,
+     "h_T": 1.2
+    },
+    "r_surrogate": 0.6,
+    "r_carla": 0.5996800603339815,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "060_A_s101_0011_right-stay_best"
+   },
+   "right>away": {
+    "label": "PASS",
+    "source": "carla",
+    "surrogate": "UNCERTAIN",
+    "policy": {
+     "A_lat": 6.0,
+     "b_evasive": 5.0,
+     "y_off": 0.35,
+     "t_start": 0.0,
+     "h_dv": 6.0,
+     "h_a": 3.0
+    },
+    "r_surrogate": 0.6,
+    "r_carla": 0.5996800603339815,
+    "contact": null,
+    "impact_speed": 0.0,
+    "run": "058_A_s101_0011_right-away_best"
+   }
+  }
+ }
+]

@@ -1,0 +1,7835 @@
+[
+ {
+  "variation_id": "H_b1_001_0",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end"
+   ],
+   "uncertain": [
+    "shift_pass"
+   ],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.6907606954246701,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.901548131889569,
+     "margins": {
+      "clear": -1.6907606954246701,
+      "road": 1.4283779991337655,
+      "dyn": 1.0
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.733331788764519,
+     "robust_cost": 1395.0774065944784,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.7000016563429958,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.5805168941224066,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.733331788764519,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.051548131889566,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.7248524640286287,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.751548131889568,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.6907606954246701,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.901548131889569,
+     "margins": {
+      "clear": -1.6907606954246701,
+      "road": 1.4283779991337655,
+      "dyn": 1.0
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.733331788764519,
+     "robust_cost": 1395.0774065944784,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.7000016563429958,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.5805168941224066,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.733331788764519,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.051548131889566,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.7248524640286287,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.751548131889568,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.6907606954246701,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.901548131889569,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.6336056980438125,
+      "off": -0.2961880372634405
+     },
+     "success": true,
+     "r": 0.3663942813873291,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3663942813873291
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3663942813873291,
+     "robust_cost": -0.7327885627746582,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3663942813873291,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.10000002384185791,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.10000002384185791
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.10000002384185791,
+     "robust_cost": 7.799998998641968,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.10000002384185791,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.10000002384185791
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.10000002384185791,
+     "robust_cost": 7.799998998641968,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 21.31935148836552,
+      "b_max": 0.5758223639397204
+     },
+     "success": true,
+     "r": 0.4241776466369629,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4241776466369629
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4241776466369629,
+     "robust_cost": -0.8483552932739258,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4241776466369629,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.10000002384185791,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.10000002384185791
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.10000002384185791,
+     "robust_cost": 7.799998998641968,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.101232476956722,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.16162123573529408,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.10000002384185791,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.10000002384185791
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.10000002384185791,
+     "robust_cost": 7.799998998641968,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.101232476956722,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.10000002384185791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.16162123573529408,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": false,
+    "verdict": "UNCERTAIN",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 10.0,
+      "x_ready": 3.0,
+      "v_pass": 5.0,
+      "b": 4.0
+     },
+     "success": true,
+     "r": 0.09561426278862506,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.09561426278862506,
+      "road": 0.15576188860237705,
+      "dyn": 0.20481228458637568
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.05576188860237696,
+     "robust_cost": 9.658000678700168,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.0976421738977552,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.05576188860237696,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.0794449097993446,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.10538648314500543,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.09561426278862506,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.09561426278862506,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.08504557687543379,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.10387389219120802,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.09561426278862506,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.0966478737954457,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.09460564760322598,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.159043913115057,
+      "D": 8.23348567774955,
+      "x_ready": 3.0308629802236875,
+      "v_pass": 5.362957268445772,
+      "b": 3.980786619940142
+     },
+     "success": true,
+     "r": 0.05277759604341048,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.05277759604341048,
+      "road": 0.19214277305538774,
+      "dyn": 0.21282586591682395
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 10,
+     "n_worlds": 12,
+     "r_worst": 0.03281767099813249,
+     "robust_cost": 9.783340966176759,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.054819422867459444,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.09214277305538765,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": 0.03281767099813249,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.06169152723714144,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.05277759604341048,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.05277759604341048,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": 0.039313844956206934,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.061976234093234606,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.05277759604341048,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.051185905041116087,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.051464247329687574,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": -1.0,
+     "fail": "contact:lead",
+     "near": "lead",
+     "contact": "lead",
+     "impact_speed": 0.2600003110930802,
+     "margins": {
+      "clear": -0.9310816566453013,
+      "road": 0.02357850348191537,
+      "dyn": 0.11970382928848255
+     },
+     "t_det": 2.299999999999998,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.0,
+     "robust_cost": 1013.000015554654,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.26000033344896023,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.4100400621073355,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": 0.04419545226053612,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.26000042887278024,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.26000000268261625,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.2600003110930802,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 35,
+    "n_success": 6,
+    "n_sims": 95
+   }
+  },
+  "secs": 21.152580976486206
+ },
+ {
+  "variation_id": "H_b1_002_0",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end"
+   ],
+   "uncertain": [],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -2.1527473976623974,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 8.940958188465926,
+     "margins": {
+      "clear": -2.1527473976623974,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -2.1634862716919825,
+     "robust_cost": 1447.0479094232962,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -2.1634862716919825,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -2.059611361197753,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -2.1435522820515027,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 9.090958188465926,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -2.1453246632773655,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.790958188465925,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -2.1527473976623974,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 8.940958188465926,
+     "margins": {
+      "clear": -2.1527473976623974,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -2.1634862716919825,
+     "robust_cost": 1447.0479094232962,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -2.1634862716919825,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -2.059611361197753,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -2.1435522820515027,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 9.090958188465926,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -2.1453246632773655,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.790958188465925,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -2.1527473976623974,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 8.940958188465926,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.6982409124092949,
+      "off": 0.0945259836908886
+     },
+     "success": true,
+     "r": 0.49094612801968973,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.49094612801968973
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.49094612801968973,
+     "robust_cost": -0.9818922560393795,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.49094612801968973,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 1.0,
+      "off": -0.007951021842441897
+     },
+     "success": true,
+     "r": 0.27094811278104813,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.27094811278104813
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.27094811278104813,
+     "robust_cost": 0.6201792631959779,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.3438533188848949,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3438533188848949
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.6877066377697898,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 18.510052042486,
+      "b_max": 0.5000515937114013
+     },
+     "success": true,
+     "r": 0.6,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.6354364244655175
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.6,
+     "robust_cost": -1.2,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.6,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 26.212377037249624,
+      "b_max": 0.9019534666020509
+     },
+     "success": true,
+     "r": 0.3424291286883978,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3424291286883978
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3424291286883978,
+     "robust_cost": -0.6848582573767956,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3424291286883978,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.43993707944091753,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.43993707944091753
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.8798741588818351,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4475898529571135,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3904927712859634,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.47585177627610387,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.43993707944091753,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.524906967719197,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.440251480874737,
+      "D": 13.946453144926645,
+      "x_ready": 1.62036323439473,
+      "v_pass": 5.900590129484433,
+      "b": 4.094722351976051
+     },
+     "success": false,
+     "r": -0.005697803968332138,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.005697803968332138,
+      "road": 0.10053718488899355,
+      "dyn": 0.5330870459762285
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -0.01571621956274033,
+     "robust_cost": 112.22791215873329,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.004389747910760522,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": 0.0005371848889934583,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.011773406767291494,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": 0.0005103123097996987,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.005697803968332138,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.005697803968332138,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.01571621956274033,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": 0.0014813297966012051,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.005697803968332138,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.006264128703902472,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.0066813447825735395,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.506596754155661,
+      "D": 13.800007723347163,
+      "x_ready": 1.888393467636103,
+      "v_pass": 4.833226433924214,
+      "b": 3.2800474904431978
+     },
+     "success": true,
+     "r": 0.056918505821706766,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.07059110120546741,
+      "road": 0.056918505821706766,
+      "dyn": 0.5966191193634156
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 10,
+     "n_worlds": 12,
+     "r_worst": -0.04308149417829332,
+     "robust_cost": 113.72325976713174,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.06066810433232295,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -0.04308149417829332,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": 0.049314336102369793,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.07064122282509722,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.056918505821706766,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.056918505821706766,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.05986742216941954,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.05537121577936954,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.056918505821706766,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.06133522900166133,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.05120439009673161,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": -0.300631547219242,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.300631547219242,
+      "road": 0.25246390172052724,
+      "dyn": 0.5285623669774254
+     },
+     "t_det": 2.1999999999999984,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.0,
+     "robust_cost": 124.02526188876968,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.2989195985337567,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -0.20063154721924192,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.0,
+       "fail": "contact:lead",
+       "contact": "lead",
+       "impact_speed": 0.9241044223580647,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -0.2864238679947465,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.300631547219242,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.300631547219242,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.35695559460949033,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -0.2696467219254369,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.300631547219242,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.300631547219242,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.300631547219242,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 57,
+    "n_success": 1,
+    "n_sims": 167
+   }
+  },
+  "secs": 26.75243377685547
+ },
+ {
+  "variation_id": "H_b1_004_0",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end"
+   ],
+   "uncertain": [],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -2.0096557561846993,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -2.0096557561846993,
+      "road": 1.3632074646015708,
+      "dyn": 1.0
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -2.020838336215153,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -2.020838336215153,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.9201174594826584,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.98503504524149,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -2.012486548884923,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -2.0096557561846993,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -2.0096557561846993,
+      "road": 1.3632074646015708,
+      "dyn": 1.0
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -2.020838336215153,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -2.020838336215153,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.9201174594826584,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.98503504524149,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -2.012486548884923,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -2.0096557561846993,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.7288311914792075,
+      "off": 0.11440189618294161
+     },
+     "success": true,
+     "r": 0.4686442585970976,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4686442585970976
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4686442585970976,
+     "robust_cost": -0.9372885171941951,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4686442585970976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 1.0,
+      "off": -0.01251415508814735
+     },
+     "success": true,
+     "r": 0.27094811278104813,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.27094811278104813
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.27094811278104813,
+     "robust_cost": 0.6201792631959779,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.3438533188848949,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3438533188848949
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.6877066377697898,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 3.0,
+      "b_max": 1.0
+     },
+     "success": true,
+     "r": 0.5356213003998664,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.3632074646015708,
+      "dyn": 0.5356213003998664
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4562094757982914,
+     "robust_cost": -1.0712426007997329,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.538160026758673,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5290561916353265,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5422413361311598,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.5356213003998664,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4562094757982914,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5667146431294847,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 17.190920764247092,
+      "b_max": 0.7711031534134253
+     },
+     "success": true,
+     "r": 0.4378257978508687,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4378257978508687
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4378257978508687,
+     "robust_cost": -0.8756515957017375,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.49253634215852127,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.44857594192966677,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4378257978508687,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4864462278099928,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.5175831639307976,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.5175831639307976
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4194221289515562,
+     "robust_cost": -1.0351663278615952,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.5220074137746025,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5055989927829885,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5289343441552821,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.5175831639307976,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4194221289515562,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5590790288585394,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 16,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.291680125000779,
+      "D": 8.765147815388069,
+      "x_ready": 0.2476745805042418,
+      "v_pass": 5.452396944418477,
+      "b": 3.682110417965765
+     },
+     "success": false,
+     "r": -0.08866413370558346,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.08866413370558346,
+      "road": 0.01696165367849245,
+      "dyn": 0.6167035359226236
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -0.09234814913964451,
+     "robust_cost": 115.54656534822334,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.08677372897962132,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -0.08303834632150764,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.09140941443141526,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -0.08535675558449207,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.08866413370558346,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.08866413370558346,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.09234814913964451,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -0.0861614657459478,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.08866413370558346,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.08872795617588103,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.0886215427312298,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": -0.19957932676710743,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.19957932676710743,
+      "road": 0.10390314715175153,
+      "dyn": 0.7487130652887786
+     },
+     "t_det": 2.0999999999999988,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -0.21439281134211507,
+     "robust_cost": 119.9831730706843,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.19526860960246062,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -0.09957932676710729,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.21439281134211507,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -0.19134964495737683,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.19957932676710743,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.19957932676710743,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.2031434104320805,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -0.1951577921382715,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.19957932676710743,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.19957932676710743,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.19957932676710743,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 57,
+    "n_success": 0,
+    "n_sims": 169
+   }
+  },
+  "secs": 26.23385000228882
+ },
+ {
+  "variation_id": "H_b1_004_1",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end"
+   ],
+   "uncertain": [
+    "shift_pass"
+   ],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8837623446130733,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8837623446130733,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.8940061671024042,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.8940061671024042,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.7854163406341998,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.861208498204059,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.886355497342248,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8837623446130733,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8837623446130733,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.8940061671024042,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.8940061671024042,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.7854163406341998,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.861208498204059,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.886355497342248,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8837623446130733,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.7212228966772273,
+      "off": -0.13501414797219657
+     },
+     "success": true,
+     "r": 0.4741911000513621,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4741911000513621
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4741911000513621,
+     "robust_cost": -0.9483822001027242,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4741911000513621,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 1.0,
+      "off": 0.32675253532661064
+     },
+     "success": true,
+     "r": 0.27094811278104813,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.27094811278104813
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.27094811278104813,
+     "robust_cost": 0.6201792631959779,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.3438533188848949,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3438533188848949
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.6877066377697898,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 3.0,
+      "b_max": 0.860982392240317
+     },
+     "success": true,
+     "r": 0.5372439218683636,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.5372439218683636
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4608444926678045,
+     "robust_cost": -1.0744878437367271,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.538160026758673,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5290561916353265,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5422413361311598,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4608444926678045,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5681306733145297,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 16.10237805143694,
+      "b_max": 0.9625009080183847
+     },
+     "success": true,
+     "r": 0.43777575327228613,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.43777575327228613
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.29828688065565023,
+     "robust_cost": -0.8755515065445723,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4464389070382625,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.34826051726681606,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.46729061111057846,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.43777575327228613,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.29828688065565023,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5245755753819095,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.520449420574542,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.520449420574542
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4252707754025321,
+     "robust_cost": -1.040898841149084,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.5220074137746025,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5055989927829885,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5289343441552821,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4252707754025321,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.559667747408197,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": false,
+    "verdict": "UNCERTAIN",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2968282539001745,
+      "D": 7.468756653771675,
+      "x_ready": 6.279950782446258,
+      "v_pass": 5.189645807918212,
+      "b": 3.5599690889015374
+     },
+     "success": true,
+     "r": 0.06629856886226382,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.06629856886226382,
+      "road": 0.17259364416791856,
+      "dyn": 0.6153869683130155
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.0629797727248993,
+     "robust_cost": 9.215460107784919,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.06700978398134294,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.07259364416791891,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.06337668670702779,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.06824727348668325,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.06629856886226382,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.06629856886226382,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.07070801284474415,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.0629797727248993,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.06629856886226382,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.0655938775175754,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.06639401490667152,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2915453908778196,
+      "D": 7.373990449833706,
+      "x_ready": 1.9572276067934349,
+      "v_pass": 5.053279270078832,
+      "b": 3.2108287341779973
+     },
+     "success": true,
+     "r": 0.05060738793501918,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.05060738793501918,
+      "road": 0.17496039517239215,
+      "dyn": 0.6623230759951879
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 10,
+     "n_worlds": 12,
+     "r_worst": 0.04598686353521508,
+     "robust_cost": 9.874489706729193,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.05125593227790848,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.0749603951723925,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": 0.04598686353521508,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.052920390451081434,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.05060738793501918,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.05060738793501918,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": 0.04716355720557952,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.05294180609056198,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.05060738793501918,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.050539728177477206,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.05072266652397939,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": -0.05762925572218375,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.05762925572218375,
+      "road": 0.24697489804353534,
+      "dyn": 0.7818745040634102
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -0.07554665701420726,
+     "robust_cost": 114.30517022888735,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.05642245527455281,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": 0.042370744277816286,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.07554665701420726,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -0.05250349062946902,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.05762925572218375,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.05762925572218375,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.060495699008046355,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -0.05364466038154986,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.05762925572218375,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.05762925572218375,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.05762925572218375,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 57,
+    "n_success": 16,
+    "n_sims": 169
+   }
+  },
+  "secs": 20.641765117645264
+ },
+ {
+  "variation_id": "H_b1_004_2",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end",
+    "shift_pass"
+   ],
+   "uncertain": [],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8162736220586646,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8162736220586646,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.8260141970273525,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.8260141970273525,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.712420325080289,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.7948277768179757,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.818739381162758,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8162736220586646,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8162736220586646,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.8260141970273525,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.8260141970273525,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.712420325080289,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.7948277768179757,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.818739381162758,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8162736220586646,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.7667729293259766,
+      "off": -0.18226174356035252
+     },
+     "success": true,
+     "r": 0.4409827513379413,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4409827513379413
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4409827513379413,
+     "robust_cost": -0.8819655026758826,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4409827513379413,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 1.0,
+      "off": 0.17824627372631097
+     },
+     "success": true,
+     "r": 0.27094811278104813,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.27094811278104813
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.27094811278104813,
+     "robust_cost": 0.6201792631959779,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.3438533188848949,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3438533188848949
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.6877066377697898,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 3.0,
+      "b_max": 1.0
+     },
+     "success": true,
+     "r": 0.5372439218683636,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.5372439218683636
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4608444926678045,
+     "robust_cost": -1.0744878437367271,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.538160026758673,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5290561916353265,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5422413361311598,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4608444926678045,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5681306733145297,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 22.027742023424427,
+      "b_max": 0.8651953332856386
+     },
+     "success": true,
+     "r": 0.3692277089651278,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3692277089651278
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3692277089651278,
+     "robust_cost": -0.7384554179302556,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.42953916974563255,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3692277089651278,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.520449420574542,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.520449420574542
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4252707754025321,
+     "robust_cost": -1.040898841149084,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.5220074137746025,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5055989927829885,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5289343441552821,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4252707754025321,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.559667747408197,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 17,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2951090512787495,
+      "D": 8.197813956083404,
+      "x_ready": 0.5041280772803229,
+      "v_pass": 5.204457767381971,
+      "b": 4.165943777683004
+     },
+     "success": true,
+     "r": 0.12531201219863863,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.12531201219863863,
+      "road": 0.22953871245321533,
+      "dyn": 0.5685045585251949
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.12135493890606153,
+     "robust_cost": 6.736895487657177,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.12586961689460519,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.12953871245321524,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.12135493890606153,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.1271269038281525,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.12531201219863863,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.12531201219863863,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.12249551686951299,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.1272977644339397,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.12531201219863863,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.12524502137701488,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.12558449220301493,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.4480678314294821,
+      "D": 10.361781507493786,
+      "x_ready": 4.6083862779027065,
+      "v_pass": 5.818534913100284,
+      "b": 3.981552638269497
+     },
+     "success": true,
+     "r": 0.06800321031641587,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.2676190039705887,
+      "road": 0.06800321031641587,
+      "dyn": 0.5770796578602436
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 11,
+     "n_worlds": 12,
+     "r_worst": -0.031996789683584215,
+     "robust_cost": 113.27987158734337,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.06980301218953944,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -0.031996789683584215,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.05502552458481791,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.07623053778831235,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.06800321031641587,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.06800321031641587,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.06769301825495022,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.06826447643923839,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.06800321031641587,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.06848812122433134,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.06803037070334828,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": 0.011793821441769659,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.011793821441769659,
+      "road": 0.31639797520748925,
+      "dyn": 0.7818745040634102
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 1,
+     "n_worlds": 12,
+     "r_worst": -0.006123579850253802,
+     "robust_cost": 111.50465949944567,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": 0.013000621889400654,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.11179382144176975,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.006123579850253802,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": 0.016919586534484443,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": 0.011793821441769659,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": 0.011793821441769659,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": 0.008927378155907162,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": 0.015778416782403548,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": 0.011793821441769659,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": 0.011793821441769659,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": 0.011793821441769659,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 47,
+    "n_success": 23,
+    "n_sims": 141
+   }
+  },
+  "secs": 19.464159965515137
+ },
+ {
+  "variation_id": "H_b1_004_3",
+  "verdict": {
+   "recoverable": true,
+   "status": "recoverable",
+   "recovering": [
+    "brake",
+    "stop_end"
+   ],
+   "uncertain": [
+    "shift_pass"
+   ],
+   "mitigation": null
+  },
+  "families": {
+   "keep": {
+    "recovers": false,
+    "verdict": "FAIL",
+    "best": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8504427916108674,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8504427916108674,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.860438158035205,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.860438158035205,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.749455824166985,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.8284359714642744,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.8529730494076389,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": null,
+    "shared": {
+     "family": "keep",
+     "cfg": {},
+     "success": false,
+     "r": -1.8504427916108674,
+     "fail": "contact:parked",
+     "near": "parked",
+     "contact": "parked",
+     "impact_speed": 7.8393807647442575,
+     "margins": {
+      "clear": -1.8504427916108674,
+      "road": 1.45,
+      "dyn": 1.0
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "FAIL",
+     "n_pass": 0,
+     "n_worlds": 12,
+     "r_worst": -1.860438158035205,
+     "robust_cost": 1391.9690382372128,
+     "cls": "fail",
+     "worlds": [
+      {
+       "success": false,
+       "r": -1.860438158035205,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene1"
+      },
+      {
+       "success": false,
+       "r": -1.749455824166985,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -1.8284359714642744,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.989380764744258,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -1.8529730494076389,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.689380764744257,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -1.8504427916108674,
+       "fail": "contact:parked",
+       "contact": "parked",
+       "impact_speed": 7.8393807647442575,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 1,
+    "n_success": 0,
+    "n_sims": 1
+   },
+   "brake": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.7632247102448384,
+      "off": -0.15001377945314076
+     },
+     "success": true,
+     "r": 0.4435695768156759,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.4435695768156759
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4435695768156759,
+     "robust_cost": -0.8871391536313518,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.4435695768156759,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 1.0,
+      "off": -0.032375855389714214
+     },
+     "success": true,
+     "r": 0.27094811278104813,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.27094811278104813
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.27094811278104813,
+     "robust_cost": 0.6201792631959779,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.27094811278104813,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "brake",
+     "cfg": {
+      "b_frac": 0.9,
+      "off": 0.0
+     },
+     "success": true,
+     "r": 0.3438533188848949,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3438533188848949
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.3438533188848949,
+     "robust_cost": -0.6877066377697898,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.3438533188848949,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "stop_end": {
+    "recovers": true,
+    "verdict": "PASS",
+    "best": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 3.0,
+      "b_max": 1.0
+     },
+     "success": true,
+     "r": 0.5372439218683636,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.5372439218683636
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4608444926678045,
+     "robust_cost": -1.0744878437367271,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.538160026758673,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5290561916353265,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5422413361311598,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.5372439218683636,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4608444926678045,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5681306733145297,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 17.37447096654677,
+      "b_max": 0.9417133621992517
+     },
+     "success": true,
+     "r": 0.3859252072520064,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.3859252072520064
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.31344211726240956,
+     "robust_cost": -0.7718504145040128,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.40091761842804996,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.49889658918283464,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.45088203802688875,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.3859252072520064,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.31344211726240956,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.5006024802089266,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "stop_end",
+     "cfg": {
+      "d_gap": 8.0,
+      "b_max": 0.9
+     },
+     "success": true,
+     "r": 0.520449420574542,
+     "fail": "",
+     "near": "",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 2.0,
+      "road": 1.45,
+      "dyn": 0.520449420574542
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "PASS",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.4252707754025321,
+     "robust_cost": -1.040898841149084,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.5220074137746025,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.5055989927829885,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.5289343441552821,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.520449420574542,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.4252707754025321,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.559667747408197,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 19,
+    "n_success": 18,
+    "n_sims": 57
+   },
+   "shift_pass": {
+    "recovers": false,
+    "verdict": "UNCERTAIN",
+    "best": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.297793644629876,
+      "D": 6.0,
+      "x_ready": 5.154482041926145,
+      "v_pass": 4.782700557415794,
+      "b": 3.6741719067295
+     },
+     "success": true,
+     "r": 0.10090934685967767,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.10090934685967767,
+      "road": 0.20579924983724807,
+      "dyn": 0.6086627123983763
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.09783777058246457,
+     "robust_cost": 7.761807431893537,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.10211426383542954,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.10579924983724842,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.09783777058246457,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.1026594187227805,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.10090934685967767,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.10090934685967767,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.10405255789950252,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.09854849773060603,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.10090934685967767,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.10135783035159651,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.1011107262826757,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "boundary": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2771337112891188,
+      "D": 8.555783804883426,
+      "x_ready": 2.6187847036178766,
+      "v_pass": 5.811438618583235,
+      "b": 4.035497767736151
+     },
+     "success": true,
+     "r": 0.06519986642006614,
+     "fail": "",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": 0.06519986642006614,
+      "road": 0.219499250708024,
+      "dyn": 0.5791705194316914
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 12,
+     "n_worlds": 12,
+     "r_worst": 0.059689246607423474,
+     "robust_cost": 9.261605610357222,
+     "cls": "success",
+     "worlds": [
+      {
+       "success": true,
+       "r": 0.06597806105386284,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.11949925070802436,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": true,
+       "r": 0.05972805198914677,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": true,
+       "r": 0.06808007147394479,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": true,
+       "r": 0.06519986642006614,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": true,
+       "r": 0.06519986642006614,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": true,
+       "r": 0.059689246607423474,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": true,
+       "r": 0.06886287800605939,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": true,
+       "r": 0.06519986642006614,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": true,
+       "r": 0.06514917016363209,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": true,
+       "r": 0.06518003769500513,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "shared": {
+     "family": "shift_pass",
+     "cfg": {
+      "dy": 1.2,
+      "D": 25.0,
+      "x_ready": 6.0,
+      "v_pass": 12.0,
+      "b": 2.0
+     },
+     "success": false,
+     "r": -0.022917717140206795,
+     "fail": "margin",
+     "near": "parked",
+     "contact": null,
+     "impact_speed": 0.0,
+     "margins": {
+      "clear": -0.022917717140206795,
+      "road": 0.2816864366255123,
+      "dyn": 0.7818745040634102
+     },
+     "t_det": 1.999999999999999,
+     "t_hb": null,
+     "verdict": "UNCERTAIN",
+     "n_pass": 1,
+     "n_worlds": 12,
+     "r_worst": -0.04083511843223031,
+     "robust_cost": 112.91670868560827,
+     "cls": "mitigate",
+     "worlds": [
+      {
+       "success": false,
+       "r": -0.021710916692575855,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene1"
+      },
+      {
+       "success": true,
+       "r": 0.07708228285979324,
+       "fail": "",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "scene2"
+      },
+      {
+       "success": false,
+       "r": -0.04083511843223031,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego0"
+      },
+      {
+       "success": false,
+       "r": -0.017791952047492066,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego1"
+      },
+      {
+       "success": false,
+       "r": -0.022917717140206795,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego2"
+      },
+      {
+       "success": false,
+       "r": -0.022917717140206795,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego3"
+      },
+      {
+       "success": false,
+       "r": -0.025784160426069402,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego4"
+      },
+      {
+       "success": false,
+       "r": -0.018933121799572905,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego5"
+      },
+      {
+       "success": false,
+       "r": -0.022917717140206795,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego6"
+      },
+      {
+       "success": false,
+       "r": -0.022917717140206795,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego7"
+      },
+      {
+       "success": false,
+       "r": -0.022917717140206795,
+       "fail": "margin",
+       "contact": null,
+       "impact_speed": 0.0,
+       "w": "ego8"
+      }
+     ]
+    },
+    "n_evals": 57,
+    "n_success": 25,
+    "n_sims": 171
+   }
+  },
+  "secs": 20.66912579536438
+ }
+]

@@ -1,0 +1,568 @@
+[
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "nominal": "FAIL",
+   "r": -2.0194369811290414,
+   "r_worst": -2.043231880701663,
+   "n_pass": 0,
+   "n_worlds": 12,
+   "fail": "contact:parked",
+   "near": "parked",
+   "contact": "parked",
+   "impact_speed": 8.359999999999994,
+   "margins": {
+    "clear": -2.0194369811290414,
+    "road": 1.45,
+    "dyn": 1.0
+   },
+   "cls": "fail",
+   "robust_cost": 1417.9999999999998
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "b_frac": 0.6479456949080962,
+   "off": 0.13333419669041413
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35205429792404175,
+   "r_worst": 0.35205429792404175,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.35205429792404175
+   },
+   "cls": "success",
+   "robust_cost": -0.7041085958480835
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "brake",
+  "kind": "boundary",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "boundary"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.10000002384185791,
+   "r_worst": 0.10000002384185791,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.10000002384185791
+   },
+   "cls": "success",
+   "robust_cost": 7.799998998641968
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "stop_end",
+  "kind": "best",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "d_gap": 11.611083145964198,
+   "b_max": 0.4372741041957498
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5627259016036987,
+   "r_worst": 0.5627259016036987,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.5627259016036987
+   },
+   "cls": "success",
+   "robust_cost": -1.1254518032073975
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "stop_end",
+  "kind": "boundary",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "d_gap": 16.45058078367478,
+   "b_max": 0.9371867542028544
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "boundary"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.06281322240829468,
+   "r_worst": 0.06281322240829468,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.06281322240829468
+   },
+   "cls": "success",
+   "robust_cost": 9.361844658851624
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "stop_end",
+  "kind": "shared",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "d_gap": 8.0,
+   "b_max": 0.9
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "shared"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.10000002384185791,
+   "r_worst": 0.10000002384185791,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.10000002384185791
+   },
+   "cls": "success",
+   "robust_cost": 7.799998998641968
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "shift_pass",
+  "kind": "best",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "dy": 1.3851373247945977,
+   "D": 12.281553168221961,
+   "x_ready": 4.271508664143734,
+   "v_pass": 4.241367442172139,
+   "b": 3.6688751280276963
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "UNCERTAIN",
+   "nominal": "PASS",
+   "r": 0.06871132757642029,
+   "r_worst": 0.05924931344171025,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "parked",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.06871132757642029,
+    "road": 0.1648042333578248,
+    "dyn": 0.20968709051270573
+   },
+   "cls": "success",
+   "robust_cost": 9.278222198971363
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "shift_pass",
+  "kind": "boundary",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "dy": 1.4586685047846843,
+   "D": 11.22793216221467,
+   "x_ready": 3.346580657141058,
+   "v_pass": 5.635622901936371,
+   "b": 2.9117742316580655
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "boundary"
+  },
+  "surrogate": {
+   "verdict": "UNCERTAIN",
+   "nominal": "PASS",
+   "r": 0.051364026531734996,
+   "r_worst": -0.04863597346826509,
+   "n_pass": 9,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "parked",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.10794299211160152,
+    "road": 0.051364026531734996,
+    "dyn": 0.3287984113364628
+   },
+   "cls": "success",
+   "robust_cost": 113.9454389387306
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "shift_pass",
+  "kind": "shared",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "dy": 1.2,
+   "D": 25.0,
+   "x_ready": 6.0,
+   "v_pass": 12.0,
+   "b": 2.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "shared"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "nominal": "FAIL",
+   "r": -0.4489754757076412,
+   "r_worst": -1.0,
+   "n_pass": 0,
+   "n_worlds": 12,
+   "fail": "margin",
+   "near": "lead",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": -0.4489754757076412,
+    "road": 0.19877483068047797,
+    "dyn": 0.16672641038894653
+   },
+   "cls": "mitigate",
+   "robust_cost": 130.00779826243343
+  }
+ },
+ {
+  "variation_id": "B_b1_000_0",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "family": "stop_end",
+  "kind": "ref",
+  "theta_s": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "theta_p": {
+   "d_gap": 11.567937655298142,
+   "b_max": 0.41973556528788186
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:stop_end:lead_hw:B_p_wet"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    3686225614,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "ref"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.5802644491195679,
+   "r_worst": 0.5802644491195679,
+   "n_pass": 12,
+   "n_worlds": 12,
+   "fail": "",
+   "near": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 2.0,
+    "road": 1.45,
+    "dyn": 0.5802644491195679
+   },
+   "cls": "success",
+   "robust_cost": -1.1605288982391357
+  }
+ }
+]

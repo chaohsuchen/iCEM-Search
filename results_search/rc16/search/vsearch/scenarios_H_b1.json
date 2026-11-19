@@ -1,0 +1,140 @@
+[
+ {
+  "variation_id": "H_b1_001_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 0,
+  "scenario_params": {
+   "v": 7.641548131889569,
+   "w_pass": 2.9666312750486856,
+   "off": 0.9950623616094227,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 6.538265272096938,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.1906396663041594,
+   "wx": "wet"
+  },
+  "hidden": [],
+  "source": "boundary:stop_end:lead_hw:H_s316_0109",
+  "history_id": "H_b1_001_0"
+ },
+ {
+  "variation_id": "H_b1_002_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 1,
+  "scenario_params": {
+   "v": 8.680958188465931,
+   "w_pass": 2.8408610037587856,
+   "off": 1.2780673774505091,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.032621012199478,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.1150696958839714,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:stop_end:lead_hw:H_s316_0087",
+  "history_id": "H_b1_002_0"
+ },
+ {
+  "variation_id": "H_b1_004_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 2,
+  "scenario_params": {
+   "v": 7.579380764744258,
+   "w_pass": 2.6,
+   "off": 1.1132074646015708,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.3417949130480147,
+   "isl_lead": 7.804965359041689,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.0788527788451903,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:H_s316_0019",
+  "history_id": "H_b1_004_0"
+ },
+ {
+  "variation_id": "H_b1_004_1",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 3,
+  "scenario_params": {
+   "v": 7.579380764744258,
+   "w_pass": 2.8776923086558153,
+   "off": 1.1132074646015708,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.3417949130480147,
+   "isl_lead": 7.804965359041689,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.0788527788451903,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:H_s316_0019",
+  "history_id": "H_b1_004_1"
+ },
+ {
+  "variation_id": "H_b1_004_2",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 4,
+  "scenario_params": {
+   "v": 7.579380764744258,
+   "w_pass": 3.0165384629837226,
+   "off": 1.1132074646015708,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.3417949130480147,
+   "isl_lead": 7.804965359041689,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.0788527788451903,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:H_s316_0019",
+  "history_id": "H_b1_004_2"
+ },
+ {
+  "variation_id": "H_b1_004_3",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@H",
+  "site": "H",
+  "split": "heldout",
+  "scene_seed": 73,
+  "index": 5,
+  "scenario_params": {
+   "v": 7.579380764744258,
+   "w_pass": 2.947115385819769,
+   "off": 1.1132074646015708,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.3417949130480147,
+   "isl_lead": 7.804965359041689,
+   "lead_bp": "vehicle.mercedes.sprinter",
+   "T_lead": 1.0788527788451903,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:H_s316_0019",
+  "history_id": "H_b1_004_3"
+ }
+]

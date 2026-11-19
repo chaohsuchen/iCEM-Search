@@ -1,0 +1,6130 @@
+[
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_000_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 1.1,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 21.56761288104807,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 1.2,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 0,
+   "how": "boundary:brake:intrude:D1_s312_0028"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    676715426,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_000_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "r_worst": 0.35490564095043453,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.35490564095043453,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.7098112819008691
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.2,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 2.1866211792686068,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 0.8803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.1819722977258018,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_002_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": -1,
+   "crash": 0,
+   "v": 28.849903083145854,
+   "d0": 60.48523250570336,
+   "intrude": 1.1,
+   "psi_rest": 1.1296005901132238,
+   "T_slide": 1.2742653498775969,
+   "v_post": 22.442179596949547,
+   "v_esc": 26.245222910097823,
+   "esc_gap": 16.46155509034234,
+   "gap_center": -3.990649358508703,
+   "lead_brake": 0.6866211792686067,
+   "follow_T": 1.1670334609175894,
+   "follow_react": 1.0803322526562678,
+   "rear": 1,
+   "rear_gap": 50.51213341658772,
+   "rear_react": 1.2,
+   "wx": "dry",
+   "delay": 0.6,
+   "vic_bp": "vehicle.mercedes.sprinter",
+   "lead_bp": "vehicle.ford.mustang",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 1,
+   "how": "boundary:brake:intrude:D1_s312_0074"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    735121356,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_002_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.35490564095043453,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_007_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 2,
+   "how": "boundary:right:v_post:D1_s312_0027"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    756731175,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_007_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "r_worst": 0.3319794168694239,
+   "n_pass": 13,
+   "n_worlds": 13,
+   "fail": "",
+   "near": "victim",
+   "contact": null,
+   "impact_speed": 0.0,
+   "margins": {
+    "clear": 0.3319794168694239,
+    "road": 4.2,
+    "dyn": 1.0
+   },
+   "cls": "success",
+   "robust_cost": -0.6639588337388478
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden1",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.5652901073968374,
+   "psi_rest": 0.47345121956123426,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden1",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden2",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 5.0,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 0.9836919324242418,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.0449007390879101,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden2",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "keep",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {},
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 3.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "left_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ },
+ {
+  "variation_id": "D1_b1_014_0~hidden3",
+  "sid": "RC03-S1-opt@D1",
+  "site": "D1",
+  "family": "right_brake",
+  "kind": "best",
+  "theta_s": {
+   "side": 1,
+   "crash": 0,
+   "v": 24.46236534807084,
+   "d0": 28.322803687919677,
+   "intrude": 0.4652901073968374,
+   "psi_rest": 0.3734512195612342,
+   "T_slide": 1.5327546178884686,
+   "v_post": 26.0,
+   "v_esc": 25.594993792204352,
+   "esc_gap": 26.004655299564632,
+   "gap_center": 3.600821687327622,
+   "lead_brake": 4.0849447675361095,
+   "follow_T": 1.2757354479618424,
+   "follow_react": 1.1,
+   "rear": 1,
+   "rear_gap": 40.74481132570444,
+   "rear_react": 1.2,
+   "wx": "heavy",
+   "delay": 0.3,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.toyota.prius",
+   "fol_bp": "vehicle.ford.mustang"
+  },
+  "theta_p": {
+   "A_lat": 6.0,
+   "b_evasive": 0.0,
+   "y_off": 0.0,
+   "t_start": 0.0
+  },
+  "scene_seed": {
+   "seed": 73,
+   "index": 3,
+   "how": "boundary:right_brake:v_post:D1_s312_0025"
+  },
+  "policy_source": {
+   "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+   "rng": [
+    73,
+    2548044827,
+    7
+   ],
+   "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+   "kind": "best"
+  },
+  "history_id": "D1_b1_014_0",
+  "hidden_world": "hidden3",
+  "surrogate": {
+   "verdict": "WORLD",
+   "nominal": "PASS",
+   "r": 0.3319794168694239,
+   "fail": "",
+   "contact": null,
+   "impact_speed": 0.0,
+   "of_candidate": "best"
+  }
+ }
+]

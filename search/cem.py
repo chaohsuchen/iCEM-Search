@@ -19,7 +19,8 @@ def cem(f, dim, rng, pop=64, iters=10, elite_frac=0.125, init_std=0.3, alpha=0.7
     return best[0], best[1], hist
 
 
-def icem(f, dim, rng, pop=64, iters=10, elite_frac=0.125, init_std=0.3, decay=1.25, keep_frac=0.3, min_pop=16, sd_floor=0.02, alpha=0.7, log=None, init_mu=None):
+def icem(f, dim, rng, pop=64, iters=10, elite_frac=0.125, init_std=0.3, decay=1.25, keep_frac=0.3, min_pop=16, sd_floor=0.02, alpha=0.7, log=None, init_mu=None,
+         stop=None):
     """iCEM-style: population shrinks by `decay` each iteration, the best elites of the previous iteration are re-evaluated in the next one
     (keep_frac), the candidate mean is also injected, and a variance floor stops early collapse. (Colored noise does not apply to a static parameter vector.)"""
     mu, sd = (np.full(dim, 0.5) if init_mu is None else np.array(init_mu, float)), np.full(dim, init_std); best = (None, np.inf); hist = []; keep = np.zeros((0, dim)); n = float(pop)      # init_mu: warm start from a neighbouring configuration
@@ -34,6 +35,7 @@ def icem(f, dim, rng, pop=64, iters=10, elite_frac=0.125, init_std=0.3, decay=1.
         keep = E[:max(1, int(keep_frac * ne))]
         if c[idx[0]] < best[1]: best = (U[idx[0]].copy(), float(c[idx[0]]))
         hist.append(best[1])
+        if stop is not None and stop(hist): break        # (vsearch) early stop, e.g. a clear robust recovery that stopped improving
     return best[0], best[1], hist
 
 

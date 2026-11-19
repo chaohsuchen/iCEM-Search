@@ -1,0 +1,94 @@
+[
+ {
+  "variation_id": "A_b1_005_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 0,
+  "scenario_params": {
+   "v": 9.951960783770412,
+   "w_pass": 2.6,
+   "off": 1.3085939003877107,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.4134816666937924,
+   "isl_lead": 3.411481063227509,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1631080036445665,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:A_s316_0132",
+  "history_id": "A_b1_005_0"
+ },
+ {
+  "variation_id": "A_b1_005_1",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 1,
+  "scenario_params": {
+   "v": 9.951960783770412,
+   "w_pass": 2.959406527944474,
+   "off": 1.3085939003877107,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.4134816666937924,
+   "isl_lead": 3.411481063227509,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1631080036445665,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:A_s316_0132",
+  "history_id": "A_b1_005_1"
+ },
+ {
+  "variation_id": "A_b1_005_2",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 2,
+  "scenario_params": {
+   "v": 9.951960783770412,
+   "w_pass": 3.139109791916711,
+   "off": 1.3085939003877107,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.4134816666937924,
+   "isl_lead": 3.411481063227509,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1631080036445665,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:A_s316_0132",
+  "history_id": "A_b1_005_2"
+ },
+ {
+  "variation_id": "A_b1_005_3",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 3,
+  "scenario_params": {
+   "v": 9.951960783770412,
+   "w_pass": 3.0492581599305923,
+   "off": 1.3085939003877107,
+   "park_bp": "vehicle.volkswagen.t2_2021",
+   "lead_hw": 1.4134816666937924,
+   "isl_lead": 3.411481063227509,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1631080036445665,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:A_s316_0132",
+  "history_id": "A_b1_005_3"
+ }
+]

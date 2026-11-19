@@ -1,0 +1,94 @@
+[
+ {
+  "variation_id": "C_b1_003_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@C",
+  "site": "C",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 0,
+  "scenario_params": {
+   "v": 6.402252570396216,
+   "w_pass": 2.6,
+   "off": 1.1107972225989002,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.788533688726939,
+   "isl_lead": 8.501232531946805,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1545411558573564,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:C_s316_0104",
+  "history_id": "C_b1_003_0"
+ },
+ {
+  "variation_id": "C_b1_003_1",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@C",
+  "site": "C",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 1,
+  "scenario_params": {
+   "v": 6.402252570396216,
+   "w_pass": 2.857599997239819,
+   "off": 1.1107972225989002,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.788533688726939,
+   "isl_lead": 8.501232531946805,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1545411558573564,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:C_s316_0104",
+  "history_id": "C_b1_003_1"
+ },
+ {
+  "variation_id": "C_b1_003_2",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@C",
+  "site": "C",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 2,
+  "scenario_params": {
+   "v": 6.402252570396216,
+   "w_pass": 2.986399995859729,
+   "off": 1.1107972225989002,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.788533688726939,
+   "isl_lead": 8.501232531946805,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1545411558573564,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:C_s316_0104",
+  "history_id": "C_b1_003_2"
+ },
+ {
+  "variation_id": "C_b1_003_3",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@C",
+  "site": "C",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 3,
+  "scenario_params": {
+   "v": 6.402252570396216,
+   "w_pass": 3.050799995169684,
+   "off": 1.1107972225989002,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.788533688726939,
+   "isl_lead": 8.501232531946805,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.1545411558573564,
+   "wx": "dry"
+  },
+  "hidden": [],
+  "source": "boundary:shift_pass:w_pass:C_s316_0104",
+  "history_id": "C_b1_003_3"
+ }
+]

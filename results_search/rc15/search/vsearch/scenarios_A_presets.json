@@ -1,0 +1,646 @@
+[
+ {
+  "variation_id": "A_p_hold_behind",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 1.5,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 1,
+   "ego_lead_dx": 25.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:hold_behind",
+  "history_id": "A_p_hold_behind"
+ },
+ {
+  "variation_id": "A_p_hold_behind~yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 1.5,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 1,
+   "ego_lead_dx": 25.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:yield:A_p_hold_behind",
+  "history_id": "A_p_hold_behind",
+  "hidden_world": "yield"
+ },
+ {
+  "variation_id": "A_p_hold_behind~match",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 0,
+  "scenario_params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 1.5,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 1,
+   "ego_lead_dx": 25.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:match:A_p_hold_behind",
+  "history_id": "A_p_hold_behind",
+  "hidden_world": "match"
+ },
+ {
+  "variation_id": "A_p_hold_front",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": -2.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:hold_front",
+  "history_id": "A_p_hold_front"
+ },
+ {
+  "variation_id": "A_p_hold_front~yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": -2.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:yield:A_p_hold_front",
+  "history_id": "A_p_hold_front",
+  "hidden_world": "yield"
+ },
+ {
+  "variation_id": "A_p_hold_front~match",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 1,
+  "scenario_params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": -2.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:match:A_p_hold_front",
+  "history_id": "A_p_hold_front",
+  "hidden_world": "match"
+ },
+ {
+  "variation_id": "A_p_match",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:match",
+  "history_id": "A_p_match"
+ },
+ {
+  "variation_id": "A_p_match~yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:yield:A_p_match",
+  "history_id": "A_p_match",
+  "hidden_world": "yield"
+ },
+ {
+  "variation_id": "A_p_match~hold",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 2,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:hold:A_p_match",
+  "history_id": "A_p_match",
+  "hidden_world": "hold"
+ },
+ {
+  "variation_id": "A_p_match_pronounced",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "mode": "match",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:match_pronounced",
+  "history_id": "A_p_match_pronounced"
+ },
+ {
+  "variation_id": "A_p_match_pronounced~yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:yield:A_p_match_pronounced",
+  "history_id": "A_p_match_pronounced",
+  "hidden_world": "yield"
+ },
+ {
+  "variation_id": "A_p_match_pronounced~hold",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 3,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -3.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:hold:A_p_match_pronounced",
+  "history_id": "A_p_match_pronounced",
+  "hidden_world": "hold"
+ },
+ {
+  "variation_id": "A_p_short_lane",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 165.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:short_lane",
+  "history_id": "A_p_short_lane"
+ },
+ {
+  "variation_id": "A_p_short_lane~yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 165.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:yield:A_p_short_lane",
+  "history_id": "A_p_short_lane",
+  "hidden_world": "yield"
+ },
+ {
+  "variation_id": "A_p_short_lane~hold",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 4,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 165.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:hold:A_p_short_lane",
+  "history_id": "A_p_short_lane",
+  "hidden_world": "hold"
+ },
+ {
+  "variation_id": "A_p_yield",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:yield",
+  "history_id": "A_p_yield"
+ },
+ {
+  "variation_id": "A_p_yield~hold",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:hold:A_p_yield",
+  "history_id": "A_p_yield",
+  "hidden_world": "hold"
+ },
+ {
+  "variation_id": "A_p_yield~match",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 5,
+  "scenario_params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:match:A_p_yield",
+  "history_id": "A_p_yield",
+  "hidden_world": "match"
+ },
+ {
+  "variation_id": "A_p_yield_pronounced",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "mode": "yield",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "preset:yield_pronounced",
+  "history_id": "A_p_yield_pronounced"
+ },
+ {
+  "variation_id": "A_p_yield_pronounced~hold",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "mode": "hold",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:hold:A_p_yield_pronounced",
+  "history_id": "A_p_yield_pronounced",
+  "hidden_world": "hold"
+ },
+ {
+  "variation_id": "A_p_yield_pronounced~match",
+  "rc": "rc15",
+  "sid": "RC15-M-opt",
+  "site": "A",
+  "split": "train",
+  "scene_seed": 7,
+  "index": 6,
+  "scenario_params": {
+   "mode": "match",
+   "style": "pronounced",
+   "react": 0.6,
+   "dv_adj": 0.0,
+   "adj_dx": -1.0,
+   "lead_dx": 47.0,
+   "follow_dx": -49.0,
+   "lead": 0,
+   "ego_lead_dx": 30.0,
+   "wx": "dry",
+   "v": 18.5,
+   "end_x": 180.0
+  },
+  "hidden": [
+   "mode",
+   "react",
+   "style"
+  ],
+  "source": "hidden_world:match:A_p_yield_pronounced",
+  "history_id": "A_p_yield_pronounced",
+  "hidden_world": "match"
+ }
+]

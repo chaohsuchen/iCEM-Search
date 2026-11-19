@@ -1,0 +1,25 @@
+[
+ {
+  "variation_id": "B_b1_000_0",
+  "rc": "rc16",
+  "sid": "RC16-S1-opt@B",
+  "site": "B",
+  "split": "train",
+  "scene_seed": 73,
+  "index": 0,
+  "scenario_params": {
+   "v": 8.1,
+   "w_pass": 2.9,
+   "off": 1.2,
+   "park_bp": "vehicle.mercedes.sprinter",
+   "lead_hw": 0.6,
+   "isl_lead": 8.0,
+   "lead_bp": "vehicle.ford.ambulance",
+   "T_lead": 1.0,
+   "wx": "wet"
+  },
+  "hidden": [],
+  "source": "boundary:stop_end:lead_hw:B_p_wet",
+  "history_id": "B_b1_000_0"
+ }
+]
