@@ -1,0 +1,270 @@
+{
+ "run_id": "5564_E1_b1_009_0~hidden3_right-return_shared",
+ "rc": "RC07",
+ "label": "FAIL",
+ "reason": "contact with pileup",
+ "end_reason": "contact:pileup",
+ "scenario": {
+  "sid": "RC07-S5-opt@E1",
+  "town": "Town06",
+  "site": "E1",
+  "frame_site": {
+   "start_xy": [
+    20.0,
+    45.4
+   ],
+   "ref_lane": -4,
+   "ref_idx": 1,
+   "s0": 150.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 12.0,
+  "prefix_s": 3.0,
+  "description": "A tyre blowout: the car ahead skids to a stop in the ego lane. The right lane carries a fast car coming up behind; an on-ramp car cuts into the slot between the ego and the fast car and floors it once the fast car closes on it, straight at the ego. Brake, or swerve right past the stopped car, then return left, stay or pull away - decided once past it.",
+  "params": {
+   "blowout": 1,
+   "v": 22.818325399170433,
+   "headway": 1.1015612063901918,
+   "blow_dec": 8.460466397640207,
+   "blow_dy": 0.301159029557582,
+   "benign_dec": 1.9075643394639266,
+   "fast": 1,
+   "fast_dv": 6.712177181413602,
+   "fast_gap": 48.56929513224287,
+   "fast_notice": 37.29444169592545,
+   "fast_react": 0.8236492897023444,
+   "fast_b": 3.8317021972976923,
+   "ramp_dx": -0.49824607919490127,
+   "ramp_v": 21.818987538917675,
+   "ramp_cut": 0,
+   "t_cut": 2.8588415826965647,
+   "ramp_acc": 2.5310542307611343,
+   "ramp_left": 90.79241807928716,
+   "pile": 1,
+   "pile_dx": 71.25236904830017,
+   "rear": 0,
+   "rear_gap": 15.0,
+   "rear_react": 1.0836994422651651,
+   "dense_sp": 18.556049641522804,
+   "dense_off": -3.1365579838218416,
+   "wx": "heavy"
+  }
+ },
+ "policy": {
+  "name": "options.right>return",
+  "family": "right>return",
+  "params": {
+   "A_lat": 6.0,
+   "b_evasive": 5.0,
+   "y_off": 0.35,
+   "t_start": 0.0,
+   "h_A": 3.0,
+   "h_margin": 3.0,
+   "h_a": 1.0,
+   "h_y": 0.0
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": 3.099999999999995,
+  "handback": "return"
+ },
+ "metrics": {
+  "r": -2.7205253557090576,
+  "min_margins": {
+   "clear": -2.7205253557090576,
+   "road": 0.47405977166617763,
+   "dyn": 0.10000045714116423
+  },
+  "start_speed": 23.07306547091907,
+  "end_speed": 0.0,
+  "progress_m": 149.79065664601197,
+  "terminal": null,
+  "envelope": {
+   "max_g": 0.5680931684814258,
+   "max_ax_g": 0.18710004019718823,
+   "min_ax_g": -0.5674951804415244,
+   "viol_ticks": 0,
+   "shaped_frac": 0.0392156862745098,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [
+   57352052
+  ],
+  "actors": [
+   "pileup"
+  ],
+  "impact_speed": 5.110213835803506
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": -2.7205253557090576,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.47405977166617763,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.10000045714116423,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": "pileup",
+    "impact_speed": 5.110213835803506
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": false,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "blowout_onramp",
+  "uid": "E1_b1_009_0~hidden3",
+  "site": "E1",
+  "split": "heldout",
+  "history_id": "E1_b1_009_0",
+  "hidden_world": "hidden3",
+  "hidden_params": [
+   "blowout",
+   "fast_notice",
+   "fast_react",
+   "fast_b",
+   "ramp_cut",
+   "t_cut",
+   "ramp_acc",
+   "rear_react"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 7,
+  "index": 9,
+  "how": "boundary:right>away:rear_gap:E1_s73_0105"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc07",
+ "variation_id": "E1_b1_009_0~hidden3",
+ "candidate_kind": "shared",
+ "family": "right>return",
+ "scenario_params": {
+  "blowout": 1,
+  "v": 22.818325399170433,
+  "headway": 1.1015612063901918,
+  "blow_dec": 8.460466397640207,
+  "blow_dy": 0.301159029557582,
+  "benign_dec": 1.9075643394639266,
+  "fast": 1,
+  "fast_dv": 6.712177181413602,
+  "fast_gap": 48.56929513224287,
+  "fast_notice": 37.29444169592545,
+  "fast_react": 0.8236492897023444,
+  "fast_b": 3.8317021972976923,
+  "ramp_dx": -0.49824607919490127,
+  "ramp_v": 21.818987538917675,
+  "ramp_cut": 0,
+  "t_cut": 2.8588415826965647,
+  "ramp_acc": 2.5310542307611343,
+  "ramp_left": 90.79241807928716,
+  "pile": 1,
+  "pile_dx": 71.25236904830017,
+  "rear": 0,
+  "rear_gap": 15.0,
+  "rear_react": 1.0836994422651651,
+  "dense_sp": 18.556049641522804,
+  "dense_off": -3.1365579838218416,
+  "wx": "heavy"
+ },
+ "hidden_params": [
+  "blowout",
+  "fast_notice",
+  "fast_react",
+  "fast_b",
+  "ramp_cut",
+  "t_cut",
+  "ramp_acc",
+  "rear_react"
+ ],
+ "policy_params": {
+  "A_lat": 6.0,
+  "b_evasive": 5.0,
+  "y_off": 0.35,
+  "t_start": 0.0,
+  "h_A": 3.0,
+  "h_margin": 3.0,
+  "h_a": 1.0,
+  "h_y": 0.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   7,
+   3859431405,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "FAIL",
+  "r": -2.509713012220183,
+  "fail": "contact:pileup",
+  "contact": "pileup",
+  "impact_speed": 7.187643437425474,
+  "of_candidate": "shared"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
