@@ -1,0 +1,234 @@
+{
+ "run_id": "4110_E1_s111_0080~hidden1_brake_free_boundary_x+0.60_v+0.15",
+ "rc": "RC11",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.08 (clearance 1.05, road 3.99, friction 0.10), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC10-S4-opt@E1",
+  "town": "Town06",
+  "site": "E1",
+  "frame_site": {
+   "start_xy": [
+    20.0,
+    45.4
+   ],
+   "ref_lane": -4,
+   "ref_idx": 1,
+   "s0": 150.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 3.0,
+  "description": "The car ahead blows a tyre, skids along the ego's lane, then slides across into the left or the right lane; which one shows only t_reveal s after it loses control. Brake in lane, commit early to a side, or brake and escape to the side it is not sliding to once that is seen.",
+  "params": {
+   "spin": 0,
+   "slide_dir": 1,
+   "t_reveal": 1.6,
+   "v": 23.328241164048606,
+   "headway": 0.599745533335265,
+   "b_spin": 9.0233907133011,
+   "slide": 2.1531433001325717,
+   "benign_dec": 4.99172343725745,
+   "adjL": 1,
+   "adjL_dx": 4.076113960150153,
+   "adjR": 0,
+   "adjR_dx": 3.835780930261617,
+   "rear": 0,
+   "rear_gap": 29.88116367681465,
+   "rear_react": 0.6200462402625788,
+   "wx": "wet"
+  }
+ },
+ "policy": {
+  "name": "options.brake_free",
+  "family": "brake_free",
+  "params": {
+   "b_frac": 0.9,
+   "d_seen": 0.1,
+   "A_lat": 3.0,
+   "b_evasive": 2.0,
+   "y_off": 0.3
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.07857413993802832,
+  "min_margins": {
+   "clear": 1.0498999655693053,
+   "road": 3.992278981537278,
+   "dyn": 0.09990840120152
+  },
+  "start_speed": 23.75126159639669,
+  "end_speed": 0.0,
+  "progress_m": 54.8835751073341,
+  "terminal": 0.07857413993802832,
+  "envelope": {
+   "max_g": 0.6753714319472628,
+   "max_ax_g": 0.08045422951053255,
+   "min_ax_g": -0.6751955139681425,
+   "viol_ticks": 0,
+   "shaped_frac": 0.009009009009009009,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 1.0498999655693053,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 3.992278981537278,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.09990840120152,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.07857413993802832,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "inside the corridor, lane-centred at the horizon",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "spinning_lead",
+  "uid": "E1_s111_0080~hidden1",
+  "site": "E1",
+  "split": "heldout",
+  "history_id": "E1_s111_0080",
+  "hidden_world": "hidden1",
+  "hidden_params": [
+   "spin",
+   "slide_dir",
+   "t_reveal",
+   "b_spin",
+   "rear_react"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 111,
+  "index": 18,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc11",
+ "variation_id": "E1_s111_0080~hidden1",
+ "candidate_kind": "boundary",
+ "family": "brake_free",
+ "scenario_params": {
+  "spin": 0,
+  "slide_dir": 1,
+  "t_reveal": 1.6,
+  "v": 23.328241164048606,
+  "headway": 0.599745533335265,
+  "b_spin": 9.0233907133011,
+  "slide": 2.1531433001325717,
+  "benign_dec": 4.99172343725745,
+  "adjL": 1,
+  "adjL_dx": 4.076113960150153,
+  "adjR": 0,
+  "adjR_dx": 3.835780930261617,
+  "rear": 0,
+  "rear_gap": 29.88116367681465,
+  "rear_react": 0.6200462402625788,
+  "wx": "wet"
+ },
+ "hidden_params": [
+  "spin",
+  "slide_dir",
+  "t_reveal",
+  "b_spin",
+  "rear_react"
+ ],
+ "policy_params": {
+  "b_frac": 0.9,
+  "d_seen": 0.1,
+  "A_lat": 3.0,
+  "b_evasive": 2.0,
+  "y_off": 0.3
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   111,
+   1825591543,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.10000002384185791,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "boundary"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
