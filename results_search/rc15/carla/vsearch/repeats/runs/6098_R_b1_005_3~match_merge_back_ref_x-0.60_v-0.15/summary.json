@@ -1,0 +1,228 @@
+{
+ "run_id": "6098_R_b1_005_3~match_merge_back_ref_x-0.60_v-0.15",
+ "rc": "RC15",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.08 (clearance 0.85, road 0.08, friction 0.14), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC15-M-opt@R",
+  "town": "Town06",
+  "site": "R",
+  "frame_site": {
+   "start_xy": [
+    21.7,
+    143.0
+   ],
+   "ref_lane": -3,
+   "ref_idx": 0,
+   "s0": 40.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 15.0,
+  "prefix_s": 1.0,
+  "description": "The ego's lane ends; a car alongside in the target lane yields, holds its speed or speeds up to stay level once the ego signals (hidden). Merge in front, drop back and merge behind, watch the response and decide, or stop before the end.",
+  "params": {
+   "mode": "match",
+   "style": "pronounced",
+   "react": 0.7656986709685862,
+   "dv_adj": -1.9657055003081174,
+   "adj_dx": -1.6340101123940978,
+   "lead_dx": 44.74371839454263,
+   "follow_dx": -50.889197812079146,
+   "lead": 0,
+   "ego_lead_dx": 37.31348249221833,
+   "wx": "heavy",
+   "v": 19.14302749129102,
+   "end_x": 206.7741483975337
+  }
+ },
+ "policy": {
+  "name": "options.merge_back",
+  "family": "merge_back",
+  "params": {
+   "a": -3.467579790632673,
+   "g_lead": 1.7702644675356396,
+   "g_lag": 6.835974730846267,
+   "A_lat": 5.977666896318176,
+   "y_off": 0.32294986781133467,
+   "b_ev": 2.081126613439486
+  },
+  "t_trigger": 3.191891195797325e-16,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.08139639563218104,
+  "min_margins": {
+   "clear": 0.8527005329753536,
+   "road": 0.08139639563218104,
+   "dyn": 0.14042466939568055
+  },
+  "start_speed": 19.12817775363015,
+  "end_speed": 9.048296254792117,
+  "progress_m": 150.39896955662297,
+  "terminal": 0.27741949812707156,
+  "envelope": {
+   "max_g": 0.43459515903033125,
+   "max_ax_g": 0.3608260803809712,
+   "min_ax_g": -0.43459515882805266,
+   "viol_ticks": 0,
+   "shaped_frac": 0.012422360248447204,
+   "governed_frac": 0.0
+  },
+  "goal": {
+   "merge": "behind"
+  }
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.8527005329753536,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.08139639563218104,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.14042466939568055,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.27741949812707156,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {
+    "merge": "behind"
+   },
+   "required": "ends in the target lane (in front of or behind the adjacent car)",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "lane_end_merge",
+  "uid": "R_b1_005_3~match",
+  "site": "R",
+  "split": "train",
+  "history_id": "R_b1_005_3",
+  "hidden_world": "match",
+  "hidden_params": [
+   "mode",
+   "react",
+   "style"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 7,
+  "index": 5,
+  "how": "boundary:merge_back:adj_dx:R_s151_0144"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc15",
+ "variation_id": "R_b1_005_3~match",
+ "candidate_kind": "ref",
+ "family": "merge_back",
+ "scenario_params": {
+  "mode": "match",
+  "style": "pronounced",
+  "react": 0.7656986709685862,
+  "dv_adj": -1.9657055003081174,
+  "adj_dx": -1.6340101123940978,
+  "lead_dx": 44.74371839454263,
+  "follow_dx": -50.889197812079146,
+  "lead": 0,
+  "ego_lead_dx": 37.31348249221833,
+  "wx": "heavy",
+  "v": 19.14302749129102,
+  "end_x": 206.7741483975337
+ },
+ "hidden_params": [
+  "mode",
+  "react",
+  "style"
+ ],
+ "policy_params": {
+  "a": -3.467579790632673,
+  "g_lead": 1.7702644675356396,
+  "g_lag": 6.835974730846267,
+  "A_lat": 5.977666896318176,
+  "y_off": 0.32294986781133467,
+  "b_ev": 2.081126613439486
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   7,
+   1675314295,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "ref",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.19278022027819985,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "ref"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
