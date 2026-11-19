@@ -1,0 +1,238 @@
+{
+ "run_id": "1003_B_s241_0023~hidden5_merge_back_shared_x-0.60_v-0.15",
+ "rc": "RC14",
+ "label": "FAIL",
+ "reason": "no contact, but min margin r = 0.04 < 0.05 (binding: road)",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC14-S1-opt@B",
+  "town": "Town06",
+  "site": "B",
+  "frame_site": {
+   "start_xy": [
+    128.5,
+    244.6
+   ],
+   "ref_lane": -5,
+   "ref_idx": 1,
+   "s0": 90.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 10.0,
+  "prefix_s": 4.0,
+  "description": "A stopped car ahead in the ego's lane; the way around it is the left lane, where a van drives just behind the ego. A motorbike seen approaching in the left lane went out of view behind the van moments ago: fast, it will pass the van and arrive in the gap; slow, it stays behind. Change now, brake, or remember the bike and wait for it; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "v": 20.835989423585197,
+   "d_obs": 93.86281492872428,
+   "stalled_bp": "vehicle.nissan.patrol_2021",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -9.671345057348748,
+   "dv_occ": 1.9620229319053406,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 11.02268835334915,
+   "dv_slow": 2.0713171390716494,
+   "t_since": 0.4925065212931165,
+   "rear": 0,
+   "rear_bp": "vehicle.carlamotors.european_hgv",
+   "rear_gap": 9.120673564526811,
+   "rear_react": 1.1359981010203848,
+   "rear_b": 4.028224116965896,
+   "wx": "heavy"
+  }
+ },
+ "policy": {
+  "name": "options.merge_back",
+  "family": "merge_back",
+  "params": {
+   "a": -6.0,
+   "g_lead": 3.0,
+   "g_lag": 4.0,
+   "A_lat": 5.0,
+   "y_off": 0.35,
+   "b_ev": 3.0
+  },
+  "t_trigger": 0.39999999999999414,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.03514915695464316,
+  "min_margins": {
+   "clear": 0.37601168561454656,
+   "road": 0.03514915695464316,
+   "dyn": 0.1923840642476321
+  },
+  "start_speed": 20.914580552986187,
+  "end_speed": 20.858834382930457,
+  "progress_m": 208.09856399987498,
+  "terminal": 0.24928104958357478,
+  "envelope": {
+   "max_g": 0.3370748343230885,
+   "max_ax_g": 0.17804487989907222,
+   "min_ax_g": -0.18155412199434162,
+   "viol_ticks": 0,
+   "shaped_frac": 0.014184397163120567,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.37601168561454656,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.03514915695464316,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.1923840642476321,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.24928104958357478,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "hidden_motorbike",
+  "uid": "B_s241_0023~hidden5",
+  "site": "B",
+  "split": "train",
+  "history_id": "B_s241_0023",
+  "hidden_world": "hidden5",
+  "hidden_params": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 241,
+  "index": 8,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc14",
+ "variation_id": "B_s241_0023~hidden5",
+ "candidate_kind": "shared",
+ "family": "merge_back",
+ "scenario_params": {
+  "v": 20.835989423585197,
+  "d_obs": 93.86281492872428,
+  "stalled_bp": "vehicle.nissan.patrol_2021",
+  "occ_bp": "vehicle.carlamotors.european_hgv",
+  "occ_dx": -9.671345057348748,
+  "dv_occ": 1.9620229319053406,
+  "bike": 0,
+  "bike_fast": 0,
+  "dv_fast": 11.02268835334915,
+  "dv_slow": 2.0713171390716494,
+  "t_since": 0.4925065212931165,
+  "rear": 0,
+  "rear_bp": "vehicle.carlamotors.european_hgv",
+  "rear_gap": 9.120673564526811,
+  "rear_react": 1.1359981010203848,
+  "rear_b": 4.028224116965896,
+  "wx": "heavy"
+ },
+ "hidden_params": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "a": -6.0,
+  "g_lead": 3.0,
+  "g_lag": 4.0,
+  "A_lat": 5.0,
+  "y_off": 0.35,
+  "b_ev": 3.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   241,
+   215171602,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.07940564321193144,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "shared"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}

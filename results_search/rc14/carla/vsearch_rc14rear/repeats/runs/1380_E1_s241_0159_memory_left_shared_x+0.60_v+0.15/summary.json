@@ -1,0 +1,261 @@
+{
+ "run_id": "1380_E1_s241_0159_memory_left_shared_x+0.60_v+0.15",
+ "rc": "RC14",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.11 (clearance 1.18, road 0.11, friction 0.12), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC14-S1-opt@E1",
+  "town": "Town06",
+  "site": "E1",
+  "frame_site": {
+   "start_xy": [
+    20.0,
+    45.4
+   ],
+   "ref_lane": -4,
+   "ref_idx": 1,
+   "s0": 150.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 10.0,
+  "prefix_s": 4.0,
+  "description": "A stopped car ahead in the ego's lane; the way around it is the left lane, where a van drives just behind the ego. A motorbike seen approaching in the left lane went out of view behind the van moments ago: fast, it will pass the van and arrive in the gap; slow, it stays behind. Change now, brake, or remember the bike and wait for it; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "v": 24.979801994586836,
+   "d_obs": 69.38837041940619,
+   "stalled_bp": "vehicle.volkswagen.t2_2021",
+   "occ_bp": "vehicle.mercedes.sprinter",
+   "occ_dx": -10.773104960830205,
+   "dv_occ": 0.18344024409346593,
+   "bike": 1,
+   "bike_fast": 0,
+   "dv_fast": 6.30394113765734,
+   "dv_slow": 2.3478666328059026,
+   "t_since": 0.4216696451573826,
+   "rear": 0,
+   "rear_bp": "vehicle.mercedes.sprinter",
+   "rear_gap": 8.421287779446846,
+   "rear_react": 0.8309542989041458,
+   "rear_b": 4.44382717678075,
+   "wx": "wet"
+  }
+ },
+ "policy": {
+  "name": "options.memory_left",
+  "family": "memory_left",
+  "params": {
+   "dv_thr": 3.0,
+   "b_wait": 0.6,
+   "t_wait": 3.0,
+   "g_pass": 3.0,
+   "A_lat": 5.0,
+   "b_evasive": 2.0,
+   "y_off": 0.3
+  },
+  "t_trigger": -5.842548667089886e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.10651464655975262,
+  "min_margins": {
+   "clear": 1.18487414926242,
+   "road": 0.10651464655975262,
+   "dyn": 0.1192640360939986
+  },
+  "start_speed": 25.30548630793551,
+  "end_speed": 25.274198019071367,
+  "progress_m": 252.39011997248335,
+  "terminal": 0.29888491047802945,
+  "envelope": {
+   "max_g": 0.4596261253683612,
+   "max_ax_g": 0.09130472395567178,
+   "min_ax_g": -0.010814714886200448,
+   "viol_ticks": 0,
+   "shaped_frac": 0.014184397163120567,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 1.18487414926242,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.10651464655975262,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.1192640360939986,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.29888491047802945,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "hidden_motorbike",
+  "uid": "E1_s241_0159",
+  "site": "E1",
+  "split": "heldout",
+  "history_id": "E1_s241_0159",
+  "hidden_world": null,
+  "hidden_params": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 241,
+  "index": 27,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc14",
+ "variation_id": "E1_s241_0159",
+ "candidate_kind": "shared",
+ "family": "memory_left",
+ "scenario_params": {
+  "v": 24.979801994586836,
+  "d_obs": 69.38837041940619,
+  "stalled_bp": "vehicle.volkswagen.t2_2021",
+  "occ_bp": "vehicle.mercedes.sprinter",
+  "occ_dx": -10.773104960830205,
+  "dv_occ": 0.18344024409346593,
+  "bike": 1,
+  "bike_fast": 0,
+  "dv_fast": 6.30394113765734,
+  "dv_slow": 2.3478666328059026,
+  "t_since": 0.4216696451573826,
+  "rear": 0,
+  "rear_bp": "vehicle.mercedes.sprinter",
+  "rear_gap": 8.421287779446846,
+  "rear_react": 0.8309542989041458,
+  "rear_b": 4.44382717678075,
+  "wx": "wet"
+ },
+ "hidden_params": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "dv_thr": 3.0,
+  "b_wait": 0.6,
+  "t_wait": 3.0,
+  "g_pass": 3.0,
+  "A_lat": 5.0,
+  "b_evasive": 2.0,
+  "y_off": 0.3
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   241,
+   2111296621,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "uncertain",
+   "edge",
+   "shared"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "UNCERTAIN",
+  "nominal": "PASS",
+  "r": 0.11920564011934343,
+  "r_worst": 0.11920533431388824,
+  "n_pass": 15,
+  "n_worlds": 15,
+  "fail": "",
+  "near": "stalled",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 0.8271196919827837,
+   "road": 0.3552886864907978,
+   "dyn": 0.11920564011934343
+  },
+  "cls": "success",
+  "robust_cost": 6.9933631149875755,
+  "companions": {
+   "other_bike": {
+    "success": false,
+    "r": -1.7260633911912655,
+    "fail": "contact:stalled",
+    "contact": "stalled",
+    "impact_speed": 13.374244671164035
+   }
+  }
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}

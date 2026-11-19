@@ -1,0 +1,252 @@
+{
+ "run_id": "389_A_s241_0028_memory_left_boundary_x-0.60_v-0.15",
+ "rc": "RC14",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.05 (clearance 0.36, road 0.63, friction 0.46), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC14-S1-opt",
+  "town": "Town06",
+  "site": "A",
+  "frame_site": {
+   "start_xy": [
+    21.7,
+    143.0
+   ],
+   "ref_lane": -5,
+   "ref_idx": 1,
+   "s0": 120.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 10.0,
+  "prefix_s": 4.0,
+  "description": "A stopped car ahead in the ego's lane; the way around it is the left lane, where a van drives just behind the ego. A motorbike seen approaching in the left lane went out of view behind the van moments ago: fast, it will pass the van and arrive in the gap; slow, it stays behind. Change now, brake, or remember the bike and wait for it; a heavy vehicle close behind cannot follow a hard stop.",
+  "params": {
+   "v": 23.069248610182168,
+   "d_obs": 108.89852727502128,
+   "stalled_bp": "vehicle.toyota.prius",
+   "occ_bp": "vehicle.carlamotors.european_hgv",
+   "occ_dx": -8.372683836317035,
+   "dv_occ": 1.5724427014181015,
+   "bike": 0,
+   "bike_fast": 0,
+   "dv_fast": 10.840331235320548,
+   "dv_slow": 1.4391561734746585,
+   "t_since": 0.7084091262123813,
+   "rear": 1,
+   "rear_bp": "vehicle.carlamotors.european_hgv",
+   "rear_gap": 6.8763060742420885,
+   "rear_react": 1.187696711488624,
+   "rear_b": 4.359092951493129,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.memory_left",
+  "family": "memory_left",
+  "params": {
+   "dv_thr": 2.7824020289488884,
+   "b_wait": 0.6474636664170927,
+   "t_wait": 3.364141806905105,
+   "g_pass": 6.197367656771966,
+   "A_lat": 5.2414500288711325,
+   "b_evasive": 1.9436560866231782,
+   "y_off": 0.5448423924937389
+  },
+  "t_trigger": -5.842548667089886e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.05462746834767074,
+  "min_margins": {
+   "clear": 0.3608462590115247,
+   "road": 0.632439801872257,
+   "dyn": 0.4638802716279524
+  },
+  "start_speed": 23.105194845180343,
+  "end_speed": 23.07747121698654,
+  "progress_m": 230.3948573367921,
+  "terminal": 0.05462746834767074,
+  "envelope": {
+   "max_g": 0.511213677870038,
+   "max_ax_g": 0.19232808281107305,
+   "min_ax_g": -0.013067875458032882,
+   "viol_ticks": 0,
+   "shaped_frac": 0.014184397163120567,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.3608462590115247,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.632439801872257,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.4638802716279524,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.05462746834767074,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "hidden_motorbike",
+  "uid": "A_s241_0028",
+  "site": "A",
+  "split": "train",
+  "history_id": "A_s241_0028",
+  "hidden_world": null,
+  "hidden_params": [
+   "bike_fast",
+   "dv_fast",
+   "dv_slow",
+   "rear_react",
+   "rear_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 241,
+  "index": 13,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc14",
+ "variation_id": "A_s241_0028",
+ "candidate_kind": "boundary",
+ "family": "memory_left",
+ "scenario_params": {
+  "v": 23.069248610182168,
+  "d_obs": 108.89852727502128,
+  "stalled_bp": "vehicle.toyota.prius",
+  "occ_bp": "vehicle.carlamotors.european_hgv",
+  "occ_dx": -8.372683836317035,
+  "dv_occ": 1.5724427014181015,
+  "bike": 0,
+  "bike_fast": 0,
+  "dv_fast": 10.840331235320548,
+  "dv_slow": 1.4391561734746585,
+  "t_since": 0.7084091262123813,
+  "rear": 1,
+  "rear_bp": "vehicle.carlamotors.european_hgv",
+  "rear_gap": 6.8763060742420885,
+  "rear_react": 1.187696711488624,
+  "rear_b": 4.359092951493129,
+  "wx": "dry"
+ },
+ "hidden_params": [
+  "bike_fast",
+  "dv_fast",
+  "dv_slow",
+  "rear_react",
+  "rear_b"
+ ],
+ "policy_params": {
+  "dv_thr": 2.7824020289488884,
+  "b_wait": 0.6474636664170927,
+  "t_wait": 3.364141806905105,
+  "g_pass": 6.197367656771966,
+  "A_lat": 5.2414500288711325,
+  "b_evasive": 1.9436560866231782,
+  "y_off": 0.5448423924937389
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   241,
+   48496027,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "boundary",
+  "selected_for": [
+   "uncertain",
+   "edge",
+   "boundary"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "UNCERTAIN",
+  "nominal": "PASS",
+  "r": 0.055121736203056604,
+  "r_worst": 0.055121727399933707,
+  "n_pass": 15,
+  "n_worlds": 15,
+  "fail": "",
+  "near": "stalled",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 0.39601747294147926,
+   "road": 0.5230898815951186,
+   "dyn": 0.4637559127316453
+  },
+  "cls": "success",
+  "robust_cost": 9.684887079471622
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
