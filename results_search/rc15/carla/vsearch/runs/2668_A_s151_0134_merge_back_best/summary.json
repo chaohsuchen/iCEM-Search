@@ -1,0 +1,254 @@
+{
+ "run_id": "2668_A_s151_0134_merge_back_best",
+ "rc": "RC15",
+ "label": "FAIL",
+ "reason": "no contact, but min margin r = -0.26 < 0.05 (binding: road)",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC15-M-opt",
+  "town": "Town06",
+  "site": "A",
+  "frame_site": {
+   "start_xy": [
+    40.0,
+    48.9
+   ],
+   "ref_lane": -6,
+   "ref_idx": 0,
+   "s0": 0.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 14.0,
+  "prefix_s": 2.0,
+  "description": "The ego's lane ends; a car alongside in the target lane yields, holds its speed or speeds up to stay level once the ego signals (hidden). Merge in front, drop back and merge behind, watch the response and decide, or stop before the end.",
+  "params": {
+   "mode": "match",
+   "style": "subtle",
+   "react": 0.5371070977384754,
+   "dv_adj": 1.7213768635301339,
+   "adj_dx": 0.5209741080374712,
+   "lead_dx": 53.30760860181064,
+   "follow_dx": -47.12152340145228,
+   "lead": 1,
+   "ego_lead_dx": 33.18200469819227,
+   "wx": "heavy",
+   "v": 14.726405139987605,
+   "end_x": 191.5178527794853
+  }
+ },
+ "policy": {
+  "name": "options.merge_back",
+  "family": "merge_back",
+  "params": {
+   "a": -2.619706165894275,
+   "g_lead": 2.44429734479924,
+   "g_lag": 3.8774691494974545,
+   "A_lat": 4.571545306568886,
+   "y_off": 0.2796437687046229,
+   "b_ev": 0.20894300738562077
+  },
+  "t_trigger": 1.2073675392798577e-15,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -0.2648241999649432,
+  "min_margins": {
+   "clear": 0.19232067203319692,
+   "road": -0.2648241999649432,
+   "dyn": 0.16133962940772306
+  },
+  "start_speed": 15.180391921501954,
+  "end_speed": 10.109721787051978,
+  "progress_m": 145.6954423495104,
+  "terminal": 0.3202651924623721,
+  "envelope": {
+   "max_g": 0.3816900010601593,
+   "max_ax_g": 0.3727221253689738,
+   "min_ax_g": -0.31412156418140347,
+   "viol_ticks": 0,
+   "shaped_frac": 0.006211180124223602,
+   "governed_frac": 0.0
+  },
+  "goal": {
+   "merge": "behind"
+  }
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.19232067203319692,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": -0.2648241999649432,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.16133962940772306,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.3202651924623721,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {
+    "merge": "behind"
+   },
+   "required": "ends in the target lane (in front of or behind the adjacent car)",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "lane_end_merge",
+  "uid": "A_s151_0134",
+  "site": "A",
+  "split": "train",
+  "history_id": "A_s151_0134",
+  "hidden_world": null,
+  "hidden_params": [
+   "mode",
+   "react",
+   "style"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 151,
+  "index": 69,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc15",
+ "variation_id": "A_s151_0134",
+ "candidate_kind": "best",
+ "family": "merge_back",
+ "scenario_params": {
+  "mode": "match",
+  "style": "subtle",
+  "react": 0.5371070977384754,
+  "dv_adj": 1.7213768635301339,
+  "adj_dx": 0.5209741080374712,
+  "lead_dx": 53.30760860181064,
+  "follow_dx": -47.12152340145228,
+  "lead": 1,
+  "ego_lead_dx": 33.18200469819227,
+  "wx": "heavy",
+  "v": 14.726405139987605,
+  "end_x": 191.5178527794853
+ },
+ "hidden_params": [
+  "mode",
+  "react",
+  "style"
+ ],
+ "policy_params": {
+  "a": -2.619706165894275,
+  "g_lead": 2.44429734479924,
+  "g_lag": 3.8774691494974545,
+  "A_lat": 4.571545306568886,
+  "y_off": 0.2796437687046229,
+  "b_ev": 0.20894300738562077
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   151,
+   997516945,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "PASS",
+  "nominal": "PASS",
+  "r": 0.19224693059347742,
+  "r_worst": 0.18992181893393223,
+  "n_pass": 14,
+  "n_worlds": 14,
+  "fail": "",
+  "near": "bg_l0_0",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 0.9825083392626597,
+   "road": 0.4059839301904129,
+   "dyn": 0.19224693059347742
+  },
+  "cls": "success",
+  "robust_cost": 3.925628915073948,
+  "companions": {
+   "yield": {
+    "success": true,
+    "r": 0.19224693059347742,
+    "fail": "",
+    "contact": null,
+    "impact_speed": 0.0
+   },
+   "hold": {
+    "success": true,
+    "r": 0.19224693059347742,
+    "fail": "",
+    "contact": null,
+    "impact_speed": 0.0
+   }
+  }
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
