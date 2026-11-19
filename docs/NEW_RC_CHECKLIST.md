@@ -1,7 +1,7 @@
 # Checklist for adding a new RC
 
 Template: `search/template_case.py` (copy to `search/<rcNN>_case.py`; do not edit the template in place).
-Slurm output always goes to `slurm_logs/`. All files, comments and logs are written in English.
+The Slurm scripts are not part of the repository (private cluster); see README "Running CARLA verification". All files, comments and logs are written in English.
 
 ## 0. Classify first (see RC_GROUPS.md)
 - [ ] Which group (A/B/C/D)? Group D: write only a wrapper, skip to step 3.
@@ -44,7 +44,7 @@ Slurm output always goes to `slurm_logs/`. All files, comments and logs are writ
 - [ ] `python tools/check_layout.py` prints "layout OK" (batch names, run folders, logs follow results_search/README.md)
 
 ## 7. CARLA verification and false-safe
-- [ ] Submit with `CASE=<rc> SHARD=i NSHARDS=n bash slurm/submit_verify.sh` (picks a free GPU via `slurm_report -g`)
+- [ ] Run `tools/verify_carla.py --case <rc> --batch <batch> --port P --shard i --nshards n` against a running CARLA server (README "Running CARLA verification")
 - [ ] After a timeout: remove the error lines from `results_shard*.jsonl` before re-running (verify_carla now also skips error rows when deciding what is done)
 - [ ] false-safe = surrogate PASS and CARLA not PASS; if > 10%, go back to step 3 and do not expand
 
@@ -55,7 +55,7 @@ Slurm output always goes to `slurm_logs/`. All files, comments and logs are writ
 
 ## Frozen output format and standard flow (do not change per RC)
 The output format is frozen as schema `rcx-run-1` (docs/RUN_SCHEMA.md) and the layout of results_search/README.md. Every RC runs the same four steps; only the Case, the CARLA scene and the scene lists differ:
-1. `tools/run_cem.py --case <rc> --batch baseline` -> verify (`slurm/submit_verify.sh`, CASE/BATCH/SHARD/NSHARDS) -> `tools/summarize_verify.py` (false-safe < 10%)
+1. `tools/run_cem.py --case <rc> --batch baseline` -> verify (`tools/verify_carla.py`, --case/--batch/--shard/--nshards) -> `tools/summarize_verify.py` (false-safe < 10%)
 2. `tools/scan_params.py` to pick the 2-3 dominant parameters -> `presets_<tag>` (`run_cem.py --scen-file`) -> verify -> false-safe
 3. `tools/boundary_configs/<rc>.json` -> `tools/run_boundary.py --case <rc> --batch boundary_r1` -> verify -> false-safe (next round `boundary_r2` if > 10%)
 4. `tools/index_runs.py`, `tools/build_dataset.py`, `tools/check_layout.py` (also validates the required summary keys / CSV columns / decision fields of every run)

@@ -1,7 +1,7 @@
 """Generic recovery-boundary exploration on a case's surrogate (no CARLA). For every axis of a config, per family: sweep one scene parameter from the easy end to the hard end,
 re-optimising at each point with iCEM warm-started from the previous point (kind=best), and also evaluating the policy found at the easy end unchanged (kind=ref, a fixed-policy
 flip). Where the optimised verdict flips PASS -> not PASS between neighbours, the interval is bisected (--rounds). Output: results_search/<rc>/search/<batch>/
-{scenarios.json, candidates.json, table.json}; verify with slurm/submit_verify.sh (CASE=<rc> BATCH=<batch>).
+{scenarios.json, candidates.json, table.json}; verify with tools/verify_carla.py (--case <rc> --batch <batch>).
 Config: tools/boundary_configs/<rc>.json  = {"axes": [{"axis": name, "key": scene param, "grid": [easy ... hard], "base": {other scene params}, "families": [...] or omitted = all}]}
 python tools/run_boundary.py --case rc01 --batch boundary_r1"""
 import argparse, json, os, sys, time

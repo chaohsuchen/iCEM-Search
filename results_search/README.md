@@ -63,7 +63,7 @@ results_search/
 ```
 python tools/run_cem.py --case rc03 --batch presets_22mps --scen-file <scenes.json>      # -> search/<batch>/ (+ scenarios.json)
 python tools/run_boundary.py --case <rc> --batch boundary_r4                          # boundary batch, axes from tools/boundary_configs/<rc>.json
-CASE=rc03 BATCH=presets_22mps SHARD=0 NSHARDS=2 sbatch --export=ALL --exclude=gpunode16 --gres=gpu:rtx_4090:1 slurm/verify.sbatch   # -> carla/<batch>/
+python tools/verify_carla.py --case rc03 --batch presets_22mps --port 2000 --shard 0 --nshards 2   # needs a running CARLA server -> carla/<batch>/
 python tools/summarize_verify.py results_search/rc03/carla/<batch>        # false-safe of that batch
 python tools/index_runs.py        # summary/carla_runs.json
 python tools/build_dataset.py     # summary/recovery_profiles.json etc. (baseline batches)

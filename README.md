@@ -37,10 +37,9 @@ Quality gate: per RC and batch, the false-safe rate (surrogate PASS but CARLA no
 | `rc01/` | low-level controller, calibration, RC01 street scene, pass/fail judge, video overlay (imported by `rcx`) |
 | `search/` | surrogate simulators (`*_sim.py`), per-RC `Case` classes and the `CASES` registry (`cases.py`), iCEM (`cem.py`), policy families, `template_case.py` for a new RC |
 | `tools/` | `run_cem.py` (search), `scan_params.py` (sensitivity scan), `run_boundary.py` (boundary sweeps, configs in `boundary_configs/`), `verify_carla.py` (CARLA replay), `summarize_verify.py` (false-safe), `index_runs.py`, `build_dataset.py`, `check_layout.py`, `rc03_scan.py`, `rc02_negatives.py` |
-| `slurm/` | `submit_verify.sh` (picks a free GPU via `slurm_report -g`), `verify.sbatch`, `carla_server.sh`, `baseline_v3.sbatch` (legacy calibration job) |
+| `slurm/`, `slurm_logs/` | **not part of this repository** (private cluster scripts, see "Running CARLA verification" below) |
 | `results_v3/` | CARLA calibration files (`<rc>/calibration*.json`) that the surrogates load. Produced by the legacy driver `run_v2.py` |
 | `results_search/` | all search and CARLA results (see its README) |
-| `slurm_logs/` | all Slurm output goes here |
 
 ## The standard flow (same four steps for every RC)
 
@@ -48,7 +47,7 @@ Quality gate: per RC and batch, the false-safe rate (surrogate PASS but CARLA no
 PY=<python with numpy and the carla egg>      # e.g. a private venv; the repo has no install step
 # 1. baseline = the RC's original scene list
 $PY tools/run_cem.py --case rc04 --batch baseline                       # surrogate search -> results_search/rc04/search/baseline
-CASE=rc04 BATCH=baseline SHARD=0 NSHARDS=3 bash slurm/submit_verify.sh v_rc04_0   # CARLA replay, one call per shard
+$PY tools/verify_carla.py --case rc04 --batch baseline --port 2000 --shard 0 --nshards 3   # CARLA replay, one call per shard (see below)
 $PY tools/summarize_verify.py results_search/rc04/carla/baseline        # false-safe must be < 10%
 # 2. presets_<tag>: hand-picked easy / mid / boundary / hard scenes   (run_cem.py --scen-file <scenes.json>)
 # 3. boundary_r<N>: sweep one scene parameter, bisect where PASS flips (tools/run_boundary.py, config tools/boundary_configs/<rc>.json)
@@ -57,11 +56,23 @@ $PY tools/summarize_verify.py results_search/rc04/carla/baseline        # false-
 
 Only iCEM is used. Scene parameters (gap, speed, delay, d_obs, ...) are never searched by iCEM; batches differ only in how scenes are chosen. There are no conditional or guarded programs: the optimizer only picks numbers.
 
+## Running CARLA verification (the Slurm scripts are not included)
+
+The Slurm scripts (`slurm/`, `slurm_logs/`) are specific to the author's private cluster and are **not published in this repository**. They only did three things, which you can reproduce on any machine:
+
+1. Start a CARLA 0.9.15 server (off-screen rendering, `-RenderOffScreen`; needs a GPU with Vulkan, tested on NVIDIA only; AMD is untested) and wait until it accepts connections on a port.
+2. Set the controller environment variables used by every verification run: `RC_SUBSTEP=0.002 RC_BRAKE_SCALE=3.0 RC_BRAKE_CAP_MAX=0.85`.
+3. Run the verifier, one call per shard (shards only split the candidate list; run them in parallel on separate servers or one after another):
+   ```bash
+   RC_SUBSTEP=0.002 RC_BRAKE_SCALE=3.0 RC_BRAKE_CAP_MAX=0.85 \
+   $PY tools/verify_carla.py --case rc04 --batch baseline --port 2000 --shard 0 --nshards 3
+   ```
+   Output goes to `results_search/<rc>/carla/<batch>/` (`results_shard*.jsonl`, `runs/`). If a shard hangs (CARLA simulator timeout), remove its error lines from `results_shard*.jsonl` and run it again; finished candidates are skipped.
+
 ## Environment
 
-- CARLA 0.9.15 server (rendering needs an NVIDIA GPU; AMD GPUs are untested). `slurm/carla_server.sh` starts and stops it inside a Slurm job.
-- Python 3.10 with numpy and the `carla` 0.9.15 client. Paths to the interpreter and server are set at the top of `slurm/verify.sbatch` and `slurm/carla_server.sh`; adjust them on a new machine.
-- Controller settings used by every verification run: `RC_SUBSTEP=0.002`, `RC_BRAKE_SCALE=3.0`, `RC_BRAKE_CAP_MAX=0.85` (set in `slurm/verify.sbatch`).
+- CARLA 0.9.15 server and the matching `carla` Python 3.10 client, plus numpy. There is no install step in the repo.
+- The data under `results_search/` and the surrogate search (`tools/run_cem.py`) do **not** need CARLA or a GPU; only `tools/verify_carla.py` does.
 
 ## Conventions
 
