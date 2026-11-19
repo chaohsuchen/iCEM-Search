@@ -1,0 +1,247 @@
+{
+ "run_id": "1500_D2b_s312_0060~hidden2_brake_shared",
+ "rc": "RC12",
+ "label": "FAIL",
+ "reason": "contact with striker",
+ "end_reason": "contact:striker",
+ "scenario": {
+  "sid": "RC03-S1-opt@D2b",
+  "town": "Town05",
+  "site": "D2b",
+  "frame_site": {
+   "start_xy": [
+    207.5,
+    13.8
+   ],
+   "ref_lane": -2,
+   "ref_idx": 1,
+   "s0": 110.0,
+   "curve": true
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 1.0,
+  "description": "A car next to the ego is rear-ended and spins (right or left side); it ends deep in the ego lane, clipping it, or in its own lane. Keep, brake, or escape into the other adjacent lane's traffic: the recovery profile over these families is measured for every variation, on several roads and in dry / wet / heavy-rain conditions.",
+  "params": {
+   "side": 1,
+   "crash": 1,
+   "v": 28.84999948457083,
+   "d0": 53.82476499589716,
+   "intrude": 1.0960956752748585,
+   "psi_rest": 0.35882881493510543,
+   "T_slide": 2.1367484843220206,
+   "v_post": 23.833627280225116,
+   "v_esc": 25.78019022506205,
+   "esc_gap": 38.56465475249572,
+   "gap_center": 3.665380612449221,
+   "lead_brake": 2.1705605334484925,
+   "follow_T": 0.914495250486566,
+   "follow_react": 0.6747745778292054,
+   "rear": 0,
+   "rear_gap": 34.65233359169382,
+   "rear_react": 0.7780058833396721,
+   "wx": "dry",
+   "delay": 0.0,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.mini.cooper_s_2021"
+  }
+ },
+ "policy": {
+  "name": "options.brake",
+  "family": "brake",
+  "params": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "t_trigger": 0.7000000000000005,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -3.588327655524458,
+  "min_margins": {
+   "clear": -3.588327655524458,
+   "road": 0.5584359517810196,
+   "dyn": 0.24581327849005352
+  },
+  "start_speed": 29.038564760859128,
+  "end_speed": 19.212598445779026,
+  "progress_m": 58.33718470413517,
+  "terminal": null,
+  "envelope": {
+   "max_g": 1.0303318662711818,
+   "max_ax_g": 0.05388605644752226,
+   "min_ax_g": -0.8008041452607554,
+   "viol_ticks": 0,
+   "shaped_frac": 0.029411764705882353,
+   "governed_frac": 0.029411764705882353
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [
+   24553
+  ],
+  "actors": [
+   "striker"
+  ],
+  "impact_speed": 19.212598445779022
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": -3.588327655524458,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.5584359517810196,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.24581327849005352,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": "striker",
+    "impact_speed": 19.212598445779022
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": false,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "spun_car",
+  "uid": "D2b_s312_0060~hidden2",
+  "site": "D2b",
+  "split": "train",
+  "history_id": "D2b_s312_0060",
+  "hidden_world": "hidden2",
+  "hidden_params": [
+   "intrude",
+   "psi_rest",
+   "v_post",
+   "lead_brake",
+   "follow_react",
+   "rear_react"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 312,
+  "index": 6,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc12",
+ "variation_id": "D2b_s312_0060~hidden2",
+ "candidate_kind": "shared",
+ "family": "brake",
+ "scenario_params": {
+  "side": 1,
+  "crash": 1,
+  "v": 28.84999948457083,
+  "d0": 53.82476499589716,
+  "intrude": 1.0960956752748585,
+  "psi_rest": 0.35882881493510543,
+  "T_slide": 2.1367484843220206,
+  "v_post": 23.833627280225116,
+  "v_esc": 25.78019022506205,
+  "esc_gap": 38.56465475249572,
+  "gap_center": 3.665380612449221,
+  "lead_brake": 2.1705605334484925,
+  "follow_T": 0.914495250486566,
+  "follow_react": 0.6747745778292054,
+  "rear": 0,
+  "rear_gap": 34.65233359169382,
+  "rear_react": 0.7780058833396721,
+  "wx": "dry",
+  "delay": 0.0,
+  "vic_bp": "vehicle.dodge.charger_2020",
+  "lead_bp": "vehicle.mini.cooper_s_2021",
+  "fol_bp": "vehicle.mini.cooper_s_2021"
+ },
+ "hidden_params": [
+  "intrude",
+  "psi_rest",
+  "v_post",
+  "lead_brake",
+  "follow_react",
+  "rear_react"
+ ],
+ "policy_params": {
+  "b_frac": 0.9,
+  "off": 0.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   312,
+   2398724132,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.29799932990383926,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "shared"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}

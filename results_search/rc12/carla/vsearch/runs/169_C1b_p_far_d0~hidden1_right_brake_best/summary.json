@@ -1,0 +1,247 @@
+{
+ "run_id": "169_C1b_p_far_d0~hidden1_right_brake_best",
+ "rc": "RC12",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.23 (clearance 2.00, road 0.57, friction 0.23), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC03-S1-opt@C1b",
+  "town": "Town04",
+  "site": "C1b",
+  "frame_site": {
+   "start_xy": [
+    -363.3,
+    423.9
+   ],
+   "ref_lane": -2,
+   "ref_idx": 1,
+   "s0": 180.0,
+   "curve": true
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 1.0,
+  "description": "A car next to the ego is rear-ended and spins (right or left side); it ends deep in the ego lane, clipping it, or in its own lane. Keep, brake, or escape into the other adjacent lane's traffic: the recovery profile over these families is measured for every variation, on several roads and in dry / wet / heavy-rain conditions.",
+  "params": {
+   "side": 1,
+   "crash": 1,
+   "v": 27.0,
+   "d0": 60.0,
+   "intrude": 1.0,
+   "psi_rest": 0.7,
+   "T_slide": 1.5,
+   "v_post": 22.0,
+   "vic_bp": "vehicle.dodge.charger_2020",
+   "v_esc": 24.0,
+   "esc_gap": 40.0,
+   "gap_center": -2.5,
+   "lead_brake": 3.0,
+   "follow_T": 1.5,
+   "follow_react": 0.8,
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.lincoln.mkz_2020",
+   "rear": 0,
+   "rear_gap": 25.0,
+   "rear_react": 0.9,
+   "wx": "dry",
+   "delay": 0.0
+  }
+ },
+ "policy": {
+  "name": "options.right_brake",
+  "family": "right_brake",
+  "params": {
+   "A_lat": 4.652806431104566,
+   "b_evasive": 6.0,
+   "y_off": 0.48989328016399813,
+   "t_start": 0.0
+  },
+  "t_trigger": 0.5000000000000003,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.22522622745914267,
+  "min_margins": {
+   "clear": 2.0,
+   "road": 0.5651909400072821,
+   "dyn": 0.22522622745914267
+  },
+  "start_speed": 27.150255651663095,
+  "end_speed": 0.0,
+  "progress_m": 68.59982227204893,
+  "terminal": 0.5074570053698857,
+  "envelope": {
+   "max_g": 0.9100672409227962,
+   "max_ax_g": 0.04608721765577844,
+   "min_ax_g": -0.8926019302412267,
+   "viol_ticks": 0,
+   "shaped_frac": 0.03296703296703297,
+   "governed_frac": 0.14285714285714285
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 2.0,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.5651909400072821,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.22522622745914267,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.5074570053698857,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "spun_car",
+  "uid": "C1b_p_far_d0~hidden1",
+  "site": "C1b",
+  "split": "train",
+  "history_id": "C1b_p_far_d0",
+  "hidden_world": "hidden1",
+  "hidden_params": [
+   "intrude",
+   "psi_rest",
+   "v_post",
+   "lead_brake",
+   "follow_react",
+   "rear_react"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 0,
+  "how": "preset:far_d0"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc12",
+ "variation_id": "C1b_p_far_d0~hidden1",
+ "candidate_kind": "best",
+ "family": "right_brake",
+ "scenario_params": {
+  "side": 1,
+  "crash": 1,
+  "v": 27.0,
+  "d0": 60.0,
+  "intrude": 1.0,
+  "psi_rest": 0.7,
+  "T_slide": 1.5,
+  "v_post": 22.0,
+  "vic_bp": "vehicle.dodge.charger_2020",
+  "v_esc": 24.0,
+  "esc_gap": 40.0,
+  "gap_center": -2.5,
+  "lead_brake": 3.0,
+  "follow_T": 1.5,
+  "follow_react": 0.8,
+  "lead_bp": "vehicle.mini.cooper_s_2021",
+  "fol_bp": "vehicle.lincoln.mkz_2020",
+  "rear": 0,
+  "rear_gap": 25.0,
+  "rear_react": 0.9,
+  "wx": "dry",
+  "delay": 0.0
+ },
+ "hidden_params": [
+  "intrude",
+  "psi_rest",
+  "v_post",
+  "lead_brake",
+  "follow_react",
+  "rear_react"
+ ],
+ "policy_params": {
+  "A_lat": 4.652806431104566,
+  "b_evasive": 6.0,
+  "y_off": 0.48989328016399813,
+  "t_start": 0.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   798574776,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "hidden_world"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.2252031482299548,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "best"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}

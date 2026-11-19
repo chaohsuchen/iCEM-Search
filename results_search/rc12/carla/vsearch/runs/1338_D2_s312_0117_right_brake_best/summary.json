@@ -1,0 +1,259 @@
+{
+ "run_id": "1338_D2_s312_0117_right_brake_best",
+ "rc": "RC12",
+ "label": "FAIL",
+ "reason": "left the permitted corridor",
+ "end_reason": "left_corridor",
+ "scenario": {
+  "sid": "RC03-S1-opt@D2",
+  "town": "Town05",
+  "site": "D2",
+  "frame_site": {
+   "start_xy": [
+    207.5,
+    13.8
+   ],
+   "ref_lane": -2,
+   "ref_idx": 1,
+   "s0": 0.0,
+   "curve": true
+  },
+  "lane_width": 3.5,
+  "horizon_s": 8.0,
+  "prefix_s": 1.0,
+  "description": "A car next to the ego is rear-ended and spins (right or left side); it ends deep in the ego lane, clipping it, or in its own lane. Keep, brake, or escape into the other adjacent lane's traffic: the recovery profile over these families is measured for every variation, on several roads and in dry / wet / heavy-rain conditions.",
+  "params": {
+   "side": -1,
+   "crash": 1,
+   "v": 27.971895476761436,
+   "d0": 60.620406658171916,
+   "intrude": 0.606523422718061,
+   "psi_rest": 0.7077113319381694,
+   "T_slide": 1.7731290254059675,
+   "v_post": 23.30383898830318,
+   "v_esc": 22.658928367238214,
+   "esc_gap": 32.991761153112705,
+   "gap_center": -6.439875663720288,
+   "lead_brake": 2.7160802770145813,
+   "follow_T": 1.1984312889424271,
+   "follow_react": 0.9652069924687063,
+   "rear": 1,
+   "rear_gap": 20.898268351681168,
+   "rear_react": 0.9477668385484658,
+   "wx": "heavy",
+   "delay": 0.9,
+   "vic_bp": "vehicle.toyota.prius",
+   "lead_bp": "vehicle.mini.cooper_s_2021",
+   "fol_bp": "vehicle.ford.mustang"
+  }
+ },
+ "policy": {
+  "name": "options.right_brake",
+  "family": "right_brake",
+  "params": {
+   "A_lat": 4.8679555812852335,
+   "b_evasive": 6.0,
+   "y_off": 0.3228949155979107,
+   "t_start": 0.01097336305177666
+  },
+  "t_trigger": 0.6000000000000004,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -1.077833605572355,
+  "min_margins": {
+   "clear": 0.4826796831875233,
+   "road": -1.077833605572355,
+   "dyn": 0.09825404772870494
+  },
+  "start_speed": 28.08844609301144,
+  "end_speed": 28.062747351818018,
+  "progress_m": 120.52961276542965,
+  "terminal": null,
+  "envelope": {
+   "max_g": 0.28137387510470896,
+   "max_ax_g": 0.15351407249536644,
+   "min_ax_g": -0.19447851817352949,
+   "viol_ticks": 0,
+   "shaped_frac": 0.037037037037037035,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.4826796831875233,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": -1.077833605572355,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.09825404772870494,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "the scene's goal",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "spun_car",
+  "uid": "D2_s312_0117",
+  "site": "D2",
+  "split": "train",
+  "history_id": "D2_s312_0117",
+  "hidden_world": null,
+  "hidden_params": [
+   "intrude",
+   "psi_rest",
+   "v_post",
+   "lead_brake",
+   "follow_react",
+   "rear_react"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 312,
+  "index": 9,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc12",
+ "variation_id": "D2_s312_0117",
+ "candidate_kind": "best",
+ "family": "right_brake",
+ "scenario_params": {
+  "side": -1,
+  "crash": 1,
+  "v": 27.971895476761436,
+  "d0": 60.620406658171916,
+  "intrude": 0.606523422718061,
+  "psi_rest": 0.7077113319381694,
+  "T_slide": 1.7731290254059675,
+  "v_post": 23.30383898830318,
+  "v_esc": 22.658928367238214,
+  "esc_gap": 32.991761153112705,
+  "gap_center": -6.439875663720288,
+  "lead_brake": 2.7160802770145813,
+  "follow_T": 1.1984312889424271,
+  "follow_react": 0.9652069924687063,
+  "rear": 1,
+  "rear_gap": 20.898268351681168,
+  "rear_react": 0.9477668385484658,
+  "wx": "heavy",
+  "delay": 0.9,
+  "vic_bp": "vehicle.toyota.prius",
+  "lead_bp": "vehicle.mini.cooper_s_2021",
+  "fol_bp": "vehicle.ford.mustang"
+ },
+ "hidden_params": [
+  "intrude",
+  "psi_rest",
+  "v_post",
+  "lead_brake",
+  "follow_react",
+  "rear_react"
+ ],
+ "policy_params": {
+  "A_lat": 4.8679555812852335,
+  "b_evasive": 6.0,
+  "y_off": 0.3228949155979107,
+  "t_start": 0.01097336305177666
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   312,
+   3829549975,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "uncertain",
+   "edge",
+   "mitigation"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "UNCERTAIN",
+  "nominal": "PASS",
+  "r": 0.05935536168015931,
+  "r_worst": -0.3274239084910551,
+  "n_pass": 10,
+  "n_worlds": 13,
+  "fail": "",
+  "near": "gap_lead",
+  "contact": null,
+  "impact_speed": 0.0,
+  "margins": {
+   "clear": 0.05935536168015931,
+   "road": 0.11006769259472193,
+   "dyn": 0.19265730909425471
+  },
+  "cls": "success",
+  "robust_cost": 9.507074809433307
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
