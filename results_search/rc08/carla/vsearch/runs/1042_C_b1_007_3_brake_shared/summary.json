@@ -1,0 +1,236 @@
+{
+ "run_id": "1042_C_b1_007_3_brake_shared",
+ "rc": "RC08",
+ "label": "FAIL",
+ "reason": "contact with follower",
+ "end_reason": "contact:follower",
+ "scenario": {
+  "sid": "RC08-S1-opt@C",
+  "town": "Town01",
+  "site": "C",
+  "frame_site": {
+   "start_xy": [
+    101.4,
+    199.1
+   ],
+   "ref_lane": 1,
+   "ref_idx": 0,
+   "s0": 50.0
+  },
+  "lane_width": 4.0,
+  "horizon_s": 22.0,
+  "prefix_s": 3.0,
+  "description": "A garbage truck stopped in the ego lane on a two-way town street, oncoming traffic in a stream with gaps, a car behind. Stop protected behind it and wait, or overtake through the oncoming lane now or once a large enough gap is seen past the truck; the route deadline may be missed.",
+  "params": {
+   "v": 11.571598952478219,
+   "d_truck": 35.5128327718392,
+   "truck_dy": 0.24472378334970893,
+   "t_go": 40.650879719112105,
+   "onc_v": 11.126806622698702,
+   "onc_x0": 87.20934452665307,
+   "onc_h1": 9.49257522900512,
+   "onc_h2": 8.226523498305863,
+   "onc_h3": 7.304763878561435,
+   "onc_h4": 5.764764675671158,
+   "fol": 1,
+   "fol_T": 0.835678953212208,
+   "fol_react": 0.8244362117309818,
+   "fol_b": 5.358327569113037,
+   "wx": "dry"
+  }
+ },
+ "policy": {
+  "name": "options.brake",
+  "family": "brake",
+  "params": {
+   "b_frac": 0.9,
+   "off": 0.0
+  },
+  "t_trigger": 0.09999999999999772,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": -2.616970879358431,
+  "min_margins": {
+   "clear": -2.616970879358431,
+   "road": 1.2327274635700238,
+   "dyn": 0.3438532485127228
+  },
+  "start_speed": 12.006964716418622,
+  "end_speed": 0.0,
+  "progress_m": 10.083329054593625,
+  "terminal": null,
+  "envelope": {
+   "max_g": 0.5075031558030108,
+   "max_ax_g": 0.12092985765457015,
+   "min_ax_g": -0.5075031545232501,
+   "viol_ticks": 0,
+   "shaped_frac": 0.01818181818181818,
+   "governed_frac": 0.0
+  },
+  "goal": {}
+ },
+ "contact": {
+  "frames": [
+   41411
+  ],
+  "actors": [
+   "follower"
+  ],
+  "impact_speed": 6.850070362116487
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": -2.616970879358431,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 1.2327274635700238,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.3438532485127228,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": null,
+   "required": 0.05,
+   "unit": "m",
+   "passed": false,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": "follower",
+    "impact_speed": 6.850070362116487
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": false,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {},
+   "required": "no deadline in the label; route_done stored apart",
+   "passed": false,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "garbage_truck",
+  "uid": "C_b1_007_3",
+  "site": "C",
+  "split": "train",
+  "history_id": "C_b1_007_3",
+  "hidden_world": null,
+  "hidden_params": [
+   "t_go",
+   "fol_react",
+   "fol_b"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 73,
+  "index": 9,
+  "how": "boundary:overtake:onc_x0:C_s308_0041"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc08",
+ "variation_id": "C_b1_007_3",
+ "candidate_kind": "shared",
+ "family": "brake",
+ "scenario_params": {
+  "v": 11.571598952478219,
+  "d_truck": 35.5128327718392,
+  "truck_dy": 0.24472378334970893,
+  "t_go": 40.650879719112105,
+  "onc_v": 11.126806622698702,
+  "onc_x0": 87.20934452665307,
+  "onc_h1": 9.49257522900512,
+  "onc_h2": 8.226523498305863,
+  "onc_h3": 7.304763878561435,
+  "onc_h4": 5.764764675671158,
+  "fol": 1,
+  "fol_T": 0.835678953212208,
+  "fol_react": 0.8244362117309818,
+  "fol_b": 5.358327569113037,
+  "wx": "dry"
+ },
+ "hidden_params": [
+  "t_go",
+  "fol_react",
+  "fol_b"
+ ],
+ "policy_params": {
+  "b_frac": 0.9,
+  "off": 0.0
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   73,
+   2821946063,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "shared",
+  "selected_for": [
+   "shared"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "FAIL",
+  "nominal": "FAIL",
+  "r": -2.7068163201989663,
+  "r_worst": -2.8009976105982357,
+  "n_pass": 0,
+  "n_worlds": 13,
+  "fail": "contact:follower",
+  "near": "follower",
+  "contact": "follower",
+  "impact_speed": 6.9859923731985525,
+  "margins": {
+   "clear": -2.7068163201989663,
+   "road": 1.2499999999999998,
+   "dyn": 0.3438533188848949
+  },
+  "cls": "fail",
+  "robust_cost": 1349.2996186599275
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
