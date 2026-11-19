@@ -1,0 +1,228 @@
+{
+ "run_id": "3437_R_s151_0027~yield_merge_front_best",
+ "rc": "RC15",
+ "label": "PASS",
+ "reason": "no contact, inside the corridor and the envelope; min margin r = 0.19 (clearance 0.28, road 0.48, friction 0.19), lane-centred at the end",
+ "end_reason": "horizon",
+ "scenario": {
+  "sid": "RC15-M-opt@R",
+  "town": "Town06",
+  "site": "R",
+  "frame_site": {
+   "start_xy": [
+    21.7,
+    143.0
+   ],
+   "ref_lane": -3,
+   "ref_idx": 0,
+   "s0": 40.0
+  },
+  "lane_width": 3.5,
+  "horizon_s": 15.0,
+  "prefix_s": 1.0,
+  "description": "The ego's lane ends; a car alongside in the target lane yields, holds its speed or speeds up to stay level once the ego signals (hidden). Merge in front, drop back and merge behind, watch the response and decide, or stop before the end.",
+  "params": {
+   "mode": "yield",
+   "style": "subtle",
+   "react": 0.7426063133537053,
+   "dv_adj": -1.0929045653438125,
+   "adj_dx": 2.9998629197464224,
+   "lead_dx": 49.58528487684539,
+   "follow_dx": -54.39070802799233,
+   "lead": 0,
+   "ego_lead_dx": 31.404067595829204,
+   "wx": "wet",
+   "v": 21.230310337212988,
+   "end_x": 239.75694459029674
+  }
+ },
+ "policy": {
+  "name": "options.merge_front",
+  "family": "merge_front",
+  "params": {
+   "a": 1.1919735332041155,
+   "g_lead": 3.057308188553385,
+   "g_lag": 3.2729760177342904,
+   "A_lat": 3.700708984495761,
+   "y_off": 0.22412095770057844,
+   "b_ev": 2.7645545827783726
+  },
+  "t_trigger": 3.191891195797325e-16,
+  "t_handback": null,
+  "handback": null
+ },
+ "metrics": {
+  "r": 0.18820225276785996,
+  "min_margins": {
+   "clear": 0.27554290945748017,
+   "road": 0.4756469324560162,
+   "dyn": 0.18820225276785996
+  },
+  "start_speed": 21.466770107024086,
+  "end_speed": 20.006156896279343,
+  "progress_m": 317.08299333972957,
+  "terminal": 0.37582217549909946,
+  "envelope": {
+   "max_g": 0.4940630685247655,
+   "max_ax_g": 0.26519652840268276,
+   "min_ax_g": -0.34479425733847346,
+   "viol_ticks": 0,
+   "shaped_frac": 0.012422360248447204,
+   "governed_frac": 0.0
+  },
+  "goal": {
+   "merge": "front"
+  }
+ },
+ "contact": {
+  "frames": [],
+  "actors": [],
+  "impact_speed": null
+ },
+ "constraints": [
+  {
+   "name": "clearance",
+   "measured": 0.27554290945748017,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min over ticks and actors of min(footprint distance, footprint distance predicted 0.3 s ahead at the closing velocity) - 0.5 m reserve, capped at 2 m"
+  },
+  {
+   "name": "road",
+   "measured": 0.4756469324560162,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "min distance of the ego footprint inside the permitted corridor (scenario bounds)"
+  },
+  {
+   "name": "friction",
+   "measured": 0.18820225276785996,
+   "required": 0.05,
+   "unit": "fraction of the budget",
+   "passed": true,
+   "definition": "min of 1 - commanded combined acceleration / usable friction budget"
+  },
+  {
+   "name": "terminal",
+   "measured": 0.37582217549909946,
+   "required": 0.05,
+   "unit": "m",
+   "passed": true,
+   "definition": "at the horizon: lane-centred and straight (the terminal contract); not reached when the run ended early"
+  },
+  {
+   "name": "no_contact",
+   "measured": {
+    "actor": null,
+    "impact_speed": 0.0
+   },
+   "required": "no contact",
+   "unit": "m/s",
+   "passed": true,
+   "definition": "no footprint overlap with any actor, and no CARLA collision event; impact_speed = closing speed at the contact"
+  },
+  {
+   "name": "goal",
+   "measured": {
+    "merge": "front"
+   },
+   "required": "ends in the target lane (in front of or behind the adjacent car)",
+   "passed": true,
+   "definition": "the scenario's own end condition (spec.goal), e.g. merged into the target lane"
+  },
+  {
+   "name": "envelope",
+   "measured": 0,
+   "required": 0,
+   "unit": "ticks",
+   "passed": true,
+   "definition": "measured acceleration inside the vehicle's 1 g contract"
+  }
+ ],
+ "pass_rule": "PASS = every constraint passed (margins >= 0.05); margin r = min of clearance, road, friction and terminal",
+ "scene": {
+  "name": "lane_end_merge",
+  "uid": "R_s151_0027~yield",
+  "site": "R",
+  "split": "train",
+  "history_id": "R_s151_0027",
+  "hidden_world": "yield",
+  "hidden_params": [
+   "mode",
+   "react",
+   "style"
+  ]
+ },
+ "schema": "rcx-run-1",
+ "simulator": "CARLA 0.9.15",
+ "scene_seed": {
+  "seed": 151,
+  "index": 15,
+  "how": "random"
+ },
+ "files": [
+  "summary.json",
+  "ego_observable.csv",
+  "ground_truth.csv",
+  "decisions.jsonl"
+ ],
+ "rc_case": "rc15",
+ "variation_id": "R_s151_0027~yield",
+ "candidate_kind": "best",
+ "family": "merge_front",
+ "scenario_params": {
+  "mode": "yield",
+  "style": "subtle",
+  "react": 0.7426063133537053,
+  "dv_adj": -1.0929045653438125,
+  "adj_dx": 2.9998629197464224,
+  "lead_dx": 49.58528487684539,
+  "follow_dx": -54.39070802799233,
+  "lead": 0,
+  "ego_lead_dx": 31.404067595829204,
+  "wx": "wet",
+  "v": 21.230310337212988,
+  "end_x": 239.75694459029674
+ },
+ "hidden_params": [
+  "mode",
+  "react",
+  "style"
+ ],
+ "policy_params": {
+  "a": 1.1919735332041155,
+  "g_lead": 3.057308188553385,
+  "g_lag": 3.2729760177342904,
+  "A_lat": 3.700708984495761,
+  "y_off": 0.22412095770057844,
+  "b_ev": 2.7645545827783726
+ },
+ "policy_source": {
+  "optimizer": "vsearch: the family's settings, then iCEM (search/cem.py) on the worst-case cost over case.perturbed",
+  "rng": [
+   151,
+   2377141911,
+   7
+  ],
+  "verdict_worlds": "nominal + case.SCENE_PERTURB + kent_bridge.WORLDS",
+  "kind": "best",
+  "selected_for": [
+   "complete"
+  ]
+ },
+ "surrogate_prediction": {
+  "verdict": "WORLD",
+  "nominal": "PASS",
+  "r": 0.1861737250540072,
+  "fail": "",
+  "contact": null,
+  "impact_speed": 0.0,
+  "of_candidate": "best"
+ },
+ "observation": {
+  "source": "line of sight (sight.py): an actor is delivered while visible from the driver's eye (held 0.3 s after it disappears); background traffic outside the corridor is never delivered",
+  "delay_s": 0.0
+ }
+}
