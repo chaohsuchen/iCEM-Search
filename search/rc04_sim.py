@@ -48,10 +48,11 @@ def simulate(theta_s, policy_kw, plant: LongPlant, calib, pcfg=None, dt=0.05, po
     settled = stopped or bool(np.all(np.abs(et[-10:]) < p["settle_tol"]) or np.all(np.abs(et[-10:] + p["side"] * W) < p["settle_tol"]))
     off_road = bool(np.abs(et).max() > 1.5 * W)
     mc = min(mn.values()); fail = []
+    brake_like = kw.get("mode") == "brake" or (kw.get("mode") == "free" and float(np.abs(et).max()) < 0.5 * W)      # free policy that never leaves its lane: stopping-in-lane pad (rc04 families: brake)
     if contact: fail.append("contact with " + contact[0])
     else:
         for k, x in mn.items():
-            if x < p["min_clear"] + {"obstacle": p["obs_pad"] if kw.get("mode") == "brake" else p["obs_pad_lc"], "side": p["side_pad"], "fol": p["fol_pad"]}.get(k, 0.0): fail.append(f"{k} clearance")
+            if x < p["min_clear"] + {"obstacle": p["obs_pad"] if brake_like else p["obs_pad_lc"], "side": p["side_pad"], "fol": p["fol_pad"]}.get(k, 0.0): fail.append(f"{k} clearance")
         if not settled: fail.append("not settled")
         if closing: fail.append("still closing on the obstacle")
         if p["fol"] and L.rear_closing((s - EGO_HL) - (fs + L.HL_FOL), fv - v, abs(t - ft) - EGO_HW - L.HW_FOL, p["sur_ttc"]): fail.append("still closing from fol")

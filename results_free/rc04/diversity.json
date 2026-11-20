@@ -1,0 +1,58 @@
+{
+ "near_obstacle": {
+  "n_free": 0,
+  "n_struct": 0,
+  "distinct_free": 0,
+  "distinct_struct": 0,
+  "distinct_pooled": 0
+ },
+ "obstacle_40": {
+  "n_free": 0,
+  "n_struct": 0,
+  "distinct_free": 0,
+  "distinct_struct": 0,
+  "distinct_pooled": 0
+ },
+ "obstacle_44": {
+  "n_free": 0,
+  "n_struct": 0,
+  "distinct_free": 0,
+  "distinct_struct": 0,
+  "distinct_pooled": 0
+ },
+ "no_follower": {
+  "n_free": 6,
+  "n_struct": 4,
+  "distinct_free": 5,
+  "distinct_struct": 3,
+  "distinct_pooled": 6
+ },
+ "easy": {
+  "n_free": 4,
+  "n_struct": 4,
+  "distinct_free": 3,
+  "distinct_struct": 2,
+  "distinct_pooled": 4
+ },
+ "truck_far_ahead": {
+  "n_free": 2,
+  "n_struct": 5,
+  "distinct_free": 2,
+  "distinct_struct": 4,
+  "distinct_pooled": 5
+ },
+ "brake_boundary": {
+  "n_free": 2,
+  "n_struct": 2,
+  "distinct_free": 2,
+  "distinct_struct": 1,
+  "distinct_pooled": 2
+ },
+ "lane_change_boundary": {
+  "n_free": 2,
+  "n_struct": 4,
+  "distinct_free": 2,
+  "distinct_struct": 2,
+  "distinct_pooled": 3
+ }
+}

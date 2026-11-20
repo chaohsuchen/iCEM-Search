@@ -1,0 +1,881 @@
+{
+ "scene": "obstacle_40",
+ "theta_s": {
+  "d_obs": 40.0,
+  "side_pos": 0.0,
+  "v_side": 22.0
+ },
+ "role": "all_families_refuted",
+ "budget": {
+  "pop": 160,
+  "iters": 9,
+  "seeds": 2,
+  "warm": true,
+  "robust_evals_cold": 1446,
+  "robust_evals_warm": 810,
+  "robust_evals": 2256,
+  "rollouts": 11280,
+  "unique_samples": 2189,
+  "per_seed": [
+   {
+    "seed": 0,
+    "cost": 1014.4827372343731,
+    "hist": [
+     1019.2810145970226,
+     1019.2810145970226,
+     1014.797653929423,
+     1014.797653929423,
+     1014.4827372343731,
+     1014.4827372343731,
+     1014.4827372343731,
+     1014.4827372343731,
+     1014.4827372343731
+    ],
+    "n": 723
+   },
+   {
+    "seed": 1,
+    "cost": 1013.6196420965596,
+    "hist": [
+     1020.5872951084552,
+     1014.9717823267812,
+     1014.9717823267812,
+     1013.6196420965596,
+     1013.6196420965596,
+     1013.6196420965596,
+     1013.6196420965596,
+     1013.6196420965596,
+     1013.6196420965596
+    ],
+    "n": 723
+   }
+  ]
+ },
+ "pool": {
+  "n_supported_nominal": 0,
+  "n_refuted_no_contact": 1,
+  "n_contact": 2188
+ },
+ "wall_s": 52.412983417510986,
+ "candidates": [
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "best",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     1.2534530208293155,
+     -3.962363488290727,
+     -5.435993231040115,
+     -1.976677948430952,
+     -6.90547796711039,
+     0.0825615578127703
+    ],
+    "lam": [
+     -0.04296645718385922,
+     0.5758056417016963,
+     0.9185134746558326,
+     1.2,
+     0.41538026991218807,
+     0.032721775069553594
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     1.2534530208293155,
+     -3.962363488290727,
+     -5.435993231040115,
+     -1.976677948430952,
+     -6.90547796711039,
+     0.0825615578127703
+    ],
+    "lateral_fraction": [
+     -0.04296645718385922,
+     0.5758056417016963,
+     0.9185134746558326,
+     1.2,
+     0.41538026991218807,
+     0.032721775069553594
+    ],
+    "lateral_target_m": [
+     0.15038260014350727,
+     -2.0153197459559373,
+     -3.214797161295414,
+     -4.2,
+     -1.4538309446926583,
+     -0.11452621274343758
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "cold",
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 1013.6196420965596,
+    "smoothness_penalty": 3.8848553513381225,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": 18.549679843238863,
+    "min_rear": 20.06693571105348,
+    "margin": -0.5,
+    "reason": "contact with side",
+    "rel_speed": 0.24803264852488027,
+    "peak_jerk_mps3": 29.069898739836475,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "refuted",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -2.495137135607007,
+     -1.7696526476827792,
+     -5.02869891286777,
+     0.16464239851326568,
+     -1.8059092218071555,
+     -1.666041825138814
+    ],
+    "lam": [
+     0.28548824590273764,
+     0.33006653050005635,
+     0.714297647501879,
+     0.04847586536289977,
+     0.36712182962771284,
+     0.41867397444934534
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -2.495137135607007,
+     -1.7696526476827792,
+     -5.02869891286777,
+     0.16464239851326568,
+     -1.8059092218071555,
+     -1.666041825138814
+    ],
+    "lateral_fraction": [
+     0.28548824590273764,
+     0.33006653050005635,
+     0.714297647501879,
+     0.04847586536289977,
+     0.36712182962771284,
+     0.41867397444934534
+    ],
+    "lateral_target_m": [
+     -0.9992088606595817,
+     -1.1552328567501973,
+     -2.5000417662565764,
+     -0.1696655287701492,
+     -1.284926403696995,
+     -1.4653589105727087
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "cold",
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 1750.1111620569322,
+    "smoothness_penalty": 1.7458495359720274,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 0.2451355199568697,
+    "min_rear": 0.2808157980208108,
+    "margin": -0.44136029518080955,
+    "reason": "obstacle clearance; side clearance; fol clearance; not settled",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 49.11760114100332,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "mitigation",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     0.8081450377360788,
+     -3.2914713917200764,
+     -4.241843384229798,
+     -7.570809568266292,
+     0.18243276020240273,
+     -1.6948747734031588
+    ],
+    "lam": [
+     0.10539385271381574,
+     0.9053938527138158,
+     1.2,
+     0.3999999999999999,
+     0.2614740153864505,
+     0.5845270292836056
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     0.8081450377360788,
+     -3.2914713917200764,
+     -4.241843384229798,
+     -7.570809568266292,
+     0.18243276020240273,
+     -1.6948747734031588
+    ],
+    "lateral_fraction": [
+     0.10539385271381574,
+     0.9053938527138158,
+     1.2,
+     0.3999999999999999,
+     0.2614740153864505,
+     0.5845270292836056
+    ],
+    "lateral_target_m": [
+     -0.3688784844983551,
+     -3.168878484498355,
+     -4.2,
+     -1.3999999999999997,
+     -0.9151590538525767,
+     -2.0458446024926196
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "cold",
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 1036.093643761704,
+    "smoothness_penalty": 3.772869935140045,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": 20.804809497112057,
+    "min_rear": 19.951924176043356,
+    "margin": -0.5,
+    "reason": "contact with side; lateral envelope",
+    "rel_speed": 0.0006028412692806739,
+    "peak_jerk_mps3": 26.52420283018877,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     0.5373552618556392,
+     -4.219597265704456,
+     -1.1977964515559547,
+     1.3115582536454706,
+     -3.433473001951012,
+     -0.6159008196671252
+    ],
+    "lam": [
+     0.3649702789418688,
+     -0.18883653863785194,
+     0.6111634613621482,
+     -0.12594126677724887,
+     0.6740587332227512,
+     1.1980327243819529
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     0.5373552618556392,
+     -4.219597265704456,
+     -1.1977964515559547,
+     1.3115582536454706,
+     -3.433473001951012,
+     -0.6159008196671252
+    ],
+    "lateral_fraction": [
+     0.3649702789418688,
+     -0.18883653863785194,
+     0.6111634613621482,
+     -0.12594126677724887,
+     0.6740587332227512,
+     1.1980327243819529
+    ],
+    "lateral_target_m": [
+     -1.2773959762965408,
+     0.6609278852324818,
+     -2.1390721147675187,
+     0.4407944337203711,
+     -2.359205566279629,
+     -4.193114535336835
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "uniform_prior",
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 4.827627885168539,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 0.0,
+    "min_rear": 15.375318343263272,
+    "margin": -0.5,
+    "reason": "contact with obstacle; lateral envelope",
+    "rel_speed": 15.390966419200701,
+    "peak_jerk_mps3": 28.0324087795762,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -8.29957747783912,
+     -6.334643555652454,
+     -0.8443560673169372,
+     -6.32330114233082,
+     -5.207595298599193,
+     -0.5756461816089793
+    ],
+    "lam": [
+     0.8,
+     0.4847563933582371,
+     0.39948738916361887,
+     0.5103523773618281,
+     0.5661244613930094,
+     -0.003529136391435872
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -8.29957747783912,
+     -6.334643555652454,
+     -0.8443560673169372,
+     -6.32330114233082,
+     -5.207595298599193,
+     -0.5756461816089793
+    ],
+    "lateral_fraction": [
+     0.8,
+     0.4847563933582371,
+     0.39948738916361887,
+     0.5103523773618281,
+     0.5661244613930094,
+     -0.003529136391435872
+    ],
+    "lateral_target_m": [
+     -2.8000000000000003,
+     -1.69664737675383,
+     -1.398205862072666,
+     -1.7862333207663985,
+     -1.981435614875533,
+     0.012351977370025552
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "uniform_prior",
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 2.052787906471464,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 0.0,
+    "min_rear": 3.013699247737124,
+    "margin": -0.5,
+    "reason": "contact with obstacle",
+    "rel_speed": 10.96925681024901,
+    "peak_jerk_mps3": 73.37110445008541,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -8.04228877583034,
+     -8.820170434925277,
+     -0.8201704349252772,
+     1.598988764229265,
+     -4.862605567796908,
+     1.667809659006405
+    ],
+    "lam": [
+     0.03371478468771699,
+     0.8337147846877171,
+     0.8453260831970546,
+     0.25757844337485264,
+     0.6112614155482303,
+     0.08861292402138343
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -8.04228877583034,
+     -8.820170434925277,
+     -0.8201704349252772,
+     1.598988764229265,
+     -4.862605567796908,
+     1.667809659006405
+    ],
+    "lateral_fraction": [
+     0.03371478468771699,
+     0.8337147846877171,
+     0.8453260831970546,
+     0.25757844337485264,
+     0.6112614155482303,
+     0.08861292402138343
+    ],
+    "lateral_target_m": [
+     -0.11800174640700947,
+     -2.91800174640701,
+     -2.958641291189691,
+     -0.9015245518119842,
+     -2.139414954418806,
+     -0.310145234074842
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "uniform_prior",
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 4.581866805305939,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 22.255933515269334,
+    "min_rear": 18.485488196627244,
+    "margin": -0.5,
+    "reason": "contact with side; lateral envelope",
+    "rel_speed": 4.469370750565858,
+    "peak_jerk_mps3": 73.37110445008541,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "obstacle_40",
+   "scene": "obstacle_40",
+   "role": "all_families_refuted",
+   "theta_s": {
+    "d_obs": 40.0,
+    "side_pos": 0.0,
+    "v_side": 22.0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -2.228056733541595,
+     -1.796741678312487,
+     1.591530989708783,
+     -5.1851359562309005,
+     0.9825357306343623,
+     -6.553126713739397
+    ],
+    "lam": [
+     0.36966096841555723,
+     0.7383882137742206,
+     -0.06161178622577945,
+     -0.13166603247937297,
+     0.1332853943876935,
+     0.10120444629293562
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -2.228056733541595,
+     -1.796741678312487,
+     1.591530989708783,
+     -5.1851359562309005,
+     0.9825357306343623,
+     -6.553126713739397
+    ],
+    "lateral_fraction": [
+     0.36966096841555723,
+     0.7383882137742206,
+     -0.06161178622577945,
+     -0.13166603247937297,
+     0.1332853943876935,
+     0.10120444629293562
+    ],
+    "lateral_target_m": [
+     -1.2938133894544503,
+     -2.5843587482097723,
+     0.21564125179022808,
+     0.4608311136778054,
+     -0.4664988803569272,
+     -0.3542155620252747
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "origin": "uniform_prior",
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 3.7129000660964566,
+    "behaviour_distance_to_selected": null
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 19.718194537258974,
+    "min_rear": 18.911147611065044,
+    "margin": -0.5,
+    "reason": "contact with side",
+    "rel_speed": 2.7073539328382736,
+    "peak_jerk_mps3": 48.91263179178367,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w2": "FAIL",
+     "w3": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  }
+ ]
+}

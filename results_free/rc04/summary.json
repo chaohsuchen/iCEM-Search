@@ -1,0 +1,314 @@
+{
+ "surrogate": {
+  "near_obstacle": {
+   "role": "all_families_refuted",
+   "struct": "FAIL / FAIL / FAIL",
+   "free_supported": 0,
+   "unique": 2189,
+   "free_best_cost": 1013.6196420965596,
+   "struct_best_cost": 1017.0171074268338,
+   "n_diverse": 0,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 0,
+   "kept_robust": 0
+  },
+  "obstacle_40": {
+   "role": "all_families_refuted",
+   "struct": "FAIL / FAIL / FAIL",
+   "free_supported": 0,
+   "unique": 2189,
+   "free_best_cost": 1013.6196420965596,
+   "struct_best_cost": 1017.3311016687701,
+   "n_diverse": 0,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 0,
+   "kept_robust": 0
+  },
+  "obstacle_44": {
+   "role": "all_families_refuted",
+   "struct": "FAIL / FAIL / FAIL",
+   "free_supported": 0,
+   "unique": 2189,
+   "free_best_cost": 1013.6893694093811,
+   "struct_best_cost": 1017.0288977166706,
+   "n_diverse": 0,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 0,
+   "kept_robust": 0
+  },
+  "no_follower": {
+   "role": "multi_family_supported",
+   "struct": "PASS / PASS / PASS",
+   "free_supported": 1261,
+   "unique": 2189,
+   "free_best_cost": 1.178587672084364,
+   "struct_best_cost": 1.0474771009884942,
+   "n_diverse": 3,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 5,
+   "kept_robust": 4
+  },
+  "easy": {
+   "role": "multi_family_supported",
+   "struct": "PASS / FAIL / PASS",
+   "free_supported": 711,
+   "unique": 2189,
+   "free_best_cost": 0.9790377074078033,
+   "struct_best_cost": 0.9107007401810517,
+   "n_diverse": 3,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 5,
+   "kept_robust": 1
+  },
+  "truck_far_ahead": {
+   "role": "mixed_near_boundary",
+   "struct": "FAIL / PASS / PASS",
+   "free_supported": 831,
+   "unique": 2189,
+   "free_best_cost": 0.9991732629707691,
+   "struct_best_cost": 0.6481599922133972,
+   "n_diverse": 3,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 5,
+   "kept_robust": 5
+  },
+  "brake_boundary": {
+   "role": "mixed_near_boundary",
+   "struct": "PASS / FAIL / FAIL",
+   "free_supported": 157,
+   "unique": 2189,
+   "free_best_cost": 56.97759037021127,
+   "struct_best_cost": 68.82079581090932,
+   "n_diverse": 2,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 4,
+   "kept_robust": 2
+  },
+  "lane_change_boundary": {
+   "role": "mixed_near_boundary",
+   "struct": "FAIL / FAIL / PASS",
+   "free_supported": 624,
+   "unique": 2189,
+   "free_best_cost": 1.8357279906031037,
+   "struct_best_cost": 1.234250340087088,
+   "n_diverse": 3,
+   "evals_free": 2256,
+   "evals_cold": 1446,
+   "evals_warm": 810,
+   "kept_supported": 5,
+   "kept_robust": 5
+  }
+ },
+ "transfer": {
+  "free random_prior": {
+   "sur_pass": 9,
+   "false_safe": 6,
+   "ci_fs": [
+    0.354,
+    0.879
+   ],
+   "sur_fail": 23,
+   "false_neg": 0,
+   "ci_fn": [
+    0,
+    0.143
+   ]
+  },
+  "free iCEM-selected (w0)": {
+   "sur_pass": 24,
+   "false_safe": 9,
+   "ci_fs": [
+    0.212,
+    0.573
+   ],
+   "sur_fail": 17,
+   "false_neg": 1,
+   "ci_fn": [
+    0.01,
+    0.27
+   ]
+  },
+  "free world replays": {
+   "sur_pass": 73,
+   "false_safe": 32,
+   "ci_fs": [
+    0.33,
+    0.552
+   ],
+   "sur_fail": 13,
+   "false_neg": 7,
+   "ci_fn": [
+    0.291,
+    0.768
+   ]
+  },
+  "structured iCEM-selected (w0)": {
+   "sur_pass": 17,
+   "false_safe": 1,
+   "ci_fs": [
+    0.01,
+    0.27
+   ],
+   "sur_fail": 15,
+   "false_neg": 3,
+   "ci_fn": [
+    0.07,
+    0.452
+   ]
+  },
+  "structured world replays": {
+   "sur_pass": 50,
+   "false_safe": 1,
+   "ci_fs": [
+    0.004,
+    0.105
+   ],
+   "sur_fail": 8,
+   "false_neg": 3,
+   "ci_fn": [
+    0.137,
+    0.694
+   ]
+  }
+ },
+ "coverage": {
+  "near_obstacle": {
+   "struct_pass": 0,
+   "struct_run": 3,
+   "free_pass": 0,
+   "free_run": 1,
+   "free_robust": 0,
+   "struct_robust": 0,
+   "refuted": [],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 0,
+   "random_run": 4
+  },
+  "obstacle_40": {
+   "struct_pass": 0,
+   "struct_run": 3,
+   "free_pass": 0,
+   "free_run": 1,
+   "free_robust": 0,
+   "struct_robust": 0,
+   "refuted": [
+    "FAIL"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 0,
+   "random_run": 4
+  },
+  "obstacle_44": {
+   "struct_pass": 0,
+   "struct_run": 3,
+   "free_pass": 0,
+   "free_run": 1,
+   "free_robust": 0,
+   "struct_robust": 0,
+   "refuted": [],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 0,
+   "random_run": 4
+  },
+  "no_follower": {
+   "struct_pass": 4,
+   "struct_run": 5,
+   "free_pass": 5,
+   "free_run": 5,
+   "free_robust": 4,
+   "struct_robust": 4,
+   "refuted": [
+    "PASS"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 0,
+   "random_run": 4
+  },
+  "easy": {
+   "struct_pass": 4,
+   "struct_run": 5,
+   "free_pass": 4,
+   "free_run": 5,
+   "free_robust": 4,
+   "struct_robust": 2,
+   "refuted": [
+    "FAIL"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 1,
+   "random_run": 4
+  },
+  "truck_far_ahead": {
+   "struct_pass": 5,
+   "struct_run": 5,
+   "free_pass": 2,
+   "free_run": 5,
+   "free_robust": 1,
+   "struct_robust": 5,
+   "refuted": [
+    "FAIL"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 1,
+   "random_run": 4
+  },
+  "brake_boundary": {
+   "struct_pass": 2,
+   "struct_run": 4,
+   "free_pass": 2,
+   "free_run": 4,
+   "free_robust": 2,
+   "struct_robust": 2,
+   "refuted": [
+    "FAIL"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 1,
+   "random_run": 4
+  },
+  "lane_change_boundary": {
+   "struct_pass": 4,
+   "struct_run": 4,
+   "free_pass": 2,
+   "free_run": 5,
+   "free_robust": 2,
+   "struct_robust": 4,
+   "refuted": [
+    "FAIL"
+   ],
+   "mitigation": [
+    "FAIL"
+   ],
+   "random_pass": 0,
+   "random_run": 4
+  }
+ }
+}

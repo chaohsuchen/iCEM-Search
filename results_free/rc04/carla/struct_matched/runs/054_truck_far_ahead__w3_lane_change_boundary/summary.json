@@ -1,0 +1,268 @@
+{
+  "run_id": "054_truck_far_ahead__w3_lane_change_boundary",
+  "rc": "RC04-01",
+  "label": "PASS",
+  "reason": "no contact, clearances kept, ego settled",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC04-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 40.0,
+    "preroll_s": 1.5,
+    "duration_s": 7.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "obs_bp": "vehicle.citroen.c3",
+    "fol_bp": "vehicle.audi.a2",
+    "min_clear": 0.5,
+    "settle_tol": 0.6,
+    "side": 1,
+    "v_ego": 22.0,
+    "d_obs": 46.0,
+    "obs_lane": 0,
+    "v_side": 22.0,
+    "side_pos": 30.0,
+    "side_hl": 2.4,
+    "side_hw": 0.95,
+    "side_acc": -3.0,
+    "side_react": 0.8,
+    "fol": 1,
+    "fol_gap": 20.0,
+    "fol_react": 0.5,
+    "fol_headway": 1.2,
+    "lane_w": 3.5
+  },
+  "policy": {
+    "name": "escape",
+    "version": "rc03-v1",
+    "params": {
+      "mode": "lane_change",
+      "v_target": 22.0,
+      "lane_w": 3.5,
+      "esc_dir": -1.0,
+      "t_react": 0.3511573965095499,
+      "a_brake": 6.0,
+      "shift": 0.0,
+      "t_lc": 2.6278175390052105,
+      "a_lc": -2.5124505566279547,
+      "a_post": 4.07792318274233,
+      "t_slow": 0.0,
+      "a_slow": 0.0
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3
+    ],
+    "brake_decel": [
+      3.279971248431857,
+      3.7649535484940904,
+      4.246829719157543,
+      4.665796055726598,
+      5.090264324738804,
+      5.509796515519087,
+      6.457853635809129
+    ],
+    "brake_cap": 0.3,
+    "coast_decel": 3.279971248431857,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.5955897549491816,
+    "max_decel": 6.457853635809129
+  },
+  "metrics": {
+    "min_front_gap": 0.6530550648158989,
+    "min_rear_gap": 1.8167548376542797,
+    "min_clear_by": {
+      "obstacle": 0.6530550648158989,
+      "side": 25.489965386382437,
+      "fol": 1.8167548376542797
+    },
+    "final_lateral": -3.5372489843075567,
+    "stopped": true,
+    "settled": true,
+    "max_filtered_accel": {
+      "forward": 3.6864074541119853,
+      "brake": 5.570429546027483,
+      "lateral": 2.882791236914014,
+      "planar": 6.257650709885612
+    }
+  },
+  "times": {},
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc04",
+  "variation_id": "truck_far_ahead__w3",
+  "candidate_kind": "boundary",
+  "family": "lane_change",
+  "scenario_params": {
+    "d_obs": 46.0,
+    "side_pos": 30.0,
+    "side_acc": -3.0,
+    "fol_react": 0.5
+  },
+  "policy_params": {
+    "mode": "lane_change",
+    "t_react": 0.3511573965095499,
+    "t_lc": 2.6278175390052105,
+    "a_lc": -2.5124505566279547,
+    "a_post": 4.07792318274233
+  },
+  "policy_source": {
+    "note": "same policy as the w0 candidate"
+  },
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 0.8697303166113849,
+    "min_rear": 1.6120026877920903,
+    "margin": 0.3697303166113849,
+    "reason": "",
+    "rel_speed": 0.0
+  },
+  "world_id": "w3",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "world_replay",
+  "scene_name": "stopped_car_truck_alongside",
+  "hidden_settings": [
+    "side_acc",
+    "side_react",
+    "fol_headway",
+    "fol_react"
+  ],
+  "constraints": [
+    {
+      "name": "no_contact",
+      "kind": "contact",
+      "measured": 0.0,
+      "required": 0.0,
+      "op": "==",
+      "unit": "frames",
+      "passed": true
+    },
+    {
+      "name": "clearance_obstacle",
+      "kind": "clearance",
+      "measured": 0.6530550648158989,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_side",
+      "kind": "clearance",
+      "measured": 25.489965386382437,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_fol",
+      "kind": "clearance",
+      "measured": 1.8167548376542797,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "ego_settled",
+      "kind": "state",
+      "measured": true,
+      "required": true,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "stays_on_road",
+      "kind": "clearance",
+      "measured": 3.708313209890658,
+      "required": 5.25,
+      "op": "<=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "not_closing_on_obstacle",
+      "kind": "state",
+      "measured": false,
+      "required": false,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "not_closing_from_fol",
+      "kind": "state",
+      "measured": 0.0,
+      "required": false,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "envelope_forward_accel",
+      "kind": "limit",
+      "measured": 3.6864074541119853,
+      "required": 4.905,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_braking",
+      "kind": "limit",
+      "measured": 5.570429546027483,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_lateral_accel",
+      "kind": "limit",
+      "measured": 2.882791236914014,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_planar_accel",
+      "kind": "limit",
+      "measured": 6.257650709885612,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    }
+  ],
+  "constraints_pass": true
+}

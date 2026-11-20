@@ -1,0 +1,3130 @@
+[
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1373.983072526785,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "near_obstacle",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.46077007690406624,
+   "t_lc": 1.8695987796568674,
+   "a_lc": -0.1457385462394578,
+   "a_post": 2.882763703680766
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.0171074268338,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 8.822852195459017,
+   "min_rear": 19.731533233603137
+  },
+  "scene": "near_obstacle",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "near_obstacle",
+  "theta_s": {
+   "d_obs": 42.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.15825698928551193,
+   "t_slow": 0.3,
+   "a_slow": 3.2744268209117684,
+   "t_lc": 2.3670090270118878,
+   "a_lc": 0.008196752254012729,
+   "a_post": 3.3337043948225373
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1037.4221140147527,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 5.53138500628787,
+   "min_rear": 18.660842678202343
+  },
+  "scene": "near_obstacle",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1440.225475214769,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "obstacle_40",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4765667674287881,
+   "t_lc": 2.1477327666303516,
+   "a_lc": -0.10258618082553284,
+   "a_post": 2.2057329679551003
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.3311016687701,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 3.5551219842161643,
+   "min_rear": 19.72234367398517
+  },
+  "scene": "obstacle_40",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.11670189866490105,
+   "t_slow": 0.40852051749623186,
+   "a_slow": 3.1106416608100913,
+   "t_lc": 2.088328715583994,
+   "a_lc": 0.08991405023692334,
+   "a_post": 3.506644989748515
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1018.3615339061715,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.717355090376934,
+   "min_rear": 18.554707687827282
+  },
+  "scene": "obstacle_40",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1294.8517622339637,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "obstacle_44",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.36612905779025173,
+   "t_lc": 1.9743440965626666,
+   "a_lc": -0.14906841566905182,
+   "a_post": 4.48802608232594
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.0288977166706,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 11.925617741568782,
+   "min_rear": 19.738671557946674
+  },
+  "scene": "obstacle_44",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.10671160504319273,
+   "t_slow": 0.3658481752605283,
+   "a_slow": 3.259855435547412,
+   "t_lc": 2.4590785885284836,
+   "a_lc": 0.08782350733893596,
+   "a_post": 3.0870852200127823
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1047.8004055663052,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 5.138722294368868,
+   "min_rear": 18.859963440054997
+  },
+  "scene": "obstacle_44",
+  "role": "all_families_refuted",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.231409700938183
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 2.6398215441106667,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.3021237372225585,
+   "min_rear": 99.0
+  },
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower__w1",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.231409700938183
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.3021237372225585,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower__w4",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.231409700938183
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 5.3021237372225585,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.040537505741654
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.046001686989349,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998
+  },
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower__w1",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.040537505741654
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.046001686989349,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower__w4",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 5.040537505741654
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 4.046001686989349,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.29768323898736726,
+   "t_lc": 3.990573632635355,
+   "a_lc": -4.933620694486578,
+   "a_post": 2.5625019842074948
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 45.992559161744204,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.6596122749439663,
+   "min_rear": 99.0
+  },
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower__w1",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -3.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.29768323898736726,
+   "t_lc": 3.990573632635355,
+   "a_lc": -4.933620694486578,
+   "a_post": 2.5625019842074948
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.6596122749439663,
+   "min_rear": 99.0,
+   "margin": 0.14262127705078342,
+   "reason": "side clearance",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower__w4",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.29768323898736726,
+   "t_lc": 3.990573632635355,
+   "a_lc": -4.933620694486578,
+   "a_post": 2.5625019842074948
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.6596122749439663,
+   "min_rear": 99.0,
+   "margin": 0.24204075648294787,
+   "reason": "side clearance",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14095290262868312,
+   "t_slow": 1.3504008150438347,
+   "a_slow": 4.0989888099544,
+   "t_lc": 2.522730151559282,
+   "a_lc": -2.5443101393926018,
+   "a_post": 1.6597993869230125
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1.0474771009884942,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.662341314881423,
+   "min_rear": 99.0
+  },
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower__w1",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14095290262868312,
+   "t_slow": 1.3504008150438347,
+   "a_slow": 4.0989888099544,
+   "t_lc": 2.522730151559282,
+   "a_lc": -2.5443101393926018,
+   "a_post": 1.6597993869230125
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.662341314881423,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower__w4",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.14095290262868312,
+   "t_slow": 1.3504008150438347,
+   "a_slow": 4.0989888099544,
+   "t_lc": 2.522730151559282,
+   "a_lc": -2.5443101393926018,
+   "a_post": 1.6597993869230125
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.662341314881423,
+   "min_rear": 99.0,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "no_follower",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.3766231000580932,
+   "t_slow": 1.1429121659356218,
+   "a_slow": 3.4584375473215507,
+   "t_lc": 2.0779067790562427,
+   "a_lc": -0.5484548561472553,
+   "a_post": 2.030397940806913
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8508416818900609,
+   "min_rear": 99.0,
+   "margin": 0.35084168189006093
+  },
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "no_follower__w1",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.3766231000580932,
+   "t_slow": 1.1429121659356218,
+   "a_slow": 3.4584375473215507,
+   "t_lc": 2.0779067790562427,
+   "a_lc": -0.5484548561472553,
+   "a_post": 2.030397940806913
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.8508416818900609,
+   "min_rear": 99.0,
+   "margin": -0.5,
+   "reason": "contact with side",
+   "rel_speed": 3.1379177608420363
+  }
+ },
+ {
+  "scenario": "no_follower__w4",
+  "scene": "no_follower",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 55.0,
+   "fol": 0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.3766231000580932,
+   "t_slow": 1.1429121659356218,
+   "a_slow": 3.4584375473215507,
+   "t_lc": 2.0779067790562427,
+   "a_lc": -0.5484548561472553,
+   "a_post": 2.030397940806913
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8508416818900609,
+   "min_rear": 99.0,
+   "margin": 0.35084168189006093,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 2.616532121569488,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "easy__w1",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w2",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w3",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w4",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998
+  },
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "easy__w1",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w2",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w3",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w4",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5326587178581387,
+   "t_lc": 2.4208752469955908,
+   "a_lc": -0.07974900590332545,
+   "a_post": 1.3285547433855949
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.2250155976988,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 30.284430909722523,
+   "min_rear": 19.715812352210673
+  },
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.9107007401810517,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.959518058979074,
+   "min_rear": 1.3460724923292309
+  },
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "easy__w1",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.959518058979074,
+   "min_rear": 0.565690580491107,
+   "margin": 0.06569058049110699,
+   "reason": "fol clearance",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w2",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.959518058979074,
+   "min_rear": 1.3460724923292309,
+   "margin": 0.8460724923292309,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w3",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 10.94115851169532,
+   "min_rear": 0.0,
+   "margin": -0.5,
+   "reason": "contact with fol",
+   "rel_speed": 6.072845807467888
+  }
+ },
+ {
+  "scenario": "easy__w4",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.959518058979074,
+   "min_rear": 1.2381345424898516,
+   "margin": 0.7381345424898516,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.959958455174246,
+   "min_rear": 0.8046922228532751,
+   "margin": 0.30469222285327513
+  },
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "easy__w1",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 4.6268140264889155,
+   "min_rear": 0.0,
+   "margin": -0.5,
+   "reason": "contact with fol",
+   "rel_speed": 6.0858403363630655
+  }
+ },
+ {
+  "scenario": "easy__w2",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.959958455174246,
+   "min_rear": 0.8046922228532751,
+   "margin": 0.30469222285327513,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "easy__w3",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 3.5337636417305163,
+   "min_rear": 0.0187681455174731,
+   "margin": -0.4812318544825269,
+   "reason": "contact with fol",
+   "rel_speed": 4.902867893850993
+  }
+ },
+ {
+  "scenario": "easy__w4",
+  "scene": "easy",
+  "role": "multi_family_supported",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.959958455174246,
+   "min_rear": 0.3767706245430528,
+   "margin": -0.12322937545694718,
+   "reason": "fol clearance",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1197.9058285841,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.3438303728737324,
+   "min_rear": 1.6147181844941956
+  },
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15909649160355896,
+   "t_lc": 2.366581807803513,
+   "a_lc": -1.3353743916305505,
+   "a_post": 1.5152172320796096
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.6481599922133972,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4167119195233704,
+   "min_rear": 1.544755673659448
+  },
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "truck_far_ahead__w1",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15909649160355896,
+   "t_lc": 2.366581807803513,
+   "a_lc": -1.3353743916305505,
+   "a_post": 1.5152172320796096
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4167119195233704,
+   "min_rear": 1.544755673659448,
+   "margin": 0.9167119195233704,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w2",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "fol_react": 0.5
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15909649160355896,
+   "t_lc": 2.366581807803513,
+   "a_lc": -1.3353743916305505,
+   "a_post": 1.5152172320796096
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4167119195233704,
+   "min_rear": 1.544755673659448,
+   "margin": 0.9167119195233704,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w3",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15909649160355896,
+   "t_lc": 2.366581807803513,
+   "a_lc": -1.3353743916305505,
+   "a_post": 1.5152172320796096
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4167119195233704,
+   "min_rear": 1.544755673659448,
+   "margin": 0.9167119195233704,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w4",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.15909649160355896,
+   "t_lc": 2.366581807803513,
+   "a_lc": -1.3353743916305505,
+   "a_post": 1.5152172320796096
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4167119195233704,
+   "min_rear": 1.544755673659448,
+   "margin": 0.9167119195233704,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.3511573965095499,
+   "t_lc": 2.6278175390052105,
+   "a_lc": -2.5124505566279547,
+   "a_post": 4.07792318274233
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8697303166113849,
+   "min_rear": 1.6120026877920903,
+   "margin": 0.3697303166113849
+  },
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "truck_far_ahead__w1",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.3511573965095499,
+   "t_lc": 2.6278175390052105,
+   "a_lc": -2.5124505566279547,
+   "a_post": 4.07792318274233
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8697303166113849,
+   "min_rear": 1.6120026877920903,
+   "margin": 0.3697303166113849,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w2",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "fol_react": 0.5
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.3511573965095499,
+   "t_lc": 2.6278175390052105,
+   "a_lc": -2.5124505566279547,
+   "a_post": 4.07792318274233
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8697303166113849,
+   "min_rear": 1.6120026877920903,
+   "margin": 0.3697303166113849,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w3",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.3511573965095499,
+   "t_lc": 2.6278175390052105,
+   "a_lc": -2.5124505566279547,
+   "a_post": 4.07792318274233
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8697303166113849,
+   "min_rear": 1.6120026877920903,
+   "margin": 0.3697303166113849,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w4",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "lane_change",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.3511573965095499,
+   "t_lc": 2.6278175390052105,
+   "a_lc": -2.5124505566279547,
+   "a_post": 4.07792318274233
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8697303166113849,
+   "min_rear": 1.6120026877920903,
+   "margin": 0.3697303166113849,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12387097457136952,
+   "t_slow": 0.3,
+   "a_slow": 3.7845425134976387,
+   "t_lc": 2.422151293579714,
+   "a_lc": -1.9717370009564772,
+   "a_post": 2.651100641849663
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1.070746645377431,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4270396674994865,
+   "min_rear": 1.6147181844941956
+  },
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "truck_far_ahead__w1",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12387097457136952,
+   "t_slow": 0.3,
+   "a_slow": 3.7845425134976387,
+   "t_lc": 2.422151293579714,
+   "a_lc": -1.9717370009564772,
+   "a_post": 2.651100641849663
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4270396674994865,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.9270396674994865,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w2",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12387097457136952,
+   "t_slow": 0.3,
+   "a_slow": 3.7845425134976387,
+   "t_lc": 2.422151293579714,
+   "a_lc": -1.9717370009564772,
+   "a_post": 2.651100641849663
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4270396674994865,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.9270396674994865,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w3",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12387097457136952,
+   "t_slow": 0.3,
+   "a_slow": 3.7845425134976387,
+   "t_lc": 2.422151293579714,
+   "a_lc": -1.9717370009564772,
+   "a_post": 2.651100641849663
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4270396674994865,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.9270396674994865,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w4",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12387097457136952,
+   "t_slow": 0.3,
+   "a_slow": 3.7845425134976387,
+   "t_lc": 2.422151293579714,
+   "a_lc": -1.9717370009564772,
+   "a_post": 2.651100641849663
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.4270396674994865,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.9270396674994865,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21818019539320802,
+   "t_slow": 0.4578090875321946,
+   "a_slow": 6.0,
+   "t_lc": 2.4880601213577296,
+   "a_lc": -1.504343492182014,
+   "a_post": 2.7947234990708245
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8149450752489287,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.3149450752489287
+  },
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "truck_far_ahead__w1",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21818019539320802,
+   "t_slow": 0.4578090875321946,
+   "a_slow": 6.0,
+   "t_lc": 2.4880601213577296,
+   "a_lc": -1.504343492182014,
+   "a_post": 2.7947234990708245
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8149450752489287,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.3149450752489287,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w2",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21818019539320802,
+   "t_slow": 0.4578090875321946,
+   "a_slow": 6.0,
+   "t_lc": 2.4880601213577296,
+   "a_lc": -1.504343492182014,
+   "a_post": 2.7947234990708245
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8149450752489287,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.3149450752489287,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w3",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21818019539320802,
+   "t_slow": 0.4578090875321946,
+   "a_slow": 6.0,
+   "t_lc": 2.4880601213577296,
+   "a_lc": -1.504343492182014,
+   "a_post": 2.7947234990708245
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8149450752489287,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.3149450752489287,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "truck_far_ahead__w4",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 30.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21818019539320802,
+   "t_slow": 0.4578090875321946,
+   "a_slow": 6.0,
+   "t_lc": 2.4880601213577296,
+   "a_lc": -1.504343492182014,
+   "a_post": 2.7947234990708245
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8149450752489287,
+   "min_rear": 1.6147181844941956,
+   "margin": 0.3149450752489287,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 68.82079581090932,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "brake_boundary__w1",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w2",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w3",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w4",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998
+  },
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "brake_boundary__w1",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w2",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w3",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary__w4",
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.36612905779025173,
+   "t_lc": 1.9743440965626666,
+   "a_lc": -0.14906841566905182,
+   "a_post": 4.48802608232594
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.0288977166706,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 15.925617741568782,
+   "min_rear": 19.738671557946674
+  },
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.3526194056947919,
+   "t_slow": 0.3,
+   "a_slow": 3.351633216865402,
+   "t_lc": 1.8981120191249325,
+   "a_lc": 0.807508169500494,
+   "a_post": 2.175640146194052
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1018.5224244456114,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 11.625389888038384,
+   "min_rear": 18.527740961157644
+  },
+  "scene": "brake_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "lane_change_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1197.9058285841,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.3438303728737324,
+   "min_rear": 1.4699999999999998
+  },
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "lane_change_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.1,
+   "t_lc": 3.7419268920128577,
+   "a_lc": -4.068559017936301,
+   "a_post": 2.5141811480797673
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 56.291731843746234,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 1.1520645837211145,
+   "min_rear": 0.5223079835132163
+  },
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "lane_change_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8888177142890139,
+   "a_slow": 5.1157406796148726,
+   "t_lc": 2.057786290482839,
+   "a_lc": -2.4818019009012855,
+   "a_post": 2.7108257686028674
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1.234250340087088,
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.585904936934909,
+   "min_rear": 1.2145301029592175
+  },
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "lane_change_boundary__w1",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8888177142890139,
+   "a_slow": 5.1157406796148726,
+   "t_lc": 2.057786290482839,
+   "a_lc": -2.4818019009012855,
+   "a_post": 2.7108257686028674
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.585904936934909,
+   "min_rear": 1.2145301029592175,
+   "margin": 0.7145301029592175,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w2",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8888177142890139,
+   "a_slow": 5.1157406796148726,
+   "t_lc": 2.057786290482839,
+   "a_lc": -2.4818019009012855,
+   "a_post": 2.7108257686028674
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.585904936934909,
+   "min_rear": 1.2145301029592175,
+   "margin": 0.7145301029592175,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w3",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8888177142890139,
+   "a_slow": 5.1157406796148726,
+   "t_lc": 2.057786290482839,
+   "a_lc": -2.4818019009012855,
+   "a_post": 2.7108257686028674
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.585904936934909,
+   "min_rear": 1.2042345994139783,
+   "margin": 0.7042345994139783,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w4",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "best",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1,
+   "t_slow": 0.8888177142890139,
+   "a_slow": 5.1157406796148726,
+   "t_lc": 2.057786290482839,
+   "a_lc": -2.4818019009012855,
+   "a_post": 2.7108257686028674
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.585904936934909,
+   "min_rear": 1.2145301029592175,
+   "margin": 0.7145301029592175,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12187048113602715,
+   "t_slow": 1.082037959921983,
+   "a_slow": 5.252768314790801,
+   "t_lc": 2.126347543922829,
+   "a_lc": -1.6525719400894863,
+   "a_post": 2.982256434954775
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples",
+   "seeds": 2
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8048696933912107,
+   "min_rear": 1.408541196122265,
+   "margin": 0.3048696933912107
+  },
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "stratum": "icem_selected",
+  "world_id": "w0"
+ },
+ {
+  "scenario": "lane_change_boundary__w1",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -3.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12187048113602715,
+   "t_slow": 1.082037959921983,
+   "a_slow": 5.252768314790801,
+   "t_lc": 2.126347543922829,
+   "a_lc": -1.6525719400894863,
+   "a_post": 2.982256434954775
+  },
+  "world_id": "w1",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8048696933912107,
+   "min_rear": 1.408541196122265,
+   "margin": 0.3048696933912107,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w2",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12187048113602715,
+   "t_slow": 1.082037959921983,
+   "a_slow": 5.252768314790801,
+   "t_lc": 2.126347543922829,
+   "a_lc": -1.6525719400894863,
+   "a_post": 2.982256434954775
+  },
+  "world_id": "w2",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8048696933912107,
+   "min_rear": 1.408541196122265,
+   "margin": 0.3048696933912107,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w3",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -3.0,
+   "fol_react": 0.5
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12187048113602715,
+   "t_slow": 1.082037959921983,
+   "a_slow": 5.252768314790801,
+   "t_lc": 2.126347543922829,
+   "a_lc": -1.6525719400894863,
+   "a_post": 2.982256434954775
+  },
+  "world_id": "w3",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8048696933912107,
+   "min_rear": 1.4085405401815476,
+   "margin": 0.3048696933912107,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ },
+ {
+  "scenario": "lane_change_boundary__w4",
+  "scene": "lane_change_boundary",
+  "role": "mixed_near_boundary",
+  "theta_s": {
+   "d_obs": 46.0,
+   "side_pos": 22.0,
+   "v_side": 23.0,
+   "side_acc": -1.5,
+   "fol_react": 1.2
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "stratum": "world_replay",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.12187048113602715,
+   "t_slow": 1.082037959921983,
+   "a_slow": 5.252768314790801,
+   "t_lc": 2.126347543922829,
+   "a_lc": -1.6525719400894863,
+   "a_post": 2.982256434954775
+  },
+  "world_id": "w4",
+  "search": {
+   "note": "same policy as the w0 candidate"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.8048696933912107,
+   "min_rear": 1.408541196122265,
+   "margin": 0.3048696933912107,
+   "reason": "",
+   "rel_speed": 0.0
+  }
+ }
+]

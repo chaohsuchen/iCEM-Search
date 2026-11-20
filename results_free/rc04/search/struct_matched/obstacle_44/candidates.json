@@ -1,0 +1,93 @@
+[
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1294.8517622339637
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 1.4699999999999998
+  }
+ },
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.36612905779025173,
+   "t_lc": 1.9743440965626666,
+   "a_lc": -0.14906841566905182,
+   "a_post": 4.48802608232594
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.0288977166706
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 11.925617741568782,
+   "min_rear": 19.738671557946674
+  }
+ },
+ {
+  "scenario": "obstacle_44",
+  "theta_s": {
+   "d_obs": 44.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.10671160504319273,
+   "t_slow": 0.3658481752605283,
+   "a_slow": 3.259855435547412,
+   "t_lc": 2.4590785885284836,
+   "a_lc": 0.08782350733893596,
+   "a_post": 3.0870852200127823
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1047.8004055663052
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 5.138722294368868,
+   "min_rear": 18.859963440054997
+  }
+ }
+]

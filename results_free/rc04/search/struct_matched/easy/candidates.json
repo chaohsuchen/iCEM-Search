@@ -1,0 +1,154 @@
+[
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.4296582900370649,
+   "a_brake": 4.839354867748341
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 2.616532121569488
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 9.98138089568392,
+   "min_rear": 1.4699999999999998
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.5839471596952163,
+   "a_brake": 5.222579787088266
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 8.979935674619767,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.5326587178581387,
+   "t_lc": 2.4208752469955908,
+   "a_lc": -0.07974900590332545,
+   "a_post": 1.3285547433855949
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.2250155976988
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 30.284430909722523,
+   "min_rear": 19.715812352210673
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.1915245222095454,
+   "t_slow": 2.856728483955001,
+   "a_slow": 3.3289054744013216,
+   "t_lc": 3.0244526435367156,
+   "a_lc": -2.515457837975445,
+   "a_post": 2.5511194085766196
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 0.9107007401810517
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 1.959518058979074,
+   "min_rear": 1.3460724923292309
+  }
+ },
+ {
+  "scenario": "easy",
+  "theta_s": {
+   "d_obs": 70.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.21229162896219111,
+   "t_slow": 2.7805702529073075,
+   "a_slow": 3.250051705159674,
+   "t_lc": 2.941300522622257,
+   "a_lc": -2.4837902914854144,
+   "a_post": 2.3704370456211983
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0.959958455174246,
+   "min_rear": 0.8046922228532751,
+   "margin": 0.30469222285327513
+  }
+ }
+]

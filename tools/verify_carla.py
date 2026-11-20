@@ -61,6 +61,7 @@ for i, c in enumerate(cands):
         scn, pol, pcfg, cal = build(c)
         extra = dict(rc_case=a.case, variation_id=c["scenario"], candidate_kind=c["kind"], family=c["family"], scenario_params=c["theta_s"], policy_params=c["theta_p"],
                      policy_source=c.get("search", {}), surrogate_prediction=c["surrogate"])
+        extra.update({k: c[k] for k in ("policy_spec", "world_id", "scene", "role", "stratum") if k in c})      # free-form pilot (results_free): full policy description, hidden world id, scene role, candidate stratum
         sm = run_engine(world, scn, pol, pcfg, cal, cid, os.path.join(out, "runs", cid), meta_extra=extra); m = sm["metrics"]
         carla_r = dict(label=sm["label"], reason=sm["reason"], min_front=m.get("min_front_gap", m.get("min_gap", m.get("min_ped_dist", m.get("min_clearance_lead")))), min_rear=m.get("min_rear_gap", m.get("min_clearance_rear_left")),
                        stopping_gap=m.get("stopping_gap"), min_wall=m.get("min_wall_clearance"))

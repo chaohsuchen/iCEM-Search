@@ -241,11 +241,12 @@ class RC04Case(_Base):
         self.plants = {v: LongPlant(c) for v, c in self.cal.items()}
 
     def policy_cls(self, fam):
+        if fam == "free": from rcx.free_policy import TrajectoryPolicy; return TrajectoryPolicy      # pilot family, see docs/FREE_SEARCH_PROPOSAL.md (not in FAM: the structured searches are unchanged)
         from rcx.policies import EscapePolicy; return EscapePolicy
 
     def simulate(self, th, kw, fam=None):
         v0 = {**self.m.SCN, **th}["v_ego"]; v = min(self.cal, key=lambda x: abs(x - v0))
-        return self.m.simulate(th, kw, self.plants[v], self.cal[v], pcfg=PolicyConfig(target_speed=v0))
+        return self.m.simulate(th, kw, self.plants[v], self.cal[v], pcfg=PolicyConfig(target_speed=v0), policy_cls=self.policy_cls(fam))
 
     def perturbed(self, th):
         b = dict(self.m.SCN); b.update(th)

@@ -1,0 +1,99 @@
+[
+ {
+  "scenario": "mech_baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 6.5
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0,
+   "min_rear": 0
+  },
+  "search": {}
+ },
+ {
+  "scenario": "mech_baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "free",
+  "kind": "best",
+  "theta_p": {
+   "mode": "free",
+   "a": [
+    -6.5,
+    -6.5,
+    -6.5,
+    -6.5,
+    -6.5,
+    -6.5
+   ],
+   "lam": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "t_start": 0.1,
+   "dk": 1.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0,
+   "min_rear": 0
+  },
+  "search": {},
+  "world_id": "w0",
+  "stratum": "mechanical_test"
+ },
+ {
+  "scenario": "mech_baseline",
+  "theta_s": {
+   "d_obs": 55.0
+  },
+  "family": "free",
+  "kind": "best",
+  "theta_p": {
+   "mode": "free",
+   "a": [
+    -5.0,
+    -6.0,
+    -3.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "lam": [
+    0.0,
+    0.3,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "t_start": 0.1,
+   "dk": 1.0
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 0,
+   "min_rear": 0
+  },
+  "search": {},
+  "world_id": "w0",
+  "stratum": "mechanical_test"
+ }
+]

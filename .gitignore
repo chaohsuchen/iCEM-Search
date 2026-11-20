@@ -8,3 +8,4 @@ slurm
 # private cluster details (paths, node names, partitions): keep local only
 slurm/
 slurm_logs/
+results_free/**/run.mp4

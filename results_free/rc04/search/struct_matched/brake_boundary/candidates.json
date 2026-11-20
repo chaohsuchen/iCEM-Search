@@ -1,0 +1,122 @@
+[
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 68.82079581090932
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 3.3438303728737324,
+   "min_rear": 1.4699999999999998
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "boundary",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1418769452944547,
+   "a_brake": 7.809755934813445
+  },
+  "search": {
+   "optimizer": "icem",
+   "pop": 48,
+   "iters": 8,
+   "note": "smallest positive-margin PASS among all iCEM samples"
+  },
+  "surrogate": {
+   "verdict": "PASS",
+   "cls": "success",
+   "min_front": 2.1242196591031615,
+   "min_rear": 1.4699999999999998,
+   "margin": 0.9699999999999998
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.36612905779025173,
+   "t_lc": 1.9743440965626666,
+   "a_lc": -0.14906841566905182,
+   "a_post": 4.48802608232594
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.0288977166706
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 15.925617741568782,
+   "min_rear": 19.738671557946674
+  }
+ },
+ {
+  "scenario": "brake_boundary",
+  "theta_s": {
+   "d_obs": 48.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.3526194056947919,
+   "t_slow": 0.3,
+   "a_slow": 3.351633216865402,
+   "t_lc": 1.8981120191249325,
+   "a_lc": 0.807508169500494,
+   "a_post": 2.175640146194052
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1018.5224244456114
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 11.625389888038384,
+   "min_rear": 18.527740961157644
+  }
+ }
+]

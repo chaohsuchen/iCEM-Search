@@ -1,0 +1,28 @@
+{
+ "name": "RC04 free-form pilot manifest (frozen before the search)",
+ "proposal": "docs/FREE_SEARCH_PROPOSAL.md v2.0",
+ "evaluator": "rcx/scenarios.py RC04.evaluate + rcx/constraints.py (unchanged), CARLA 0.9.15, Town04, dt 0.05, RC_SUBSTEP=0.002 RC_BRAKE_SCALE=3.0 RC_BRAKE_CAP_MAX=0.85",
+ "ego_speed_mps": 22.0,
+ "policy": "free-v1: K=6 knots (0.1 s .. 5.1 s, 1.0 s apart), a_req in [-9, 2], lateral fraction in [-0.3, 1.2]; hard rate limits 8 m/s2 and 0.8 per knot interval; smoothness weight 0.2; continuation = hold last lateral target + speed hold at hand-over speed (rcx/free_policy.py)",
+ "scenes": {
+  "near_obstacle":        {"role": "all_families_refuted", "theta_s": {"d_obs": 42.0}},
+  "obstacle_40":          {"role": "all_families_refuted", "theta_s": {"d_obs": 40.0, "side_pos": 0.0, "v_side": 22.0}},
+  "obstacle_44":          {"role": "all_families_refuted", "theta_s": {"d_obs": 44.0, "side_pos": 0.0, "v_side": 22.0}},
+  "no_follower":          {"role": "multi_family_supported", "theta_s": {"d_obs": 55.0, "fol": 0}},
+  "easy":                 {"role": "multi_family_supported", "theta_s": {"d_obs": 70.0, "side_pos": 0.0, "v_side": 22.0}},
+  "truck_far_ahead":      {"role": "mixed_near_boundary", "theta_s": {"d_obs": 46.0, "side_pos": 30.0}},
+  "brake_boundary":       {"role": "mixed_near_boundary", "theta_s": {"d_obs": 48.0, "side_pos": 0.0, "v_side": 22.0}},
+  "lane_change_boundary": {"role": "mixed_near_boundary", "theta_s": {"d_obs": 46.0, "side_pos": 22.0, "v_side": 23.0}}
+ },
+ "worlds": {
+  "w0": {},
+  "w1": {"side_acc": -3.0},
+  "w2": {"fol_react": 0.5},
+  "w3": {"side_acc": -3.0, "fol_react": 0.5},
+  "w4": {"side_acc": -1.5, "fol_react": 1.2}
+ },
+ "world_notes": "Hidden at the trigger (20RCs.md RC04): truck braking response 0..3 m/s2 (side_acc) and follower reaction 0.5..1.2 s (fol_react). The follower headway (0.8..1.6 s) is a parameter in rcx/rc04_laws.DEFAULTS but no law uses it, so it is not varied. Scenes without a follower drop the worlds that differ only in fol_react.",
+ "budget": {"free": "iCEM pop 160, 9 iterations, 2 seeds (about 1500 robust evaluations x 5 perturbations)", "structured": "iCEM pop 48, 8 iterations, 2 seeds per family, 3 families (about 1400 robust evaluations x 5 perturbations)"},
+ "search_seeds": [0, 1],
+ "history": "existing structured-family results of these scenes (results_search/rc04) are kept unchanged as historical evidence"
+}

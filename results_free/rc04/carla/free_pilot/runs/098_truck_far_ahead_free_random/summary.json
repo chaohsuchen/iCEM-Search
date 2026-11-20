@@ -1,0 +1,360 @@
+{
+  "run_id": "098_truck_far_ahead_free_random",
+  "rc": "RC04-01",
+  "label": "FAIL",
+  "reason": "physics envelope exceeded",
+  "end_reason": "time_limit",
+  "scenario": {
+    "rc": "RC04-01",
+    "map": "Town04",
+    "road": 40,
+    "lane": -3,
+    "s0": 2.0,
+    "ego_s": 40.0,
+    "preroll_s": 1.5,
+    "duration_s": 7.0,
+    "ego_bp": "vehicle.tesla.model3",
+    "obs_bp": "vehicle.citroen.c3",
+    "fol_bp": "vehicle.audi.a2",
+    "min_clear": 0.5,
+    "settle_tol": 0.6,
+    "side": 1,
+    "v_ego": 22.0,
+    "d_obs": 46.0,
+    "obs_lane": 0,
+    "v_side": 22.0,
+    "side_pos": 30.0,
+    "side_hl": 2.4,
+    "side_hw": 0.95,
+    "side_acc": 0.0,
+    "side_react": 0.8,
+    "fol": 1,
+    "fol_gap": 20.0,
+    "fol_react": 0.8,
+    "fol_headway": 1.2,
+    "lane_w": 3.5
+  },
+  "policy": {
+    "name": "free_trajectory",
+    "version": "free-v1",
+    "params": {
+      "mode": "free",
+      "v_target": 22.0,
+      "lane_w": 3.5,
+      "esc_dir": -1.0,
+      "a": [
+        0.9387403442786457,
+        -3.0967208770431602,
+        -7.616318297765447,
+        0.38368170223455333,
+        -2.782513003913378,
+        -6.639042227843494
+      ],
+      "lam": [
+        0.6935325626849012,
+        0.2410658247929996,
+        0.8724646821000579,
+        1.0834056186144698,
+        0.40185166459182514,
+        -0.022175890146498123
+      ],
+      "t_start": 0.1,
+      "dk": 1.0
+    }
+  },
+  "calibration": {
+    "brake_cmd": [
+      0.0,
+      0.04,
+      0.08,
+      0.12,
+      0.16,
+      0.2,
+      0.3
+    ],
+    "brake_decel": [
+      3.279971248431857,
+      3.7649535484940904,
+      4.246829719157543,
+      4.665796055726598,
+      5.090264324738804,
+      5.509796515519087,
+      6.457853635809129
+    ],
+    "brake_cap": 0.3,
+    "coast_decel": 3.279971248431857,
+    "brake_delay_s": 0.05,
+    "cruise_throttle": 0.5955897549491816,
+    "max_decel": 6.457853635809129
+  },
+  "metrics": {
+    "min_front_gap": 0.559062944860548,
+    "min_rear_gap": 1.7734376414402535,
+    "min_clear_by": {
+      "obstacle": 0.559062944860548,
+      "side": 25.489965386382437,
+      "fol": 1.7734376414402535
+    },
+    "final_lateral": 0.2161452878410298,
+    "stopped": false,
+    "settled": true,
+    "max_filtered_accel": {
+      "forward": 2.9464873811463357,
+      "brake": 6.881238671698154,
+      "lateral": 9.350344541065777,
+      "planar": 11.501364605448135
+    }
+  },
+  "times": {},
+  "contact": {
+    "frames": [],
+    "actors": []
+  },
+  "evidence_meta": {
+    "frames_contiguous": true,
+    "collision_sensor_ok": true,
+    "video_frames_match": true
+  },
+  "schema": "rcx-run-1",
+  "scene_seed": 7,
+  "files": [
+    "run.mp4",
+    "ego_observable.csv",
+    "ground_truth.csv",
+    "decisions.jsonl",
+    "summary.json"
+  ],
+  "rc_case": "rc04",
+  "variation_id": "truck_far_ahead",
+  "candidate_kind": "random",
+  "family": "free",
+  "scenario_params": {
+    "d_obs": 46.0,
+    "side_pos": 30.0
+  },
+  "policy_params": {
+    "mode": "free",
+    "a": [
+      0.9387403442786457,
+      -3.0967208770431602,
+      -7.616318297765447,
+      0.38368170223455333,
+      -2.782513003913378,
+      -6.639042227843494
+    ],
+    "lam": [
+      0.6935325626849012,
+      0.2410658247929996,
+      0.8724646821000579,
+      1.0834056186144698,
+      0.40185166459182514,
+      -0.022175890146498123
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+  },
+  "policy_source": {
+    "origin": "uniform_prior",
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 3.981711017016588,
+    "behaviour_distance_to_selected": null
+  },
+  "surrogate_prediction": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 0.812385925689431,
+    "min_rear": 1.2362331214914388,
+    "margin": 0.312385925689431,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 41.665109428010005,
+    "worlds": {
+      "w0": "PASS",
+      "w1": "PASS",
+      "w2": "PASS",
+      "w3": "PASS",
+      "w4": "PASS"
+    },
+    "robust_over_worlds": true
+  },
+  "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+      0.1,
+      1.1,
+      2.1,
+      3.1,
+      4.1,
+      5.1
+    ],
+    "a_req_mps2": [
+      0.9387403442786457,
+      -3.0967208770431602,
+      -7.616318297765447,
+      0.38368170223455333,
+      -2.782513003913378,
+      -6.639042227843494
+    ],
+    "lateral_fraction": [
+      0.6935325626849012,
+      0.2410658247929996,
+      0.8724646821000579,
+      1.0834056186144698,
+      0.40185166459182514,
+      -0.022175890146498123
+    ],
+    "lateral_target_m": [
+      -2.4273639693971543,
+      -0.8437303867754986,
+      -3.0536263873502025,
+      -3.7919196651506444,
+      -1.406480826071388,
+      0.07761561551274343
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+      "a_req": [
+        -9.0,
+        2.0
+      ],
+      "lateral_fraction": [
+        -0.3,
+        1.2
+      ],
+      "max_da_per_knot": 8.0,
+      "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+  },
+  "world_id": "w0",
+  "scene": "truck_far_ahead",
+  "role": "mixed_near_boundary",
+  "stratum": "random_prior",
+  "scene_name": "stopped_car_truck_alongside",
+  "hidden_settings": [
+    "side_acc",
+    "side_react",
+    "fol_headway",
+    "fol_react"
+  ],
+  "constraints": [
+    {
+      "name": "no_contact",
+      "kind": "contact",
+      "measured": 0.0,
+      "required": 0.0,
+      "op": "==",
+      "unit": "frames",
+      "passed": true
+    },
+    {
+      "name": "clearance_obstacle",
+      "kind": "clearance",
+      "measured": 0.559062944860548,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_side",
+      "kind": "clearance",
+      "measured": 25.489965386382437,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "clearance_fol",
+      "kind": "clearance",
+      "measured": 1.7734376414402535,
+      "required": 0.5,
+      "op": ">=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "ego_settled",
+      "kind": "state",
+      "measured": true,
+      "required": true,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "stays_on_road",
+      "kind": "clearance",
+      "measured": 3.7104951173546263,
+      "required": 5.25,
+      "op": "<=",
+      "unit": "m",
+      "passed": true
+    },
+    {
+      "name": "not_closing_on_obstacle",
+      "kind": "state",
+      "measured": 0.0,
+      "required": false,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "not_closing_from_fol",
+      "kind": "state",
+      "measured": 0.0,
+      "required": false,
+      "op": "==",
+      "unit": "bool",
+      "passed": true
+    },
+    {
+      "name": "envelope_forward_accel",
+      "kind": "limit",
+      "measured": 2.9464873811463357,
+      "required": 4.905,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_braking",
+      "kind": "limit",
+      "measured": 6.881238671698154,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_lateral_accel",
+      "kind": "limit",
+      "measured": 9.350344541065777,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": true
+    },
+    {
+      "name": "envelope_planar_accel",
+      "kind": "limit",
+      "measured": 11.501364605448135,
+      "required": 9.81,
+      "op": "<=",
+      "unit": "m/s2",
+      "passed": false
+    }
+  ],
+  "constraints_pass": false
+}

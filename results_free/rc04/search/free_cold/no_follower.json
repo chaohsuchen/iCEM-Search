@@ -1,0 +1,2315 @@
+{
+ "scene": "no_follower",
+ "theta_s": {
+  "d_obs": 55.0,
+  "fol": 0
+ },
+ "role": "multi_family_supported",
+ "budget": {
+  "pop": 160,
+  "iters": 9,
+  "seeds": 2,
+  "robust_evals": 1446,
+  "rollouts": 7230,
+  "unique_samples": 1403,
+  "per_seed": [
+   {
+    "seed": 0,
+    "cost": 1.178587672084364,
+    "hist": [
+     3.4887446604054047,
+     3.434862755817933,
+     3.09309506290729,
+     1.545729692153544,
+     1.545729692153544,
+     1.178587672084364,
+     1.178587672084364,
+     1.178587672084364,
+     1.178587672084364
+    ],
+    "n": 723
+   },
+   {
+    "seed": 1,
+    "cost": 2.8075780626657996,
+    "hist": [
+     12.251458547944365,
+     3.483268691555157,
+     3.483268691555157,
+     3.0775979329970484,
+     3.0572826008804377,
+     2.9287660969607803,
+     2.9287660969607803,
+     2.887597042907605,
+     2.8075780626657996
+    ],
+    "n": 723
+   }
+  ]
+ },
+ "pool": {
+  "n_supported_nominal": 687,
+  "n_refuted_no_contact": 237,
+  "n_contact": 479
+ },
+ "wall_s": 96.36684846878052,
+ "candidates": [
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "best",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lam": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lateral_fraction": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "lateral_target_m": [
+     -0.6337411520767317,
+     -0.3029318787635694,
+     -0.7752373982061794,
+     -0.9844248035780438,
+     -1.5322705293494927,
+     -2.8965497023589273
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 1.178587672084364,
+    "smoothness_penalty": 0.7350385271344417
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 1.2757059083838003,
+    "min_rear": 99.0,
+    "margin": 0.7757059083838003,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 68.2610553433296,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower__w1",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -3.0
+   },
+   "family": "free",
+   "kind": "best",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lam": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lateral_fraction": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "lateral_target_m": [
+     -0.6337411520767317,
+     -0.3029318787635694,
+     -0.7752373982061794,
+     -0.9844248035780438,
+     -1.5322705293494927,
+     -2.8965497023589273
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w1",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 1.2757059083838003,
+    "min_rear": 99.0,
+    "margin": 0.7757059083838003,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower__w4",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -1.5,
+    "fol_react": 1.2
+   },
+   "family": "free",
+   "kind": "best",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lam": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -4.608518972796844,
+     -5.03774239082654,
+     -7.4607492838570435,
+     -6.516222202468596,
+     -2.134776165110149,
+     -1.7075946060776213
+    ],
+    "lateral_fraction": [
+     0.1810689005933519,
+     0.08655196536101983,
+     0.22149639948747984,
+     0.2812642295937268,
+     0.4377915798141408,
+     0.8275856292454078
+    ],
+    "lateral_target_m": [
+     -0.6337411520767317,
+     -0.3029318787635694,
+     -0.7752373982061794,
+     -0.9844248035780438,
+     -1.5322705293494927,
+     -2.8965497023589273
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w4",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 1.2757059083838003,
+    "min_rear": 99.0,
+    "margin": 0.7757059083838003,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lam": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lateral_fraction": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "lateral_target_m": [
+     -1.3068203160692307,
+     -0.02210196417043242,
+     -0.027280491872357426,
+     1.05,
+     -1.4675380467478012,
+     -2.870199254209962
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 3.810222126000132,
+    "smoothness_penalty": 2.366357613410286
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 7.3828278926295425,
+    "min_rear": 99.0,
+    "margin": 0.8327002840103264,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 142.6207021120006,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower__w1",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -3.0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lam": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lateral_fraction": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "lateral_target_m": [
+     -1.3068203160692307,
+     -0.02210196417043242,
+     -0.027280491872357426,
+     1.05,
+     -1.4675380467478012,
+     -2.870199254209962
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w1",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 7.3828278926295425,
+    "min_rear": 99.0,
+    "margin": 0.8327002840103264,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower__w4",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -1.5,
+    "fol_react": 1.2
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lam": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -3.6417702468360513,
+     -5.5878959905624,
+     -8.578066759385806,
+     -7.984937916608304,
+     -2.0018375828274353,
+     -5.440149196688702
+    ],
+    "lateral_fraction": [
+     0.3733772331626373,
+     0.006314846905837834,
+     0.007794426249244979,
+     -0.3,
+     0.4192965847850861,
+     0.8200569297742748
+    ],
+    "lateral_target_m": [
+     -1.3068203160692307,
+     -0.02210196417043242,
+     -0.027280491872357426,
+     1.05,
+     -1.4675380467478012,
+     -2.870199254209962
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w4",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 7.3828278926295425,
+    "min_rear": 99.0,
+    "margin": 0.8327002840103264,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lam": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lateral_fraction": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "lateral_target_m": [
+     -0.6951654938298939,
+     -0.05495534299338259,
+     -2.0843142654535836,
+     -4.2,
+     -2.2292054851853296,
+     -2.490868308350457
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 7.304731975188206,
+    "smoothness_penalty": 1.967253957709642
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.8719676366538,
+    "min_rear": 99.0,
+    "margin": 0.8933418055448985,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 131.86071629688,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower__w1",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -3.0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lam": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lateral_fraction": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "lateral_target_m": [
+     -0.6951654938298939,
+     -0.05495534299338259,
+     -2.0843142654535836,
+     -4.2,
+     -2.2292054851853296,
+     -2.490868308350457
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w1",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.8719676366538,
+    "min_rear": 99.0,
+    "margin": 0.8933418055448985,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower__w4",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -1.5,
+    "fol_react": 1.2
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lam": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.813036921693984,
+     -4.7111029530053115,
+     -8.616215311193937,
+     -7.35870897092731,
+     -8.788504490567506,
+     -9.0
+    ],
+    "lateral_fraction": [
+     0.1986187125228268,
+     0.015701526569537883,
+     0.5955183615581667,
+     1.2,
+     0.6369158529100942,
+     0.7116766595287021
+    ],
+    "lateral_target_m": [
+     -0.6951654938298939,
+     -0.05495534299338259,
+     -2.0843142654535836,
+     -4.2,
+     -2.2292054851853296,
+     -2.490868308350457
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w4",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.8719676366538,
+    "min_rear": 99.0,
+    "margin": 0.8933418055448985,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lam": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lateral_fraction": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "lateral_target_m": [
+     -0.9490687433799597,
+     0.745300544531437,
+     0.851290787679127,
+     -1.9487092123208734,
+     0.052531426679580495,
+     -2.7474685733204196
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 6.427924391256503,
+    "smoothness_penalty": 4.143110966694377
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.556447123340753,
+    "min_rear": 99.0,
+    "margin": 0.9116996062314826,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 143.9578302673342,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower__w1",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -3.0
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lam": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lateral_fraction": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "lateral_target_m": [
+     -0.9490687433799597,
+     0.745300544531437,
+     0.851290787679127,
+     -1.9487092123208734,
+     0.052531426679580495,
+     -2.7474685733204196
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w1",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.556447123340753,
+    "min_rear": 99.0,
+    "margin": 0.9116996062314826,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower__w4",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -1.5,
+    "fol_react": 1.2
+   },
+   "family": "free",
+   "kind": "diverse",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lam": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.866030990318272,
+     -2.8714619752007406,
+     -8.54418171452018,
+     -6.631922996487965,
+     -7.898018422812554,
+     -2.021703809782144
+    ],
+    "lateral_fraction": [
+     0.2711624981085599,
+     -0.2129430127232677,
+     -0.24322593933689343,
+     0.5567740606631066,
+     -0.015008979051308713,
+     0.7849910209486913
+    ],
+    "lateral_target_m": [
+     -0.9490687433799597,
+     0.745300544531437,
+     0.851290787679127,
+     -1.9487092123208734,
+     0.052531426679580495,
+     -2.7474685733204196
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w4",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 8.556447123340753,
+    "min_rear": 99.0,
+    "margin": 0.9116996062314826,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "boundary",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lam": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lateral_fraction": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "lateral_target_m": [
+     -0.7049126730849502,
+     -0.8733830068033307,
+     0.5462284747912475,
+     -2.253771525208753,
+     -1.361489729869715,
+     -1.9093313678763275
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 57.71796298960287,
+    "smoothness_penalty": 3.23975888549987
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 3.681213963633519,
+    "min_rear": 99.0,
+    "margin": 0.30260516859866216,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 147.16130739269846,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower__w1",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -3.0
+   },
+   "family": "free",
+   "kind": "boundary",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lam": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lateral_fraction": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "lateral_target_m": [
+     -0.7049126730849502,
+     -0.8733830068033307,
+     0.5462284747912475,
+     -2.253771525208753,
+     -1.361489729869715,
+     -1.9093313678763275
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w1",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 3.681213963633519,
+    "min_rear": 99.0,
+    "margin": 0.30260516859866216,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower__w4",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0,
+    "side_acc": -1.5,
+    "fol_react": 1.2
+   },
+   "family": "free",
+   "kind": "boundary",
+   "stratum": "world_replay",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lam": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -2.9489761414536417,
+     -9.0,
+     -1.9058021356965842,
+     -5.956959553728056,
+     -4.6150407010745536,
+     -8.158619905744208
+    ],
+    "lateral_fraction": [
+     0.20140362088141434,
+     0.24953800194380876,
+     -0.156065278511785,
+     0.6439347214882151,
+     0.38899706567706144,
+     0.545523247964665
+    ],
+    "lateral_target_m": [
+     -0.7049126730849502,
+     -0.8733830068033307,
+     0.5462284747912475,
+     -2.253771525208753,
+     -1.361489729869715,
+     -1.9093313678763275
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "world_id": "w4",
+   "search": {
+    "optimizer": "icem",
+    "note": "same complete policy as the w0 candidate of this kind"
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 3.681213963633519,
+    "min_rear": 99.0,
+    "margin": 0.30260516859866216,
+    "reason": "",
+    "rel_speed": 0.0
+   }
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "refuted",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -7.344896475815215,
+     -6.497274860708005,
+     -2.015735575357783,
+     -9.0,
+     -7.10583957134161,
+     -0.8749025279411704
+    ],
+    "lam": [
+     0.18596703773110673,
+     -0.28191740971097456,
+     0.5180825902890255,
+     -0.18474082077297072,
+     0.21448550386804227,
+     0.28227082531918707
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -7.344896475815215,
+     -6.497274860708005,
+     -2.015735575357783,
+     -9.0,
+     -7.10583957134161,
+     -0.8749025279411704
+    ],
+    "lateral_fraction": [
+     0.18596703773110673,
+     -0.28191740971097456,
+     0.5180825902890255,
+     -0.18474082077297072,
+     0.21448550386804227,
+     0.28227082531918707
+    ],
+    "lateral_target_m": [
+     -0.6508846320588736,
+     0.986710933988411,
+     -1.8132890660115892,
+     0.6465928727053976,
+     -0.750699263538148,
+     -0.9879478886171548
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 80.13903137174024,
+    "smoothness_penalty": 4.120005275448955
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 6.428109171131126,
+    "min_rear": 99.0,
+    "margin": 0.9392434779671892,
+    "reason": "lateral envelope",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 132.47407481742846,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "mitigation",
+   "stratum": "icem_selected",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -5.399326029787144,
+     -6.3770460699220255,
+     -3.134130468479972,
+     -1.9923859266752206,
+     -6.792620020276637,
+     -4.8036089051143245
+    ],
+    "lam": [
+     0.1702533723334122,
+     -0.10749958658219483,
+     0.6925004134178052,
+     0.4414891417517501,
+     0.7005964738720569,
+     -0.09940352612794312
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -5.399326029787144,
+     -6.3770460699220255,
+     -3.134130468479972,
+     -1.9923859266752206,
+     -6.792620020276637,
+     -4.8036089051143245
+    ],
+    "lateral_fraction": [
+     0.1702533723334122,
+     -0.10749958658219483,
+     0.6925004134178052,
+     0.4414891417517501,
+     0.7005964738720569,
+     -0.09940352612794312
+    ],
+    "lateral_target_m": [
+     -0.5958868031669426,
+     0.3762485530376819,
+     -2.423751446962318,
+     -1.5452119961311253,
+     -2.452087658552199,
+     0.3479123414478009
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "icem",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": 1146.8944272586755,
+    "smoothness_penalty": 2.945366072939688
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "mitigate",
+    "min_front": 0.017754592921129266,
+    "min_rear": 99.0,
+    "margin": -0.48224540707887076,
+    "reason": "contact with obstacle",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 127.94807676944583,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -8.59358674868595,
+     -7.733589670580814,
+     -7.402777806153884,
+     -6.607283274713345,
+     -4.111695624765304,
+     -2.133768123722837
+    ],
+    "lam": [
+     0.1376563990082229,
+     -0.1783607994040068,
+     0.6216392005959932,
+     -0.08512918181508639,
+     0.3183442711644325,
+     0.3812474884152242
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -8.59358674868595,
+     -7.733589670580814,
+     -7.402777806153884,
+     -6.607283274713345,
+     -4.111695624765304,
+     -2.133768123722837
+    ],
+    "lateral_fraction": [
+     0.1376563990082229,
+     -0.1783607994040068,
+     0.6216392005959932,
+     -0.08512918181508639,
+     0.3183442711644325,
+     0.3812474884152242
+    ],
+    "lateral_target_m": [
+     -0.4817973965287802,
+     0.6242627979140237,
+     -2.175737202085976,
+     0.2979521363528024,
+     -1.1142049490755137,
+     -1.3343662094532847
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 2.3786813084109464
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 10.8460924598375,
+    "min_rear": 99.0,
+    "margin": 0.9456528777713034,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 141.7101944307773,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -1.216961709968328,
+     -7.650540494304906,
+     -5.336639762279164,
+     -6.556229574112178,
+     -3.020786631060269,
+     -2.6010574791614163
+    ],
+    "lam": [
+     -0.15062942505312554,
+     -0.017225876950732355,
+     -0.20976021163981534,
+     0.5902397883601846,
+     -0.16359550317541982,
+     0.0810737459251144
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -1.216961709968328,
+     -7.650540494304906,
+     -5.336639762279164,
+     -6.556229574112178,
+     -3.020786631060269,
+     -2.6010574791614163
+    ],
+    "lateral_fraction": [
+     -0.15062942505312554,
+     -0.017225876950732355,
+     -0.20976021163981534,
+     0.5902397883601846,
+     -0.16359550317541982,
+     0.0810737459251144
+    ],
+    "lateral_target_m": [
+     0.5272029876859394,
+     0.06029056932756324,
+     0.7341607407393537,
+     -2.0658392592606463,
+     0.5725842611139693,
+     -0.2837581107379004
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 3.0188698083693373
+   },
+   "surrogate": {
+    "verdict": "PASS",
+    "cls": "success",
+    "min_front": 4.757974410937884,
+    "min_rear": 99.0,
+    "margin": 0.7866494004849094,
+    "reason": "",
+    "rel_speed": 0.0,
+    "peak_jerk_mps3": 143.77747953790617,
+    "worlds": {
+     "w0": "PASS",
+     "w1": "PASS",
+     "w4": "PASS"
+    },
+    "robust_over_worlds": true
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -4.87618003590648,
+     0.9923636852081223,
+     -1.8803261029974667,
+     0.08690693868435417,
+     -3.108905989800377,
+     -5.732785662976433
+    ],
+    "lam": [
+     0.4079302010856008,
+     1.0191661067544842,
+     0.2191661067544841,
+     0.6653112108598278,
+     0.5068861731197314,
+     1.1655340967050114
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -4.87618003590648,
+     0.9923636852081223,
+     -1.8803261029974667,
+     0.08690693868435417,
+     -3.108905989800377,
+     -5.732785662976433
+    ],
+    "lateral_fraction": [
+     0.4079302010856008,
+     1.0191661067544842,
+     0.2191661067544841,
+     0.6653112108598278,
+     0.5068861731197314,
+     1.1655340967050114
+    ],
+    "lateral_target_m": [
+     -1.4277557037996027,
+     -3.5670813736406943,
+     -0.7670813736406944,
+     -2.328589238009397,
+     -1.7741016059190597,
+     -4.07936933846754
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 3.606518113930838
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 37.98030945516013,
+    "min_rear": 99.0,
+    "margin": -0.5,
+    "reason": "contact with side; lateral envelope",
+    "rel_speed": 3.116886042454169,
+    "peak_jerk_mps3": 68.08432719939077,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  },
+  {
+   "scenario": "no_follower",
+   "scene": "no_follower",
+   "role": "multi_family_supported",
+   "theta_s": {
+    "d_obs": 55.0,
+    "fol": 0
+   },
+   "family": "free",
+   "kind": "random",
+   "stratum": "random_prior",
+   "theta_p": {
+    "mode": "free",
+    "a": [
+     -3.5337286710420077,
+     -3.2242479246177407,
+     -1.651218523585376,
+     -3.9739629514324397,
+     -3.273467504792703,
+     0.9775090293461322
+    ],
+    "lam": [
+     0.4544666378670657,
+     0.8340176803507666,
+     0.5022451930386935,
+     0.252374830430193,
+     0.38982517864083527,
+     0.44909726923019094
+    ],
+    "t_start": 0.1,
+    "dk": 1.0
+   },
+   "policy_spec": {
+    "family": "free",
+    "version": "free-v1",
+    "K": 6,
+    "knot_times_s": [
+     0.1,
+     1.1,
+     2.1,
+     3.1,
+     4.1,
+     5.1
+    ],
+    "a_req_mps2": [
+     -3.5337286710420077,
+     -3.2242479246177407,
+     -1.651218523585376,
+     -3.9739629514324397,
+     -3.273467504792703,
+     0.9775090293461322
+    ],
+    "lateral_fraction": [
+     0.4544666378670657,
+     0.8340176803507666,
+     0.5022451930386935,
+     0.252374830430193,
+     0.38982517864083527,
+     0.44909726923019094
+    ],
+    "lateral_target_m": [
+     -1.5906332325347299,
+     -2.919061881227683,
+     -1.7578581756354272,
+     -0.8833119065056755,
+     -1.3643881252429235,
+     -1.5718404423056682
+    ],
+    "lateral_reference": "scene lane frame, t positive to the right, 0 = ego lane centre; target = esc_dir * lane_w * fraction, esc_dir = -side",
+    "interpolation": "a_req piecewise-linear; lateral cosine-eased",
+    "prefix_duration_s": 5.0,
+    "continuation": "hold last lateral target; speed regulator at the hand-over speed; hand brake once stopped",
+    "bounds": {
+     "a_req": [
+      -9.0,
+      2.0
+     ],
+     "lateral_fraction": [
+      -0.3,
+      1.2
+     ],
+     "max_da_per_knot": 8.0,
+     "max_dlam_per_knot": 0.8
+    },
+    "smoothness_weight": 0.2
+   },
+   "search": {
+    "optimizer": "uniform_prior",
+    "pop": 160,
+    "iters": 9,
+    "seeds": 2,
+    "robust_cost": null,
+    "smoothness_penalty": 0.9441270671087947
+   },
+   "surrogate": {
+    "verdict": "FAIL",
+    "cls": "fail",
+    "min_front": 36.193873194148345,
+    "min_rear": 99.0,
+    "margin": -0.5,
+    "reason": "contact with side",
+    "rel_speed": 4.142791677655936,
+    "peak_jerk_mps3": 64.34774397311784,
+    "worlds": {
+     "w0": "FAIL",
+     "w1": "FAIL",
+     "w4": "FAIL"
+    },
+    "robust_over_worlds": false
+   },
+   "world_id": "w0"
+  }
+ ]
+}

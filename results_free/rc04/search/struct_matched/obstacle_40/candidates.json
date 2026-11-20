@@ -1,0 +1,93 @@
+[
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "brake",
+  "kind": "best",
+  "theta_p": {
+   "mode": "brake",
+   "shift": 0.0,
+   "t_react": 0.1,
+   "a_brake": 7.316540124112784
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1440.225475214769
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "fail",
+   "min_front": 0.0,
+   "min_rear": 1.4699999999999998
+  }
+ },
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "lane_change",
+  "kind": "best",
+  "theta_p": {
+   "mode": "lane_change",
+   "t_react": 0.4765667674287881,
+   "t_lc": 2.1477327666303516,
+   "a_lc": -0.10258618082553284,
+   "a_post": 2.2057329679551003
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 0,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1017.3311016687701
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 3.5551219842161643,
+   "min_rear": 19.72234367398517
+  }
+ },
+ {
+  "scenario": "obstacle_40",
+  "theta_s": {
+   "d_obs": 40.0,
+   "side_pos": 0.0,
+   "v_side": 22.0
+  },
+  "family": "staged",
+  "kind": "best",
+  "theta_p": {
+   "mode": "staged",
+   "t_react": 0.11670189866490105,
+   "t_slow": 0.40852051749623186,
+   "a_slow": 3.1106416608100913,
+   "t_lc": 2.088328715583994,
+   "a_lc": 0.08991405023692334,
+   "a_post": 3.506644989748515
+  },
+  "search": {
+   "optimizer": "icem",
+   "seed": 1,
+   "pop": 48,
+   "iters": 8,
+   "robust_cost": 1018.3615339061715
+  },
+  "surrogate": {
+   "verdict": "FAIL",
+   "cls": "mitigate",
+   "min_front": 4.717355090376934,
+   "min_rear": 18.554707687827282
+  }
+ }
+]
